@@ -7,8 +7,8 @@
  */
 
 /* preprocessing directives */
-#include <iostream> // library for defining objects which handle command line input and command line output operations
-#include <fstream> // library for defining objects which handle file input and file output operations
+#include <iostream> // library for defining objects which handle command line input and command line output
+#include <fstream> // library for defining objects which handle file input and file output
 #define MAXIMUM_N 12 // constant which represents maximum N value
 
 /* function prototypes */
