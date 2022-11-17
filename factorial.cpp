@@ -1,14 +1,14 @@
 /**
  * file: factorial.cpp
  * type: C++ (source file)
- * date: 16_NOVEMBER_2022
+ * date: 17_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN
  */
 
 /* preprocessing directives */
-#include <iostream> // library for defining objects which handle command line input and output operations
-#include <fstream> // library for defining objects which handle file input and output operations
+#include <iostream> // library for defining objects which handle command line input and command line output operations
+#include <fstream> // library for defining objects which handle file input and file output operations
 #define MAXIMUM_N 12 // constant which represents maximum N value
 
 /* function prototypes */
@@ -21,7 +21,7 @@ int compute_factorial_of_N_using_iteration(int N, std::ostream & output);
  * Assume that N is an integer value and that output is an output stream object.
  * 
  * For each compute_factorial_of_N_using_recursion function call, 
- * print an algebraic expression which represents N factorial.
+ * print an algebriac expression which represents N factorial.
  * 
  * 0! := 1. // base case: when N is smaller than 1 or when N is larger than MAXIMUM_N.
  * N! := N * (N - 1)! // recursive case: when N is larger than or equal to 1 and when N is smaller than or equal to MAXIMUM_N.
