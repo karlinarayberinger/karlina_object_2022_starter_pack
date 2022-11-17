@@ -21,7 +21,7 @@ int compute_factorial_of_N_using_iteration(int N, std::ostream & output);
  * Assume that N is an integer value and that output is an output stream object.
  * 
  * For each compute_factorial_of_N_using_recursion function call, 
- * print an algebriac expression which represents N factorial.
+ * print an algebraic expression which represents N factorial.
  * 
  * 0! := 1. // base case: when N is smaller than 1 or when N is larger than MAXIMUM_N.
  * N! := N * (N - 1)! // recursive case: when N is larger than or equal to 1 and when N is smaller than or equal to MAXIMUM_N.
