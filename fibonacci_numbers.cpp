@@ -91,6 +91,7 @@ int compute_Nth_fibonacci_sequence_term_using_recursion(int N, std::ostream & ou
  */
 int compute_Nth_fibonacci_sequence_term_using_iteration(int N, std::ostream & output)
 {
+	// Define four int type variables for storing whole number values which increment zero or more times during any compute_Nth_fibonacci_sequence_term_using_iteration function call.
     int i = 0, A = 1, B = 1, C = 0;
 
     // Print the value of the first term of the Fibonacci Sequence (i.e. fibonacci(0)).
@@ -126,6 +127,8 @@ int compute_Nth_fibonacci_sequence_term_using_iteration(int N, std::ostream & ou
         output << ". // i = " << i;
         i += 1;
     }
+
+    // Return the value of fibonacci(N).
     return B;
 }
 
