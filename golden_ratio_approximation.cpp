@@ -36,7 +36,7 @@ unsigned long long int compute_Nth_fibonacci_sequence_term_using_iteration(int N
 {
     int i = 0, A = 1, B = 1, C = 0;
     if ((N < 2) || (N > MAXIMUM_N)) return 1;
-    for (i = 2; i < N; i += 1) 
+    for (i = 1; i < N; i += 1) 
     {
         C = A;
         A = B;
@@ -61,6 +61,7 @@ long double golden_ratio_approximation(int N, std::ostream & output)
 {
     unsigned long long int A = 0, B = 0; 
     long double C = 0.0;
+    if ((N < 1) || (N > MAXIMUM_N)) N = 0;
     A = compute_Nth_fibonacci_sequence_term_using_iteration(N);
     B = compute_Nth_fibonacci_sequence_term_using_iteration(N - 1);
     C = (long double) A / B;
@@ -141,12 +142,12 @@ int main()
     file << "\n\nComputing the first N Golden Ratio approximations by dividing adjacent terms of the Fibonacci Sequence:";
 
     // Print the first N Golden Ratio approximations to the command line terminal and to the file output stream.
-    for (i = 0; i < N; i += 1) 
+    for (i = 1; i < N; i += 1) 
     {
         G = golden_ratio_approximation(i, std::cout); // Print comments to the command line terminal.
         golden_ratio_approximation(i, file); // Print comments to the file output stream.
-        std::cout << "\nG := golden_ratio_approximation(" << i << ") = " << G << ".";
-        file << "\nG := golden_ratio_approximation(" << i << ") = " << G << ".";
+        std::cout << "\nG = golden_ratio_approximation(" << i << ") = " << G << ".";
+        file << "\nG = golden_ratio_approximation(" << i << ") = " << G << ".";
     }
 
     // Print a closing message to the command line terminal.
