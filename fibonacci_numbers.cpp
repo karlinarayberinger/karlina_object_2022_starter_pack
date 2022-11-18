@@ -97,11 +97,8 @@ int compute_Nth_fibonacci_sequence_term_using_iteration(int N, std::ostream & ou
     // Print the value of the first term of the Fibonacci Sequence (i.e. fibonacci(0)).
     output << "\n\nfibonacci(" << i << ") = 1. // i = " << i; // i = 0
 
-    // If N is smaller than 0 or if N is larger than MAXIMUM_N, return 1.
-    if ((N < 0) || (N > MAXIMUM_N)) return 1;
-
-    // If N is equal to 0, return 1.
-    if (N == 0) return 1;
+    // If N is smaller than 1 or if N is larger than MAXIMUM_N, return 1.
+    if ((N < 1) || (N > MAXIMUM_N)) return 1;
 
     // Increment the value of i by one.
     i += 1;
@@ -112,12 +109,10 @@ int compute_Nth_fibonacci_sequence_term_using_iteration(int N, std::ostream & ou
     // If N is equal to 1, return 1.
     if (N == 1) return 1;
 
-    // Increment the value of i by one.
-    i += 1;
-
     // If N is larger than 2, return the sum of the (N - 2)th term of the Fibonacci Sequence and the (N - 1)nth term of the Fibonacci Sequence.
     while (i < N) 
     {
+    	i += 1;
         C = A;
         A = B;
         B += C;
@@ -125,7 +120,6 @@ int compute_Nth_fibonacci_sequence_term_using_iteration(int N, std::ostream & ou
         output << B << " = fibonacci(" << i - 2 << ") + fibonacci(" << i - 1 << ") = ";
         output << C << " + " << A;
         output << ". // i = " << i;
-        i += 1;
     }
 
     // Return the value of fibonacci(N).

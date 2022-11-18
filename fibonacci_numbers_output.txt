@@ -58,7 +58,9 @@ fibonacci(3) = 3 = fibonacci(1) + fibonacci(2) = 1 + 2. // i = 3
 
 fibonacci(4) = 5 = fibonacci(2) + fibonacci(3) = 2 + 3. // i = 4
 
-B = fibonacci(5) = 5.
+fibonacci(5) = 8 = fibonacci(3) + fibonacci(4) = 3 + 5. // i = 5
+
+B = fibonacci(5) = 8.
 
 --------------------------------
 End Of Program
