@@ -1,0 +1,117 @@
+--------------------------------
+Start Of Program
+--------------------------------
+
+The value which was entered for N is 46.
+
+N := 46.
+
+--------------------------------
+
+A = fibonacci(46) = 0.
+
+The number of times which the recursive Fibonacci Sequence term function was called during this program runtime instance is 0.
+
+--------------------------------
+
+Computing the Nth term of the Fibonacci Sequence using iteration:
+
+fibonacci(0) = 1. // i = 0
+
+fibonacci(1) = 1. // i = 1
+
+fibonacci(2) = 2 = fibonacci(0) + fibonacci(1) = 1 + 1. // i = 2
+
+fibonacci(3) = 3 = fibonacci(1) + fibonacci(2) = 1 + 2. // i = 3
+
+fibonacci(4) = 5 = fibonacci(2) + fibonacci(3) = 2 + 3. // i = 4
+
+fibonacci(5) = 8 = fibonacci(3) + fibonacci(4) = 3 + 5. // i = 5
+
+fibonacci(6) = 13 = fibonacci(4) + fibonacci(5) = 5 + 8. // i = 6
+
+fibonacci(7) = 21 = fibonacci(5) + fibonacci(6) = 8 + 13. // i = 7
+
+fibonacci(8) = 34 = fibonacci(6) + fibonacci(7) = 13 + 21. // i = 8
+
+fibonacci(9) = 55 = fibonacci(7) + fibonacci(8) = 21 + 34. // i = 9
+
+fibonacci(10) = 89 = fibonacci(8) + fibonacci(9) = 34 + 55. // i = 10
+
+fibonacci(11) = 144 = fibonacci(9) + fibonacci(10) = 55 + 89. // i = 11
+
+fibonacci(12) = 233 = fibonacci(10) + fibonacci(11) = 89 + 144. // i = 12
+
+fibonacci(13) = 377 = fibonacci(11) + fibonacci(12) = 144 + 233. // i = 13
+
+fibonacci(14) = 610 = fibonacci(12) + fibonacci(13) = 233 + 377. // i = 14
+
+fibonacci(15) = 987 = fibonacci(13) + fibonacci(14) = 377 + 610. // i = 15
+
+fibonacci(16) = 1597 = fibonacci(14) + fibonacci(15) = 610 + 987. // i = 16
+
+fibonacci(17) = 2584 = fibonacci(15) + fibonacci(16) = 987 + 1597. // i = 17
+
+fibonacci(18) = 4181 = fibonacci(16) + fibonacci(17) = 1597 + 2584. // i = 18
+
+fibonacci(19) = 6765 = fibonacci(17) + fibonacci(18) = 2584 + 4181. // i = 19
+
+fibonacci(20) = 10946 = fibonacci(18) + fibonacci(19) = 4181 + 6765. // i = 20
+
+fibonacci(21) = 17711 = fibonacci(19) + fibonacci(20) = 6765 + 10946. // i = 21
+
+fibonacci(22) = 28657 = fibonacci(20) + fibonacci(21) = 10946 + 17711. // i = 22
+
+fibonacci(23) = 46368 = fibonacci(21) + fibonacci(22) = 17711 + 28657. // i = 23
+
+fibonacci(24) = 75025 = fibonacci(22) + fibonacci(23) = 28657 + 46368. // i = 24
+
+fibonacci(25) = 121393 = fibonacci(23) + fibonacci(24) = 46368 + 75025. // i = 25
+
+fibonacci(26) = 196418 = fibonacci(24) + fibonacci(25) = 75025 + 121393. // i = 26
+
+fibonacci(27) = 317811 = fibonacci(25) + fibonacci(26) = 121393 + 196418. // i = 27
+
+fibonacci(28) = 514229 = fibonacci(26) + fibonacci(27) = 196418 + 317811. // i = 28
+
+fibonacci(29) = 832040 = fibonacci(27) + fibonacci(28) = 317811 + 514229. // i = 29
+
+fibonacci(30) = 1346269 = fibonacci(28) + fibonacci(29) = 514229 + 832040. // i = 30
+
+fibonacci(31) = 2178309 = fibonacci(29) + fibonacci(30) = 832040 + 1346269. // i = 31
+
+fibonacci(32) = 3524578 = fibonacci(30) + fibonacci(31) = 1346269 + 2178309. // i = 32
+
+fibonacci(33) = 5702887 = fibonacci(31) + fibonacci(32) = 2178309 + 3524578. // i = 33
+
+fibonacci(34) = 9227465 = fibonacci(32) + fibonacci(33) = 3524578 + 5702887. // i = 34
+
+fibonacci(35) = 14930352 = fibonacci(33) + fibonacci(34) = 5702887 + 9227465. // i = 35
+
+fibonacci(36) = 24157817 = fibonacci(34) + fibonacci(35) = 9227465 + 14930352. // i = 36
+
+fibonacci(37) = 39088169 = fibonacci(35) + fibonacci(36) = 14930352 + 24157817. // i = 37
+
+fibonacci(38) = 63245986 = fibonacci(36) + fibonacci(37) = 24157817 + 39088169. // i = 38
+
+fibonacci(39) = 102334155 = fibonacci(37) + fibonacci(38) = 39088169 + 63245986. // i = 39
+
+fibonacci(40) = 165580141 = fibonacci(38) + fibonacci(39) = 63245986 + 102334155. // i = 40
+
+fibonacci(41) = 267914296 = fibonacci(39) + fibonacci(40) = 102334155 + 165580141. // i = 41
+
+fibonacci(42) = 433494437 = fibonacci(40) + fibonacci(41) = 165580141 + 267914296. // i = 42
+
+fibonacci(43) = 701408733 = fibonacci(41) + fibonacci(42) = 267914296 + 433494437. // i = 43
+
+fibonacci(44) = 1134903170 = fibonacci(42) + fibonacci(43) = 433494437 + 701408733. // i = 44
+
+fibonacci(45) = 1836311903 = fibonacci(43) + fibonacci(44) = 701408733 + 1134903170. // i = 45
+
+fibonacci(46) = -1323752223 = fibonacci(44) + fibonacci(45) = 1134903170 + 1836311903. // i = 46
+
+B = fibonacci(46) = -1323752223.
+
+--------------------------------
+End Of Program
+--------------------------------
