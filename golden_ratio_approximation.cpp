@@ -32,7 +32,7 @@ long double golden_ratio_approximation(int N, std::ostream & output);
  * fibonacci(1) := 1. // The second term of the Fibonacci Sequence is 1.
  * fibonacci(i) := fibonacci(i - 2) + fibonacci(i - 1). // if i is a natural number larger than 1
  */
-int compute_Nth_fibonacci_sequence_term_using_iteration(int N)
+unsigned long long int compute_Nth_fibonacci_sequence_term_using_iteration(int N)
 {
     int i = 0, A = 1, B = 1, C = 0;
     if ((N < 2) || (N > MAXIMUM_N)) return 1;
@@ -61,8 +61,8 @@ long double golden_ratio_approximation(int N, std::ostream & output)
 {
     unsigned long long int A = 0, B = 0; 
     long double C = 0.0;
-    A = fibonacci_sequence_term(N);
-    B = fibonacci_sequence_term(N - 1);
+    A = compute_Nth_fibonacci_sequence_term_using_iteration(N);
+    B = compute_Nth_fibonacci_sequence_term_using_iteration(N - 1);
     C = (long double) A / B;
     output << "\n\ngolden_ratio_approximation(" << N << ") = fibonacci(" << N << ") / fibonacci(" << N - 1 << ").";
     output << "\ngolden_ratio_approximation(" << N << ") = " << A << " / " << B << ".";
