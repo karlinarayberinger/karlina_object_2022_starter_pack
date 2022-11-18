@@ -10,139 +10,139 @@ N := 8.
 
 Computing the Nth term of the Fibonacci Sequence using recursion:
 
-fibonacci(8) = fibonacci(6) + fibonacci(7). // recursive case
+fibonacci(8) = fibonacci(6) + fibonacci(7). // recursive case (C = 1)
 
-fibonacci(6) = fibonacci(4) + fibonacci(5). // recursive case
+fibonacci(6) = fibonacci(4) + fibonacci(5). // recursive case (C = 2)
 
-fibonacci(4) = fibonacci(2) + fibonacci(3). // recursive case
+fibonacci(4) = fibonacci(2) + fibonacci(3). // recursive case (C = 3)
 
-fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case
+fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case (C = 4)
 
-fibonacci(0) = 1. // base case
+fibonacci(0) = 1. // base case (C = 5)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 6)
 
-fibonacci(3) = fibonacci(1) + fibonacci(2). // recursive case
+fibonacci(3) = fibonacci(1) + fibonacci(2). // recursive case (C = 7)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 8)
 
-fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case
+fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case (C = 9)
 
-fibonacci(0) = 1. // base case
+fibonacci(0) = 1. // base case (C = 10)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 11)
 
-fibonacci(5) = fibonacci(3) + fibonacci(4). // recursive case
+fibonacci(5) = fibonacci(3) + fibonacci(4). // recursive case (C = 12)
 
-fibonacci(3) = fibonacci(1) + fibonacci(2). // recursive case
+fibonacci(3) = fibonacci(1) + fibonacci(2). // recursive case (C = 13)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 14)
 
-fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case
+fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case (C = 15)
 
-fibonacci(0) = 1. // base case
+fibonacci(0) = 1. // base case (C = 16)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 17)
 
-fibonacci(4) = fibonacci(2) + fibonacci(3). // recursive case
+fibonacci(4) = fibonacci(2) + fibonacci(3). // recursive case (C = 18)
 
-fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case
+fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case (C = 19)
 
-fibonacci(0) = 1. // base case
+fibonacci(0) = 1. // base case (C = 20)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 21)
 
-fibonacci(3) = fibonacci(1) + fibonacci(2). // recursive case
+fibonacci(3) = fibonacci(1) + fibonacci(2). // recursive case (C = 22)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 23)
 
-fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case
+fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case (C = 24)
 
-fibonacci(0) = 1. // base case
+fibonacci(0) = 1. // base case (C = 25)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 26)
 
-fibonacci(7) = fibonacci(5) + fibonacci(6). // recursive case
+fibonacci(7) = fibonacci(5) + fibonacci(6). // recursive case (C = 27)
 
-fibonacci(5) = fibonacci(3) + fibonacci(4). // recursive case
+fibonacci(5) = fibonacci(3) + fibonacci(4). // recursive case (C = 28)
 
-fibonacci(3) = fibonacci(1) + fibonacci(2). // recursive case
+fibonacci(3) = fibonacci(1) + fibonacci(2). // recursive case (C = 29)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 30)
 
-fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case
+fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case (C = 31)
 
-fibonacci(0) = 1. // base case
+fibonacci(0) = 1. // base case (C = 32)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 33)
 
-fibonacci(4) = fibonacci(2) + fibonacci(3). // recursive case
+fibonacci(4) = fibonacci(2) + fibonacci(3). // recursive case (C = 34)
 
-fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case
+fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case (C = 35)
 
-fibonacci(0) = 1. // base case
+fibonacci(0) = 1. // base case (C = 36)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 37)
 
-fibonacci(3) = fibonacci(1) + fibonacci(2). // recursive case
+fibonacci(3) = fibonacci(1) + fibonacci(2). // recursive case (C = 38)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 39)
 
-fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case
+fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case (C = 40)
 
-fibonacci(0) = 1. // base case
+fibonacci(0) = 1. // base case (C = 41)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 42)
 
-fibonacci(6) = fibonacci(4) + fibonacci(5). // recursive case
+fibonacci(6) = fibonacci(4) + fibonacci(5). // recursive case (C = 43)
 
-fibonacci(4) = fibonacci(2) + fibonacci(3). // recursive case
+fibonacci(4) = fibonacci(2) + fibonacci(3). // recursive case (C = 44)
 
-fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case
+fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case (C = 45)
 
-fibonacci(0) = 1. // base case
+fibonacci(0) = 1. // base case (C = 46)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 47)
 
-fibonacci(3) = fibonacci(1) + fibonacci(2). // recursive case
+fibonacci(3) = fibonacci(1) + fibonacci(2). // recursive case (C = 48)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 49)
 
-fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case
+fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case (C = 50)
 
-fibonacci(0) = 1. // base case
+fibonacci(0) = 1. // base case (C = 51)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 52)
 
-fibonacci(5) = fibonacci(3) + fibonacci(4). // recursive case
+fibonacci(5) = fibonacci(3) + fibonacci(4). // recursive case (C = 53)
 
-fibonacci(3) = fibonacci(1) + fibonacci(2). // recursive case
+fibonacci(3) = fibonacci(1) + fibonacci(2). // recursive case (C = 54)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 55)
 
-fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case
+fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case (C = 56)
 
-fibonacci(0) = 1. // base case
+fibonacci(0) = 1. // base case (C = 57)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 58)
 
-fibonacci(4) = fibonacci(2) + fibonacci(3). // recursive case
+fibonacci(4) = fibonacci(2) + fibonacci(3). // recursive case (C = 59)
 
-fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case
+fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case (C = 60)
 
-fibonacci(0) = 1. // base case
+fibonacci(0) = 1. // base case (C = 61)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 62)
 
-fibonacci(3) = fibonacci(1) + fibonacci(2). // recursive case
+fibonacci(3) = fibonacci(1) + fibonacci(2). // recursive case (C = 63)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 64)
 
-fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case
+fibonacci(2) = fibonacci(0) + fibonacci(1). // recursive case (C = 65)
 
-fibonacci(0) = 1. // base case
+fibonacci(0) = 1. // base case (C = 66)
 
-fibonacci(1) = 1. // base case
+fibonacci(1) = 1. // base case (C = 67)
 
 A = fibonacci(8) = 34.
 
@@ -152,23 +152,23 @@ The number of times which the recursive Fibonacci Sequence term function was cal
 
 Computing the Nth term of the Fibonacci Sequence using iteration:
 
-fibonacci(0) = 1 = fibonacci(-2) + fibonacci(-1) = 1 + 0. // i = 0.
+fibonacci(0) = 1. // i = 0
 
-fibonacci(1) = 2 = fibonacci(-1) + fibonacci(0) = 1 + 1. // i = 1.
+fibonacci(1) = 1. // i = 1
 
-fibonacci(2) = 3 = fibonacci(0) + fibonacci(1) = 2 + 1. // i = 2.
+fibonacci(2) = 2 = fibonacci(0) + fibonacci(1) = 1 + 1. // i = 2
 
-fibonacci(3) = 5 = fibonacci(1) + fibonacci(2) = 3 + 2. // i = 3.
+fibonacci(3) = 3 = fibonacci(1) + fibonacci(2) = 1 + 2. // i = 3
 
-fibonacci(4) = 8 = fibonacci(2) + fibonacci(3) = 5 + 3. // i = 4.
+fibonacci(4) = 5 = fibonacci(2) + fibonacci(3) = 2 + 3. // i = 4
 
-fibonacci(5) = 13 = fibonacci(3) + fibonacci(4) = 8 + 5. // i = 5.
+fibonacci(5) = 8 = fibonacci(3) + fibonacci(4) = 3 + 5. // i = 5
 
-fibonacci(6) = 21 = fibonacci(4) + fibonacci(5) = 13 + 8. // i = 6.
+fibonacci(6) = 13 = fibonacci(4) + fibonacci(5) = 5 + 8. // i = 6
 
-fibonacci(7) = 34 = fibonacci(5) + fibonacci(6) = 21 + 13. // i = 7.
+fibonacci(7) = 21 = fibonacci(5) + fibonacci(6) = 8 + 13. // i = 7
 
-B = fibonacci(8) = 34.
+B = fibonacci(8) = 21.
 
 --------------------------------
 End Of Program
