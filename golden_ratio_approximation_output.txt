@@ -2,6 +2,24 @@
 Start Of Program
 --------------------------------
 
+The following statements describe the data capacities of various primitive C++ data types:
+
+sizeof(int) = 4 byte(s).
+
+sizeof(unsigned long long int) = 8 byte(s).
+
+sizeof(bool) = 1 byte(s).
+
+sizeof(char) = 1 byte(s).
+
+sizeof(float) = 4 byte(s).
+
+sizeof(double) = 8 byte(s).
+
+sizeof(long double) = 16 byte(s).
+
+--------------------------------
+
 The value which was entered for N is 7.
 
 N := 7.

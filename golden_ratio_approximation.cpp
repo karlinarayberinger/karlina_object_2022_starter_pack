@@ -108,6 +108,60 @@ int main()
     file << "\nStart Of Program";
     file << "\n--------------------------------";
 
+    // Print "The following statements describe the data capacities of various primitive C++ data types:" to the command line terminal.
+    std::cout << "\n\nThe following statements describe the data capacities of various primitive C++ data types:";
+
+    // Print "The following statements describe the data capacities of various primitive C++ data types:" to the file output stream.
+    file << "\n\nThe following statements describe the data capacities of various primitive C++ data types:";
+
+    // Print the data size of an int type variable to the command line terminal.
+    std::cout << "\n\nsizeof(int) = " << sizeof(int) << " byte(s).";
+
+    // Print the data size of an int type variable to the file output stream.
+    file << "\n\nsizeof(int) = " << sizeof(int) << " byte(s).";
+
+    // Print the data size of an unsigned long long int type variable to the command line terminal.
+    std::cout << "\n\nsizeof(unsigned long long int) = " << sizeof(unsigned long long int) << " byte(s).";
+
+    // Print the data size of an unsigned long long int type variable to the file output stream.
+    file << "\n\nsizeof(unsigned long long int) = " << sizeof(unsigned long long int) << " byte(s).";
+
+    // Print the data size of a bool type variable to the command line terminal.
+    std::cout << "\n\nsizeof(bool) = " << sizeof(bool) << " byte(s).";
+
+    // Print the data size of a float type variable to the file output stream.
+    file << "\n\nsizeof(bool) = " << sizeof(bool) << " byte(s).";
+
+    // Print the data size of a char type variable to the command line terminal.
+    std::cout << "\n\nsizeof(char) = " << sizeof(char) << " byte(s).";
+
+    // Print the data size of a float type variable to the file output stream.
+    file << "\n\nsizeof(char) = " << sizeof(char) << " byte(s).";
+
+    // Print the data size of a float type variable to the command line terminal.
+    std::cout << "\n\nsizeof(float) = " << sizeof(float) << " byte(s).";
+
+    // Print the data size of a float type variable to the file output stream.
+    file << "\n\nsizeof(float) = " << sizeof(float) << " byte(s).";
+
+    // Print the data size of a double type variable to the command line terminal.
+    std::cout << "\n\nsizeof(double) = " << sizeof(double) << " byte(s).";
+
+    // Print the data size of an int type variable to the file output stream.
+    file << "\n\nsizeof(double) = " << sizeof(double) << " byte(s).";
+
+    // Print the data size of a long double type variable to the command line terminal.
+    std::cout << "\n\nsizeof(long double) = " << sizeof(long double) << " byte(s).";
+
+    // Print the data size of an int type variable to the file output stream.
+    file << "\n\nsizeof(long double) = " << sizeof(long double) << " byte(s).";
+
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------";
+
     // Print "Enter a nonnegative integer which is no larger than {MAXIMUM_N}: " to the command line terminal.
     std::cout << "\n\nEnter a nonnegative integer which is no larger than " << MAXIMUM_N << ": ";
 
