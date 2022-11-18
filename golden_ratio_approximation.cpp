@@ -20,7 +20,6 @@
 unsigned long long int compute_Nth_fibonacci_sequence_term_using_iteration(int N);
 long double golden_ratio_approximation(int N, std::ostream & output);
 
-
 /**
  * Compute the Nth term of the Fibonacci Sequence using an iterative algorithm.
  * 
@@ -45,7 +44,6 @@ int compute_Nth_fibonacci_sequence_term_using_iteration(int N)
     }
     return B;
 }
-
 
 /**
  * Compute the approximate value of the Golden Ratio by dividing the Nth term of the Fibonacci Sequence by the (N - 1)th term of the Fibonacci Sequence.
@@ -72,15 +70,23 @@ long double golden_ratio_approximation(int N, std::ostream & output)
     return C;
 }
 
-
 /* program entry point */
 int main()
 {
-    // Declare two int type variables and set their initial values to 0.
+    // Declare two int type variables for storing whole numbers and set their initial values to 0.
     int N = 0, i = 0;
+
+    // Declare a long double type variable for storing floating-point numbers and set its initial value to 0. named G and set its initial value to 0.0.
+    double G = 0.0;
 
     // Declare a file output stream object.
     std::ofstream file;
+
+    // Set the number of digits of floating-point numbers which are printed to the command line terminal to 100 digits.
+    std::cout.precision(100);
+
+    // Set the number of digits of floating-point numbers which are printed to the file output stream to 100 digits.
+    file.precision(100);
 
     /**
      * If golden_ratio_approximation_output.txt does not already exist in the same directory as golden_ratio_approximation.cpp, 
@@ -133,6 +139,15 @@ int main()
 
     // Print "Computing the first N Golden Ratio approximations by dividing adjacent terms of the Fibonacci Sequence:" to the file output stream.
     file << "\n\nComputing the first N Golden Ratio approximations by dividing adjacent terms of the Fibonacci Sequence:";
+
+    // Print the first N Golden Ratio approximations to the command line terminal and to the file output stream.
+    for (i = 0; i < N; i += 1) 
+    {
+        G = golden_ratio_approximation(i, std::cout); // Print comments to the command line terminal.
+        golden_ratio_approximation(i, file); // Print comments to the file output stream.
+        std::cout << "\nG := golden_ratio_approximation(" << i << ") = " << G << ".";
+        file << "\nG := golden_ratio_approximation(" << i << ") = " << G << ".";
+    }
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
