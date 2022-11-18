@@ -248,6 +248,11 @@ golden_ratio_approximation(44) = 1134903170 / 701408733.
 golden_ratio_approximation(44) = 1.618033988749894849074571767655328358159749768674373626708984375.
 G = golden_ratio_approximation(44) = 1.6180339887498949025257388711906969547271728515625.
 
+golden_ratio_approximation(45) = fibonacci(45) / fibonacci(44).
+golden_ratio_approximation(45) = 1836311903 / 1134903170.
+golden_ratio_approximation(45) = 1.618033988749894847881949377921273480751551687717437744140625.
+G = golden_ratio_approximation(45) = 1.6180339887498949025257388711906969547271728515625.
+
 --------------------------------
 End Of Program
 --------------------------------

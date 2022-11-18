@@ -56,7 +56,7 @@ long double golden_ratio_approximation(int N, std::ostream & output)
 {
     unsigned long long int A = 0, B = 0; 
     long double C = 0.0;
-    if ((N < 1) || (N > MAXIMUM_N)) N = 0;
+    if ((N < 0) || (N > MAXIMUM_N)) N = 0;
     A = compute_Nth_fibonacci_sequence_term_using_iteration(N);
     B = compute_Nth_fibonacci_sequence_term_using_iteration(N - 1);
     C = (long double) A / B;
@@ -157,8 +157,8 @@ int main()
     // Print a horizontal line to the command line terminal.
     file << "\n\n--------------------------------";
 
-    // Print "Enter a nonnegative integer which is no larger than {MAXIMUM_N}: " to the command line terminal.
-    std::cout << "\n\nEnter a nonnegative integer which is no larger than " << MAXIMUM_N << ": ";
+    // Print "Enter a natural number which is no larger than {MAXIMUM_N}: " to the command line terminal.
+    std::cout << "\n\nEnter a natural number which is no larger than " << MAXIMUM_N << ": ";
 
     // Scan the command line terminal for the most recent keyboard input value.
     std::cin >> N;
@@ -169,8 +169,8 @@ int main()
     // Print "The value which was entered for N is {N}." to the file output stream.
     file << "\n\nThe value which was entered for N is " << N << ".";
 
-    // If N is smaller than 0 or if N is larger than MAXIMUM_N, set N to 0.
-    N = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N; // A tertiary operation (using the tertiary operator (?)) is an alternative to using if-else statements.
+    // If N is smaller than 1 or if N is larger than MAXIMUM_N, set N to 1.
+    N = ((N < 1) || (N > MAXIMUM_N)) ? 1 : N; // A tertiary operation (using the tertiary operator (?)) is an alternative to using if-else statements.
 
     // Print "N := {N}." to the command line terminal.
     std::cout << "\n\nN := " << N << ".";
@@ -191,7 +191,7 @@ int main()
     file << "\n\nComputing the first N Golden Ratio approximations by dividing adjacent terms of the Fibonacci Sequence:";
 
     // Print the first N Golden Ratio approximations to the command line terminal and to the file output stream.
-    for (i = 1; i < N; i += 1) 
+    for (i = 1; i <= N; i += 1) 
     {
         G = golden_ratio_approximation(i, std::cout); // Print comments to the command line terminal.
         golden_ratio_approximation(i, file); // Print comments to the file output stream.
