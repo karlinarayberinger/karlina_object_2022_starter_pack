@@ -124,13 +124,13 @@ int main()
     // Print the data size of a bool type variable to the command line terminal.
     std::cout << "\n\nsizeof(bool) = " << sizeof(bool) << " byte(s).";
 
-    // Print the data size of a float type variable to the file output stream.
+    // Print the data size of a bool type variable to the file output stream.
     file << "\n\nsizeof(bool) = " << sizeof(bool) << " byte(s).";
 
     // Print the data size of a char type variable to the command line terminal.
     std::cout << "\n\nsizeof(char) = " << sizeof(char) << " byte(s).";
 
-    // Print the data size of a float type variable to the file output stream.
+    // Print the data size of a char type variable to the file output stream.
     file << "\n\nsizeof(char) = " << sizeof(char) << " byte(s).";
 
     // Print the data size of a float type variable to the command line terminal.
@@ -142,13 +142,13 @@ int main()
     // Print the data size of a double type variable to the command line terminal.
     std::cout << "\n\nsizeof(double) = " << sizeof(double) << " byte(s).";
 
-    // Print the data size of an int type variable to the file output stream.
+    // Print the data size of a double type variable to the file output stream.
     file << "\n\nsizeof(double) = " << sizeof(double) << " byte(s).";
 
     // Print the data size of a long double type variable to the command line terminal.
     std::cout << "\n\nsizeof(long double) = " << sizeof(long double) << " byte(s).";
 
-    // Print the data size of an int type variable to the file output stream.
+    // Print the data size of a long double type variable to the file output stream.
     file << "\n\nsizeof(long double) = " << sizeof(long double) << " byte(s).";
 
     // Print a horizontal line to the command line terminal.
