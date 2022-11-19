@@ -1,7 +1,7 @@
 /**
  * file: probability.cpp
  * type: C++ (source file)
- * date: 18_NOVEMBER_2022
+ * date: 19_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN 
  */
@@ -61,8 +61,8 @@ void bubble_sort(int * A, int S)
 /* program entry point */
 int main()
 {
-    // Declare three int type variables and set each of their initial values to 0.
-    int S = 0, T = 0, i = 0;
+    // Declare four int type variables and set each of their initial values to 0.
+    int S = 0, T = 0, i = 0, k = 0;
 
     // Declare two pointer-to-int type variables.
     int * A, * B;
@@ -505,6 +505,37 @@ int main()
     {
         std::cout << "\nB[" << i << "] = " << B[i] << ". \t// &B[" << i << "] = \t" << &B[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "].";
         file << "\nB[" << i << "] = " << B[i] << ". \t// &B[" << i << "] = \t" << &B[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "].";
+    }
+
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------";
+
+    // Print "STEP_4: FOR EACH ELEMENT B[i] OF THE ARRAY NAMED B, STORE THE NUMBER OF TIMES i APPEARS AS AN ELEMENT VALUE IN THE ARRAY NAMED A." to the command line terminal.
+    std::cout << "\n\nSTEP_4: FOR EACH ELEMENT B[i] OF THE ARRAY NAMED B, STORE THE NUMBER OF TIMES i APPEARS AS AN ELEMENT VALUE IN THE ARRAY NAMED A.";
+
+    // Print "STEP_4: FOR EACH ELEMENT B[i] OF THE ARRAY NAMED B, STORE THE NUMBER OF TIMES i APPEARS AS AN ELEMENT VALUE IN THE ARRAY NAMED A." to the file output stream.
+    file << "\n\nSTEP_4: FOR EACH ELEMENT B[i] OF THE ARRAY NAMED B, STORE THE NUMBER OF TIMES i APPEARS AS AN ELEMENT VALUE IN THE ARRAY NAMED A.";
+
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------";
+
+    /**
+     * For each element, i, of the array represented by B, 
+     * store the number of times i appears as an element value in the array represented by A
+     * in B[i].
+     */ 
+    for (i = 0; i < T; i += 1)
+    {
+        for (k = 0; k < S; k += 1) 
+        {
+            if (i == A[k]) B[i] += 1;
+        }
     }
 
     // Print a horizontal line to the command line terminal.
