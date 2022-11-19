@@ -46,9 +46,11 @@ sizeof(double ***) = 8 byte(s). // A pointer-to-pointer-to-pointer-to-double typ
 
 --------------------------------
 
-The value which was entered for S is 80.
+The value which was entered for S is 60.
 
-S := 80. // number of consecutive int-sized chunks of memory to allocate to an array such that the memory address of the first element of that array, A[0], is stored in a pointer-to-int type variable named A
+S := 60. // number of consecutive int-sized chunks of memory to allocate to an array such that the memory address of the first element of that array, A[0], is stored in a pointer-to-int type variable named A
+
+--------------------------------
 
 // Declare a pointer-to-int type variable named A.
 int * A;
@@ -58,9 +60,9 @@ A = new int [S];
 
 --------------------------------
 
-The value which was entered for T is 8.
+The value which was entered for T is 6.
 
-T := 8. // number of unique states which each element of the array pointed to by A can store exactly one of at a time
+T := 6. // number of unique states which each element of the array pointed to by A can store exactly one of at a time
 
 --------------------------------
 

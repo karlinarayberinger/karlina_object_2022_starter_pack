@@ -249,6 +249,12 @@ int main()
     // Print "S := {S}. // number of consecutive int-sized chunks of memory to allocate to an array such that the memory address of the first element of that array, A[0], is stored in a pointer-to-int type variable named A" to the file output stream.
     file << "\n\nS := " << S << ". // number of consecutive int-sized chunks of memory to allocate to an array such that the memory address of the first element of that array, A[0], is stored in a pointer-to-int type variable named A";
 
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------";
+
     // Allocate S contiguous int-sized chunks of memory and store the memory address of the first int-sized chunk of memory, A[0]. inside the pointer-to-int variable named A.
     A = new int [S];
 
