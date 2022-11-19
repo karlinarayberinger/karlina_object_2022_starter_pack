@@ -13,10 +13,13 @@
 /* preprocessing directives */
 #include <iostream> // library for defining objects which handle command line input and command line output
 #include <fstream> // library for defining objects which handle file input and file output
+#include <cmath> // library which defines the square root function (sqrt()), trigonometric functions (e.g. sine (sin()), cosine (cos()), tangent (tan())), and the floor function (which rounds the input number down to that number's nearest integer)
+#include <string> // library which defines a sequence of text characters (i.e. char type values) as a string type variable
 #define MINIMUM_X -999 // constant which represents minimum X value
 #define MAXIMUM_X 999 // constant which represents maximum X value
 #define MINIMUM_Y -999 // constant which represents minimum Y value
 #define MAXIMUM_Y 999 // constant which represents maximum Y value
+#define PI 3.141592653589793238462643383279502884197169399 // constant which represents the approximate value of a circle's circumference divided by that circle's diameter
 
 /**
  * Define a class which is used to instantiate POINT type objects.
