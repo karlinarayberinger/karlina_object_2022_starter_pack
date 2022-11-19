@@ -19,7 +19,7 @@
 #define MAXIMUM_X 999 // constant which represents maximum X value
 #define MINIMUM_Y -999 // constant which represents minimum Y value
 #define MAXIMUM_Y 999 // constant which represents maximum Y value
-#define PI 3.141592653589793238462643383279502884197169399 // constant which represents the approximate value of a circle's circumference divided by that circle's diameter
+#define PI 3.14159 // constant which represents the approximate value of a circle's circumference divided by that circle's diameter
 
 /**
  * Define a class which is used to instantiate POINT type objects.
