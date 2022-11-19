@@ -249,6 +249,21 @@ int main()
     // Print "S := {S}. // number of consecutive int-sized chunks of memory to allocate to an array such that the memory address of the first element of that array, A[0], is stored in a pointer-to-int type variable named A" to the file output stream.
     file << "\n\nS := " << S << ". // number of consecutive int-sized chunks of memory to allocate to an array such that the memory address of the first element of that array, A[0], is stored in a pointer-to-int type variable named A";
 
+    // Allocate S contiguous int-sized chunks of memory and store the memory address of the first int-sized chunk of memory, A[0]. inside the pointer-to-int variable named A.
+    A = new int [S];
+
+    // Print the program instruction used to generate the dynamic array represented by A to the command line terminal.
+    std::cout << "\n\n// Declare a pointer-to-int type variable named A.";
+    std::cout << "\nint * A;";
+    std::cout << "\n\n// Allocate S contiguous int-sized chunks of memory and store the memory address of the first int-sized chunk of memory, A[0]. inside the pointer-to-int variable named A.";
+    std::cout << "\nA = new int [S];"; 
+
+    // Print the program instruction used to generate the dynamic array represented by A to the file output stream.
+    file << "\n\n// Declare a pointer-to-int type variable named A.";
+    file << "\nint * A;";
+    file << "\n\n// Allocate S contiguous int-sized chunks of memory and store the memory address of the first int-sized chunk of memory, A[0]. inside the pointer-to-int variable named A.";
+    file << "\nA = new int [S];"; 
+
     // Print a horizontal line to the command line terminal.
     std::cout << "\n\n--------------------------------";
 
@@ -282,7 +297,16 @@ int main()
     // Print a horizontal line to the command line terminal.
     file << "\n\n--------------------------------";
 
-    // ...
+    // Deallocate the memory which was used to instantiate the dynamic array represented by A (and a dynamic array is assigned memory during program runtime rather than during program compile time).
+    delete [] A;
+
+    // Print the command to de-allocate memory which was assigned to the dynamically-allocated array of S int type values to the command line terminal.
+    std::cout << "\n\n// Deallocate the memory which was used to instantiate the dynamic array represented by A (and a dynamic array (unlike a normal array) is assigned memory during program runtime rather than during program compile time).";
+    std::cout << "\ndelete [] A;";
+
+    // Print the command to de-allocate memory which was assigned to the dynamically-allocated array of S int type values to the file output stream.
+    file << "\n\n// Deallocate the memory which was used to instantiate the dynamic array represented by A (and a dynamic array (unlike a normal array) is assigned memory during program runtime rather than during program compile time).";
+    file << "\ndelete [] A;";
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
