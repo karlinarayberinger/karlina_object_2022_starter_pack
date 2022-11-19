@@ -538,6 +538,24 @@ int main()
         }
     }
 
+    // Print the contents of B to the command line terminal.
+    std::cout << "\n\nB = " << B << ". // memory address of B[0]\n";
+
+    // Print the contents of B to the file output stream.
+    file << "\n\nB = " << B << ". // memory address of B[0]\n";
+
+    /**
+     * For each element, i, of the array represented by B, 
+     * print the contents of the ith element of the array, B[i], 
+     * and the memory address of that array element 
+     * to the command line terminal and to the file output stream.
+     */
+    for (i = 0; i < T; i += 1) 
+    {
+        std::cout << "\nB[" << i << "] = " << B[i] << ". \t// &B[" << i << "] = \t" << &B[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "].";
+        file << "\nB[" << i << "] = " << B[i] << ". \t// &B[" << i << "] = \t" << &B[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "].";
+    }
+
     // Print a horizontal line to the command line terminal.
     std::cout << "\n\n--------------------------------";
 
