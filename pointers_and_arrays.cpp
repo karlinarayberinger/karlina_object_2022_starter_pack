@@ -15,9 +15,8 @@
 #define MAXIMUM_S 1000 // upper limit constant for values of S
 #define MAXIMUM_T 1000 // upper limit constant for values of T
 
-/* function prototypes */
+/* function prototype */
 void bubble_sort(int * A, int S);
-void print_histogram(int * A, int S, int T, std::ostream & output);
 
 /**
  * Use the Bubble Sort algorithm to arrange the elements of 
@@ -231,11 +230,11 @@ int main()
     // Print a horizontal line to the command line terminal.
     file << "\n\n--------------------------------";
 
-    // Print "STEP_0: CREATE A DYNAMIC ARRAY WHICH IS NAMED A AND WHICH IS COMRPISED OF S INT TYPE VALUES." to the command line terminal.
-    std::cout << "\n\nSTEP_0: CREATE A DYNAMIC ARRAY WHICH IS NAMED A AND WHICH IS COMRPISED OF S INT TYPE VALUES.";
+    // Print "STEP_0: CREATE A DYNAMIC ARRAY WHICH IS NAMED A AND WHICH IS COMPRISED OF S INT TYPE VALUES." to the command line terminal.
+    std::cout << "\n\nSTEP_0: CREATE A DYNAMIC ARRAY WHICH IS NAMED A AND WHICH IS COMPRISED OF S INT TYPE VALUES.";
 
     // Print "STEP_0: CREATE A DYNAMIC ARRAY WHICH IS NAMED A AND WHICH IS COMRPISED OF S INT TYPE VALUES." to the file output stream.
-    file << "\n\nSTEP_0: CREATE A DYNAMIC ARRAY WHICH IS NAMED A AND WHICH IS COMRPISED OF S INT TYPE VALUES.";
+    file << "\n\nSTEP_0: CREATE A DYNAMIC ARRAY WHICH IS NAMED A AND WHICH IS COMPRISED OF S INT TYPE VALUES.";
 
     // Print a horizontal line to the command line terminal.
     std::cout << "\n\n--------------------------------";
@@ -276,13 +275,13 @@ int main()
     // Print the program instruction used to generate the dynamic array represented by A to the command line terminal.
     std::cout << "\n\n// Declare a pointer-to-int type variable named A.";
     std::cout << "\nint * A;";
-    std::cout << "\n\n// Allocate S contiguous int-sized chunks of memory and store the memory address of the first int-sized chunk of memory, A[0]. inside the pointer-to-int type variable named A.";
+    std::cout << "\n\n// Allocate S contiguous int-sized chunks of memory and store the memory address of the first int-sized chunk of memory, A[0], inside the pointer-to-int type variable named A.";
     std::cout << "\nA = new int [S];"; 
 
     // Print the program instruction used to generate the dynamic array represented by A to the file output stream.
     file << "\n\n// Declare a pointer-to-int type variable named A.";
     file << "\nint * A;";
-    file << "\n\n// Allocate S contiguous int-sized chunks of memory and store the memory address of the first int-sized chunk of memory, A[0]. inside the pointer-to-int type variable named A.";
+    file << "\n\n// Allocate S contiguous int-sized chunks of memory and store the memory address of the first int-sized chunk of memory, A[0], inside the pointer-to-int type variable named A.";
     file << "\nA = new int [S];"; 
 
     // Print a horizontal line to the command line terminal.
@@ -442,6 +441,17 @@ int main()
     file << "\n\nA = " << A << ". // memory address of A[0]\n";
 
     /**
+     * // Note that the reference operator (&) is used to return the memory address of the variable it prefaces.
+     * int N = 99;
+     * std::cout << &N; // 0x55eefa6bc920
+     * 
+     * Note that the dereference operator (*) is used to retrieve the data value stored at the memory address which is stored inside of the pointer which the dereference operator prefaces.
+     * int M = 88;
+     * int * P = &M;
+     * std::cout << * P; // 88
+     */
+
+    /**
      * For each element, i, of the array represented by A, 
      * print the contents of the ith element of the array, A[i], 
      * and the memory address of that array element 
@@ -449,8 +459,8 @@ int main()
      */
     for (i = 0; i < S; i += 1) 
     {
-        std::cout << "\nA[" << i << "] = " << A[i] << ". \t// &A[" << i << "] = \t" << &A[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "].";
-        file << "\nA[" << i << "] = " << A[i] << ". \t// &A[" << i << "] = \t" << &A[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "].";
+        std::cout << "\nA[" << i << "] = " << A[i] << ".\t// &A[" << i << "] =\t" << &A[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "].";
+        file << "\nA[" << i << "] = " << A[i] << ".\t// &A[" << i << "] =\t" << &A[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "].";
     }
 
     // Print a horizontal line to the command line terminal.
@@ -459,11 +469,11 @@ int main()
     // Print a horizontal line to the command line terminal.
     file << "\n\n--------------------------------";
 
-    // Print "STEP_3: CREATE A DYNAMIC ARRAY WHICH IS NAMED B AND WHICH IS COMRPISED OF T INT TYPE VALUES." to the command line terminal.
-    std::cout << "\n\nSTEP_3: CREATE A DYNAMIC ARRAY WHICH IS NAMED B AND WHICH IS COMRPISED OF T INT TYPE VALUES.";
+    // Print "STEP_3: CREATE A DYNAMIC ARRAY WHICH IS NAMED B AND WHICH IS COMPRISED OF T INT TYPE VALUES." to the command line terminal.
+    std::cout << "\n\nSTEP_3: CREATE A DYNAMIC ARRAY WHICH IS NAMED B AND WHICH IS COMPRISED OF T INT TYPE VALUES.";
 
-    // Print "STEP_3: CREATE A DYNAMIC ARRAY WHICH IS NAMED B AND WHICH IS COMRPISED OF T INT TYPE VALUES." to the file output stream.
-    file << "\n\nSTEP_3: CREATE A DYNAMIC ARRAY WHICH IS NAMED B AND WHICH IS COMRPISED OF T INT TYPE VALUES.";
+    // Print "STEP_3: CREATE A DYNAMIC ARRAY WHICH IS NAMED B AND WHICH IS COMPRISED OF T INT TYPE VALUES." to the file output stream.
+    file << "\n\nSTEP_3: CREATE A DYNAMIC ARRAY WHICH IS NAMED B AND WHICH IS COMPRISED OF T INT TYPE VALUES.";
 
     // Print a horizontal line to the command line terminal.
     std::cout << "\n\n--------------------------------";
@@ -477,13 +487,13 @@ int main()
     // Print the program instruction used to generate the dynamic array represented by B to the command line terminal.
     std::cout << "\n\n// Declare a pointer-to-int type variable named B.";
     std::cout << "\nint * B;";
-    std::cout << "\n\n// Allocate T contiguous int-sized chunks of memory and store the memory address of the first int-sized chunk of memory, B[0]. inside the pointer-to-int type variable named B.";
+    std::cout << "\n\n// Allocate T contiguous int-sized chunks of memory and store the memory address of the first int-sized chunk of memory, B[0], inside the pointer-to-int type variable named B.";
     std::cout << "\nB = new int [T];"; 
 
     // Print the program instruction used to generate the dynamic array represented by B to the file output stream.
     file << "\n\n// Declare a pointer-to-int type variable named B.";
     file << "\nint * B;";
-    file << "\n\n// Allocate T contiguous int-sized chunks of memory and store the memory address of the first int-sized chunk of memory, B[0]. inside the pointer-to-int type variable named B.";
+    file << "\n\n// Allocate T contiguous int-sized chunks of memory and store the memory address of the first int-sized chunk of memory, B[0], inside the pointer-to-int type variable named B.";
     file << "\nB = new int [T];"; 
 
     // Print a horizontal line to the command line terminal.
@@ -506,8 +516,8 @@ int main()
      */
     for (i = 0; i < T; i += 1) 
     {
-        std::cout << "\nB[" << i << "] = " << B[i] << ". \t// &B[" << i << "] = \t" << &B[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "].";
-        file << "\nB[" << i << "] = " << B[i] << ". \t// &B[" << i << "] = \t" << &B[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "].";
+        std::cout << "\nB[" << i << "] = " << B[i] << ".\t// &B[" << i << "] =\t" << &B[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "].";
+        file << "\nB[" << i << "] = " << B[i] << ".\t// &B[" << i << "] =\t" << &B[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "].";
     }
 
     // Print a horizontal line to the command line terminal.
@@ -555,8 +565,8 @@ int main()
      */
     for (i = 0; i < T; i += 1) 
     {
-        std::cout << "\nB[" << i << "] = " << B[i] << ". \t// &B[" << i << "] = \t" << &B[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "].";
-        file << "\nB[" << i << "] = " << B[i] << ". \t// &B[" << i << "] = \t" << &B[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "].";
+        std::cout << "\nB[" << i << "] = " << B[i] << ".\t// &B[" << i << "] =\t" << &B[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "].";
+        file << "\nB[" << i << "] = " << B[i] << ".\t// &B[" << i << "] =\t" << &B[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "].";
     }
 
     // Print a horizontal line to the command line terminal.
@@ -565,11 +575,11 @@ int main()
     // Print a horizontal line to the command line terminal.
     file << "\n\n--------------------------------";
 
-    // Print "STEP_5: CREATE A DYNAMIC ARRAY WHICH IS NAMED C AND WHICH IS COMRPISED OF T POINTER-TO-CHAR TYPE VALUES." to the command line terminal.
-    std::cout << "\n\nSTEP_5: CREATE A DYNAMIC ARRAY WHICH IS NAMED C AND WHICH IS COMRPISED OF T POINTER-TO-CHAR TYPE VALUES.";
+    // Print "STEP_5: CREATE A DYNAMIC ARRAY WHICH IS NAMED C AND WHICH IS COMPRISED OF T POINTER-TO-CHAR TYPE VALUES." to the command line terminal.
+    std::cout << "\n\nSTEP_5: CREATE A DYNAMIC ARRAY WHICH IS NAMED C AND WHICH IS COMPRISED OF T POINTER-TO-CHAR TYPE VALUES.";
 
-    // Print "STEP_5: CREATE A DYNAMIC ARRAY WHICH IS NAMED C AND WHICH IS COMRPISED OF T POINTER-TO-CHAR TYPE VALUES." to the file output stream.
-    file << "\n\nSTEP_5: CREATE A DYNAMIC ARRAY WHICH IS NAMED C AND WHICH IS COMRPISED OF T POINTER-TO-CHAR TYPE VALUES.";
+    // Print "STEP_5: CREATE A DYNAMIC ARRAY WHICH IS NAMED C AND WHICH IS COMPRISED OF T POINTER-TO-CHAR TYPE VALUES." to the file output stream.
+    file << "\n\nSTEP_5: CREATE A DYNAMIC ARRAY WHICH IS NAMED C AND WHICH IS COMPRISED OF T POINTER-TO-CHAR TYPE VALUES.";
 
     // Print a horizontal line to the command line terminal.
     std::cout << "\n\n--------------------------------";
@@ -577,20 +587,75 @@ int main()
     // Print a horizontal line to the command line terminal.
     file << "\n\n--------------------------------";
 
-    // Allocate T contiguous pointer-to-char-sized chunks of memory and store the memory address of the first pointer-to-char-sized chunk of memory, C[0]. inside the pointer-to-pointer-to-char type variable named C.
+    // Allocate T contiguous pointer-to-char-sized chunks of memory and store the memory address of the first pointer-to-char-sized chunk of memory, C[0], inside the pointer-to-pointer-to-char type variable named C.
     C = new char * [T];
+
+    // C is a two-dimensional array which depicts a histogram (i.e. bar graph) such the length of the ith row is identical to the value stored in B[i].
+    for (i = 0; i < T; i += 1) 
+    {
+        C[i] = new char [B[i]];
+        for (k = 0; k < B[i]; k += 1) C[i][k] = 'X';
+    }
 
     // Print the program instruction used to generate the dynamic array represented by C to the command line terminal.
     std::cout << "\n\n// Declare one pointer-to-pointer-to-char type variable.";
     std::cout << "\nchar ** C;";
-    std::cout << "\n\n// Allocate T contiguous pointer-to-char-sized chunks of memory and store the memory address of the first pointer-to-char-sized chunk of memory, C[0]. inside the pointer-to-pointer-to-char type variable named C.";
+    std::cout << "\n\n// Allocate T contiguous pointer-to-char-sized chunks of memory and store the memory address of the first pointer-to-char-sized chunk of memory, C[0], inside the pointer-to-pointer-to-char type variable named C.";
     std::cout << "\nC = new char * [T];";
+    std::cout << "\n\n// C is a two-dimensional array which depicts a histogram (i.e. bar graph) such the length of the ith row is identical to the value stored in B[i].";
+    std::cout << "\nfor (i = 0; i < T; i += 1)";
+    std::cout << "\n{";
+    std::cout << "\n    C[i] = new char [B[i]];";
+    std::cout << "\n    for (k = 0; k < B[i]; k += 1) C[i][k] = 'X';";
+    std::cout << "\n}";
 
     // Print the program instruction used to generate the dynamic array represented by C to the file output stream.
     file << "\n\n// Declare one pointer-to-pointer-to-char type variable.";
     file << "\nchar ** C;";
-    file << "\n\n// Allocate T contiguous pointer-to-char-sized chunks of memory and store the memory address of the first pointer-to-char-sized chunk of memory, C[0]. inside the pointer-to-pointer-to-char type variable named C.";
+    file << "\n\n// Allocate T contiguous pointer-to-char-sized chunks of memory and store the memory address of the first pointer-to-char-sized chunk of memory, C[0], inside the pointer-to-pointer-to-char type variable named C.";
     file << "\nC = new char * [T];";
+    file << "\n\n// C is a two-dimensional array which depicts a histogram (i.e. bar graph) such the length of the ith row is identical to the value stored in B[i].";
+    file << "\nfor (i = 0; i < T; i += 1)";
+    file << "\n{";
+    file << "\n    C[i] = new char [B[i]];";
+    file << "\n    for (k = 0; k < B[i]; k += 1) C[i][k] = 'X';";
+    file << "\n}";
+
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------";
+
+    // Print the contents of C to the command line terminal.
+    std::cout << "\n\nC = " << C << ". // memory address of C[0]\n";
+
+    // Print the contents of C to the file output stream.
+    file << "\n\nC = " << C << ". // memory address of C[0]\n";
+
+    /**
+     * For each element, i, of the array represented by C, 
+     * print the contents of the ith element of the array, C[i], 
+     * and the memory address of that array element 
+     * to the command line terminal and to the file output stream.
+     */
+    for (i = 0; i < T; i += 1) 
+    {
+        std::cout << "\nC[" << i << "] = " << C[i] << ".\t// &C[" << i << "] =\t" << &C[i] << ".\t(memory address of the first memory cell comprising the block of 8 contiguous memory cells allocated to C[" << i << "].";
+        file << "\nC[" << i << "] = " << C[i] << ".\t// &B[" << i << "] =\t" << &C[i] << ".\t(memory address of the first memory cell comprising the block of 8 contiguous memory cells allocated to C[" << i << "].";
+    }
+
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------";
+
+    // Print "STEP_6: RELEASE MEMORY WHICH WAS ALLOCATED TO THE DYNAMIC ARRAYS NAMED A, B, AND C." to the command line terminal.
+    std::cout << "\n\nSTEP_6: RELEASE MEMORY WHICH WAS ALLOCATED TO THE DYNAMIC ARRAYS NAMED A, B, AND C.";
+
+    // Print "STEP_6: RELEASE MEMORY WHICH WAS ALLOCATED TO THE DYNAMIC ARRAYS NAMED A, B, AND C." to the file output stream.
+    file << "\n\nSTEP_6: RELEASE MEMORY WHICH WAS ALLOCATED TO THE DYNAMIC ARRAYS NAMED A, B, AND C.";
 
     // Print a horizontal line to the command line terminal.
     std::cout << "\n\n--------------------------------";
@@ -632,12 +697,12 @@ int main()
 
     // Print the command to de-allocate memory which was assigned to the dynamically-allocated array of T pointer-to-char type values to the command line terminal.
     std::cout << "\n\n// De-allocate memory which was assigned to the dynamically-allocated array of T pointer-to-char type values.";
-    std::cout << "\nfor (i = 0; i < T; i += 1) delete [] C[i];";
+    std::cout << "\nfor (i = 0; i < T; i += 1) delete [] C[i]; // Free up B[i] char-sized chunks of memory which were assigned to the dynamic array named C[i].";
     std::cout << "\ndelete [] C; // Free up T contiguous pointer-to-char-sized chunks of memory which were assigned to the dynamic array named C.";
 
     // Print the command to de-allocate memory which was assigned to the dynamically-allocated array of T pointer-to-char type values to the file output stream.
     file << "\n\n// De-allocate memory which was assigned to the dynamically-allocated array of T pointer-to-char type values.";
-    file << "\nfor (i = 0; i < T; i += 1) delete [] C[i];";
+    file << "\nfor (i = 0; i < T; i += 1) delete [] C[i]; // Free up B[i] char-sized chunks of memory which were assigned to the dynamic array named C[i].";
     file << "\ndelete [] C; // Free up T contiguous pointer-to-char-sized chunks of memory which were assigned to the dynamic array named C.";
 
     // Print a closing message to the command line terminal.
