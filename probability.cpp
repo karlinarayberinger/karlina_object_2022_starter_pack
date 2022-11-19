@@ -403,6 +403,59 @@ int main()
     // Print a horizontal line to the command line terminal.
     file << "\n\n--------------------------------";
 
+    // Print "STEP_2: SORT THE ELEMENT VALUES OF THE ARRAY NAMED A TO BE IN ASCENDING ORDER." to the command line terminal.
+    std::cout << "\n\nSTEP_2: SORT THE ELEMENT VALUES OF THE ARRAY NAMED A TO BE IN ASCENDING ORDER.";
+
+    // Print "STEP_2: SORT THE ELEMENT VALUES OF THE ARRAY NAMED A TO BE IN ASCENDING ORDER." to the file output stream.
+    file << "\n\nSTEP_2: SORT THE ELEMENT VALUES OF THE ARRAY NAMED A TO BE IN ASCENDING ORDER.";
+
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------";
+
+    // Sort the integer values stored in array A to be in ascending order using the Bubble Sort algorithm.
+    bubble_sort(A, S);
+
+    // Print the command to sort the integer values stored in array A in ascending order to the command line.
+    std::cout << "\n\n// Sort the integer values stored in array A to be in ascending order using the Bubble Sort algorithm.";
+    std::cout << "\nbubble_sort(A, S);";
+
+    // Print the command to sort the integer values stored in array A in ascending order to the file output stream.
+    file << "\n\n// Sort the integer values stored in array A to be in ascending order using the Bubble Sort algorithm.";
+    file << "\nbubble_sort(A, S);";
+
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------";
+
+    // Print the contents of A to the command line terminal.
+    std::cout << "\n\nA = " << A << ". // memory address of A[0]\n";
+
+    // Print the contents of A to the file output stream.
+    file << "\n\nA = " << A << ". // memory address of A[0]\n";
+
+    /**
+     * For each element, i, of the array represented by A, 
+     * print the contents of the ith element of the array, A[i], 
+     * and the memory address of that array element 
+     * to the command line terminal and to the file output stream.
+     */
+    for (i = 0; i < S; i += 1) 
+    {
+        std::cout << "\nA[" << i << "] = " << A[i] << ". \t// &A[" << i << "] = \t" << &A[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "].";
+        file << "\nA[" << i << "] = " << A[i] << ". \t// &A[" << i << "] = \t" << &A[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "].";
+    }
+
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------";
+
     // Deallocate the memory which was used to instantiate the dynamic array represented by A (and a dynamic array is assigned memory during program runtime rather than during program compile time).
     delete [] A;
 
