@@ -304,8 +304,8 @@ int main()
      */
     for (i = 0; i < S; i += 1) 
     {
-        std::cout << "\nA[" << i << "] = " << A[i] << ". \t// &A[" << i << "] = \t" << &A[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "].";
-        file << "\nA[" << i << "] = " << A[i] << ". \t// &A[" << i << "] = \t" << &A[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "].";
+        std::cout << "\nA[" << i << "] = " << A[i] << ". \t// &A[" << i << "] = \t" << &A[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "]).";
+        file << "\nA[" << i << "] = " << A[i] << ". \t// &A[" << i << "] = \t" << &A[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "]).";
     }
 
     // Print a horizontal line to the command line terminal.
@@ -395,8 +395,8 @@ int main()
      */
     for (i = 0; i < S; i += 1) 
     {
-        std::cout << "\nA[" << i << "] = " << A[i] << ". \t// &A[" << i << "] = \t" << &A[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "].";
-        file << "\nA[" << i << "] = " << A[i] << ". \t// &A[" << i << "] = \t" << &A[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "].";
+        std::cout << "\nA[" << i << "] = " << A[i] << ". \t// &A[" << i << "] = \t" << &A[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "]).";
+        file << "\nA[" << i << "] = " << A[i] << ". \t// &A[" << i << "] = \t" << &A[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "]).";
     }
 
     // Print a horizontal line to the command line terminal.
@@ -459,8 +459,8 @@ int main()
      */
     for (i = 0; i < S; i += 1) 
     {
-        std::cout << "\nA[" << i << "] = " << A[i] << ".\t// &A[" << i << "] =\t" << &A[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "].";
-        file << "\nA[" << i << "] = " << A[i] << ".\t// &A[" << i << "] =\t" << &A[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "].";
+        std::cout << "\nA[" << i << "] = " << A[i] << ".\t// &A[" << i << "] =\t" << &A[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "]).";
+        file << "\nA[" << i << "] = " << A[i] << ".\t// &A[" << i << "] =\t" << &A[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "]).";
     }
 
     // Print a horizontal line to the command line terminal.
@@ -516,8 +516,8 @@ int main()
      */
     for (i = 0; i < T; i += 1) 
     {
-        std::cout << "\nB[" << i << "] = " << B[i] << ".\t// &B[" << i << "] =\t" << &B[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "].";
-        file << "\nB[" << i << "] = " << B[i] << ".\t// &B[" << i << "] =\t" << &B[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "].";
+        std::cout << "\nB[" << i << "] = " << B[i] << ".\t// &B[" << i << "] =\t" << &B[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "]).";
+        file << "\nB[" << i << "] = " << B[i] << ".\t// &B[" << i << "] =\t" << &B[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "]).";
     }
 
     // Print a horizontal line to the command line terminal.
@@ -565,8 +565,8 @@ int main()
      */
     for (i = 0; i < T; i += 1) 
     {
-        std::cout << "\nB[" << i << "] = " << B[i] << ".\t// &B[" << i << "] =\t" << &B[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "].";
-        file << "\nB[" << i << "] = " << B[i] << ".\t// &B[" << i << "] =\t" << &B[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "].";
+        std::cout << "\nB[" << i << "] = " << B[i] << ".\t// &B[" << i << "] =\t" << &B[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "]).";
+        file << "\nB[" << i << "] = " << B[i] << ".\t// &B[" << i << "] =\t" << &B[i] << ".\t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to B[" << i << "]).";
     }
 
     // Print a horizontal line to the command line terminal.
@@ -641,8 +641,8 @@ int main()
      */
     for (i = 0; i < T; i += 1) 
     {
-        std::cout << "\nC[" << i << "] = " << C[i] << ".\t// &C[" << i << "] =\t" << &C[i] << ".\t(memory address of the first memory cell comprising the block of 8 contiguous memory cells allocated to C[" << i << "].";
-        file << "\nC[" << i << "] = " << C[i] << ".\t// &C[" << i << "] =\t" << &C[i] << ".\t(memory address of the first memory cell comprising the block of 8 contiguous memory cells allocated to C[" << i << "].";
+        std::cout << "\nC[" << i << "] = " << C[i] << ".\t// &C[" << i << "] =\t" << &C[i] << ".\t(memory address of the first memory cell comprising the block of 8 contiguous memory cells allocated to C[" << i << "]).";
+        file << "\nC[" << i << "] = " << C[i] << ".\t// &C[" << i << "] =\t" << &C[i] << ".\t(memory address of the first memory cell comprising the block of 8 contiguous memory cells allocated to C[" << i << "]).";
     }
 
     // Print a horizontal line to the command line terminal.
