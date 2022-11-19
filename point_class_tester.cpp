@@ -20,6 +20,7 @@ void unit_test_7(std::ostream & output);
 void unit_test_8(std::ostream & output);
 void unit_test_9(std::ostream & output);
 void unit_test_10(std::ostream & output);
+void unit_test_11(std::ostream & output);
 
 // Unit Test # 0: POINT class default constructor, POINT class print method, and POINT class destructor.
 void unit_test_0(std::ostream & output) 
@@ -223,6 +224,50 @@ void unit_test_10(std::ostream & output)
     output << "\npoint.get_Y() = " << point.get_Y() << ".";
 }
 
+// Unit Test # 11: POINT class normal constructor, POINT class data attribute setter methods, POINT class overloaded ostream operator method, and POINT class destructor.
+void unit_test_11(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 10: POINT class normal constructor, POINT class data attribute setter methods, POINT class overloaded ostream operator method, and POINT class destructor.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nPOINT point = POINT(666,777);";
+    output << "\noutput << point;";
+    output << "\npoint.set_X(999);";
+    output << "\noutput << point;";
+    output << "\npoint.set_Y(-999);";
+    output << "\noutput << point;";
+    output << "\npoint.set_X(-1000);";
+    output << "\noutput << point;";
+    output << "\npoint.set_X(200);";
+    output << "\noutput << point;";
+    output << "\npoint.set_Y(-1000);";
+    output << "\noutput << point;";
+    output << "\npoint.set_Y(444);";
+    output << "\noutput << point;";
+    output << "\npoint.set_X(1000);";
+    output << "\noutput << point;";
+    output << "\npoint.set_Y(1000);";
+    output << "\noutput << point;";
+    POINT point = POINT(666,777);
+    output << point;
+    point.set_X(999);
+    output << point;
+    point.set_Y(-999);
+    output << point;
+    point.set_X(-1000);
+    output << point;
+    point.set_X(200);
+    output << point;
+    point.set_Y(-1000);
+    output << point;
+    point.set_Y(444);
+    output << point;
+    point.set_X(1000);
+    output << point;
+    point.set_Y(1000);
+    output << point;
+}
+
 /* program entry point */
 int main()
 {
@@ -277,6 +322,8 @@ int main()
     unit_test_9(file);
     unit_test_10(std::cout);
     unit_test_10(file);
+    unit_test_11(std::cout);
+    unit_test_11(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
