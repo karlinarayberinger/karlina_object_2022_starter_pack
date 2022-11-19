@@ -6,9 +6,9 @@
  * license: PUBLIC_DOMAIN
  */
 
-// If point.h has not already been linked to a source file (.cpp), then link this header file to the source file(s) which include this header file.
-#ifndef POINT_H 
-#define POINT_H
+/* preprocessing directives */
+#ifndef POINT_H // If point.h has not already been linked to a source file (.cpp), 
+#define POINT_H // then link this header file to the source file(s) which include this header file.
 
 /* preprocessing directives */
 #include <iostream> // library for defining objects which handle command line input and command line output
@@ -50,5 +50,5 @@ public:
     ~POINT(); // destructor
 };
 
-// end of header file
-#endif
+/* preprocessing directives */
+#endif // Terminate the conditional preprocessing directives code block in this header file.
