@@ -362,6 +362,23 @@ int main()
     file << "\n\n// Seed the pseudo random number generator with the integer number of seconds which have elapsed since the Unix Epoch (i.e. midnight of 01_JANUARY_1970).";
     file << "\nsrand(time(NULL));";
 
+    // For each element, A[i], of the array named A, set A[i] to a randomly generated integer which is no smaller than 0 and no larger than (T - 1).
+    for (i = 0; i < S; i += 1) A[i] = rand() % T;
+
+    // Print the command to populate each element of the array named A with a randomly generated integer which is no smaller than 0 and no larger than (T - 1) to the command line terminal.
+    std::cout << "\n\n// For each element, A[i], of the array named A, set A[i] to a randomly generated integer which is no smaller than 0 and no larger than (T - 1).";
+    std::cout << "\nfor (i = 0; i < S; i += 1) A[i] = rand() % T;";
+
+    // Print the command to populate each element of the array named A with a randomly generated integer which is no smaller than 0 and no larger than (T - 1) to the file output stream.
+    file << "\n\n// For each element, A[i], of the array named A, set A[i] to a randomly generated integer which is no smaller than 0 and no larger than (T - 1).";
+    file << "\nfor (i = 0; i < S; i += 1) A[i] = rand() % T;";
+
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------\n";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------\n";
+
     /**
      * For each element, i, of the array represented by A, 
      * print the contents of the ith element of the array, A[i], 
