@@ -642,7 +642,7 @@ int main()
     for (i = 0; i < T; i += 1) 
     {
         std::cout << "\nC[" << i << "] = " << C[i] << ".\t// &C[" << i << "] =\t" << &C[i] << ".\t(memory address of the first memory cell comprising the block of 8 contiguous memory cells allocated to C[" << i << "].";
-        file << "\nC[" << i << "] = " << C[i] << ".\t// &B[" << i << "] =\t" << &C[i] << ".\t(memory address of the first memory cell comprising the block of 8 contiguous memory cells allocated to C[" << i << "].";
+        file << "\nC[" << i << "] = " << C[i] << ".\t// &C[" << i << "] =\t" << &C[i] << ".\t(memory address of the first memory cell comprising the block of 8 contiguous memory cells allocated to C[" << i << "].";
     }
 
     // Print a horizontal line to the command line terminal.
