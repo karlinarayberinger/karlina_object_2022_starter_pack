@@ -289,7 +289,7 @@ int main()
     file << "\n\n--------------------------------";
 
     // Print the contents of A to the command line terminal.
-    std::cout << "\n\nA = " << A << ". // memory address of A[0]";
+    std::cout << "\n\nA = " << A << ". // memory address of A[0]\n";
 
     // Print the contents of A to the file output stream.
     file << "\n\nA = " << A << ". // memory address of A[0]\n";
@@ -374,10 +374,16 @@ int main()
     file << "\nfor (i = 0; i < S; i += 1) A[i] = rand() % T;";
 
     // Print a horizontal line to the command line terminal.
-    std::cout << "\n\n--------------------------------\n";
+    std::cout << "\n\n--------------------------------";
 
     // Print a horizontal line to the command line terminal.
-    file << "\n\n--------------------------------\n";
+    file << "\n\n--------------------------------";
+
+    // Print the contents of A to the command line terminal.
+    std::cout << "\n\nA = " << A << ". // memory address of A[0]\n";
+
+    // Print the contents of A to the file output stream.
+    file << "\n\nA = " << A << ". // memory address of A[0]\n";
 
     /**
      * For each element, i, of the array represented by A, 

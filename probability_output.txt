@@ -50,9 +50,9 @@ STEP_0: CREATE A DYNAMIC ARRAY WHICH IS NAMED A AND WHICH IS COMRPISED OF S INT 
 
 --------------------------------
 
-The value which was entered for S is 10.
+The value which was entered for S is 20.
 
-S := 10. // number of consecutive int-sized chunks of memory to allocate to an array such that the memory address of the first element of that array, A[0], is stored in a pointer-to-int type variable named A
+S := 20. // number of consecutive int-sized chunks of memory to allocate to an array such that the memory address of the first element of that array, A[0], is stored in a pointer-to-int type variable named A
 
 --------------------------------
 
@@ -64,18 +64,28 @@ A = new int [S];
 
 --------------------------------
 
-A = 0x55f4837b58c0. // memory address of A[0]
+A = 0x55996b9938c0. // memory address of A[0]
 
-A[0] = 0. 	// &A[0] = 	0x55f4837b58c0. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[0].
-A[1] = 0. 	// &A[1] = 	0x55f4837b58c4. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[1].
-A[2] = 0. 	// &A[2] = 	0x55f4837b58c8. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[2].
-A[3] = 0. 	// &A[3] = 	0x55f4837b58cc. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[3].
-A[4] = 0. 	// &A[4] = 	0x55f4837b58d0. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[4].
-A[5] = 0. 	// &A[5] = 	0x55f4837b58d4. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[5].
-A[6] = 0. 	// &A[6] = 	0x55f4837b58d8. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[6].
-A[7] = 0. 	// &A[7] = 	0x55f4837b58dc. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[7].
-A[8] = 0. 	// &A[8] = 	0x55f4837b58e0. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[8].
-A[9] = 0. 	// &A[9] = 	0x55f4837b58e4. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[9].
+A[0] = 0. 	// &A[0] = 	0x55996b9938c0. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[0].
+A[1] = 0. 	// &A[1] = 	0x55996b9938c4. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[1].
+A[2] = 0. 	// &A[2] = 	0x55996b9938c8. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[2].
+A[3] = 0. 	// &A[3] = 	0x55996b9938cc. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[3].
+A[4] = 0. 	// &A[4] = 	0x55996b9938d0. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[4].
+A[5] = 0. 	// &A[5] = 	0x55996b9938d4. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[5].
+A[6] = 0. 	// &A[6] = 	0x55996b9938d8. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[6].
+A[7] = 0. 	// &A[7] = 	0x55996b9938dc. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[7].
+A[8] = 0. 	// &A[8] = 	0x55996b9938e0. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[8].
+A[9] = 0. 	// &A[9] = 	0x55996b9938e4. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[9].
+A[10] = 0. 	// &A[10] = 	0x55996b9938e8. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[10].
+A[11] = 0. 	// &A[11] = 	0x55996b9938ec. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[11].
+A[12] = 0. 	// &A[12] = 	0x55996b9938f0. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[12].
+A[13] = 0. 	// &A[13] = 	0x55996b9938f4. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[13].
+A[14] = 0. 	// &A[14] = 	0x55996b9938f8. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[14].
+A[15] = 0. 	// &A[15] = 	0x55996b9938fc. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[15].
+A[16] = 0. 	// &A[16] = 	0x55996b993900. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[16].
+A[17] = 0. 	// &A[17] = 	0x55996b993904. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[17].
+A[18] = 0. 	// &A[18] = 	0x55996b993908. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[18].
+A[19] = 0. 	// &A[19] = 	0x55996b99390c. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[19].
 
 --------------------------------
 
@@ -83,9 +93,9 @@ STEP_1: CREATE A DYNAMIC ARRAY WHICH IS NAMED A AND WHICH IS COMRPISED OF S INT 
 
 --------------------------------
 
-The value which was entered for T is 6.
+The value which was entered for T is 7.
 
-T := 6. // number of unique states which each element of the array pointed to by A can store exactly one of at a time
+T := 7. // number of unique states which each element of the array pointed to by A can store exactly one of at a time
 
 --------------------------------
 
@@ -97,16 +107,28 @@ for (i = 0; i < S; i += 1) A[i] = rand() % T;
 
 --------------------------------
 
-A[0] = 3. 	// &A[0] = 	0x55f4837b58c0. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[0].
-A[1] = 1. 	// &A[1] = 	0x55f4837b58c4. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[1].
-A[2] = 2. 	// &A[2] = 	0x55f4837b58c8. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[2].
-A[3] = 1. 	// &A[3] = 	0x55f4837b58cc. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[3].
-A[4] = 4. 	// &A[4] = 	0x55f4837b58d0. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[4].
-A[5] = 3. 	// &A[5] = 	0x55f4837b58d4. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[5].
-A[6] = 5. 	// &A[6] = 	0x55f4837b58d8. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[6].
-A[7] = 0. 	// &A[7] = 	0x55f4837b58dc. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[7].
-A[8] = 5. 	// &A[8] = 	0x55f4837b58e0. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[8].
-A[9] = 2. 	// &A[9] = 	0x55f4837b58e4. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[9].
+A = 0x55996b9938c0. // memory address of A[0]
+
+A[0] = 2. 	// &A[0] = 	0x55996b9938c0. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[0].
+A[1] = 1. 	// &A[1] = 	0x55996b9938c4. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[1].
+A[2] = 0. 	// &A[2] = 	0x55996b9938c8. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[2].
+A[3] = 5. 	// &A[3] = 	0x55996b9938cc. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[3].
+A[4] = 6. 	// &A[4] = 	0x55996b9938d0. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[4].
+A[5] = 6. 	// &A[5] = 	0x55996b9938d4. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[5].
+A[6] = 1. 	// &A[6] = 	0x55996b9938d8. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[6].
+A[7] = 5. 	// &A[7] = 	0x55996b9938dc. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[7].
+A[8] = 6. 	// &A[8] = 	0x55996b9938e0. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[8].
+A[9] = 0. 	// &A[9] = 	0x55996b9938e4. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[9].
+A[10] = 6. 	// &A[10] = 	0x55996b9938e8. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[10].
+A[11] = 3. 	// &A[11] = 	0x55996b9938ec. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[11].
+A[12] = 2. 	// &A[12] = 	0x55996b9938f0. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[12].
+A[13] = 2. 	// &A[13] = 	0x55996b9938f4. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[13].
+A[14] = 4. 	// &A[14] = 	0x55996b9938f8. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[14].
+A[15] = 6. 	// &A[15] = 	0x55996b9938fc. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[15].
+A[16] = 4. 	// &A[16] = 	0x55996b993900. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[16].
+A[17] = 1. 	// &A[17] = 	0x55996b993904. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[17].
+A[18] = 4. 	// &A[18] = 	0x55996b993908. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[18].
+A[19] = 4. 	// &A[19] = 	0x55996b99390c. 	(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[19].
 
 --------------------------------
 
