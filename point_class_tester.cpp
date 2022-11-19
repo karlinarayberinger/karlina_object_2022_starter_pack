@@ -202,12 +202,18 @@ void unit_test_9(std::ostream & output)
     output << "\npoint_2.get_distance_from(point_1) = " << point_2.get_distance_from(point_1) << ".";
     output << "\npoint_2.get_distance_from(point_0) = " << point_2.get_distance_from(point_0) << ".";
     output << "\npoint_0.get_distance_from(point_2) = " << point_0.get_distance_from(point_2) << ".";
+    output << "\npoint_0.get_distance_from(point_0) = " << point_0.get_distance_from(point_0) << ".";
+    output << "\npoint_1.get_distance_from(point_1) = " << point_1.get_distance_from(point_1) << ".";
+    output << "\npoint_2.get_distance_from(point_2) = " << point_2.get_distance_from(point_2) << ".";
     output << "\npoint_0.get_slope_of_line_to(point_1) = " << point_0.get_slope_of_line_to(point_1) << ".";
     output << "\npoint_1.get_slope_of_line_to(point_0) = " << point_1.get_slope_of_line_to(point_0) << ".";
     output << "\npoint_1.get_slope_of_line_to(point_2) = " << point_1.get_slope_of_line_to(point_2) << ".";
     output << "\npoint_2.get_slope_of_line_to(point_1) = " << point_2.get_slope_of_line_to(point_1) << ".";
     output << "\npoint_2.get_slope_of_line_to(point_0) = " << point_2.get_slope_of_line_to(point_0) << ".";
     output << "\npoint_0.get_slope_of_line_to(point_2) = " << point_0.get_slope_of_line_to(point_2) << ".";
+    output << "\npoint_0.get_slope_of_line_to(point_0) = " << point_0.get_slope_of_line_to(point_0) << ".";
+    output << "\npoint_1.get_slope_of_line_to(point_1) = " << point_1.get_slope_of_line_to(point_1) << ".";
+    output << "\npoint_2.get_slope_of_line_to(point_2) = " << point_2.get_slope_of_line_to(point_2) << ".";
 }
 
 // Unit Test # 10: POINT class normal constructor, POINT class data attribute getter methods, POINT class overloaded ostream operator method, and POINT class destructor.
