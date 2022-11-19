@@ -586,11 +586,11 @@ int main()
     std::cout << "\n\n// Allocate T contiguous pointer-to-char-sized chunks of memory and store the memory address of the first pointer-to-char-sized chunk of memory, C[0]. inside the pointer-to-pointer-to-char type variable named C.";
     std::cout << "\nC = new char * [T];";
 
-    // Print the program instruction used to generate the dynamic array represented by C to the command line terminal.
-    std::cout << "\n\n// Declare one pointer-to-pointer-to-char type variable.";
-    std::cout << "\nchar ** C;";
-    std::cout << "\n\n// Allocate T contiguous pointer-to-char-sized chunks of memory and store the memory address of the first pointer-to-char-sized chunk of memory, C[0]. inside the pointer-to-pointer-to-char type variable named C.";
-    std::cout << "\nC = new char * [T];";
+    // Print the program instruction used to generate the dynamic array represented by C to the file output stream.
+    file << "\n\n// Declare one pointer-to-pointer-to-char type variable.";
+    file << "\nchar ** C;";
+    file << "\n\n// Allocate T contiguous pointer-to-char-sized chunks of memory and store the memory address of the first pointer-to-char-sized chunk of memory, C[0]. inside the pointer-to-pointer-to-char type variable named C.";
+    file << "\nC = new char * [T];";
 
     // Print a horizontal line to the command line terminal.
     std::cout << "\n\n--------------------------------";
@@ -598,30 +598,47 @@ int main()
     // Print a horizontal line to the command line terminal.
     file << "\n\n--------------------------------";
 
-    // Deallocate the memory which was used to instantiate the dynamic array represented by A (and a dynamic array is assigned memory during program runtime rather than during program compile time).
+    /**
+     * Note that, unlike a normal array, a dynamic array is instantiated during program runtime instead of during program compile time.
+     * At compile time, the computer does not know how much memory space to allocate to a dynamic array because the number of elements
+     * in that array may vary and is not specified in the program source code.
+     */
+
+    // De-allocate memory which was assigned to the dynamically-allocated array of S int type values
     delete [] A;
 
     // Print the command to de-allocate memory which was assigned to the dynamically-allocated array of S int type values to the command line terminal.
-    std::cout << "\n\n// Deallocate the memory which was used to instantiate the dynamic array represented by A (and a dynamic array (unlike a normal array) is assigned memory during program runtime rather than during program compile time).";
+    std::cout << "\n\n// De-allocate memory which was assigned to the dynamically-allocated array of S int type values.";
     std::cout << "\ndelete [] A; // Free up S contiguous int-sized chunks of memory which were assigned to the dynamic array named A.";
 
     // Print the command to de-allocate memory which was assigned to the dynamically-allocated array of S int type values to the file output stream.
-    file << "\n\n// Deallocate the memory which was used to instantiate the dynamic array represented by A (and a dynamic array (unlike a normal array) is assigned memory during program runtime rather than during program compile time).";
+    file << "\n\n// De-allocate memory which was assigned to the dynamically-allocated array of S int type values.";
     file << "\ndelete [] A; // Free up S contiguous int-sized chunks of memory which were assigned to the dynamic array named A.";
 
-    // Deallocate the memory which was used to instantiate the dynamic array represented by B (and a dynamic array is assigned memory during program runtime rather than during program compile time).
+    // De-allocate memory which was assigned to the dynamically-allocated array of T int type values.
     delete [] B;
 
     // Print the command to de-allocate memory which was assigned to the dynamically-allocated array of T int type values to the command line terminal.
-    std::cout << "\n\n// Deallocate the memory which was used to instantiate the dynamic array represented by B (and a dynamic array (unlike a normal array) is assigned memory during program runtime rather than during program compile time).";
+    std::cout << "\n\nDe-allocate memory which was assigned to the dynamically-allocated array of T int type values.";
     std::cout << "\ndelete [] B; // Free up T contiguous int-sized chunks of memory which were assigned to the dynamic array named B.";
 
     // Print the command to de-allocate memory which was assigned to the dynamically-allocated array of T int type values to the file output stream.
-    file << "\n\n// Deallocate the memory which was used to instantiate the dynamic array represented by B (and a dynamic array (unlike a normal array) is assigned memory during program runtime rather than during program compile time).";
+    file << "\n\nDe-allocate memory which was assigned to the dynamically-allocated array of T int type values.";
     file << "\ndelete [] B; // Free up T contiguous int-sized chunks of memory which were assigned to the dynamic array named B.";
 
+    // De-allocate memory which was assigned to the dynamically-allocated array of T pointer-to-char type values.
     for (i = 0; i < T; i += 1) delete [] C[i];
     delete [] C;
+
+    // Print the command to de-allocate memory which was assigned to the dynamically-allocated array of T pointer-to-char type values to the command line terminal.
+    std::cout << "\n\n// De-allocate memory which was assigned to the dynamically-allocated array of T pointer-to-char type values.";
+    std::cout << "\nfor (i = 0; i < T; i += 1) delete [] C[i];";
+    std::cout << "\ndelete [] C; // Free up T contiguous pointer-to-char-sized chunks of memory which were assigned to the dynamic array named C.";
+
+    // Print the command to de-allocate memory which was assigned to the dynamically-allocated array of T pointer-to-char type values to the file output stream.
+    file << "\n\n// De-allocate memory which was assigned to the dynamically-allocated array of T pointer-to-char type values.";
+    file << "\nfor (i = 0; i < T; i += 1) delete [] C[i];";
+    file << "\ndelete [] C; // Free up T contiguous pointer-to-char-sized chunks of memory which were assigned to the dynamic array named C.";
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
