@@ -16,6 +16,10 @@ void unit_test_3(std::ostream & output);
 void unit_test_4(std::ostream & output);
 void unit_test_5(std::ostream & output);
 void unit_test_6(std::ostream & output);
+void unit_test_7(std::ostream & output);
+void unit_test_8(std::ostream & output);
+void unit_test_9(std::ostream & output);
+void unit_test_10(std::ostream & output);
 
 // Unit Test # 0: POINT class default constructor, POINT class print method, and POINT class destructor.
 void unit_test_0(std::ostream & output) 
@@ -137,6 +141,88 @@ void unit_test_6(std::ostream & output)
     output << point_6;
 }
 
+// Unit Test # 7: POINT class normal constructor, POINT class copy constructor, POINT class overloaded ostream operator method, and POINT class destructor.
+void unit_test_7(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 7: POINT class normal constructor, POINT class copy constructor, POINT class overloaded ostream operator method, and POINT class destructor.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nPOINT point_0 = POINT(333, -666);";
+    output << "\nPOINT point_1 = POINT(point_0);";
+    output << "\noutput << point_0;";
+    output << "\noutput << point_1;";
+    POINT point_0 = POINT(333, -666);
+    POINT point_1 = POINT(point_0);
+    output << point_0;
+    output << point_1;
+}
+
+// Unit Test # 8: POINT class normal constructor, POINT class distance getter method, POINT class overloaded ostream operator method, and POINT class destructor.
+void unit_test_8(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 8: POINT class normal constructor, POINT class distance getter method, POINT class overloaded ostream operator method, and POINT class destructor.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nPOINT point_0 = POINT(1, 1);";
+    output << "\nPOINT point_1 = POINT(-1, -1);";
+    output << "\noutput << point_0;";
+    output << "\noutput << point_1;";
+    POINT point_0 = POINT(1, 1);
+    POINT point_1 = POINT(-1, -1);
+    output << point_0;
+    output << point_1;
+    output << "\npoint_0.get_distance_from(point_1) = " << point_0.get_distance_from(point_1) << ".";
+    output << "\npoint_1.get_distance_from(point_0) = " << point_1.get_distance_from(point_0) << ".";
+    output << "\npoint_0.get_distance_from(point_0) = " << point_0.get_distance_from(point_0) << ".";
+    output << "\npoint_1.get_distance_from(point_1) = " << point_1.get_distance_from(point_1) << ".";
+}
+
+// Unit Test # 9: POINT class normal constructor, POINT class distance getter method, POINT class slope getter method, POINT class overloaded ostream operator method, and POINT class destructor.
+void unit_test_9(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 9: POINT class normal constructor, POINT class distance getter method, POINT class slope getter method, POINT class overloaded ostream operator method, and POINT class destructor.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nPOINT point_0 = POINT(0, 4);";
+    output << "\nPOINT point_1 = POINT(3, 0);";
+    output << "\nPOINT point_2 = POINT(0, 0);";
+    output << "\noutput << point_0;";
+    output << "\noutput << point_1;";
+    output << "\noutput << point_2;";
+    POINT point_0 = POINT(0, 4);
+    POINT point_1 = POINT(3, 0);
+    POINT point_2 = POINT(0, 0);
+    output << point_0;
+    output << point_1;
+    output << point_2;
+    output << "\npoint_0.get_distance_from(point_1) = " << point_0.get_distance_from(point_1) << ".";
+    output << "\npoint_1.get_distance_from(point_0) = " << point_1.get_distance_from(point_0) << ".";
+    output << "\npoint_1.get_distance_from(point_2) = " << point_1.get_distance_from(point_2) << ".";
+    output << "\npoint_2.get_distance_from(point_1) = " << point_2.get_distance_from(point_1) << ".";
+    output << "\npoint_2.get_distance_from(point_0) = " << point_2.get_distance_from(point_0) << ".";
+    output << "\npoint_0.get_distance_from(point_2) = " << point_0.get_distance_from(point_2) << ".";
+    output << "\npoint_0.get_slope_of_line_to(point_1) = " << point_0.get_slope_of_line_to(point_1) << ".";
+    output << "\npoint_1.get_slope_of_line_to(point_0) = " << point_1.get_slope_of_line_to(point_0) << ".";
+    output << "\npoint_1.get_slope_of_line_to(point_2) = " << point_1.get_slope_of_line_to(point_2) << ".";
+    output << "\npoint_2.get_slope_of_line_to(point_1) = " << point_2.get_slope_of_line_to(point_1) << ".";
+    output << "\npoint_2.get_slope_of_line_to(point_0) = " << point_2.get_slope_of_line_to(point_0) << ".";
+    output << "\npoint_0.get_slope_of_line_to(point_2) = " << point_0.get_slope_of_line_to(point_2) << ".";
+}
+
+// Unit Test # 10: POINT class normal constructor, POINT class data attribute getter methods, POINT class overloaded ostream operator method, and POINT class destructor.
+void unit_test_10(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 10: POINT class normal constructor, POINT class data attribute getter methods, POINT class overloaded ostream operator method, and POINT class destructor.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nPOINT point = POINT(33.3, 88.8); // point = POINT(33, 88).";
+    output << "\noutput << point;";
+    POINT point = POINT(33.3, 88.8);
+    output << point;
+    output << "\npoint.get_X() = " << point.get_X() << ".";
+    output << "\npoint.get_Y() = " << point.get_Y() << ".";
+}
+
 /* program entry point */
 int main()
 {
@@ -183,6 +269,14 @@ int main()
     unit_test_5(file);
     unit_test_6(std::cout);
     unit_test_6(file);
+    unit_test_7(std::cout);
+    unit_test_7(file);
+    unit_test_8(std::cout);
+    unit_test_8(file);
+    unit_test_9(std::cout);
+    unit_test_9(file);
+    unit_test_10(std::cout);
+    unit_test_10(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
