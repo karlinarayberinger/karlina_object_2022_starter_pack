@@ -111,79 +111,116 @@ int main()
     std::cout << "\n\nsizeof(bool) = " << sizeof(bool) << " byte(s). // Boolean values (true : not(0) :: false : 0)";
 
     // Print the data size of a bool type variable to the file output stream.
-    file << "\n\nsizeof(bool) = " << sizeof(bool) << " byte(s).";
+    file << "\n\nsizeof(bool) = " << sizeof(bool) << " byte(s). // Boolean values (true : not(0) :: false : 0)";
+
+    /*
+    bool X = 77; // The last character output by the command below is 1.
+    std::cout << "\n\nTest: bool X = 77. What is X? X is " << X; 
+    X = false; // The last character output by the command below is 0.
+    std::cout << "\n\nTest: bool X = false. What is X? X is " << X; 
+    */
 
     // Print the data size of a char type variable to the command line terminal.
-    std::cout << "\n\nsizeof(char) = " << sizeof(char) << " byte(s).";
+    std::cout << "\n\nsizeof(char) = " << sizeof(char) << " byte(s). // string character value such as 'A' or '?' or '7'";
 
     // Print the data size of a char type variable to the file output stream.
-    file << "\n\nsizeof(char) = " << sizeof(char) << " byte(s).";
+    file << "\n\nsizeof(char) = " << sizeof(char) << " byte(s). // string character value such as 'A' or '?' or '7'";
 
     // Print the data size of a float type variable to the command line terminal.
-    std::cout << "\n\nsizeof(float) = " << sizeof(float) << " byte(s).";
+    std::cout << "\n\nsizeof(float) = " << sizeof(float) << " byte(s). // floating-point number value such as 3.14";
 
     // Print the data size of a float type variable to the file output stream.
-    file << "\n\nsizeof(float) = " << sizeof(float) << " byte(s).";
+    file << "\n\nsizeof(float) = " << sizeof(float) << " byte(s). // floating-point number value such as 3.14";
 
     // Print the data size of a double type variable to the command line terminal.
-    std::cout << "\n\nsizeof(double) = " << sizeof(double) << " byte(s).";
+    std::cout << "\n\nsizeof(double) = " << sizeof(double) << " byte(s). // floating-point number values from a larger set than what float encompasses";
 
     // Print the data size of a double type variable to the file output stream.
-    file << "\n\nsizeof(double) = " << sizeof(double) << " byte(s).";
+    file << "\n\nsizeof(double) = " << sizeof(double) << " byte(s). // floating-point number values from a larger set than what float encompasses";
 
     // Print the data size of a long double type variable to the command line terminal.
-    std::cout << "\n\nsizeof(long double) = " << sizeof(long double) << " byte(s).";
+    std::cout << "\n\nsizeof(long double) = " << sizeof(long double) << " byte(s). // floating-point number values from a larger set than what double encompasses";
 
     // Print the data size of a long double type variable to the file output stream.
-    file << "\n\nsizeof(long double) = " << sizeof(long double) << " byte(s).";
+    file << "\n\nsizeof(long double) = " << sizeof(long double) << " byte(s). // floating-point number values from a larger set than what double encompasses";
 
     // Print the data size of a pointer-to-int type variable to the command line terminal.
-    std::cout << "\n\nsizeof(int *) = " << sizeof(int *) << " byte(s).";
+    std::cout << "\n\nsizeof(int *) = " << sizeof(int *) << " byte(s). // A pointer-to-int type variable stores the memory address of the first memory cell of 4 contiguous memory cells which are allocated to an int type variable (and each memory cell has a data capacity of 1 byte).";
 
     // Print the data size of a pointer-to-int type variable to the file output stream.
-    file << "\n\nsizeof(int *) = " << sizeof(int *) << " byte(s).";
+    file << "\n\nsizeof(int *) = " << sizeof(int *) << " byte(s). // A pointer-to-int type variable stores the memory address of the first memory cell of 4 contiguous memory cells which are allocated to an int type variable (and each memory cell has a data capacity of 1 byte).";
 
     // Print the data size of a pointer-to-unsigned-long-long-int type variable to the command line terminal.
-    std::cout << "\n\nsizeof(unsigned long long int *) = " << sizeof(unsigned long long int *) << " byte(s).";
+    std::cout << "\n\nsizeof(unsigned long long int *) = " << sizeof(unsigned long long int *) << " byte(s). // A pointer-to-unsigned-long-long-int type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to an unsigned long long int type variable (and each memory cell has a data capacity of 1 byte).";
 
     // Print the data size of a pointer-to-unsigned-long-long-int type variable to the file output stream.
-    file << "\n\nsizeof(unsigned long long int *) = " << sizeof(unsigned long long int *) << " byte(s).";
+    file << "\n\nsizeof(unsigned long long int *) = " << sizeof(unsigned long long int *) << " byte(s). // A pointer-to-unsigned-long-long-int type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to an unsigned long long int type variable (and each memory cell has a data capacity of 1 byte)..";
 
     // Print the data size of a pointer-to-bool type variable to the command line terminal.
-    std::cout << "\n\nsizeof(bool *) = " << sizeof(bool *) << " byte(s).";
+    std::cout << "\n\nsizeof(bool *) = " << sizeof(bool *) << " byte(s). // A pointer-to-bool type variable stores the memory address of a bool type variable.";
 
     // Print the data size of a pointer-to-bool type variable to the file output stream.
-    file << "\n\nsizeof(bool *) = " << sizeof(bool *) << " byte(s).";
+    file << "\n\nsizeof(bool *) = " << sizeof(bool *) << " byte(s). // A pointer-to-bool type variable stores the memory address of a bool type variable.";
 
     // Print the data size of a pointer-to-char type variable to the command line terminal.
-    std::cout << "\n\nsizeof(char *) = " << sizeof(char *) << " byte(s).";
+    std::cout << "\n\nsizeof(char *) = " << sizeof(char *) << " byte(s). // A pointer-to-char type variable stores the memory address of a char type variable.";
 
     // Print the data size of a pointer-to-char type variable to the file output stream.
-    file << "\n\nsizeof(char *) = " << sizeof(char *) << " byte(s).";
+    file << "\n\nsizeof(char *) = " << sizeof(char *) << " byte(s). // A pointer-to-char type variable stores the memory address of a char type variable.";
 
     // Print the data size of a pointer-to-float type variable to the command line terminal.
-    std::cout << "\n\nsizeof(float *) = " << sizeof(float *) << " byte(s).";
+    std::cout << "\n\nsizeof(float *) = " << sizeof(float *) << " byte(s). // A pointer-to-float type variable stores the memory address of the first memory cell of 4 contiguous memory cells which are allocated to a float type variable (and each memory cell has a data capacity of 1 byte).";
 
     // Print the data size of a pointer-to-float type variable to the file output stream.
-    file << "\n\nsizeof(float *) = " << sizeof(float *) << " byte(s).";
+    file << "\n\nsizeof(float *) = " << sizeof(float *) << " byte(s). // A pointer-to-float type variable stores the memory address of the first memory cell of 4 contiguous memory cells which are allocated to a float type variable (and each memory cell has a data capacity of 1 byte).";
 
     // Print the data size of a pointer-to-double type variable to the command line terminal.
-    std::cout << "\n\nsizeof(double *) = " << sizeof(double *) << " byte(s).";
+    std::cout << "\n\nsizeof(double *) = " << sizeof(double *) << " byte(s). // A pointer-to-double type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a double type variable (and each memory cell has a data capacity of 1 byte).";
 
     // Print the data size of a pointer-to-double type variable to the file output stream.
-    file << "\n\nsizeof(double *) = " << sizeof(double *) << " byte(s).";
+    file << "\n\nsizeof(double *) = " << sizeof(double *) << " byte(s). // A pointer-to-double type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a double type variable (and each memory cell has a data capacity of 1 byte).";
 
     // Print the data size of a pointer-to-long-double type variable to the command line terminal.
-    std::cout << "\n\nsizeof(long double *) = " << sizeof(long double *) << " byte(s).";
+    std::cout << "\n\nsizeof(long double *) = " << sizeof(long double *) << " byte(s). // A pointer-to-long-double type variable stores the memory address of the first memory cell of 16 contiguous memory cells which are allocated to a long double type variable (and each memory cell has a data capacity of 1 byte).";
 
     // Print the data size of a pointer-to-long-double type variable to the file output stream.
-    file << "\n\nsizeof(long double *) = " << sizeof(long double *) << " byte(s).";
+    file << "\n\nsizeof(long double *) = " << sizeof(long double *) << " byte(s). // A pointer-to-long-double type variable stores the memory address of the first memory cell of 16 contiguous memory cells which are allocated to a long double type variable (and each memory cell has a data capacity of 1 byte).";
 
     // Print the data size of a pointer-to-pointer-to-int type variable to the command line terminal.
-    std::cout << "\n\nsizeof(int **) = " << sizeof(int **) << " byte(s).";
+    std::cout << "\n\nsizeof(int **) = " << sizeof(int **) << " byte(s). // A pointer-to-pointer-to-int type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-int type variable (and each memory cell has a data capacity of 1 byte).";
 
     // Print the data size of a pointer-to-pointer-to-int type variable to the file output stream.
-    file << "\n\nsizeof(int **) = " << sizeof(int **) << " byte(s).";
+    file << "\n\nsizeof(int **) = " << sizeof(int **) << " byte(s). // A pointer-to-pointer-to-int type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-int type variable (and each memory cell has a data capacity of 1 byte).";
+
+    // Print the data size of a pointer-to-pointer-to-bool type variable to the command line terminal.
+    std::cout << "\n\nsizeof(bool **) = " << sizeof(bool **) << " byte(s). // A pointer-to-pointer-to-bool type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-bool type variable (and each memory cell has a data capacity of 1 byte).";
+
+    // Print the data size of a pointer-to-pointer-to-bool type variable to the file output stream.
+    file << "\n\nsizeof(bool **) = " << sizeof(bool **) << " byte(s). // A pointer-to-pointer-to-bool type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-bool type variable (and each memory cell has a data capacity of 1 byte).";
+
+    // Print the data size of a pointer-to-pointer-to-double type variable to the command line terminal.
+    std::cout << "\n\nsizeof(double **) = " << sizeof(double **) << " byte(s). // A pointer-to-pointer-to-double type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-double type variable (and each memory cell has a data capacity of 1 byte).";
+
+    // Print the data size of a pointer-to-pointer-to-double type variable to the file output stream.
+    file << "\n\nsizeof(double **) = " << sizeof(double **) << " byte(s). // A pointer-to-pointer-to-double type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-double type variable (and each memory cell has a data capacity of 1 byte).";
+
+    // Print the data size of a pointer-to-pointer-to-pointer-to-int type variable to the command line terminal.
+    std::cout << "\n\nsizeof(int ***) = " << sizeof(int ***) << " byte(s). // A pointer-to-pointer-to-pointer-to-int type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-pointer-to-int type variable (and each memory cell has a data capacity of 1 byte).";
+
+    // Print the data size of a pointer-to-pointer-to-pointer-to-int type variable to the file output stream.
+    file << "\n\nsizeof(int ***) = " << sizeof(int ***) << " byte(s). // A pointer-to-pointer-to-pointer-to-int type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-pointer-to-int type variable (and each memory cell has a data capacity of 1 byte).";
+
+    // Print the data size of a pointer-to-pointer-to-pointer-to-bool type variable to the command line terminal.
+    std::cout << "\n\nsizeof(bool ***) = " << sizeof(bool ***) << " byte(s). // A pointer-to-pointer-to-pointer-to-bool type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-pointer-to-bool type variable (and each memory cell has a data capacity of 1 byte).";
+
+    // Print the data size of a pointer-to-pointer-to-pointer-to-bool type variable to the file output stream.
+    file << "\n\nsizeof(bool ***) = " << sizeof(bool ***) << " byte(s). // A pointer-to-pointer-to-pointer-to-bool type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-pointer-to-bool type variable (and each memory cell has a data capacity of 1 byte).";
+
+    // Print the data size of a pointer-to-pointer-to-pointer-to-double type variable to the command line terminal.
+    std::cout << "\n\nsizeof(double ***) = " << sizeof(double ***) << " byte(s). // A pointer-to-pointer-to-pointer-to-double type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-pointer-to-double type variable (and each memory cell has a data capacity of 1 byte).";
+
+    // Print the data size of a pointer-to-pointer-to-pointer-to-double type variable to the file output stream.
+    file << "\n\nsizeof(double ***) = " << sizeof(double ***) << " byte(s). // A pointer-to-pointer-to-pointer-to-double type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-pointer-to-double type variable (and each memory cell has a data capacity of 1 byte).";
 
     // Print a horizontal line to the command line terminal.
     std::cout << "\n\n--------------------------------";
@@ -211,10 +248,6 @@ int main()
 
     // Print "S := {S}. // number of consecutive int-sized chunks of memory to allocate to an array such that the memory address of the first element of that array, A[0], is stored in a pointer-to-int type variable named A" to the file output stream.
     file << "\n\nS := " << S << ". // number of consecutive int-sized chunks of memory to allocate to an array such that the memory address of the first element of that array, A[0], is stored in a pointer-to-int type variable named A";
-
-    // ...
-    bool X = 77;
-    std:cout << "\n\nTest: bool X = 77. What is X? " << X;
 
     // Print a horizontal line to the command line terminal.
     std::cout << "\n\n--------------------------------";

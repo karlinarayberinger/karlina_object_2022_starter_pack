@@ -1,0 +1,63 @@
+--------------------------------
+Start Of Program
+--------------------------------
+
+The following statements describe the data capacities of various primitive C++ data types:
+
+sizeof(int) = 4 byte(s). // integer (i.e. whole number) values
+
+sizeof(unsigned long long int) = 8 byte(s). // integer values from a larger set that what int encompasses
+
+sizeof(bool) = 1 byte(s). // Boolean values (true : not(0) :: false : 0)
+
+sizeof(char) = 1 byte(s). // string character value such as 'A' or '?' or '7'
+
+sizeof(float) = 4 byte(s). // floating-point number value such as 3.14
+
+sizeof(double) = 8 byte(s). // floating-point number values from a larger set than what float encompasses
+
+sizeof(long double) = 16 byte(s). // floating-point number values from a larger set than what double encompasses
+
+sizeof(int *) = 8 byte(s). // A pointer-to-int type variable stores the memory address of the first memory cell of 4 contiguous memory cells which are allocated to an int type variable (and each memory cell has a data capacity of 1 byte).
+
+sizeof(unsigned long long int *) = 8 byte(s). // A pointer-to-unsigned-long-long-int type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to an unsigned long long int type variable (and each memory cell has a data capacity of 1 byte)..
+
+sizeof(bool *) = 8 byte(s). // A pointer-to-bool type variable stores the memory address of a bool type variable.
+
+sizeof(char *) = 8 byte(s). // A pointer-to-char type variable stores the memory address of a char type variable.
+
+sizeof(float *) = 8 byte(s). // A pointer-to-float type variable stores the memory address of the first memory cell of 4 contiguous memory cells which are allocated to a float type variable (and each memory cell has a data capacity of 1 byte).
+
+sizeof(double *) = 8 byte(s). // A pointer-to-double type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a double type variable (and each memory cell has a data capacity of 1 byte).
+
+sizeof(long double *) = 8 byte(s). // A pointer-to-long-double type variable stores the memory address of the first memory cell of 16 contiguous memory cells which are allocated to a long double type variable (and each memory cell has a data capacity of 1 byte).
+
+sizeof(int **) = 8 byte(s). // A pointer-to-pointer-to-int type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-int type variable (and each memory cell has a data capacity of 1 byte).
+
+sizeof(bool **) = 8 byte(s). // A pointer-to-pointer-to-bool type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-bool type variable (and each memory cell has a data capacity of 1 byte).
+
+sizeof(double **) = 8 byte(s). // A pointer-to-pointer-to-double type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-double type variable (and each memory cell has a data capacity of 1 byte).
+
+sizeof(int ***) = 8 byte(s). // A pointer-to-pointer-to-pointer-to-int type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-pointer-to-int type variable (and each memory cell has a data capacity of 1 byte).
+
+sizeof(bool ***) = 8 byte(s). // A pointer-to-pointer-to-pointer-to-bool type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-pointer-to-bool type variable (and each memory cell has a data capacity of 1 byte).
+
+sizeof(double ***) = 8 byte(s). // A pointer-to-pointer-to-pointer-to-double type variable stores the memory address of the first memory cell of 8 contiguous memory cells which are allocated to a pointer-to-pointer-to-double type variable (and each memory cell has a data capacity of 1 byte).
+
+--------------------------------
+
+The value which was entered for S is 10.
+
+S := 10. // number of consecutive int-sized chunks of memory to allocate to an array such that the memory address of the first element of that array, A[0], is stored in a pointer-to-int type variable named A
+
+--------------------------------
+
+The value which was entered for T is 10.
+
+T := 10. // number of unique states which each element of the array pointed to by A can store exactly one of at a time
+
+--------------------------------
+
+--------------------------------
+End Of Program
+--------------------------------
