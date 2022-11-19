@@ -276,6 +276,30 @@ int main()
     // Print a horizontal line to the command line terminal.
     file << "\n\n--------------------------------";
 
+    // Print the contents of A to the command line terminal.
+    std::cout << "\n\nA = " << A << ". // memory address of A[0]";
+
+    // Print the contents of A to the file output stream.
+    file << "\n\nA = " << A << ". // memory address of A[0]\n";
+
+    /**
+     * For each element, i, of the array represented by A, 
+     * print the contents of the ith element of the array, A[i], 
+     * and the memory address of that array element 
+     * to the command line terminal and to the file output stream.
+     */
+    for (i = 0; i < S; i += 1) 
+    {
+        std::cout << "\nA[" << i << "] = " << A[i] << ". \t// &A[" << i << "] = \t" << &A[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "].";
+        file << "\nA[" << i << "] = " << A[i] << ". \t// &A[" << i << "] = \t" << &A[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "].";
+    }
+
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------";
+
     // Print "Enter a natural number, T, for representing the number of unique states which each element of the array can store exactly one of which is no larger than {MAXIMUM_T}: " to the command line terminal.
     std::cout << "\n\nEnter a natural number, T, for representing the number of unique states which each element of the array can store exactly one of which is no larger than " << MAXIMUM_T << ": ";
 
