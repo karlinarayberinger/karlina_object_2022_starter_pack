@@ -228,6 +228,18 @@ int main()
     // Print a horizontal line to the command line terminal.
     file << "\n\n--------------------------------";
 
+    // Print "STEP_0: CREATE A DYNAMIC ARRAY WHICH IS NAMED A AND WHICH IS COMRPISED OF S INT TYPE VALUES." to the command line terminal.
+    std::cout << "\n\nSTEP_0: CREATE A DYNAMIC ARRAY WHICH IS NAMED A AND WHICH IS COMRPISED OF S INT TYPE VALUES.";
+
+    // Print "STEP_0: CREATE A DYNAMIC ARRAY WHICH IS NAMED A AND WHICH IS COMRPISED OF S INT TYPE VALUES." to the file output stream.
+    file << "\n\nSTEP_0: CREATE A DYNAMIC ARRAY WHICH IS NAMED A AND WHICH IS COMRPISED OF S INT TYPE VALUES.";
+
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------";
+
     // Print "Enter a natural number, S, for representing the number of elements to include in an array which is no larger than than {MAXIMUM_S}: " to the command line terminal.
     std::cout << "\n\nEnter a natural number, S, for representing the number of elements to include in an array which is no larger than " << MAXIMUM_S << ": ";
 
@@ -300,6 +312,18 @@ int main()
     // Print a horizontal line to the command line terminal.
     file << "\n\n--------------------------------";
 
+    // Print "STEP_1: ASSIGN ONE OF T RANDOM INTEGERS TO EACH ELEMENT OF THE ARRAY NAMED A." to the command line terminal.
+    std::cout << "\n\nSTEP_1: ASSIGN ONE OF T RANDOM INTEGERS TO EACH ELEMENT OF THE ARRAY NAMED A.";
+
+    // Print "STEP_1: ASSIGN ONE OF T RANDOM INTEGERS TO EACH ELEMENT OF THE ARRAY NAMED A." to the file output stream.
+    file << "\n\nSTEP_1: CREATE A DYNAMIC ARRAY WHICH IS NAMED A AND WHICH IS COMRPISED OF S INT TYPE VALUES.";
+
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------";
+
     // Print "Enter a natural number, T, for representing the number of unique states which each element of the array can store exactly one of which is no larger than {MAXIMUM_T}: " to the command line terminal.
     std::cout << "\n\nEnter a natural number, T, for representing the number of unique states which each element of the array can store exactly one of which is no larger than " << MAXIMUM_T << ": ";
 
@@ -320,6 +344,35 @@ int main()
 
     // Print "T := {T}. /// number of unique states which each element of the array pointed to by A can store exactly one of at a time" to the file output stream.
     file << "\n\nT := " << T << ". // number of unique states which each element of the array pointed to by A can store exactly one of at a time";
+
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------";
+
+    // Seed the pseudo random number generator with the integer number of seconds which have elapsed since the Unix Epoch (i.e. midnight of 01_JANUARY_1970).
+    srand(time(NULL));
+
+    // Print the command to seed the pseudo random number generator to the command line.
+    std::cout << "\n\n// Seed the pseudo random number generator with the integer number of seconds which have elapsed since the Unix Epoch (i.e. midnight of 01_JANUARY_1970).";
+    std::cout << "\nsrand(time(NULL));";
+
+    // Print the command to seed the pseudo random number generator to the file output stream.
+    file << "\n\n// Seed the pseudo random number generator with the integer number of seconds which have elapsed since the Unix Epoch (i.e. midnight of 01_JANUARY_1970).";
+    file << "\nsrand(time(NULL));";
+
+    /**
+     * For each element, i, of the array represented by A, 
+     * print the contents of the ith element of the array, A[i], 
+     * and the memory address of that array element 
+     * to the command line terminal and to the file output stream.
+     */
+    for (i = 0; i < S; i += 1) 
+    {
+        std::cout << "\nA[" << i << "] = " << A[i] << ". \t// &A[" << i << "] = \t" << &A[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "].";
+        file << "\nA[" << i << "] = " << A[i] << ". \t// &A[" << i << "] = \t" << &A[i] << ". \t(memory address of the first memory cell comprising the block of 4 contiguous memory cells allocated to A[" << i << "].";
+    }
 
     // Print a horizontal line to the command line terminal.
     std::cout << "\n\n--------------------------------";
