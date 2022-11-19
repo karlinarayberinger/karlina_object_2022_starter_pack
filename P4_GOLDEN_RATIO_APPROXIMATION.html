@@ -1,6 +1,6 @@
-<hr />
+<hr>
 <p><strong>GOLDEN_RATIO_APPROXIMATION</strong></p>
-<hr />
+<hr>
 <p><span style="background:#ffff00;">The <a style="background:#ff9000;color:#000000;" href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank" rel="noopener">C++</a> program featured in this tutorial web page computes the approximate value of the <a style="background:#ff9000;color:#000000;" href="https://en.wikipedia.org/wiki/Golden_ratio" target="_blank" rel="noopener">Golden Ratio</a> by dividing the Nth term of the Fibonacci Sequence by the (N &#8211; 1)th term of the <a style="background:#000000;color:#00ff00;" href="https://karlinaobject.wordpress.com/fibonacci_numbers/" target="_blank" rel="noopener">Fibonacci Sequence</a>.</span></p>
 <p><span style="background:#00ff00;">To view hidden text inside of the preformatted text boxes below, scroll horizontally.</span></p>
 <pre>golden_ratio := (1 + square_root(2)) / 5. 
@@ -8,14 +8,14 @@ fibonacci(i) := 1. // i is an integer which is smaller than 2.
 fibonacci(k) := fibonacci(k - 2) + fibonacci(k - 1). // k is a natural number which is larger than or equal to 2.
 golden_ratio_approximation(N) := fibonacci(N) / fibonacci(N - 1).  // N is an integer.
 </pre>
-<hr />
+<hr>
 <p><strong>SOFTWARE_APPLICATION_COMPONENTS</strong></p>
-<hr />
+<hr>
 <p>C++_source_file: <a style="background:#000000;color:#00ff00;" href="https://github.com/karlinarayberinger/karlina_object_2022_starter_pack/blob/main/golden_ratio_approximation.cpp" target="_blank" rel="noopener">https://github.com/karlinarayberinger/karlina_object_2022_starter_pack/blob/main/golden_ratio_approximation.cpp</a></p>
 <p>plain-text_file: <a style="background:#000000;color:#ff9000;" href="https://github.com/karlinarayberinger/karlina_object_2022_starter_pack/blob/main/golden_ratio_approximation_output.txt" target="_blank" rel="noopener">https://github.com/karlinarayberinger/karlina_object_2022_starter_pack/blob/main/golden_ratio_approximation_output.txt</a></p>
-<hr />
+<hr>
 <p><strong>PROGRAM_COMPILATION_AND_EXECUTION</strong></p>
-<hr />
+<hr>
 <p>STEP_0: Copy and paste the C++ <a style="background:#000000;color:#00ff00;" href="https://github.com/karlinarayberinger/karlina_object_2022_starter_pack/blob/main/golden_ratio_approximation.cpp" target="_blank" rel="noopener">source code</a> into a new text editor document and save that document as the following file name:</p>
 <pre>golden_ratio_approximation.cpp</pre>
 <p>STEP_1: Open a <a style="background:#ff9000;color:#000000;" href="https://en.wikipedia.org/wiki/Unix" target="_blank" rel="noopener">Unix</a> command line terminal application and set the current directory to wherever the C++ is located on the local machine (e.g. Desktop).</p>
@@ -30,12 +30,12 @@ golden_ratio_approximation(N) := fibonacci(N) / fibonacci(N - 1).  // N is an in
 <pre>Enter a natural number which is no larger than 45:</pre>
 <p>STEP_6: Enter a value for N using the using the keyboard.</p>
 <p>STEP_7: Observe program results on the command line terminal and in the <a style="background:#000000;color:#ff9000;" href="https://github.com/karlinarayberinger/karlina_object_2022_starter_pack/blob/main/golden_ratio_approximation_output.txt" target="_blank" rel="noopener">output file</a>.</p>
-<hr />
+<hr>
 <p><strong>PROGRAM_SOURCE_CODE</strong></p>
-<hr />
+<hr>
 <p><span style="background:#00ff00;">When copy-pasting the source code from the preformatted text box below into a text editor document, remove the spaces between the angle brackets and the library names in the preprocessing directives code block. (The spaces were inserted between the library names and angle brackets in the preformatted text box below in order to prevent the WordPress server from misinterpreting those C++ library references as <a style="background:#ff9000;color:#000000;" href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener">HTML</a> tags in the source code of this web page).</span></p>
 <p>C++_source_file: <a style="background:#000000;color:#00ff00;" href="https://github.com/karlinarayberinger/karlina_object_2022_starter_pack/blob/main/golden_ratio_approximation.cpp" target="_blank" rel="noopener">https://github.com/karlinarayberinger/karlina_object_2022_starter_pack/blob/main/golden_ratio_approximation.cpp</a></p>
-<hr />
+<hr>
 <pre>/**
  * file: golden_ratio_approximation.cpp
  * type: C++ (source file)
@@ -162,13 +162,13 @@ int main()
     // Print the data size of a bool type variable to the command line terminal.
     std::cout &lt;&lt; "\n\nsizeof(bool) = " &lt;&lt; sizeof(bool) &lt;&lt; " byte(s).";
 
-    // Print the data size of a float type variable to the file output stream.
+    // Print the data size of a bool type variable to the file output stream.
     file &lt;&lt; "\n\nsizeof(bool) = " &lt;&lt; sizeof(bool) &lt;&lt; " byte(s).";
 
     // Print the data size of a char type variable to the command line terminal.
     std::cout &lt;&lt; "\n\nsizeof(char) = " &lt;&lt; sizeof(char) &lt;&lt; " byte(s).";
 
-    // Print the data size of a float type variable to the file output stream.
+    // Print the data size of a char type variable to the file output stream.
     file &lt;&lt; "\n\nsizeof(char) = " &lt;&lt; sizeof(char) &lt;&lt; " byte(s).";
 
     // Print the data size of a float type variable to the command line terminal.
@@ -180,13 +180,13 @@ int main()
     // Print the data size of a double type variable to the command line terminal.
     std::cout &lt;&lt; "\n\nsizeof(double) = " &lt;&lt; sizeof(double) &lt;&lt; " byte(s).";
 
-    // Print the data size of an int type variable to the file output stream.
+    // Print the data size of a double type variable to the file output stream.
     file &lt;&lt; "\n\nsizeof(double) = " &lt;&lt; sizeof(double) &lt;&lt; " byte(s).";
 
     // Print the data size of a long double type variable to the command line terminal.
     std::cout &lt;&lt; "\n\nsizeof(long double) = " &lt;&lt; sizeof(long double) &lt;&lt; " byte(s).";
 
-    // Print the data size of an int type variable to the file output stream.
+    // Print the data size of a long double type variable to the file output stream.
     file &lt;&lt; "\n\nsizeof(long double) = " &lt;&lt; sizeof(long double) &lt;&lt; " byte(s).";
 
     // Print a horizontal line to the command line terminal.
@@ -254,12 +254,12 @@ int main()
     return 0;
 }
 </pre>
-<hr />
+<hr>
 <p><strong>SAMPLE_PROGRAM_OUTPUT</strong></p>
-<hr />
+<hr>
 <p>The text in the preformatted text box below was generated by one use case of the C++ program featured in this <a style="background:#ff9000;color:#000000;" href="https://en.wikipedia.org/wiki/Computer_programming" target="_blank" rel="noopener">computer programming</a> tutorial web page.</p>
 <p>plain-text_file: <a style="background:#000000;color:#ff9000;" href="https://github.com/karlinarayberinger/karlina_object_2022_starter_pack/blob/main/golden_ratio_approximation_output.txt" target="_blank" rel="noopener">https://github.com/karlinarayberinger/karlina_object_2022_starter_pack/blob/main/golden_ratio_approximation_output.txt</a></p>
-<hr />
+<hr>
 <pre>--------------------------------
 Start Of Program
 --------------------------------
@@ -519,6 +519,6 @@ G = golden_ratio_approximation(45) = 1.61803398874989490252573887119069695472717
 End Of Program
 --------------------------------
 </pre>
-<hr />
+<hr>
 <p>This web page was last updated on 18_NOVEMBER_2022. The content displayed on this web page is licensed as <a style="background:#000000;color:#ff9000;" href="https://karlinaobject.wordpress.com/public_domain/" target="_blank" rel="noopener">PUBLIC_DOMAIN</a> intellectual property.</p>
-<hr />
+<hr>
