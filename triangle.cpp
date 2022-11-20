@@ -140,7 +140,7 @@ TRIANGLE::TRIANGLE(int A_X, int A_Y, int B_X, int B_Y, int C_X, int C_Y)
  * if parameter A, parameter B, and parameter C represent a non-degenerate triangle.
  * 
  * If parameter A, parameter B, and parameter C do not represent a non-degenerate triangle,
- * then this function will return a TRIANGLE object
+ * this function will return a TRIANGLE object
  * whose POINT property named A represents the coordinate pair (0, 0),
  * whose POINT property named B represents the coordinate pair (0, 1), and
  * whose POINT property named C represents the coordinate pair (1, 0).
