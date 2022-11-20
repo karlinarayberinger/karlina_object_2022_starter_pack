@@ -44,12 +44,14 @@ public:
     POINT get_A(); // getter method
     POINT get_B(); // getter method
     POINT get_C(); // getter method
-    double get_side_length_a(); // getter method
-    double get_side_length_b(); // getter method
-    double get_side_length_c(); // getter method
-    double get_angle_ABC(); // getter method
-    double get_angle_BCA(); // getter method
-    double get_angle_CAB(); // getter method
+    double get_side_length_AB(); // getter method
+    double get_side_length_BC(); // getter method
+    double get_side_length_CA(); // getter method
+    double get_interior_angle_ABC(); // getter method
+    double get_interior_angle_BCA(); // getter method
+    double get_interior_angle_CAB(); // getter method
+    double get_perimeter(); // getter method
+    double get_area(); //
     void print(std::ostream & output = std::cout); // descriptor method
     friend std::ostream & operator << (std::ostream & output, TRIANGLE & triangle); // descriptor method
     ~TRIANGLE(); // destructor
