@@ -100,14 +100,14 @@ TRIANGLE::TRIANGLE()
 }
 
 /**
- * The normal constructor method of the TRIANGLE class which takes six int type values as function inputs returns a TRIANGLE object 
+ * The normal constructor method of the TRIANGLE class (which takes six int type values as function inputs) returns a TRIANGLE object 
  * whose POINT property named A represents the coordinate pair (A_X, A_Y),
  * whose POINT property named B represents the coordinate pair (B_X, B_Y), and
  * whose POINT property named C represents the coordinate pair (C_X, C_Y)
  * if POINT(A_X, A_Y), POINT(B_X, B_Y), and POINT(C_X, C_Y) represent a non-degenerate triangle.
  * 
  * If POINT(A_X, A_Y, POINT(B_X, B_Y), and POINT(C_X, C_Y) do not represent a non-degenerate triangle,
- * then this function will return a TRIANGLE object
+ * this function will return a TRIANGLE object
  * whose POINT property named A represents the coordinate pair (0, 0),
  * whose POINT property named B represents the coordinate pair (0, 1), and
  * whose POINT property named C represents the coordinate pair (1, 0).
@@ -129,5 +129,35 @@ TRIANGLE::TRIANGLE(int A_X, int A_Y, int B_X, int B_Y, int C_X, int C_Y)
         A = POINT(0, 0);
         B = POINT(0, 1);
         C = POINT(1, 0);
+    }
+}
+
+/**
+ * The normal constructor method of the TRIANGLE class (which takes three POINT objects as function inputs) returns a TRIANGLE object 
+ * whose POINT property named A represents the same coordinate pair as the parameter named A,
+ * whose POINT property named B represents the same coordinate pair as the parameter named B, and
+ * whose POINT property named C represents the same coordinate pair as the parameter named C
+ * if parameter A, parameter B, and parameter C represent a non-degenerate triangle.
+ * 
+ * If parameter A, parameter B, and parameter C do not represent a non-degenerate triangle,
+ * then this function will return a TRIANGLE object
+ * whose POINT property named A represents the coordinate pair (0, 0),
+ * whose POINT property named B represents the coordinate pair (0, 1), and
+ * whose POINT property named C represents the coordinate pair (1, 0).
+ */
+TRIANGLE::TRIANGLE(POINT A, POINT B, POINT C)
+{
+    std::cout << "\n\nCreating the TRIANGLE type object whose memory address is " << this << ".";
+    if (points_form_nondegenerate_triangle(A, B, C))
+    {
+        this -> A = A;
+        this -> B = B;
+        this -> C = C;
+    }
+    else
+    {
+        this -> A = POINT(0, 0);
+        this -> B = POINT(0, 1);
+        this -> C = POINT(1, 0);
     }
 }
