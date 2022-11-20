@@ -112,7 +112,7 @@ TRIANGLE::TRIANGLE()
  * whose POINT property named B represents the coordinate pair (0, 1), and
  * whose POINT property named C represents the coordinate pair (1, 0).
  */
-TRIANGLE::TRIANGLE(int A_x, int A_y, int B_x, int B_y, int C_x, int C_y)
+TRIANGLE::TRIANGLE(int A_X, int A_Y, int B_X, int B_Y, int C_X, int C_Y)
 {
     std::cout << "\n\nCreating the TRIANGLE type object whose memory address is " << this << "...";
     POINT input_A = POINT(A_X, A_Y);
