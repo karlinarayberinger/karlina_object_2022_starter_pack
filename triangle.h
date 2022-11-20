@@ -39,7 +39,7 @@ private:
 public:
     TRIANGLE(); // default constructor
     TRIANGLE(POINT A, POINT B, POINT C); // normal constructor
-    TRIANGLE(int A_X, int A_Y, int B_X, int B_Y, int C_X, int CY); // normal constructor
+    TRIANGLE(int A_X, int A_Y, int B_X, int B_Y, int C_X, int C_Y); // normal constructor
     TRIANGLE(const TRIANGLE & triangle); // copy constructor
     POINT get_A(); // getter method
     POINT get_B(); // getter method
