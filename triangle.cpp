@@ -144,6 +144,8 @@ TRIANGLE::TRIANGLE(int A_X, int A_Y, int B_X, int B_Y, int C_X, int C_Y)
  * whose POINT property named A represents the coordinate pair (0, 0),
  * whose POINT property named B represents the coordinate pair (0, 1), and
  * whose POINT property named C represents the coordinate pair (1, 0).
+ * 
+ * (The keyword this refers to the TRIANGLE object which is returned by the TRIANGLE(POINT A, POINT B, POINT C) method of the TRIANGLE class).
  */
 TRIANGLE::TRIANGLE(POINT A, POINT B, POINT C)
 {
@@ -160,4 +162,20 @@ TRIANGLE::TRIANGLE(POINT A, POINT B, POINT C)
         this -> B = POINT(0, 1);
         this -> C = POINT(1, 0);
     }
+}
+
+/**
+ * The copy constructor method of the TRIANGLE class returns a TRIANGLE object 
+ * whose POINT property named A represents the same coordinate pair as the POINT property named A which belongs to the input TRIANGLE object,
+ * whose POINT property named B represents the same coordinate pair as the POINT property named B which belongs to the input TRIANGLE object, and
+ * whose POINT property named C represents the same coordinate pair as the POINT property named C which belongs to the input TRIANGLE object. 
+ * 
+ * (The keyword this refers to the TRIANGLE object which is returned by the copy constructor method of the TRIANGLE class).
+ */
+TRIANGLE::TRIANGLE(const TRIANGLE & triangle)
+{
+    std::cout << "\n\nCreating the TRIANGLE type object whose memory address is " << this << ".";
+    this -> A = triangle.A;
+    this -> B = triangle.B;
+    this -> C = triangle.C;
 }
