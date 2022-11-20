@@ -34,6 +34,8 @@ class TRIANGLE
 {
 private:
     POINT A, B, C; // data attributes
+    bool TRIANGLE::points_represent_unique_coordinate_pairs(POINT point_0, POINT point_1, POINT point_2) // helper method
+    bool TRIANGLE::points_form_nondegenerate_triangle(POINT point_0, POINT point_1, POINT point_2); // helper method
 public:
     TRIANGLE(); // default constructor
     TRIANGLE(POINT A, POINT B, POINT C); // normal constructor
