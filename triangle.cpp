@@ -78,7 +78,7 @@ bool TRIANGLE::points_form_nondegenerate_triangle(POINT point_0, POINT point_1, 
     C = point_2;
     if (get_area() <= 0) 
     {
-        std::cout << "\n\nWhen setting the POINT values of the caller TRIANGLE object to the function parameters, get_area() returned a non-positive number result.";
+        std::cout << "\n\nWhen setting the POINT values of the caller TRIANGLE object using the given inputs, get_area() returned a non-positive number result.";
         std::cout << "\nHence, points_form_nondegenerate_triangle(POINT point_0, POINT point_1, POINT point_2) is returning false.";
         return false;
     }
@@ -97,4 +97,37 @@ TRIANGLE::TRIANGLE()
     A = POINT(0, 0);
     B = POINT(0, 1);
     C = POINT(1, 0);
+}
+
+/**
+ * The normal constructor method of the TRIANGLE class which takes six int type values as function inputs returns a TRIANGLE object 
+ * whose POINT property named A represents the coordinate pair (A_X, A_Y),
+ * whose POINT property named B represents the coordinate pair (B_X, B_Y), and
+ * whose POINT property named C represents the coordinate pair (C_X, C_Y)
+ * if POINT(A_X, A_Y), POINT(B_X, B_Y), and POINT(C_X, C_Y) represent a non-degenerate triangle.
+ * 
+ * If POINT(A_X, A_Y, POINT(B_X, B_Y), and POINT(C_X, C_Y) do not represent a non-degenerate triangle,
+ * then this function will return a TRIANGLE object
+ * whose POINT property named A represents the coordinate pair (0, 0),
+ * whose POINT property named B represents the coordinate pair (0, 1), and
+ * whose POINT property named C represents the coordinate pair (1, 0).
+ */
+TRIANGLE::TRIANGLE(int A_x, int A_y, int B_x, int B_y, int C_x, int C_y)
+{
+    std::cout << "\n\nCreating the TRIANGLE type object whose memory address is " << this << "...";
+    POINT input_A = POINT(A_X, A_Y);
+    POINT input_B = POINT(B_X, B_Y);
+    POINT input_C = POINT(C_X, C_Y);
+    if (points_form_nondegenerate_triangle(input_A, input_B, input_C))
+    {
+        A = input_A;
+        B = input_B;
+        C = input_C;
+    }
+    else
+    {
+        A = POINT(0, 0);
+        B = POINT(0, 1);
+        C = POINT(1, 0);
+    }
 }
