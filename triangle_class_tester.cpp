@@ -11,6 +11,7 @@
 /* function prototypes */
 void unit_test_0(std::ostream & output);
 void unit_test_1(std::ostream & output);
+void unit_test_2(std::ostream & output);
 
 // Unit Test # 0: TRIANGLE class default constructor, TRIANGLE class print method, and TRIANGLE class destructor.
 void unit_test_0(std::ostream & output) 
@@ -62,6 +63,27 @@ void unit_test_1(std::ostream & output)
     output << "\ntriangle.get_area() = " << triangle.get_area() << ".";
 }
 
+
+// Unit Test # 2: TRIANGLE class normal constructors, TRIANGLE class copy constructor, TRIANGLE class print method, and TRIANGLE class destructor.
+void unit_test_2(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 2: TRIANGLE class normal constructors, TRIANGLE class copy constructor, TRIANGLE class print method, and TRIANGLE class destructor.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nTRIANGLE triangle_0 = TRIANGLE(-1, -1, 0, 5, 2, -5); // normal constructor which takes exactly 6 int type values as function inputs";
+    output << "\nTRIANGLE triangle_1 = TRIANGLE( POINT(-3,-3), POINT(-4,-8), POINT(0,1) ); // normal constructor which takes 3 POINT type values as function inputs";
+    output << "\nTRIANGLE triangle_2 = TRIANGLE(triangle_0); // copy constructor which takes 1 TRIANGLE type value as function input";
+    output << "\ntriangle_0.print(output);";
+    output << "\ntriangle_1.print(output);";
+    output << "\ntriangle_2.print(output);";
+    TRIANGLE triangle_0 = TRIANGLE(-1, -1, 0, 5, 2, -5); // normal constructor which takes exactly 6 int type values as function inputs
+    TRIANGLE triangle_1 = TRIANGLE( POINT(-3,-3), POINT(-4,-8), POINT(0,1) ); // normal constructor which takes 3 POINT type values as function inputs
+    TRIANGLE triangle_2 = TRIANGLE(triangle_0); // copy constructor which takes 1 TRIANGLE type value as function input
+    triangle_0.print(output);
+    triangle_1.print(output);
+    triangle_2.print(output);
+}
+
 /* program entry point */
 int main()
 {
@@ -98,6 +120,8 @@ int main()
     unit_test_0(file);
     unit_test_1(std::cout);
     unit_test_1(file);
+    unit_test_2(std::cout);
+    unit_test_2(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
