@@ -377,7 +377,7 @@ std::ostream & operator << (std::ostream & output, TRIANGLE & triangle)
 
 /**
  * The destructor method of the TRIANGLE class de-allocates memory which was used to 
- * instantiate the POINT object which is calling this function.
+ * instantiate the TRIANGLE object which is calling this function.
  * 
  * The destructor method of the TRIANGLE class is automatically called when 
  * the program scope in which the caller TRIANGLE object was instantiated terminates.
