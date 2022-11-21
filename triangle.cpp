@@ -179,3 +179,108 @@ TRIANGLE::TRIANGLE(const TRIANGLE & triangle)
     this -> B = triangle.B;
     this -> C = triangle.C;
 }
+
+/** 
+ * The getter method of the TRIANGLE class named get_A() returns the value of the caller TRIANGLE object's A property.
+ */
+POINT TRIANGLE::get_A()
+{
+    return A;
+}
+
+/** 
+ * The getter method of the TRIANGLE class named get_B() returns the value of the caller TRIANGLE object's B property.
+ */
+POINT TRIANGLE::get_B()
+{
+    return B;
+}
+
+/** 
+ * The getter method of the TRIANGLE class named get_C() returns the value of the caller TRIANGLE object's C property.
+ */
+POINT TRIANGLE::get_C()
+{
+    return C;
+}
+
+/** 
+ * The getter method of the TRIANGLE class named get_side_length_AB() returns the length of the shortest path between points A and B.
+ */
+double TRIANGLE::get_side_length_AB()
+{
+    return A.get_distance_from(B);
+}
+
+/** 
+ * The getter method of the TRIANGLE class named get_side_length_BC() returns the length of the shortest path between points B and C.
+ */
+double TRIANGLE::get_side_length_BC()
+{
+    return B.get_distance_from(C);
+}
+
+/** 
+ * The getter method of the TRIANGLE class named get_side_length_CA() returns the length of the shortest path between points C and A.
+ */
+double TRIANGLE::get_side_length_CA()
+{
+    return C.get_distance_from(A);
+}
+
+/**
+ * The getter method of the TRIANGLE class named get_interior_angle_ABC() returns the angle measurement in degrees of the angle
+ * formed by connecting points A, B, anc C in the order specified by this sentence.
+ * 
+ * The function below uses the Law of Cosines to compute the measurement of an interior angle of a triangle 
+ * using that triangle's three side lengths as function inputs to output some nonnegative real number of degrees.
+ */
+double TRIANGLE::get_interior_angle_ABC()
+{
+    double a = 0.0, b = 0.0, c = 0.0, angle_opposite_of_a = 0.0, angle_opposite_of_b = 0.0, angle_opposite_of_c = 0.0;
+    a = get_side_length_BC(); // a represents the length of the line segment whose endpoints are B and C.
+    b = get_side_length_CA(); // b represents the length of the line segment whose endpoints are C and A.
+    c = get_side_length_AB(); // c represents the length of the line segment whose endpoints are A and B.
+    angle_opposite_of_a = acos(((b * b) + (c * c) - (a * a)) / (2 * b * c)) * (180 / PI);
+    angle_opposite_of_b = acos(((a * a) + (c * c) - (b * b)) / (2 * a * c)) * (180 / PI);
+    angle_opposite_of_c = acos(((a * a) + (b * b) - (c * c)) / (2 * a * b)) * (180 / PI);
+    return angle_opposite_of_b;
+}
+
+/**
+ * The getter method of the TRIANGLE class named get_interior_angle_BCA() returns the angle measurement in degrees of the angle
+ * formed by connecting points B, C, and A in the order specified by this sentence.
+ * 
+ * The function below uses the Law of Cosines to compute the measurement of an interior angle of a triangle 
+ * using that triangle's three side lengths as function inputs to output some nonnegative real number of degrees.
+ */
+double TRIANGLE::get_interior_angle_BCA()
+{
+    double a = 0.0, b = 0.0, c = 0.0, angle_opposite_of_a = 0.0, angle_opposite_of_b = 0.0, angle_opposite_of_c = 0.0;
+    a = get_side_length_BC(); // a represents the length of the line segment whose endpoints are B and C.
+    b = get_side_length_CA(); // b represents the length of the line segment whose endpoints are C and A.
+    c = get_side_length_AB(); // c represents the length of the line segment whose endpoints are A and B.
+    angle_opposite_of_a = acos(((b * b) + (c * c) - (a * a)) / (2 * b * c)) * (180 / PI);
+    angle_opposite_of_b = acos(((a * a) + (c * c) - (b * b)) / (2 * a * c)) * (180 / PI);
+    angle_opposite_of_c = acos(((a * a) + (b * b) - (c * c)) / (2 * a * b)) * (180 / PI);
+    return angle_opposite_of_c;
+}
+
+/**
+ * The getter method of the TRIANGLE class named get_interior_angle_CAB() returns the angle measurement in degrees of the angle
+ * formed by connecting points C, A, and B in the order specified by this sentence.
+ * 
+ * The function below uses the Law of Cosines to compute the measurement of an interior angle of a triangle 
+ * using that triangle's three side lengths as function inputs to output some nonnegative real number of degrees.
+ */   
+double TRIANGLE::get_interior_angle_CAB()
+{
+    double a = 0.0, b = 0.0, c = 0.0, angle_opposite_of_a = 0.0, angle_opposite_of_b = 0.0, angle_opposite_of_c = 0.0;
+    a = get_side_length_BC(); // a represents the length of the line segment whose endpoints are B and C.
+    b = get_side_length_CA(); // b represents the length of the line segment whose endpoints are C and A.
+    c = get_side_length_AB(); // c represents the length of the line segment whose endpoints are A and B.
+    angle_opposite_of_a = acos(((b * b) + (c * c) - (a * a)) / (2 * b * c)) * (180 / PI);
+    angle_opposite_of_b = acos(((a * a) + (c * c) - (b * b)) / (2 * a * c)) * (180 / PI);
+    angle_opposite_of_c = acos(((a * a) + (b * b) - (c * c)) / (2 * a * b)) * (180 / PI);
+    return angle_opposite_of_a;
+}
