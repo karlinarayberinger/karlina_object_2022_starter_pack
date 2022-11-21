@@ -1,7 +1,7 @@
 /**
  * file: triangle_class_tester.cpp
  * type: C++ (source file)
- * date: 20_NOVEMBER_2022
+ * date: 21_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN 
  */
@@ -13,6 +13,7 @@ void unit_test_0(std::ostream & output);
 void unit_test_1(std::ostream & output);
 void unit_test_2(std::ostream & output);
 void unit_test_3(std::ostream & output);
+void unit_test_4(std::ostream & output);
 
 // Unit Test # 0: TRIANGLE class default constructor, TRIANGLE class print method, and TRIANGLE class destructor.
 void unit_test_0(std::ostream & output) 
@@ -101,6 +102,30 @@ void unit_test_3(std::ostream & output)
     triangle_1.print(output);
 }
 
+// Unit Test # 4: Demonstrate how the setter methods of the POINT class cannot be called by a TRIANGLE object due to the fact that the methods of the POINT class each have uniquely corresponding function prototypes which are prefaced with the private access specifier in the POINT class header file (i.e. POINT.h).
+void unit_test_4(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\n// Unit Test # 4: Demonstrate how the setter methods of the POINT class cannot be called by a TRIANGLE object due to the fact that the methods of the POINT class each have uniquely corresponding function prototypes which are prefaced with the private access specifier in the POINT class header file (i.e. POINT.h).";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nTRIANGLE triangle;";
+    output << "\ntriangle.print(output);";
+    TRIANGLE triangle;
+    triangle.print(output);
+    output << "\nPOINT copy_A = triangle.get_A();";
+    output << "\ncopy_A.print(output);";
+    POINT copy_A = triangle.get_A();
+    copy_A.print(output);
+    copy_A.set_X(33); // The setter method of the POINT class is public. Therefore, that method can be invoked from the program scope in which the POINT type variable copy_A is insstantiated.
+    output << "\ncopy_A.set_X(33); // The setter method of the POINT class is public. Therefore, that method can be invoked from the program scope in which the POINT type variable copy_A is insstantiated.";
+    output << "\ncopy_A.print(output); // The print method of the POINT class is public. Therefore, that method can be invoked from the program scope in which the POINT type variable copy_A is insstantiated.";
+    output << "\ntriangle.A.get_X() = " << triangle.A.get_X() << ". // Note that the POINT class method can only be executed if the POINT type data member named A of a TRIANGLE instance is prefaced with the public access speificier.";
+    output << "\ntriangle.A.get_Y() = " << triangle.A.get_Y() << ". // Note that the POINT class method can only be executed if the POINT type data member named A of a TRIANGLE instance is prefaced with the public access speificier.";
+    output << "\ntriangle.A.set_X(25) = " << triangle.A.set_X(25) << ". // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is prefaced with the public access speificier.";
+    output << "\ntriangle.A.get_Y(666) = " << triangle.A.set_Y(666) << ". // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is prefaced with the public access speificier.";
+    triangle.print(output);
+}
+
 /* program entry point */
 int main()
 {
@@ -141,6 +166,8 @@ int main()
     unit_test_2(file);
     unit_test_3(std::cout);
     unit_test_3(file);
+    unit_test_4(std::cout);
+    unit_test_4(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
