@@ -75,10 +75,8 @@ public:
     virtual double get_perimeter() = 0;
 
     /**
-     * The descriptor method prints a description of the caller POLYGON instance 
-     * (or pointer-to-POLYGON type variable)
-     * to the output stream.
-     * If no parameter is supplied, output is set to the command line terminal.
+     * The descriptor method prints a description of the caller POLYGON instance to the output stream.
+     * If no function input is supplied, output is set to the command line terminal.
      */
     void print(std::ostream & output = std::cout);
 

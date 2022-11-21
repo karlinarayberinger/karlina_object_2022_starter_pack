@@ -32,16 +32,14 @@ POLYGON::POLYGON()
 
 /**
  * The virtual methods get_area() and get_perimeter() must be defined by 
- * classes which are derived from POLYGON.
+ * classes which are derived from the POLYGON class.
  */
 double POLYGON::get_area() { return 0.0; }
 double POLYGON::get_perimeter() { return 0.0; }
 
 /**
- * The descriptor method prints a description of the caller POLYGON instance 
- * (or pointer-to-POLYGON type variable)
- * to the output stream.
- * If no parameter is supplied, output is set to the command line terminal.
+ * The descriptor method prints a description of the caller POLYGON instance to the output stream.
+ * If no function input is supplied, output is set to the command line terminal.
  */
 void POLYGON::print(std::ostream & output)
 {
@@ -51,10 +49,12 @@ void POLYGON::print(std::ostream & output)
 }
 
 /**
- * The descriptor method prints a description of the caller POLYGON instance 
- * (or pointer-to-POLYGON type variable)
- * to the output stream.
- * If no parameter is supplied, output is set to the command line terminal.
+ * The friend function is an alternative to the print method.
+ * The friend function overloads the ostream operator (i.e. <<).
+ * 
+ * The friend function is not a member of the POLYGON class,
+ * but that friend function does have access to the private and protected members of the POLYGON class
+ * as though that friend function was a member of the POLYGON class.
  */
 std::ostream & operator << (std::ostream & output, POLYGON & polygon)
 {
