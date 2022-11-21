@@ -116,14 +116,20 @@ void unit_test_4(std::ostream & output)
     output << "\ncopy_A.print(output);";
     POINT copy_A = triangle.get_A();
     copy_A.print(output);
-    copy_A.set_X(33); // The setter method of the POINT class is public. Therefore, that method can be invoked from the program scope in which the POINT type variable copy_A is insstantiated.
-    output << "\ncopy_A.set_X(33); // The setter method of the POINT class is public. Therefore, that method can be invoked from the program scope in which the POINT type variable copy_A is insstantiated.";
+    copy_A.set_X(33); // The setter method of the POINT class is public. Therefore, that method can be invoked from the program scope in which the POINT type variable copy_A is instantiated.
+    output << "\ncopy_A.set_X(33); // The setter method of the POINT class is public. Therefore, that method can be invoked from the program scope in which the POINT type variable copy_A is instantiated.";
     output << "\ncopy_A.print(output); // The print method of the POINT class is public. Therefore, that method can be invoked from the program scope in which the POINT type variable copy_A is insstantiated.";
-    output << "\ntriangle.A.get_X() = " << triangle.A.get_X() << ". // Note that the POINT class method can only be executed if the POINT type data member named A of a TRIANGLE instance is prefaced with the public access speificier.";
-    output << "\ntriangle.A.get_Y() = " << triangle.A.get_Y() << ". // Note that the POINT class method can only be executed if the POINT type data member named A of a TRIANGLE instance is prefaced with the public access speificier.";
-    output << "\ntriangle.A.set_X(25) = " << triangle.A.set_X(25) << ". // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is prefaced with the public access speificier.";
-    output << "\ntriangle.A.get_Y(666) = " << triangle.A.set_Y(666) << ". // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is prefaced with the public access speificier.";
+    /*
+    output << "\ntriangle.A.get_X() = " << triangle.A.get_X() << ". // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.";
+    output << "\ntriangle.A.get_Y() = " << triangle.A.get_Y() << ". // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.";
+    output << "\ntriangle.A.set_X(25) = " << triangle.A.set_X(25) << ". // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.";
+    output << "\ntriangle.A.get_Y(666) = " << triangle.A.set_Y(666) << ". // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.";
     triangle.print(output);
+    */
+    output << "\n// COMMENTED OUT: triangle.A.get_X(); // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.";
+    output << "\n// COMMENTED OUT: triangle.A.get_Y(); // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.";
+    output << "\n// COMMENTED OUT: triangle.A.set_X(25); // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.";
+    output << "\ntriangle.A.get_Y(666); // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.";
 }
 
 /* program entry point */
