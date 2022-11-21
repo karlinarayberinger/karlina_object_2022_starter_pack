@@ -308,3 +308,49 @@ double TRIANGLE::get_area()
     c = get_side_length_AB(); // c represents the length of the line segment whose endpoints are A and B (and which are points of the caller TRIANGLE object of this function represents).
     return sqrt(s * (s - a) * (s - b) * (s - c)); // Use Heron's Formula to compute the area of the triangle whose points are A, B, and C (and which are points of the caller TRIANGLE object of this function represents).
 }
+
+/**
+ * The friend function is an alternative to the print method.
+ * The friend function overloads the ostream operator (<<).
+ * 
+ * (Overloading an operator is assigning a different function to a native operator other than the function which that operator is used to represent by default).
+ * 
+ * Note that the default value of the leftmost function input parameter is the standard command line output stream (std::cout).
+ * The default parameter is defined in the TRIANGLE class header file (i.e. triangle.h).
+ * 
+ * The friend function is not a member of the TRIANGLE class, 
+ * but the friend function has access to the private and protected members 
+ * of the TRIANGLE class and not just to the public members of the TRIANGLE class.
+ * 
+ * The friend keyword only prefaces the function prototype of this function 
+ * (and the prototype of this function is declared in the TRIANGLE class header file (i.e. triangle.h)). 
+ * 
+ * The friend keyword does not preface the definition of this function
+ * (and the definition of this function is specified in the TRIANGLE class source file (i.e. triangle.cpp)).
+ * 
+ * // overloaded print function example one
+ * TRIANGLE triangle_0;
+ * std::cout << triangle_0; // identical to triangle_0();
+ * 
+ * // overloaded print function example two
+ * std::ofstream file;
+ * TRIANGLE triangle_1;
+ * file << triangle_1; // identical to triangle_1(file);
+ */
+std::ostream & operator << (std::ostream & output, POINT & point)
+{
+    point.print(output);
+    return output;
+}
+
+/**
+ * The destructor method of the TRIANGLE class de-allocates memory which was used to 
+ * instantiate the POINT object which is calling this function.
+ * 
+ * The destructor method of the TRIANGLE class is automatically called when 
+ * the program scope in which the caller TRIANGLE object was instantiated terminates.
+ */
+TRIANGLE::~TRIANGLE()
+{
+    std::cout << "\n\nDeleting the TRIANGLE type object whose memory address is " << this << "...";
+}
