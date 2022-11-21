@@ -180,7 +180,7 @@ TRIANGLE::TRIANGLE(const TRIANGLE & triangle)
 }
 
 /** 
- * The getter method of the TRIANGLE class named get_A() returns the value of the caller TRIANGLE object's A property.
+ * The getter method of the TRIANGLE class named get_A() returns the POINT type value of the caller TRIANGLE object's A property.
  */
 POINT TRIANGLE::get_A()
 {
@@ -188,7 +188,7 @@ POINT TRIANGLE::get_A()
 }
 
 /** 
- * The getter method of the TRIANGLE class named get_B() returns the value of the caller TRIANGLE object's B property.
+ * The getter method of the TRIANGLE class named get_B() returns the POINT type value of the caller TRIANGLE object's B property.
  */
 POINT TRIANGLE::get_B()
 {
@@ -196,7 +196,7 @@ POINT TRIANGLE::get_B()
 }
 
 /** 
- * The getter method of the TRIANGLE class named get_C() returns the value of the caller TRIANGLE object's C property.
+ * The getter method of the TRIANGLE class named get_C() returns the POINT type value of the caller TRIANGLE object's C property.
  */
 POINT TRIANGLE::get_C()
 {
@@ -204,7 +204,7 @@ POINT TRIANGLE::get_C()
 }
 
 /** 
- * The getter method of the TRIANGLE class named get_side_length_AB() returns the length of the shortest path between points A and B.
+ * The getter method of the TRIANGLE class named get_side_length_AB() returns the approximate length of the shortest path between points A and B.
  */
 double TRIANGLE::get_side_length_AB()
 {
@@ -212,7 +212,7 @@ double TRIANGLE::get_side_length_AB()
 }
 
 /** 
- * The getter method of the TRIANGLE class named get_side_length_BC() returns the length of the shortest path between points B and C.
+ * The getter method of the TRIANGLE class named get_side_length_BC() returns the approximate length of the shortest path between points B and C.
  */
 double TRIANGLE::get_side_length_BC()
 {
@@ -220,7 +220,7 @@ double TRIANGLE::get_side_length_BC()
 }
 
 /** 
- * The getter method of the TRIANGLE class named get_side_length_CA() returns the length of the shortest path between points C and A.
+ * The getter method of the TRIANGLE class named get_side_length_CA() returns the approximate length of the shortest path between points C and A.
  */
 double TRIANGLE::get_side_length_CA()
 {
@@ -228,7 +228,7 @@ double TRIANGLE::get_side_length_CA()
 }
 
 /**
- * The getter method of the TRIANGLE class named get_interior_angle_ABC() returns the angle measurement in degrees of the angle
+ * The getter method of the TRIANGLE class named get_interior_angle_ABC() returns the approximate angle measurement in degrees of the angle
  * formed by connecting points A, B, anc C in the order specified by this sentence.
  * 
  * The function below uses the Law of Cosines to compute the measurement of an interior angle of a triangle 
@@ -247,7 +247,7 @@ double TRIANGLE::get_interior_angle_ABC()
 }
 
 /**
- * The getter method of the TRIANGLE class named get_interior_angle_BCA() returns the angle measurement in degrees of the angle
+ * The getter method of the TRIANGLE class named get_interior_angle_BCA() returns the approximate angle measurement in degrees of the angle
  * formed by connecting points B, C, and A in the order specified by this sentence.
  * 
  * The function below uses the Law of Cosines to compute the measurement of an interior angle of a triangle 
@@ -266,7 +266,7 @@ double TRIANGLE::get_interior_angle_BCA()
 }
 
 /**
- * The getter method of the TRIANGLE class named get_interior_angle_CAB() returns the angle measurement in degrees of the angle
+ * The getter method of the TRIANGLE class named get_interior_angle_CAB() returns the approximate angle measurement in degrees of the angle
  * formed by connecting points C, A, and B in the order specified by this sentence.
  * 
  * The function below uses Law of Cosines to compute the measurement of an interior angle of a triangle 
@@ -285,7 +285,7 @@ double TRIANGLE::get_interior_angle_CAB()
 }
 
 /** 
- * The getter method of the TRIANGLE class named get_perimeter() returns the sum of the three side lengths 
+ * The getter method of the TRIANGLE class named get_perimeter() returns the approximate sum of the three side lengths 
  * of the triangle which the caller TRIANGLE object represents.
  */
 double TRIANGLE::get_perimeter()
@@ -294,7 +294,7 @@ double TRIANGLE::get_perimeter()
 }
 
 /** 
- * The getter method of the TRIANGLE class named get_area() returns the area of the two-dimensional space whose bounds are 
+ * The getter method of the TRIANGLE class named get_area() returns the approximate area of the two-dimensional space whose bounds are 
  * the shortest paths between points A, B, and C of the triangle which the caller TRIANGLE object represents.
  * 
  * This function uses Heron's Formula to compute the area of a triangle using that triangle's side lengths as function inputs.
@@ -323,12 +323,21 @@ void TRIANGLE::print(std::ostream & output)
     output << "\n&A = " << &A << ". // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.";
     output << "\n&B = " << &B << ". // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.";
     output << "\n&C = " << &C << ". // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.";
-    output << "\nsizeof(int) = " << sizeof(int) << ". // The sizeof() operation returns the number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).";
-    output << "\nsizeof(POINT) = " << sizeof(POINT) << ". // The sizeof() operation returns the number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).";
-    output << "\nsizeof(TRIANGLE) = " << sizeof(TRIANGLE) << ". // The sizeof() operation returns the number of bytes of memory which a TRIANGLE type object occupies. (Each memory cell has a data capacity of 1 byte).";
-    output << "\nA = POINT(" << A.get_X() << "," << A.get_Y() << "). // A represents a point (which is neither B nor C) plotted on a two-dimensional Cartesian grid (such that the X value represents a whole number position along the horizontal axis of the Cartesian grid while Y represents a whole number position along the vertical axis of the same Cartesian grid).";
-    output << "\nB = POINT(" << B.get_X() << "," << B.get_Y() << "). // B represents a point (which is neither A nor C) plotted on a two-dimensional Cartesian grid (such that the X value represents a whole number position along the horizontal axis of the Cartesian grid while Y represents a whole number position along the vertical axis of the same Cartesian grid).";
-    output << "\nC = POINT(" << C.get_X() << "," << C.get_Y() << "). // C represents a point (which is neither A nor B) plotted on a two-dimensional Cartesian grid (such that the X value represents a whole number position along the horizontal axis of the Cartesian grid while Y represents a whole number position along the vertical axis of the same Cartesian grid).";
+    output << "\nsizeof(int) = " << sizeof(int) << ". // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).";
+    output << "\nsizeof(POINT) = " << sizeof(POINT) << ". // The sizeof() operation returns the nonnegative integer number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).";
+    output << "\nsizeof(TRIANGLE) = " << sizeof(TRIANGLE) << ". // The sizeof() operation returns the nonnegative integer number of bytes of memory which a TRIANGLE type object occupies. (Each memory cell has a data capacity of 1 byte).";
+    output << "\nA = POINT(" << A.get_X() << "," << A.get_Y() << "). // A represents a point (which is neither B nor C) plotted on a two-dimensional Cartesian grid (such that the X value represents a real whole number position along the horizontal axis of the Cartesian grid while Y represents a real whole number position along the vertical axis of the same Cartesian grid).";
+    output << "\nB = POINT(" << B.get_X() << "," << B.get_Y() << "). // B represents a point (which is neither A nor C) plotted on a two-dimensional Cartesian grid (such that the X value represents a real whole number position along the horizontal axis of the Cartesian grid while Y represents a real whole number position along the vertical axis of the same Cartesian grid).";
+    output << "\nC = POINT(" << C.get_X() << "," << C.get_Y() << "). // C represents a point (which is neither A nor B) plotted on a two-dimensional Cartesian grid (such that the X value represents a real whole number position along the horizontal axis of the Cartesian grid while Y represents a real whole number position along the vertical axis of the same Cartesian grid).";
+    output << "\na = get_side_length_BC() = " << get_side_length_BC() << ". // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.";
+    output << "\nc = get_side_length_AB() = " << get_side_length_AB() << ". // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.";
+    output << "\nb = get_side_length_CA() = " << get_side_length_CA() << ". // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and A.";
+    output << "\nget_interior_angle_CAB() =  " << get_interior_angle_CAB() << ". // The method returns the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are C and A with the line segment whose endpoints are A and B such that those two line segments intersect at A (and the angle measurement is in degrees and not in radians).";
+    output << "\nget_interior_angle_ABC() =  " << get_interior_angle_ABC() << ". // The method returns the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are A and B with the line segment whose endpoints are B and C such that those two line segments intersect at B (and the angle measurement is in degrees and not in radians).";
+    output << "\nget_interior_angle_BCA() =  " << get_interior_angle_BCA() << ". // The method returns the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are B and C with the line segment whose endpoints are C and A such that those two line segments intersect at C (and the angle measurement is in degrees and not in radians).";
+    output << "\nget_interior_angle_CAB() + get_interior_angle_ABC() + get_interior_angle_BCA() = " << get_interior_angle_CAB() + get_interior_angle_ABC() + get_interior_angle_BCA() << ". // sum of all three approximate angle measurements of the triangle represented by the caller TRIANGLE object (in degrees and not in radians)";
+    output << "\nget_perimeter() = a + b + c = " << get_perimeter() << ". // The method returns the sum of the three approximated side lengths of the triangle which the caller TRIANGLE object represents.";
+    output << "\nget_area() = " << get_area() << ". // The method returns the approximate nonnegative real number of Cartesian grid unit squares which are enclosed inside of the two-dimensional region formed by the three line segments which connect points A, B, and C.";
     output << "\n--------------------------------------------------------------------------------------------------";
 }
 
