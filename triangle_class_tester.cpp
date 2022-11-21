@@ -102,11 +102,11 @@ void unit_test_3(std::ostream & output)
     triangle_1.print(output);
 }
 
-// Unit Test # 4: Demonstrate how the setter methods of the POINT class cannot be called by a TRIANGLE object due to the fact that the methods of the POINT class each have uniquely corresponding function prototypes which are prefaced with the private access specifier in the POINT class header file (i.e. POINT.h).
+// Unit Test # 4: Demonstrate how the methods of the POINT class cannot be called by a TRIANGLE object due to the fact that the methods of the POINT class each have uniquely corresponding function prototypes which are prefaced with the private access specifier in the POINT class header file (i.e. POINT.h).
 void unit_test_4(std::ostream & output) 
 {
     output << "\n\n--------------------------------------------------------------------------------------------------";
-    output << "\n// Unit Test # 4: Demonstrate how the setter methods of the POINT class cannot be called by a TRIANGLE object due to the fact that the methods of the POINT class each have uniquely corresponding function prototypes which are prefaced with the private access specifier in the POINT class header file (i.e. POINT.h).";
+    output << "\n// Unit Test # 4: Demonstrate how the methods of the POINT class cannot be called by a TRIANGLE object due to the fact that the methods of the POINT class each have uniquely corresponding function prototypes which are prefaced with the private access specifier in the POINT class header file (i.e. POINT.h).";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nTRIANGLE triangle;";
     output << "\ntriangle.print(output);";
