@@ -51,7 +51,7 @@ public:
     double get_interior_angle_BCA(); // getter method
     double get_interior_angle_CAB(); // getter method
     double get_perimeter(); // getter method
-    double get_area(); //
+    double get_area(); // getter method
     void print(std::ostream & output = std::cout); // descriptor method
     friend std::ostream & operator << (std::ostream & output, TRIANGLE & triangle); // descriptor method
     ~TRIANGLE(); // destructor
