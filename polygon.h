@@ -14,13 +14,12 @@
 #include "point.h" 
 
 /**
- * POLYGON is an abstract class whose members are the essential components of polygons 
- * such as TRILATERAL, RIGHT_TRILATERAL, QUADRILATERAL, TRAPEZOID, RECTANGLE, and SQUARE.
+ * POLYGON is an abstract class whose members are the essential components of objects 
+ * whose classes are TRILATERAL, RIGHT_TRILATERAL, QUADRILATERAL, TRAPEZOID, RECTANGLE, and SQUARE.
  * 
- * An abstract class has at least one virtual function.
+ * (An abstract class has at least one virtual function).
  * 
- * The POLYGON class includes the POINT class via composition and
- * not via inheritance.
+ * The POLYGON class includes the POINT class via composition and not via inheritance.
  * 
  * Class members which are set to the protected access specifier
  * are accessible to the base class and to derived classes.
@@ -38,12 +37,12 @@ protected:
     
     /**
      * category is a description of the POLYGON instance.
-     * category is set to a const (i.e. const (i.e. immutable)) value.
+     * category is set to a constant (i.e. immutable) string type value.
      */
     const std::string category = "POLYGON";
     
     /**
-     * color is an arbitrary value.
+     * color is an arbitrary string type value.
      * color is used to demonstrate how abstract constructors work.
      */
     std::string color;
@@ -51,11 +50,17 @@ protected:
 public:
     
     /**
-     * The default POLYGON constructor sets the color value to some arbitrary value.
+     * The default POLYGON constructor sets the color value to "orange".
      * 
-     * Note that the POLYGON cannot be instantiated as an object which takes
-     * up some allotment of physical memory because the POLYGON class is
-     * abstract. 
+     * Note that POLYGON type objects cannot be instantiated (i.e. occupy space in memory)
+     * because the POLYGON class is abstract. 
+     * 
+     * (pointer-to-POLYGON type variables can be instantiated, however, and used to store the memory addresses
+     * of objects whose classes are derived from the POLYGON).
+     * 
+     * POLYGON * pointer_to_polygon; // The pointer_to_polygon variable can point to instances of non-abstract derived classes of POLYGON such as QUADRILATERAL.
+     * pointer_to_polygon = new QUADRILATERAL; // Assign memory to a dynamic QUADRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of during program compile time).
+     * pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method and not the QUADRILATERAL print method.
      * 
      * The POLYGON constructor is implemented only by classes which are
      * descendents of the POLYGON class.
@@ -63,15 +68,17 @@ public:
     POLYGON();
     
     /**
-     * The virtual methods get_area() and get_perimeter() must be defined by 
-     * classes which are derived from POLYGON.
+     * The virtual methods get_area() and get_perimeter() 
+     * must be defined by classes which are derived from POLYGON.
      */
     virtual double get_area() = 0;
     virtual double get_perimeter() = 0;
 
     /**
-     * The descriptor method prints a description of the POLYGON to the output stream.
-     * If no parameter is supplied, output is set to the command line.
+     * The descriptor method prints a description of the caller POLYGON instance 
+     * (or pointer-to-POLYGON type variable)
+     * to the output stream.
+     * If no parameter is supplied, output is set to the command line terminal.
      */
     void print(std::ostream & output = std::cout);
 
@@ -80,8 +87,8 @@ public:
      * The friend function overloads the ostream operator (i.e. <<).
      * 
      * The friend function is not a member of the POLYGON class,
-     * but it does have access to the members of POLYGON as though
-     * it were a member of that class.
+     * but that friend function does have access to the private and protected members of POLYGON 
+     * as though that friend function was a member of the POLYGON class.
      */
     friend std::ostream & operator << (std::ostream & output, POLYGON & polygon);
 };
