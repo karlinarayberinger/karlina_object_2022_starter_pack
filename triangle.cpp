@@ -371,7 +371,7 @@ void TRIANGLE::print(std::ostream & output)
  */
 std::ostream & operator << (std::ostream & output, TRIANGLE & triangle)
 {
-    point.print(output);
+    triangle.print(output);
     return output;
 }
 
