@@ -20,7 +20,7 @@ void unit_test_0(std::ostream & output)
     output << "\nTRIANGLE point;";
     output << "\ntriangle.print(output);";
     TRIANGLE triangle;
-    TRIANGLE.print(output);
+    triangle.print(output);
 }
 
 /* program entry point */
