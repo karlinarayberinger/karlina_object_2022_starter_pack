@@ -42,11 +42,17 @@ void unit_test_1(std::ostream & output)
     output << triangle;
     output << "\n\ncopy_of_point_A.print(output);";
     copy_of_point_A.print(output);
+    output << "\n\noutput << copy_of_point_A;";
+    output << copy_of_point_A;
     output << "\n\ncopy_of_point_B.print(output);";
     copy_of_point_B.print(output);
+    output << "\n\noutput << copy_of_point_B;";
+    output << copy_of_point_B;
     output << "\n\ncopy_of_point_C.print(output);";
     copy_of_point_C.print(output);
-    output << "\ntriangle.get_side_length_AB() = " << triangle.get_side_length_AB() << ".";
+    output << "\n\noutput << copy_of_point_C;";
+    output << copy_of_point_C;
+    output << "\n\ntriangle.get_side_length_AB() = " << triangle.get_side_length_AB() << ".";
     output << "\ntriangle.get_side_length_BC() = " << triangle.get_side_length_BC() << ".";
     output << "\ntriangle.get_side_length_CA() = " << triangle.get_side_length_CA() << ".";
     output << "\ntriangle.get_interior_angle_ABC() = " << triangle.get_interior_angle_ABC() << ".";
