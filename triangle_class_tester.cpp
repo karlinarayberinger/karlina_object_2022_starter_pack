@@ -129,7 +129,7 @@ void unit_test_4(std::ostream & output)
     output << "\n// COMMENTED OUT: triangle.A.get_X(); // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.";
     output << "\n// COMMENTED OUT: triangle.A.get_Y(); // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.";
     output << "\n// COMMENTED OUT: triangle.A.set_X(25); // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.";
-    output << "\ntriangle.A.get_Y(666); // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.";
+    output << "\n// COMMENTED OUT: triangle.A.get_Y(666); // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.";
 }
 
 /* program entry point */

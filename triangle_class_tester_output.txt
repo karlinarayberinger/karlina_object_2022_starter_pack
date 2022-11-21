@@ -9,10 +9,10 @@ TRIANGLE point;
 triangle.print(output);
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff6d20aff0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&A = 0x7fff6d20aff0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7fff6d20aff8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7fff6d20b000. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+this = 0x7ffcad6ef5b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&A = 0x7ffcad6ef5b0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffcad6ef5b8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffcad6ef5c0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(POINT) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(TRIANGLE) = 24. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a TRIANGLE type object occupies. (Each memory cell has a data capacity of 1 byte).
@@ -40,10 +40,10 @@ POINT copy_of_point_C = triangle.get_C();
 output << triangle;
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff6d20aff0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&A = 0x7fff6d20aff0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7fff6d20aff8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7fff6d20b000. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+this = 0x7ffcad6ef5b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&A = 0x7ffcad6ef5b0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffcad6ef5b8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffcad6ef5c0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(POINT) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(TRIANGLE) = 24. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a TRIANGLE type object occupies. (Each memory cell has a data capacity of 1 byte).
@@ -64,9 +64,9 @@ get_area() = 0.4999999999999997779553950749686919152736663818359375. // The meth
 copy_of_point_A.print(output);
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff6d20afd8. // The keyword named this is a pointer which stores the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the caller POINT object.
-&X = 0x7fff6d20afd8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named X.
-&Y = 0x7fff6d20afdc. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named Y.
+this = 0x7ffcad6ef598. // The keyword named this is a pointer which stores the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the caller POINT object.
+&X = 0x7ffcad6ef598. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named X.
+&Y = 0x7ffcad6ef59c. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named Y.
 sizeof(int) = 4. // The sizeof() operation returns the number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(POINT) = 8. // The sizeof() operation returns the number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
 X = 0. // X stores one int type value at a time which represents the horizontal position of a two-dimensional point plotted on a Cartesian grid.
@@ -76,9 +76,9 @@ Y = 0. // Y stores one int type value at a time which represents the vertical po
 output << copy_of_point_A;
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff6d20afd8. // The keyword named this is a pointer which stores the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the caller POINT object.
-&X = 0x7fff6d20afd8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named X.
-&Y = 0x7fff6d20afdc. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named Y.
+this = 0x7ffcad6ef598. // The keyword named this is a pointer which stores the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the caller POINT object.
+&X = 0x7ffcad6ef598. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named X.
+&Y = 0x7ffcad6ef59c. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named Y.
 sizeof(int) = 4. // The sizeof() operation returns the number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(POINT) = 8. // The sizeof() operation returns the number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
 X = 0. // X stores one int type value at a time which represents the horizontal position of a two-dimensional point plotted on a Cartesian grid.
@@ -88,9 +88,9 @@ Y = 0. // Y stores one int type value at a time which represents the vertical po
 copy_of_point_B.print(output);
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff6d20afe0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the caller POINT object.
-&X = 0x7fff6d20afe0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named X.
-&Y = 0x7fff6d20afe4. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named Y.
+this = 0x7ffcad6ef5a0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the caller POINT object.
+&X = 0x7ffcad6ef5a0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named X.
+&Y = 0x7ffcad6ef5a4. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named Y.
 sizeof(int) = 4. // The sizeof() operation returns the number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(POINT) = 8. // The sizeof() operation returns the number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
 X = 0. // X stores one int type value at a time which represents the horizontal position of a two-dimensional point plotted on a Cartesian grid.
@@ -100,9 +100,9 @@ Y = 1. // Y stores one int type value at a time which represents the vertical po
 output << copy_of_point_B;
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff6d20afe0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the caller POINT object.
-&X = 0x7fff6d20afe0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named X.
-&Y = 0x7fff6d20afe4. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named Y.
+this = 0x7ffcad6ef5a0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the caller POINT object.
+&X = 0x7ffcad6ef5a0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named X.
+&Y = 0x7ffcad6ef5a4. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named Y.
 sizeof(int) = 4. // The sizeof() operation returns the number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(POINT) = 8. // The sizeof() operation returns the number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
 X = 0. // X stores one int type value at a time which represents the horizontal position of a two-dimensional point plotted on a Cartesian grid.
@@ -112,9 +112,9 @@ Y = 1. // Y stores one int type value at a time which represents the vertical po
 copy_of_point_C.print(output);
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff6d20afe8. // The keyword named this is a pointer which stores the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the caller POINT object.
-&X = 0x7fff6d20afe8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named X.
-&Y = 0x7fff6d20afec. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named Y.
+this = 0x7ffcad6ef5a8. // The keyword named this is a pointer which stores the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the caller POINT object.
+&X = 0x7ffcad6ef5a8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named X.
+&Y = 0x7ffcad6ef5ac. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named Y.
 sizeof(int) = 4. // The sizeof() operation returns the number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(POINT) = 8. // The sizeof() operation returns the number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
 X = 1. // X stores one int type value at a time which represents the horizontal position of a two-dimensional point plotted on a Cartesian grid.
@@ -124,9 +124,9 @@ Y = 0. // Y stores one int type value at a time which represents the vertical po
 output << copy_of_point_C;
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff6d20afe8. // The keyword named this is a pointer which stores the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the caller POINT object.
-&X = 0x7fff6d20afe8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named X.
-&Y = 0x7fff6d20afec. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named Y.
+this = 0x7ffcad6ef5a8. // The keyword named this is a pointer which stores the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the caller POINT object.
+&X = 0x7ffcad6ef5a8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named X.
+&Y = 0x7ffcad6ef5ac. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named Y.
 sizeof(int) = 4. // The sizeof() operation returns the number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(POINT) = 8. // The sizeof() operation returns the number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
 X = 1. // X stores one int type value at a time which represents the horizontal position of a two-dimensional point plotted on a Cartesian grid.
@@ -153,10 +153,10 @@ triangle_1.print(output);
 triangle_2.print(output);
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff6d20afb0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&A = 0x7fff6d20afb0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7fff6d20afb8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7fff6d20afc0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+this = 0x7ffcad6ef570. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&A = 0x7ffcad6ef570. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffcad6ef578. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffcad6ef580. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(POINT) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(TRIANGLE) = 24. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a TRIANGLE type object occupies. (Each memory cell has a data capacity of 1 byte).
@@ -175,10 +175,10 @@ get_area() = 10.9999999999999946709294817992486059665679931640625. // The method
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff6d20afd0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&A = 0x7fff6d20afd0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7fff6d20afd8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7fff6d20afe0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+this = 0x7ffcad6ef590. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&A = 0x7ffcad6ef590. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffcad6ef598. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffcad6ef5a0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(POINT) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(TRIANGLE) = 24. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a TRIANGLE type object occupies. (Each memory cell has a data capacity of 1 byte).
@@ -197,10 +197,10 @@ get_area() = 5.49999999999998312461002569762058556079864501953125. // The method
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff6d20aff0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&A = 0x7fff6d20aff0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7fff6d20aff8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7fff6d20b000. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+this = 0x7ffcad6ef5b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&A = 0x7ffcad6ef5b0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffcad6ef5b8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffcad6ef5c0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(POINT) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(TRIANGLE) = 24. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a TRIANGLE type object occupies. (Each memory cell has a data capacity of 1 byte).
@@ -227,10 +227,10 @@ triangle_0.print(output);
 triangle_1.print(output);
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff6d20afd0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&A = 0x7fff6d20afd0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7fff6d20afd8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7fff6d20afe0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+this = 0x7ffcad6ef590. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&A = 0x7ffcad6ef590. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffcad6ef598. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffcad6ef5a0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(POINT) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(TRIANGLE) = 24. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a TRIANGLE type object occupies. (Each memory cell has a data capacity of 1 byte).
@@ -249,10 +249,10 @@ get_area() = 0.4999999999999997779553950749686919152736663818359375. // The meth
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff6d20aff0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&A = 0x7fff6d20aff0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7fff6d20aff8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7fff6d20b000. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+this = 0x7ffcad6ef5b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&A = 0x7ffcad6ef5b0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffcad6ef5b8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffcad6ef5c0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(POINT) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(TRIANGLE) = 24. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a TRIANGLE type object occupies. (Each memory cell has a data capacity of 1 byte).
@@ -277,10 +277,10 @@ TRIANGLE triangle;
 triangle.print(output);
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff6d20aff0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&A = 0x7fff6d20aff0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7fff6d20aff8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7fff6d20b000. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+this = 0x7ffcad6ef5b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&A = 0x7ffcad6ef5b0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffcad6ef5b8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffcad6ef5c0. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(POINT) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(TRIANGLE) = 24. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a TRIANGLE type object occupies. (Each memory cell has a data capacity of 1 byte).
@@ -301,9 +301,9 @@ POINT copy_A = triangle.get_A();
 copy_A.print(output);
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff6d20afe8. // The keyword named this is a pointer which stores the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the caller POINT object.
-&X = 0x7fff6d20afe8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named X.
-&Y = 0x7fff6d20afec. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named Y.
+this = 0x7ffcad6ef5a8. // The keyword named this is a pointer which stores the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the caller POINT object.
+&X = 0x7ffcad6ef5a8. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named X.
+&Y = 0x7ffcad6ef5ac. // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the caller POINT data attribute named Y.
 sizeof(int) = 4. // The sizeof() operation returns the number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(POINT) = 8. // The sizeof() operation returns the number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
 X = 0. // X stores one int type value at a time which represents the horizontal position of a two-dimensional point plotted on a Cartesian grid.
@@ -314,7 +314,7 @@ copy_A.print(output); // The print method of the POINT class is public. Therefor
 // COMMENTED OUT: triangle.A.get_X(); // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.
 // COMMENTED OUT: triangle.A.get_Y(); // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.
 // COMMENTED OUT: triangle.A.set_X(25); // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.
-triangle.A.get_Y(666); // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.
+// COMMENTED OUT: triangle.A.get_Y(666); // Note that this command can only be executed if the POINT type data member named A of a TRIANGLE instance is public.
 
 --------------------------------
 End Of Program
