@@ -10,6 +10,7 @@
 
 /* function prototypes */
 void unit_test_0(std::ostream & output);
+void unit_test_1(std::ostream & output);
 
 // Unit Test # 0: TRIANGLE class default constructor, TRIANGLE class print method, and TRIANGLE class destructor.
 void unit_test_0(std::ostream & output) 
@@ -21,6 +22,38 @@ void unit_test_0(std::ostream & output)
     output << "\ntriangle.print(output);";
     TRIANGLE triangle;
     triangle.print(output);
+}
+
+// Unit Test # 1: TRIANGLE class default constructor, TRIANGLE class overloaded ostream operator method, TRIANGLE getter methods, and TRIANGLE class destructor.
+void unit_test_1(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 1: TRIANGLE class default constructor, TRIANGLE class overloaded ostream operator method, TRIANGLE getter methods, and TRIANGLE class destructor.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nTRIANGLE triangle;";
+    output << "\nPOINT copy_of_point_A = triangle.get_A();";
+    output << "\nPOINT copy_of_point_B = triangle.get_B();";
+    output << "\nPOINT copy_of_point_C = triangle.get_C();";
+    output << "\noutput << triangle;";
+    TRIANGLE triangle;
+    POINT copy_of_point_A = triangle.get_A();
+    POINT copy_of_point_B = triangle.get_B();
+    POINT copy_of_point_C = triangle.get_C();
+    output << triangle;
+    output << "\n\ncopy_of_point_A.print(output);";
+    copy_of_point_A.print(output);
+    output << "\n\ncopy_of_point_B.print(output);";
+    copy_of_point_B.print(output);
+    output << "\n\ncopy_of_point_C.print(output);";
+    copy_of_point_C.print(output);
+    output << "\ntriangle.get_side_length_AB() = " << triangle.get_side_length_AB() << ".";
+    output << "\ntriangle.get_side_length_BC() = " << triangle.get_side_length_BC() << ".";
+    output << "\ntriangle.get_side_length_CA() = " << triangle.get_side_length_CA() << ".";
+    output << "\ntriangle.get_interior_angle_ABC() = " << triangle.get_interior_angle_ABC() << ".";
+    output << "\ntriangle.get_interior_angle_BCA() := " << triangle.get_interior_angle_BCA() << ".";
+    output << "\ntriangle.get_interior_angle_CAB() = " << triangle.get_interior_angle_CAB() << ".";
+    output << "\ntriangle.get_perimeter() = " << triangle.get_perimeter() << ".";
+    output << "\ntriangle.get_area() = " << triangle.get_area() << ".";
 }
 
 /* program entry point */
@@ -57,6 +90,8 @@ int main()
     // Implement a series of unit tests which demonstrate the functionality of TRIANGLE class variables.
     unit_test_0(std::cout);
     unit_test_0(file);
+    unit_test_1(std::cout);
+    unit_test_1(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
