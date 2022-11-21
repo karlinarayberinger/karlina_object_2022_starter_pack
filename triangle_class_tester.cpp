@@ -12,6 +12,7 @@
 void unit_test_0(std::ostream & output);
 void unit_test_1(std::ostream & output);
 void unit_test_2(std::ostream & output);
+void unit_test_3(std::ostream & output);
 
 // Unit Test # 0: TRIANGLE class default constructor, TRIANGLE class print method, and TRIANGLE class destructor.
 void unit_test_0(std::ostream & output) 
@@ -84,6 +85,22 @@ void unit_test_2(std::ostream & output)
     triangle_2.print(output);
 }
 
+// Unit Test # 3: degenerate triangle examples.
+void unit_test_3(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 3: degenerate triangle examples.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nTRIANGLE triangle_0 = TRIANGLE( POINT(-1,-1), POINT(0,0), POINT(1,1) ); // Because these inputs would generate a degenerate triangle, default coordinate values are used for A, B, and C instead of the input values.";
+    output << "\nTRIANGLE triangle_1 = TRIANGLE( POINT(-1,-1), POINT(0,0), POINT(-1,-1) ); // Because these inputs represent only 2 unique points instead of 3 unique points, default coordinate values are used for A, B, and C instead of the input values.";
+    output << "\ntriangle_0.print(output);";
+    output << "\ntriangle_1.print(output);";
+    TRIANGLE triangle_0 = TRIANGLE( POINT(-1,-1), POINT(0,0), POINT(1,1) ); // Because these inputs would generate a degenerate triangle, default coordinate values are used for A, B, and C instead of the input values.
+    TRIANGLE triangle_1 = TRIANGLE(-1, -1, 0, 0, -1, -1); // Because these inputs represent only 2 unique points instead of 3 unique points, default coordinate values are used for A, B, and C instead of the input values.
+    triangle_0.print(output);
+    triangle_1.print(output);
+}
+
 /* program entry point */
 int main()
 {
@@ -122,6 +139,8 @@ int main()
     unit_test_1(file);
     unit_test_2(std::cout);
     unit_test_2(file);
+    unit_test_3(std::cout);
+    unit_test_3(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
