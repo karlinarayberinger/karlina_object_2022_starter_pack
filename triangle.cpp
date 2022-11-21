@@ -9,7 +9,6 @@
 // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the TRIANGLE class.
 #include "triangle.h" 
 
-
 /**
  * Determine whether or not point_0, point_1, and point_2 each represent unique coordinate pairs.
  * 
@@ -270,17 +269,42 @@ double TRIANGLE::get_interior_angle_BCA()
  * The getter method of the TRIANGLE class named get_interior_angle_CAB() returns the angle measurement in degrees of the angle
  * formed by connecting points C, A, and B in the order specified by this sentence.
  * 
- * The function below uses the Law of Cosines to compute the measurement of an interior angle of a triangle 
+ * The function below uses Law of Cosines to compute the measurement of an interior angle of a triangle 
  * using that triangle's three side lengths as function inputs to output some nonnegative real number of degrees.
  */   
 double TRIANGLE::get_interior_angle_CAB()
 {
     double a = 0.0, b = 0.0, c = 0.0, angle_opposite_of_a = 0.0, angle_opposite_of_b = 0.0, angle_opposite_of_c = 0.0;
-    a = get_side_length_BC(); // a represents the length of the line segment whose endpoints are B and C.
-    b = get_side_length_CA(); // b represents the length of the line segment whose endpoints are C and A.
-    c = get_side_length_AB(); // c represents the length of the line segment whose endpoints are A and B.
+    a = get_side_length_BC(); // a represents the length of the line segment whose endpoints are B and C (and which are points of the caller TRIANGLE object of this function represents).
+    b = get_side_length_CA(); // b represents the length of the line segment whose endpoints are C and A (and which are points of the caller TRIANGLE object of this function represents).
+    c = get_side_length_AB(); // c represents the length of the line segment whose endpoints are A and B (and which are points of the caller TRIANGLE object of this function represents).
     angle_opposite_of_a = acos(((b * b) + (c * c) - (a * a)) / (2 * b * c)) * (180 / PI);
     angle_opposite_of_b = acos(((a * a) + (c * c) - (b * b)) / (2 * a * c)) * (180 / PI);
     angle_opposite_of_c = acos(((a * a) + (b * b) - (c * c)) / (2 * a * b)) * (180 / PI);
     return angle_opposite_of_a;
+}
+
+/** 
+ * The getter method of the TRIANGLE class named get_perimeter() returns the sum of the three side lengths 
+ * of the triangle which the caller TRIANGLE object represents.
+ */
+double TRIANGLE::get_perimeter()
+{
+    return get_side_length_AB() + get_side_length_BC() + get_side_length_CA();
+}
+
+/** 
+ * The getter method of the TRIANGLE class named get_area() returns the area of the two-dimensional space whose bounds are 
+ * the shortest paths between points A, B, and C of the triangle which the caller TRIANGLE object represents.
+ * 
+ * This function uses Heron's Formula to compute the area of a triangle using that triangle's side lengths as function inputs.
+ */
+double TRIANGLE::get_area()
+{
+    double s = 0.0, a = 0.0, b = 0.0, c = 0.0;
+    s = get_perimeter() / 2; // s is technically referred to as the semiperimter of the triangle which the caller TRIANGLE object of this function represents.
+    a = get_side_length_BC(); // a represents the length of the line segment whose endpoints are B and C (and which are points of the caller TRIANGLE object of this function represents).
+    b = get_side_length_CA(); // b represents the length of the line segment whose endpoints are C and A (and which are points of the caller TRIANGLE object of this function represents).
+    c = get_side_length_AB(); // c represents the length of the line segment whose endpoints are A and B (and which are points of the caller TRIANGLE object of this function represents).
+    return sqrt(s * (s - a) * (s - b) * (s - c)); // Use Heron's Formula to compute the area of the triangle whose points are A, B, and C (and which are points of the caller TRIANGLE object of this function represents).
 }
