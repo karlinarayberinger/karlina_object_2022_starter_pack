@@ -310,6 +310,29 @@ double TRIANGLE::get_area()
 }
 
 /**
+ * The print method of the TRIANGLE class prints a description of the caller TRIANGLE object to the output stream.
+ * 
+ * Note that the default value of the function input parameter is the standard command line output stream (std::cout).
+ * 
+ * The default parameter is defined in the TRIANGLE class header file (i.e. triangle.h) and not in the TRIANGLE class source file (i.e. triangle.cpp).
+ */
+void TRIANGLE::print(std::ostream & output)
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nthis = " << this << ". // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.";
+    output << "\n&A = " << &A << ". // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.";
+    output << "\n&B = " << &B << ". // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.";
+    output << "\n&C = " << &C << ". // The reference operation returns the memory address of the first memory cell of an int sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.";
+    output << "\nsizeof(int) = " << sizeof(int) << ". // The sizeof() operation returns the number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).";
+    output << "\nsizeof(POINT) = " << sizeof(POINT) << ". // The sizeof() operation returns the number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).";
+    output << "\nsizeof(TRIANGLE) = " << sizeof(TRIANGLE) << ". // The sizeof() operation returns the number of bytes of memory which a TRIANGLE type object occupies. (Each memory cell has a data capacity of 1 byte).";
+    output << "\nA = POINT(" << A.get_X() << "," << A.get_Y() << "). // A represents a point (which is neither B nor C) plotted on a two-dimensional Cartesian grid (such that the X value represents a whole number position along the horizontal axis of the Cartesian grid while Y represents a whole number position along the vertical axis of the same Cartesian grid).";
+    output << "\nB = POINT(" << B.get_X() << "," << B.get_Y() << "). // B represents a point (which is neither A nor C) plotted on a two-dimensional Cartesian grid (such that the X value represents a whole number position along the horizontal axis of the Cartesian grid while Y represents a whole number position along the vertical axis of the same Cartesian grid).";
+    output << "\nC = POINT(" << C.get_X() << "," << C.get_Y() << "). // C represents a point (which is neither A nor B) plotted on a two-dimensional Cartesian grid (such that the X value represents a whole number position along the horizontal axis of the Cartesian grid while Y represents a whole number position along the vertical axis of the same Cartesian grid).";
+    output << "\n--------------------------------------------------------------------------------------------------";
+}
+
+/**
  * The friend function is an alternative to the print method.
  * The friend function overloads the ostream operator (<<).
  * 
@@ -337,7 +360,7 @@ double TRIANGLE::get_area()
  * TRIANGLE triangle_1;
  * file << triangle_1; // identical to triangle_1(file);
  */
-std::ostream & operator << (std::ostream & output, POINT & point)
+std::ostream & operator << (std::ostream & output, TRIANGLE & triangle)
 {
     point.print(output);
     return output;
