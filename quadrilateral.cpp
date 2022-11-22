@@ -76,6 +76,7 @@ bool QUADRILATERAL::interior_angles_add_up_to_360_degrees()
  */
 QUADRILATERAL::QUADRILATERAL()
 {
+    std::cout << "\n\nCreating the QUADRILATERAL type object whose memory address is " << this << "...";
     A = POINT(0,0);
     B = POINT(0,5);
     C = POINT(4,5);
@@ -99,6 +100,7 @@ QUADRILATERAL::QUADRILATERAL()
  */
 QUADRILATERAL::QUADRILATERAL(std::string color, POINT A, POINT B, POINT C, POINT D)
 {
+    std::cout << "\n\nCreating the QUADRILATERAL type object whose memory address is " << this << "...";
     QUADRILATERAL test_quadrilateral;
     test_quadrilateral.A.set_X(A.get_X());
     test_quadrilateral.A.set_Y(A.get_Y());
@@ -133,6 +135,7 @@ QUADRILATERAL::QUADRILATERAL(std::string color, POINT A, POINT B, POINT C, POINT
  */
 QUADRILATERAL::QUADRILATERAL(QUADRILATERAL & quadrilateral)
 {
+    std::cout << "\n\nCreating the QUADRILATERAL type object whose memory address is " << this << "...";
     A = quadrilateral.A;
     B = quadrilateral.B;
     C = quadrilateral.C;
@@ -308,4 +311,16 @@ std::ostream & operator << (std::ostream & output, QUADRILATERAL & quadrilateral
 {
     quadrilateral.print(output);
     return output;
+}
+
+/**
+ * The destructor method of the QUADRILATERAL class de-allocates memory which was used to 
+ * instantiate the QUADRILATERAL object which is calling this function.
+ * 
+ * The destructor method of the QUADRILATERAL class is automatically called when 
+ * the program scope in which the caller QUADRILATERAL object was instantiated terminates.
+ */
+QUADRILATERAL::~QUADRILATERAL()
+{
+    std::cout << "\n\nDeleting the QUADRILATERAL type object whose memory address is " << this << "...";
 }
