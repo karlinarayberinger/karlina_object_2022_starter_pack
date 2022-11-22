@@ -389,6 +389,8 @@ void QUADRILATERAL::print(std::ostream & output)
 
     output << "\n\n--------------------------------------------------------------------------------------------------";
     output << "\nthis = " << this << ". // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.";
+    output << "\ncategory = " << category << ". // This is an immutable string type value which is a data member of the caller QUADRILATERAL object.";
+    output << "\ncolor = " << color << ". // This is a string type value which is a data member of the caller QUADRILATERAL object.";
     output << "\n&A = " << &A << ". // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.";
     output << "\n&B = " << &B << ". // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.";
     output << "\n&C = " << &C << ". // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.";
