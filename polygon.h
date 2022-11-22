@@ -1,7 +1,7 @@
 /**
  * file: polygon.h
  * type: C++ (header file)
- * date: 21_NOVEMBER_2022
+ * date: 22_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN
  */
@@ -90,6 +90,15 @@ public:
      * as though that friend function was a member of the POLYGON class.
      */
     friend std::ostream & operator << (std::ostream & output, POLYGON & polygon);
+
+    /**
+     * The destructor method of the POLYGON class de-allocates memory which was used to 
+     * instantiate the POLYGON object which is calling this function.
+     * 
+     * The destructor method of the POLYGON class is automatically called when 
+     * the program scope in which the caller POLYGON object was instantiated terminates.
+     */
+    ~POLYGON();
 };
 
 /* preprocessing directives */
