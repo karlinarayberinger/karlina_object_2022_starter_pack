@@ -13,12 +13,16 @@
 /* function prototypes */
 void unit_test_0(std::ostream & output);
 void unit_test_1(std::ostream & output);
+void unit_test_2(std::ostream & output);
 
-// Unit Test # 0: Implement a POLYGON pointer to store the memory address of a dynamically allocated QUADRILATERAL instance. Use that POLYGON pointer to call the print method of POLYGON (and not of QUADRILATERAL).
+/**
+ * Unit Test # 0: Implement a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
+ * Use that pointer-to-POLYGON type variable to call the print method of the POLYGON class (and not of the QUADRILATERAL class).
+ */
 void unit_test_0(std::ostream & output) 
 {
     output << "\n\n--------------------------------------------------------------------------------------------------";
-    output << "\nUnit Test # 0: Implement a POLYGON pointer to store the memory address of a dynamically allocated QUADRILATERAL instance. Use that POLYGON pointer to call the print method of POLYGON (and not of QUADRILATERAL).";
+    output << "\nUnit Test # 0: Implement a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. Use that pointer-to-POLYGON type variable to call the print method of the POLYGON class (and not of the QUADRILATERAL class).";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\n// COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.";
     output << "\nPOLYGON * pointer_to_polygon; // The pointer-to-polygon type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as QUADRILATERAL.";
@@ -33,11 +37,13 @@ void unit_test_0(std::ostream & output)
     delete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated QUADRILATERAL instance.
 }
 
-// Unit Test # 1: Test the default QUADRILATERAL constructor and QUADRILATERAL print method.
+/**
+ * Unit Test # 1: Test the default QUADRILATERAL constructor and QUADRILATERAL print method.
+ */
 void unit_test_1(std::ostream & output)
 {
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\nUnit Test # 1: Unit Test # 1: Test the default QUADRILATERAL constructor and QUADRILATERAL print method.";
+    output << "\nUnit Test # 1: Test the default QUADRILATERAL constructor and QUADRILATERAL print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nQUADRILATERAL quadrilateral;";
     output << "\nquadrilateral.print(output);";
@@ -50,6 +56,23 @@ void unit_test_1(std::ostream & output)
     quadrilateral.print(); // Test the default argument (which is std::cout).
     quadrilateral.print(output);
     output << quadrilateral; // overloaded ostream operator as defined in quadrilateral.cpp
+}
+
+/** 
+ * Unit Test # 2: Implement a pointer-to-POLYGON type variable to call the overloaded ostream operator method of the POLYGON class.
+ */
+void unit_test_2(std::ostream & output)
+{
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 2: Implement a pointer-to-POLYGON type variable to call the overloaded ostream operator method of the POLYGON class.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\n// COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.";
+    output << "\nPOLYGON * pointer_to_polygon; // The pointer-to-polygon type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as QUADRILATERAL.";
+    output << "\noutput << * pointer_to_polygon; // Use the overloaded ostream operator as defined in polygon.cpp to print the data which is stored at the memory address which pointer_to_polygon stores.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    // COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.";
+    POLYGON * pointer_to_polygon; // The pointer-to-polygon type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as QUADRILATERAL.";
+    output << * pointer_to_polygon; // Use the overloaded ostream operator as defined in polygon.cpp to print the data which is stored at the memory address which pointer_to_polygon stores.";
 }
 
 /* program entry point */
@@ -88,6 +111,8 @@ int main()
     unit_test_0(file);
     unit_test_1(std::cout);
     unit_test_1(file);
+    unit_test_2(std::cout);
+    unit_test_2(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
