@@ -58,6 +58,7 @@ public:
      * (pointer-to-POLYGON type variables can be instantiated, however, and used to store the memory addresses
      * of objects whose classes are derived from the POLYGON).
      * 
+     * POLYGON polygon; // This command does not work because POLYGON is an abstract class.
      * POLYGON * pointer_to_polygon; // The pointer-to-polygon type variable can store the memory address of objects whose data type is a non-abstract derived class of POLYGON such as QUADRILATERAL.
      * pointer_to_polygon = new QUADRILATERAL; // Assign memory to a dynamic QUADRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of during program compile time).
      * pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method and not the QUADRILATERAL print method.
