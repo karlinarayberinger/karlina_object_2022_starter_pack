@@ -107,22 +107,26 @@ void unit_test_3(std::ostream & output)
 }
 
 /**
- * Unit Test # 4: Test the normal QUADRILATERAL constructor using valid function inputs and the QUADRILATERAL print method.
+ * Unit Test # 4: Test the normal QUADRILATERAL constructor and QUADRILATERAL copy constructor using valid function inputs and the QUADRILATERAL print method.
  */
 void unit_test_4(std::ostream & output)
 {
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\nUnit Test # 4: Test the normal QUADRILATERAL constructor using valid function inputs and the QUADRILATERAL print method.";
+    output << "\nUnit Test # 4: Test the normal QUADRILATERAL constructor and QUADRILATERAL copy constructor using valid function inputs and the QUADRILATERAL print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nQUADRILATERAL quadrilateral_0 = QUADRILATERAL(\"green\", POINT(-2,-2), POINT(-2,2), POINT(2,2), POINT(2,-2));";
     output << "\nquadrilateral_0.print(output);";
     output << "\nQUADRILATERAL quadrilateral_1 = QUADRILATERAL(\"blue\", POINT(0,0), POINT(3,2), POINT(5,1), POINT(-1,-2));";
     output << "\nquadrilateral_1.print(output);";
+    output << "\nQUADRILATERAL quadrilateral_2 = QUADRILATERAL(quadrilateral_0);";
+    output << "\nquadrilateral_2.print(output);";
     output << "\n--------------------------------------------------------------------------------------------------";
     QUADRILATERAL quadrilateral_0 = QUADRILATERAL("green", POINT(-2,-2), POINT(-2,2), POINT(2,2), POINT(2,-2));
     quadrilateral_0.print(output);
     QUADRILATERAL quadrilateral_1 = QUADRILATERAL("blue", POINT(0,0), POINT(3,2), POINT(5,1), POINT(-1,-2));
     quadrilateral_1.print(output);
+    QUADRILATERAL quadrilateral_2 = QUADRILATERAL(quadrilateral_0);
+    quadrilateral_2.print(output);
 }
 
 /**
