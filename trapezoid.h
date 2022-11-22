@@ -50,12 +50,6 @@ protected:
 public:
     
     /**
-     * The default constructor of TRAPEZOID calls QUADRILATERAL's constructor
-     * and sets color to "orange" and quadrilateral points to
-     * A(0,0), B(1,1), C(2,1), and D(3,0). 
-     */
-
-    /**
      * The default constructor of the TRAPEZOID class calls the constructor of the QUADRILATERAL class and
      * sets the POINT type data member of the TRAPEZOID object returned by this function named A to POINT(0,0), 
      * sets the POINT type data member of the TRAPEZOID object returned by this function named B to POINT(1,1), 
