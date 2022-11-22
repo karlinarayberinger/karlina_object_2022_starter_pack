@@ -320,9 +320,9 @@ void TRIANGLE::print(std::ostream & output)
 {
     output << "\n\n--------------------------------------------------------------------------------------------------";
     output << "\nthis = " << this << ". // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRIANGLE sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.";
-    output << "\n&A = " << &A << ". // The reference operation returns the memory address of the first memory cell of an POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.";
-    output << "\n&B = " << &B << ". // The reference operation returns the memory address of the first memory cell of an POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.";
-    output << "\n&C = " << &C << ". // The reference operation returns the memory address of the first memory cell of an POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.";
+    output << "\n&A = " << &A << ". // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.";
+    output << "\n&B = " << &B << ". // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.";
+    output << "\n&C = " << &C << ". // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.";
     output << "\nsizeof(int) = " << sizeof(int) << ". // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).";
     output << "\nsizeof(POINT) = " << sizeof(POINT) << ". // The sizeof() operation returns the nonnegative integer number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).";
     output << "\nsizeof(TRIANGLE) = " << sizeof(TRIANGLE) << ". // The sizeof() operation returns the nonnegative integer number of bytes of memory which a TRIANGLE type object occupies. (Each memory cell has a data capacity of 1 byte).";
