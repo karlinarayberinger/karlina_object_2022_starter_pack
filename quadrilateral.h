@@ -166,7 +166,7 @@ public:
      * This method overrides the POLYGON class's print method.
      * 
      * The descriptor method prints a description of the caller QUADRILATERAL instance to the output stream.
-
+     * 
      * If no function input is supplied, output is set to the command line terminal.
      */
     void print(std::ostream & output = std::cout);
