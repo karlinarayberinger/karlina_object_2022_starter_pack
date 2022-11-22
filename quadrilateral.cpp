@@ -16,48 +16,12 @@
  */
 bool QUADRILATERAL::points_represent_unique_coordinate_pairs(POINT _A, POINT _B, POINT _C, POINT _D)
 {
-    if ((_A.get_X() == _B.get_X()) && (_A.get_Y() == _B.get_Y())) 
-    {
-        std::cout << "\n\n_A and _B appear to represent the same coordinate pair.";
-        std::cout << "\n_A := POINT(" << _A.get_X() << ", " << _A.get_Y() << ").";
-        std::cout << "\n_B := POINT(" << _B.get_X() << ", " << _B.get_Y() << ").";
-        return false;
-    }
-    if ((_A.get_X() == _C.get_X()) && (_A.get_Y() == _C.get_Y())) 
-    {
-        std::cout << "\n\n_A and _C appear to represent the same coordinate pair.";
-        std::cout << "\n_A := POINT(" << _A.get_X() << ", " << _A.get_Y() << ").";
-        std::cout << "\n_C := POINT(" << _C.get_X() << ", " << _C.get_Y() << ").";
-        return false;
-    }
-    if ((_A.get_X() == _D.get_X()) && (_A.get_Y() == _D.get_Y())) 
-    {
-        std::cout << "\n\n_A and _D appear to represent the same coordinate pair.";
-        std::cout << "\n_A := POINT(" << _A.get_X() << ", " << _A.get_Y() << ").";
-        std::cout << "\n_D := POINT(" << _D.get_X() << ", " << _D.get_Y() << ").";
-        return false;
-    }
-    if ((_B.get_X() == _C.get_X()) && (_B.get_Y() == _C.get_Y())) 
-    {
-        std::cout << "\n\n_B and _C appear to represent the same coordinate pair.";
-        std::cout << "\n_B := POINT(" << _B.get_X() << ", " << _B.get_Y() << ").";
-        std::cout << "\n_C := POINT(" << _C.get_X() << ", " << _C.get_Y() << ").";
-        return false;
-    }
-    if ((_B.get_X() == _D.get_X()) && (_B.get_Y() == _D.get_Y())) 
-    {
-        std::cout << "\n\n_B and _D appear to represent the same coordinate pair.";
-        std::cout << "\n_B := POINT(" << _B.get_X() << ", " << _B.get_Y() << ").";
-        std::cout << "\n_D := POINT(" << _D.get_X() << ", " << _D.get_Y() << ").";
-        return false;
-    }
-    if ((_C.get_X() == _D.get_X()) && (_C.get_Y() == _D.get_Y())) 
-    {
-        std::cout << "\n\n_C and _D appear to represent the same coordinate pair.";
-        std::cout << "\n_C := POINT(" << _C.get_X() << ", " << _C.get_Y() << ").";
-        std::cout << "\n_D := POINT(" << _D.get_X() << ", " << _D.get_Y() << ").";
-        return false;
-    }
+    if ((_A.get_X() == _B.get_X()) && (_A.get_Y() == _B.get_Y())) return false;
+    if ((_A.get_X() == _C.get_X()) && (_A.get_Y() == _C.get_Y())) return false;
+    if ((_A.get_X() == _D.get_X()) && (_A.get_Y() == _D.get_Y())) return false;
+    if ((_B.get_X() == _C.get_X()) && (_B.get_Y() == _C.get_Y())) return false;
+    if ((_B.get_X() == _D.get_X()) && (_B.get_Y() == _D.get_Y())) return false;
+    if ((_C.get_X() == _D.get_X()) && (_C.get_Y() == _D.get_Y())) return false;
     return true;
 }
 
@@ -100,11 +64,6 @@ bool QUADRILATERAL::interior_angles_add_up_to_360_degrees()
 
     // Allow for there to be a +/- 2 margin of error for the value stored in sum_of_interior_angles with the ideal value being 360.
     if ((sum_of_interior_angles >= 358) && (sum_of_interior_angles <= 362)) return true;
-    std::cout << "\nThe interior angles of the quadrilateral must add up to 360 degrees.";
-    std::cout << "\ninterior_angle_of_A = " << interior_angle_of_A << " degrees.";
-    std::cout << "\ninterior_angle_of_B = " << interior_angle_of_B << " degrees.";
-    std::cout << "\ninterior_angle_of_C = " << interior_angle_of_C << " degrees.";
-    std::cout << "\ninterior_angle_of_D = " << interior_angle_of_D << " degrees.";
     return false;
 }
     
