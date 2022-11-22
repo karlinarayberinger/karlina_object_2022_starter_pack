@@ -1,7 +1,7 @@
 /**
  * file: quadrilateral.h
  * type: C++ (header file)
- * date: 21_NOVEMBER_2022
+ * date: 22_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN
  */
@@ -64,30 +64,6 @@ protected:
      * Otherwise, return false.
      */
     bool interior_angles_add_up_to_360_degrees();
-
-    /**
-     * If the interior angle measurement of the angle whose vertice is A is identical to the interior angle measurement of the angle whose vertice is C and
-     * if the interior angle measurement of the angle whose vertice is B is identical to the interior angle measurement of the angle whose vertice is D,
-     * return true.
-     * Otherwise, return false.
-     */
-    bool opposite_interior_angles_are_equal();
-
-    /**
-     * If the quadrilateral represented by the caller QUADRILATERAL object represents a quadrilateral 
-     * whose vertices _A, _B, _C, and _D each represent a unique coordinate pair and 
-     * each vertice connects with exactly two other vertices in that quadrilateral such that
-     * the side of the quadrilateral labeled a is the line segment whose endpoints are _B and _C,
-     * the side of the quadrilateral labeled b is the line segment whose endpoints are _C and _D,
-     * the side of the quadrilateral labeled c is the line segment whose endpoints are _D and _A, 
-     * the side of the quadrilateral labeled d is the line segment whose endpoints are _A and _B, and
-     * such that the four interior angles of that quadrilateral add up to approximately 360 degrees,
-     * return true.
-     * Otherwise, return false.
-     * 
-     * (A bowtie quadrilateral has no diagonal lines because two sides of the quadrilateral intersect each other).
-     */
-    bool point_sequence_represents_non_bowtie_quadrilateral(POINT _A, POINT _B, POINT _C, POINT _D);
     
 public:
     
@@ -110,9 +86,8 @@ public:
      * 
      * (The keyword this refers to the QUADRILATERAL object which is returned by this function).
      * 
-     * If A, B, C, and D represent points which do not connect to each other linearly in the order specified by this sentence,
-     * then set the data members of this named A, B, C, and D to have the same coordinate values as 
-     * the data members named A, B, C, and D of a QUADRILATERAL object returned by the default QUADRILATERAL constructor.
+     * If A, B, C, and D represent unique points on a Cartesian plane and if the interior angles of the quadrilateral which those points would represent add up to 360 degrees,
+     * use the input POINT values as the POINT values for the QUADRILATERAL object which is returned by this function.
      */
     QUADRILATERAL(std::string color, POINT A, POINT B, POINT C, POINT D);
 
