@@ -92,9 +92,7 @@ protected:
 public:
     
     /**
-     * The default constructor of the QUADRILATERAL calls the constructor of the POLYGON class
-     * and sets the string type color of the QUADRILATERAL object returned by this funnction to "green" 
-     * (which overrides the default color value "orange" which is specified by the POLYGON constructor) and
+     * The default constructor of the QUADRILATERAL calls the constructor of the POLYGON class and
      * sets the POINT type data member of that quadrilateral named A to POINT(0,0), 
      * sets the POINT type data member of that quadrilateral named B to POINT(0,5), 
      * sets the POINT type data member of that quadrilateral named C to POINT(4,5), and
