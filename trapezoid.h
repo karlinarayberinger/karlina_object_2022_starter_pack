@@ -41,7 +41,7 @@ protected:
     const std::string category = "POLYGON/QUADRILATERAL/TRAPEZOID";
 
     /**
-     * The helper method determines whether or not the caller TRAPEOID instance represents a
+     * The helper method determines whether or not the caller TRAPEZOID instance represents a
      * quadrilateral with exactly two parallel opposite sides whose lengths are not identical.
      * Return true if the caller TRAPEZOID satisfies those conditions. Otherwise, return false.
      */
