@@ -69,7 +69,7 @@ public:
     
     /**
      * The virtual methods get_area() and get_perimeter() 
-     * must be defined by classes which are derived from POLYGON.
+     * must be defined by classes which are derived from the POLYGON class.
      */
     virtual double get_area() = 0;
     virtual double get_perimeter() = 0;
@@ -85,7 +85,7 @@ public:
      * The friend function overloads the ostream operator (i.e. <<).
      * 
      * The friend function is not a member of the POLYGON class,
-     * but that friend function does have access to the private and protected members of POLYGON 
+     * but that friend function does have access to the private and protected members of the POLYGON class
      * as though that friend function was a member of the POLYGON class.
      */
     friend std::ostream & operator << (std::ostream & output, POLYGON & polygon);
