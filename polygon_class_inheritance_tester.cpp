@@ -16,6 +16,7 @@ void unit_test_1(std::ostream & output);
 void unit_test_2(std::ostream & output);
 void unit_test_3(std::ostream & output);
 void unit_test_4(std::ostream & output);
+void unit_test_5(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -99,8 +100,9 @@ void unit_test_3(std::ostream & output)
     QUADRILATERAL * pointer_to_quadrilateral; // The pointer-to-QUADRATERAL type variable can store the memory address of an object whose data type is QUADRILATERAL or else a non-abstract derived class of QUADRILATERAL such as TRAPEZOID.
     pointer_to_quadrilateral = new QUADRILATERAL; // Assign memory to a dynamic QUADRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
     output << * pointer_to_quadrilateral; // Use the overloaded ostream operator as defined in quadrilateral.cpp to print the data which is stored at the memory address which pointer_to_quadrilateral stores.
-    output << "\n\npointer_to_quadrilateral -> get_area() = " << pointer_to_quadrilateral -> get_area(); // Indirectly call the get_area() method of the QUADRILATERAL class.
-    output << "\n\npointer_to_quadrilateral -> get_perimeter() = " << pointer_to_quadrilateral -> get_perimeter(); // Indirectly call the get_perimeter() method of the QUADRILATERAL class.
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\npointer_to_quadrilateral -> get_area() = " << pointer_to_quadrilateral -> get_area(); // Indirectly call the get_area() method of the QUADRILATERAL class.
+    output << "\npointer_to_quadrilateral -> get_perimeter() = " << pointer_to_quadrilateral -> get_perimeter(); // Indirectly call the get_perimeter() method of the QUADRILATERAL class.
     delete pointer_to_quadrilateral; // De-allocate memory which was assigned to the dynamically allocated QUADRILATERAL instance.
 }
 
@@ -112,11 +114,22 @@ void unit_test_4(std::ostream & output)
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nUnit Test # 4";
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\nQUADRILATERAL quadrilateral = QUADRILATERAL(\"green\", POINT(-2,-2), POINT(-2,2), POINT(2,2), POINT(2,-2));";
-    output << "\nquadrilateral.print(output);";
+    output << "\nQUADRILATERAL quadrilateral_0 = QUADRILATERAL(\"green\", POINT(-2,-2), POINT(-2,2), POINT(2,2), POINT(2,-2));";
+    output << "\nquadrilateral_0.print(output);";
+    output << "\nQUADRILATERAL quadrilateral_0 = QUADRILATERAL(\"blue\", POINT(0,0), POINT(3,2), POINT(5,1), POINT(-1,-2));";
+    output << "\nquadrilateral_1.print(output);";
     output << "\n--------------------------------------------------------------------------------------------------";
-    QUADRILATERAL quadrilateral = QUADRILATERAL("green", POINT(-2,-2), POINT(-2,2), POINT(2,2), POINT(2,-2));
-    quadrilateral.print(output);
+    QUADRILATERAL quadrilateral_0 = QUADRILATERAL("green", POINT(-2,-2), POINT(-2,2), POINT(2,2), POINT(2,-2));
+    quadrilateral_0.print(output);
+    QUADRILATERAL quadrilateral_1 = QUADRILATERAL("blue", POINT(0,0), POINT(3,2), POINT(5,1), POINT(-1,-2));
+    quadrilateral_1.print(output);
+}
+
+/**
+ * Unit Test # 5: Test the normal QUADRILATERAL constructor using valid function inputs and the QUADRILATERAL print method.
+ */
+void unit_test_5(std::ostream & output)
+{
     output << "\n--------------------------------------------------------------------------------------------------";
 }
 
@@ -162,6 +175,8 @@ int main()
     unit_test_3(file);
     unit_test_4(std::cout);
     unit_test_4(file);
+    unit_test_5(std::cout);
+    unit_test_5(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
