@@ -31,7 +31,6 @@ void unit_test_0(std::ostream & output)
     pointer_to_polygon = new QUADRILATERAL; // Assign memory to a dynamic QUADRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
     pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
     delete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated QUADRILATERAL instance.
-    output << "\n--------------------------------------------------------------------------------------------------";
 }
 
 // Unit Test # 1: Test the default QUADRILATERAL constructor and QUADRILATERAL print method.
@@ -51,7 +50,6 @@ void unit_test_1(std::ostream & output)
     quadrilateral.print(); // Test the default argument (which is std::cout).
     quadrilateral.print(output);
     output << quadrilateral; // overloaded ostream operator as defined in quadrilateral.cpp
-    output << "\n--------------------------------------------------------------------------------------------------";
 }
 
 /* program entry point */
