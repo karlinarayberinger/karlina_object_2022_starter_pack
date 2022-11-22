@@ -69,26 +69,26 @@ public:
     
     /**
      * The default constructor of the QUADRILATERAL class calls the constructor of the POLYGON class and
-     * sets the POINT type data member of that quadrilateral named A to POINT(0,0), 
-     * sets the POINT type data member of that quadrilateral named B to POINT(0,5), 
-     * sets the POINT type data member of that quadrilateral named C to POINT(4,5), and
-     * sets the POINT type data member of that quadrilateral named D to POINT(4,0).
+     * sets the POINT type data member of the QUADRILATERAL object returned by this function named A to POINT(0,0), 
+     * sets the POINT type data member of the QUADRILATERAL object returned by this function named B to POINT(0,5), 
+     * sets the POINT type data member of the QUADRILATERAL object returned by this function named C to POINT(4,5), and
+     * sets the POINT type data member of the QUADRILATERAL object returned by this function named D to POINT(4,0).
      */
     QUADRILATERAL();
     
     /**
      * The normal constructor of QUADRILATERAL attempts to set
      * the string type data member of this to the input string type value named color and
-     * the POINT type data member of this to the input POINT type value named A and
-     * the POINT type data member of this to the input POINT type value named B and
-     * the POINT type data member of this to the input POINT type value named C and
-     * the POINT type data member of this to the input POINT type value named D.
+     * the POINT type data member of this named A to the input POINT type value named A and
+     * the POINT type data member of this named B to the input POINT type value named B and
+     * the POINT type data member of this named C to the input POINT type value named C and
+     * the POINT type data member of this named D to the input POINT type value named D.
      * 
      * (The keyword this refers to the QUADRILATERAL object which is returned by this function).
      * 
-     * If A, B, C, and D represent unique points on a Cartesian plane,
-     * if the interior angles of the quadrilateral which those points would represent add up to 360 degrees, and
-     * if the area of the quadrilateral which those points would represent is larger than zero,
+     * If A, B, C, and D represent unique points on a Cartesian plane and
+     * if the interior angles of the quadrilateral which those points would represent add up to 360 degrees and
+     * if the area of the quadrilateral which those points represents is larger than zero,
      * use the input POINT values as the POINT values for the QUADRILATERAL object which is returned by this function.
      */
     QUADRILATERAL(std::string color, POINT A, POINT B, POINT C, POINT D);
