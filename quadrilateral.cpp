@@ -366,12 +366,6 @@ void QUADRILATERAL::print(std::ostream & output)
     double angle_opposite_of_a1 = 0.0, angle_opposite_of_b1 = 0.0, angle_opposite_of_c1 = 0.0; 
     double interior_angle_of_A = 0.0, interior_angle_of_B = 0.0, interior_angle_of_C = 0.0, interior_angle_of_D = 0.0;
 
-    double slope_of_side_AB = 0.0, slope_of_side_BC = 0.0, slope_of_side_CD = 0.0, slope_of_side_DA = 0.0;
-    slope_of_side_AB = get_slope(A,B);
-    slope_of_side_BC = get_slope(B,C);
-    slope_of_side_CD = get_slope(C,D);
-    slope_of_side_DA = get_slope(D,A);
-
     // first triangle
     a0 = A.get_distance_from(B);
     b0 = B.get_distance_from(D);
@@ -410,11 +404,15 @@ void QUADRILATERAL::print(std::ostream & output)
     output << "\nb = C.get_distance_from(D) = " << C.get_distance_from(D) << ". // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.";
     output << "\nc = D.get_distance_from(A) = " << D.get_distance_from(A) << ". // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.";
     output << "\nd = A.get_distance_from(B) = " << A.get_distance_from(D) << ". // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.";
+    output << "\nA.get_slope_of_line_to(B) = " << A.get_slope_of_line_to(B) << ". // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.";
+    output << "\nB.get_slope_of_line_to(C) = " << B.get_slope_of_line_to(C) << ". // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.";
+    output << "\nC.get_slope_of_line_to(D) = " << C.get_slope_of_line_to(D) << ". // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and D.";
+    output << "\nD.get_slope_of_line_to(A) = " << D.get_slope_of_line_to(A) << ". // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.";
     output << "\ninterior_angle_DAB = interior_angle_of_A = " << interior_angle_of_A << ". // The value represents the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are D and A with the line segment whose endpoints are A and B such that those two line segments intersect at A (and the angle measurement is in degrees and not in radians).";
     output << "\ninterior_angle_ABC = interior_angle_of_B = " << interior_angle_of_B << ". // The method returns the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are A and B with the line segment whose endpoints are B and C such that those two line segments intersect at B (and the angle measurement is in degrees and not in radians).";
     output << "\ninterior_angle_BCD = interior_angle_of_C = " << interior_angle_of_C << ". // The method returns the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are B and C with the line segment whose endpoints are C and D such that those two line segments intersect at C (and the angle measurement is in degrees and not in radians).";
     output << "\ninterior_angle_CDA = interior_angle_of_D = " << interior_angle_of_D << ". // The method returns the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are C and D with the line segment whose endpoints are D and A such that those two line segments intersect at D (and the angle measurement is in degrees and not in radians).";
-    output << "\ninterior_angle_of_A + interior_angle_of_B + interior_angle_of_C + interior_angle_of_D = " << interior_angle_of_A + interior_angle_of_B + interior_angle_of_C + interior_angle_of_D << ". // sum of all four approximate angle measurements of the quadrilateral represented by the caller QUADRILATERAL object (in degrees and not in radians)";
+    output << "\ninterior_angle_of_A + interior_angle_of_B + interior_angle_of_C + interior_angle_of_D = " << interior_angle_of_A + interior_angle_of_B + interior_angle_of_C + interior_angle_of_D << ". // sum of all four approximate interior angle measurements of the quadrilateral represented by the caller QUADRILATERAL object (in degrees and not in radians)";
     output << "\nget_perimeter() = a + b + c + d = " << get_perimeter() << ". // The method returns the sum of the four approximated side lengths of the quadrilateral which the caller QUADRILATERAL object represents.";
     output << "\nget_area() = " << get_area() << ". // The method returns the approximate nonnegative real number of Cartesian grid unit squares which are enclosed inside of the two-dimensional region formed by the four line segments which connect points A to B, B to C, C to D, and D to A.";
     output << "\n--------------------------------------------------------------------------------------------------";

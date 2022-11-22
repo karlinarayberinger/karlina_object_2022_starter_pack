@@ -1,0 +1,21 @@
+--------------------------------
+Start Of Program
+--------------------------------
+
+--------------------------------------------------------------------------------------------------
+Unit Test # 0: Implement a POLYGON pointer to store the memory address of a dynamically allocated QUADRILATERAL instance. Use that POLYGON pointer to call the print method of POLYGON (and not of QUADRILATERAL).
+--------------------------------------------------------------------------------------------------
+// COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.
+POLYGON * pointer_to_polygon; // The pointer-to-polygon type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as QUADRILATERAL.
+pointer_to_polygon = new QUADRILATERAL; // Assign memory to a dynamic QUADRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
+pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
+delete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated QUADRILATERAL instance.
+--------------------------------------------------------------------------------------------------
+memory_address = 0x55cee8ab64b0.
+category = POLYGON.
+color = orange.
+--------------------------------------------------------------------------------------------------
+
+--------------------------------
+End Of Program
+--------------------------------
