@@ -28,6 +28,7 @@
  */
 POLYGON::POLYGON()
 {
+    std::cout << "\n\nCreating the POLYGON type object whose memory address is " << this << "...";
     color = "orange";
 }
 
@@ -65,4 +66,16 @@ std::ostream & operator << (std::ostream & output, POLYGON & polygon)
 {
     polygon.print(output);
     return output;
+}
+
+/**
+ * The destructor method of the POLYGON class de-allocates memory which was used to 
+ * instantiate the POLYGON object which is calling this function.
+ * 
+ * The destructor method of the POLYGON class is automatically called when 
+ * the program scope in which the caller POLYGON object was instantiated terminates.
+ */
+POLYGON::~POLYGON()
+{
+    std::cout << "\n\nDeleting the POLYGON type object whose memory address is " << this << "...";
 }
