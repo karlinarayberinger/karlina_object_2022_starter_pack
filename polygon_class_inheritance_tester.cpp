@@ -112,11 +112,11 @@ void unit_test_3(std::ostream & output)
 void unit_test_4(std::ostream & output)
 {
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\nUnit Test # 4";
+    output << "\nUnit Test # 4: Test the normal QUADRILATERAL constructor using valid function inputs and the QUADRILATERAL print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nQUADRILATERAL quadrilateral_0 = QUADRILATERAL(\"green\", POINT(-2,-2), POINT(-2,2), POINT(2,2), POINT(2,-2));";
     output << "\nquadrilateral_0.print(output);";
-    output << "\nQUADRILATERAL quadrilateral_0 = QUADRILATERAL(\"blue\", POINT(0,0), POINT(3,2), POINT(5,1), POINT(-1,-2));";
+    output << "\nQUADRILATERAL quadrilateral_1 = QUADRILATERAL(\"blue\", POINT(0,0), POINT(3,2), POINT(5,1), POINT(-1,-2));";
     output << "\nquadrilateral_1.print(output);";
     output << "\n--------------------------------------------------------------------------------------------------";
     QUADRILATERAL quadrilateral_0 = QUADRILATERAL("green", POINT(-2,-2), POINT(-2,2), POINT(2,2), POINT(2,-2));
@@ -126,11 +126,26 @@ void unit_test_4(std::ostream & output)
 }
 
 /**
- * Unit Test # 5: Test the normal QUADRILATERAL constructor using valid function inputs and the QUADRILATERAL print method.
+ * Unit Test # 5: Test the normal QUADRILATERAL constructor using invalid function inputs and the QUADRILATERAL print method.
  */
 void unit_test_5(std::ostream & output)
 {
     output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 5: Test the normal QUADRILATERAL constructor using invalid function inputs and the QUADRILATERAL print method.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nQUADRILATERAL quadrilateral_0 = QUADRILATERAL(\"red\", POINT(-2,-2), POINT(0,0), POINT(1,1), POINT(2,2)); // A line intersects all four points.";
+    output << "\nquadrilateral_0.print(output);";
+    output << "\nQUADRILATERAL quadrilateral_1 = QUADRILATERAL(\"purple\", POINT(0,0), POINT(3,2), POINT(0,0), POINT(-1,-2)); // Not all point coordinate pairs are unique.";
+    output << "\nquadrilateral_1.print(output);";
+    output << "\nQUADRILATERAL quadrilateral_2 = QUADRILATERAL(\"yellow\", POINT(0,0), POINT(0,2), POINT(4,0), POINT(4,2)); // The points form a bow-tie shaped polygon.";
+    output << "\nquadrilateral_2.print(output);";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    QUADRILATERAL quadrilateral_0 = QUADRILATERAL("red", POINT(-2,-2), POINT(0,0), POINT(1,1), POINT(2,2)); // A line intersects all four points.
+    quadrilateral_0.print(output);
+    QUADRILATERAL quadrilateral_1 = QUADRILATERAL("purple", POINT(0,0), POINT(3,2), POINT(0,0), POINT(-1,-2)); // Not all point coordinate pairs are unique.
+    quadrilateral_1.print(output);
+    QUADRILATERAL quadrilateral_2 = QUADRILATERAL("yellow", POINT(0,0), POINT(0,2), POINT(4,0), POINT(4,2)); // The points form a bow-tie shaped polygon.
+    quadrilateral_2.print(output);
 }
 
 /* program entry point */
