@@ -2,7 +2,7 @@
 /**
  * file: polygon_class_inheritance_tester.cpp
  * type: C++ (source file)
- * date: 21_NOVEMBER_2022
+ * date: 22_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN 
  */
@@ -34,21 +34,23 @@ void unit_test_0(std::ostream & output)
     output << "\n--------------------------------------------------------------------------------------------------";
 }
 
-// Unit Test # 1: Test the default QUADRILATERAL constructor and print method.
+// Unit Test # 1: Test the default QUADRILATERAL constructor and QUADRILATERAL print method.
 void unit_test_1(std::ostream & output)
 {
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\nUnit Test # 1: Unit Test # 1: Test the default QUADRILATERAL constructor and print method.";
+    output << "\nUnit Test # 1: Unit Test # 1: Test the default QUADRILATERAL constructor and QUADRILATERAL print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nQUADRILATERAL quadrilateral;";
     output << "\nquadrilateral.print(output);";
     output << "\nquadrilateral.print(); // Test the default argument (which is std::cout).";
     output << "\nquadrilateral.print(output);";
+    output << "\noutput << quadrilateral; // overloaded ostream operator as defined in quadrilateral.cpp";
     output << "\n--------------------------------------------------------------------------------------------------";
     QUADRILATERAL quadrilateral;
     quadrilateral.print(output);
     quadrilateral.print(); // Test the default argument (which is std::cout).
     quadrilateral.print(output);
+    output << quadrilateral; // overloaded ostream operator as defined in quadrilateral.cpp
     output << "\n--------------------------------------------------------------------------------------------------";
 }
 
