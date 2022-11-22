@@ -15,15 +15,16 @@ void unit_test_0(std::ostream & output);
 void unit_test_1(std::ostream & output);
 void unit_test_2(std::ostream & output);
 void unit_test_3(std::ostream & output);
+void unit_test_4(std::ostream & output);
 
 /**
- * Unit Test # 0: Implement a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
+ * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
  * Use that pointer-to-POLYGON type variable to call the print method of the POLYGON class (and not of the QUADRILATERAL class).
  */
 void unit_test_0(std::ostream & output) 
 {
     output << "\n\n--------------------------------------------------------------------------------------------------";
-    output << "\nUnit Test # 0: Implement a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. Use that pointer-to-POLYGON type variable to call the print method of the POLYGON class (and not of the QUADRILATERAL class).";
+    output << "\nUnit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. Use that pointer-to-POLYGON type variable to call the print method of the POLYGON class (and not of the QUADRILATERAL class).";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\n// COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.";
     output << "\nPOLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as QUADRILATERAL.";
@@ -39,12 +40,12 @@ void unit_test_0(std::ostream & output)
 }
 
 /**
- * Unit Test # 1: Test the default QUADRILATERAL constructor and QUADRILATERAL print method.
+ * Unit Test # 1: Test the default QUADRILATERAL constructor and the QUADRILATERAL print method.
  */
 void unit_test_1(std::ostream & output)
 {
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\nUnit Test # 1: Test the default QUADRILATERAL constructor and QUADRILATERAL print method.";
+    output << "\nUnit Test # 1: Test the default QUADRILATERAL constructor and the QUADRILATERAL print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nQUADRILATERAL quadrilateral;";
     output << "\nquadrilateral.print(output);";
@@ -60,13 +61,13 @@ void unit_test_1(std::ostream & output)
 }
 
 /** 
- * Unit Test # 2: Implement a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
+ * Unit Test # 2: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
  * Use that pointer-to-POLYGON to call the overloaded ostream operator method of the POLYGON class (and not of the QUADRILATERAL class).
  */
 void unit_test_2(std::ostream & output)
 {
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\nUnit Test # 2: Implement a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. Use that pointer-to-POLYGON to call the overloaded ostream operator method of the POLYGON class (and not of the QUADRILATERAL class).";
+    output << "\nUnit Test # 2: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. Use that pointer-to-POLYGON to call the overloaded ostream operator method of the POLYGON class (and not of the QUADRILATERAL class).";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\n// COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.";
     output << "\nPOLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as QUADRILATERAL.";
@@ -82,13 +83,13 @@ void unit_test_2(std::ostream & output)
 }
 
 /** 
- * Unit Test # 3: Unit Test # 3: Implement a pointer-to-QUADRILATERAL type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
- * Use that pointer-to-QUADRILATERAL to call the overloaded ostream operator method of the QUADRILATERAL class.
+ * Unit Test # 3: Unit Test # 3: Create a pointer-to-QUADRILATERAL type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
+ * Use that pointer-to-QUADRILATERAL to call the overloaded ostream operator method of the QUADRILATERAL class and the public getter methods of the QUADRILATERAL class.
  */
 void unit_test_3(std::ostream & output)
 {
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\nUnit Test # 3: Implement a pointer-to-QUADRILATERAL type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. Use that pointer-to-QUADRILATERAL to call the overloaded ostream operator method of the QUADRILATERAL class.";
+    output << "\nUnit Test # 3: Create a pointer-to-QUADRILATERAL type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. Use that pointer-to-QUADRILATERAL to call the overloaded ostream operator method of the QUADRILATERAL class and the public getter methods of the QUADRILATERAL class.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nQUADRILATERAL * pointer_to_quadrilateral; // The pointer-to-QUADRATERAL type variable can store the memory address of an object whose data type is QUADRILATERAL or else a non-abstract derived class of QUADRILATERAL such as TRAPEZOID.";
     output << "\npointer_to_quadrilateral = new QUADRILATERAL; // Assign memory to a dynamic QUADRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).";
@@ -98,7 +99,25 @@ void unit_test_3(std::ostream & output)
     QUADRILATERAL * pointer_to_quadrilateral; // The pointer-to-QUADRATERAL type variable can store the memory address of an object whose data type is QUADRILATERAL or else a non-abstract derived class of QUADRILATERAL such as TRAPEZOID.
     pointer_to_quadrilateral = new QUADRILATERAL; // Assign memory to a dynamic QUADRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
     output << * pointer_to_quadrilateral; // Use the overloaded ostream operator as defined in quadrilateral.cpp to print the data which is stored at the memory address which pointer_to_quadrilateral stores.
+    output << "\n\npointer_to_quadrilateral -> get_area() = " << pointer_to_quadrilateral -> get_area(); // Indirectly call the get_area() method of the QUADRILATERAL class.
+    output << "\n\npointer_to_quadrilateral -> get_perimeter() = " << pointer_to_quadrilateral -> get_perimeter(); // Indirectly call the get_perimeter() method of the QUADRILATERAL class.
     delete pointer_to_quadrilateral; // De-allocate memory which was assigned to the dynamically allocated QUADRILATERAL instance.
+}
+
+/**
+ * Unit Test # 4: Test the normal QUADRILATERAL constructor using valid function inputs and the QUADRILATERAL print method.
+ */
+void unit_test_4(std::ostream & output)
+{
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 4";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nQUADRILATERAL quadrilateral = QUADRILATERAL(\"green\", POINT(-2,-2), POINT(-2,2), POINT(2,2), POINT(2,-2));";
+    output << "\nquadrilateral.print(output);";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    QUADRILATERAL quadrilateral = QUADRILATERAL("green", POINT(-2,-2), POINT(-2,2), POINT(2,2), POINT(2,-2));
+    quadrilateral.print(output);
+    output << "\n--------------------------------------------------------------------------------------------------";
 }
 
 /* program entry point */
@@ -141,6 +160,8 @@ int main()
     unit_test_2(file);
     unit_test_3(std::cout);
     unit_test_3(file);
+    unit_test_4(std::cout);
+    unit_test_4(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
