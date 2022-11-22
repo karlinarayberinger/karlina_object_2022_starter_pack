@@ -165,6 +165,15 @@ public:
      * the friend function was a member of the QUADRILATERAL class.
      */
     friend std::ostream & operator << (std::ostream & output, QUADRILATERAL & quadrilateral);
+
+    /**
+     * The destructor method of the QUADRILATERAL class de-allocates memory which was used to 
+     * instantiate the QUADRILATERAL object which is calling this function.
+     * 
+     * The destructor method of the QUADRILATERAL class is automatically called when 
+     * the program scope in which the caller QUADRILATERAL object was instantiated terminates.
+     */
+    ~QUADRILATERAL();
 };
 
 /* preprocessing directives */
