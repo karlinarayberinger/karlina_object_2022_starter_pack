@@ -38,14 +38,15 @@ double POLYGON::get_area() { return 0.0; }
 double POLYGON::get_perimeter() { return 0.0; }
 
 /**
- * The descriptor method prints a description of the caller POLYGON instance to the output stream.
+ * The descriptor method prints a description of the caller QUADRILATERAL instance to the output stream
+ * (and overrides the print method of the POLYGON class).
  * If no function input is supplied, output is set to the command line terminal.
  */
 void POLYGON::print(std::ostream & output)
 {
-    output << "\nmemory_address := " << this << ".";
-    output << "\ncategory := " << category << ".";
-    output << "\ncolor := " << color << ".";
+    output << "\nmemory_address = " << this << ".";
+    output << "\ncategory = " << category << ".";
+    output << "\ncolor = " << color << ".";
 }
 
 /**
