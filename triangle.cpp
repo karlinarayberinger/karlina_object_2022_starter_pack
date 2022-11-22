@@ -2,7 +2,7 @@
  * file: triangle.cpp
  * type: C++ (source file)
  * author: Karlina Ray Beringer
- * date: 20_NOVEMBER_2022
+ * date: 21_NOVEMBER_2022
  * license: PUBLIC_DOMAIN
  */
 
