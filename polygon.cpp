@@ -1,7 +1,7 @@
 /**
  * file: polygon.cpp
  * type: C++ (source file)
- * date: 21_NOVEMBER_2022
+ * date: 22_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN
  */
@@ -50,7 +50,7 @@ void POLYGON::print(std::ostream & output)
     output << "\ncolor = " << color << ".";
     output << "\n&category = " << &category << ".";
     output << "\n&color = " << &color << ".";
-    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\n--------------------------------------------------------------------------------------------------";
 }
 
 /**
