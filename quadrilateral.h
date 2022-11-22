@@ -86,7 +86,9 @@ public:
      * 
      * (The keyword this refers to the QUADRILATERAL object which is returned by this function).
      * 
-     * If A, B, C, and D represent unique points on a Cartesian plane and if the interior angles of the quadrilateral which those points would represent add up to 360 degrees,
+     * If A, B, C, and D represent unique points on a Cartesian plane,
+     * if the interior angles of the quadrilateral which those points would represent add up to 360 degrees, and
+     * if the area of the quadrilateral which those points would represent is larger than zero,
      * use the input POINT values as the POINT values for the QUADRILATERAL object which is returned by this function.
      */
     QUADRILATERAL(std::string color, POINT A, POINT B, POINT C, POINT D);

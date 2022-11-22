@@ -133,9 +133,10 @@ QUADRILATERAL::QUADRILATERAL()
  * 
  * (The keyword this refers to the QUADRILATERAL object which is returned by this function).
  * 
- * If A, B, C, and D represent points which do not connect to each other linearly in the order specified by this sentence,
- * then set the data members of this named A, B, C, and D to have the same coordinate values as 
- * the data members named A, B, C, and D of a QUADRILATERAL object returned by the default QUADRILATERAL constructor.
+ * If A, B, C, and D represent unique points on a Cartesian plane,
+ * if the interior angles of the quadrilateral which those points would represent add up to 360 degrees, and
+ * if the area of the quadrilateral which those points would represent is larger than zero,
+ * use the input POINT values as the POINT values for the QUADRILATERAL object which is returned by this function.
  */
 QUADRILATERAL::QUADRILATERAL(std::string color, POINT A, POINT B, POINT C, POINT D)
 {
@@ -146,7 +147,7 @@ QUADRILATERAL::QUADRILATERAL(std::string color, POINT A, POINT B, POINT C, POINT
     test_quadrilateral.B.set_Y(B.get_Y());
     test_quadrilateral.C.set_X(C.get_X());
     test_quadrilateral.C.set_Y(C.get_Y());
-    if (points_represent_unique_coordinate_pairs(A, B, C, D) && test_quadrilateral.interior_angles_add_up_to_360_degrees())
+    if (points_represent_unique_coordinate_pairs(A, B, C, D) && test_quadrilateral.interior_angles_add_up_to_360_degrees() && (test_quadrilateral.get_area() > 0))
     {
         this -> A = A;
         this -> B = B;
