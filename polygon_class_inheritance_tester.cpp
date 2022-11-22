@@ -12,6 +12,7 @@
 
 /* function prototypes */
 void unit_test_0(std::ostream & output);
+void unit_test_1(std::ostream & output);
 
 // Unit Test # 0: Implement a POLYGON pointer to store the memory address of a dynamically allocated QUADRILATERAL instance. Use that POLYGON pointer to call the print method of POLYGON (and not of QUADRILATERAL).
 void unit_test_0(std::ostream & output) 
@@ -30,6 +31,24 @@ void unit_test_0(std::ostream & output)
     pointer_to_polygon = new QUADRILATERAL; // Assign memory to a dynamic QUADRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
     pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
     delete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated QUADRILATERAL instance.
+    output << "\n--------------------------------------------------------------------------------------------------";
+}
+
+// Unit Test # 1: Test the default QUADRILATERAL constructor and print method.
+void unit_test_1(std::ostream & output)
+{
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 1: Unit Test # 1: Test the default QUADRILATERAL constructor and print method.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nQUADRILATERAL quadrilateral;";
+    output << "\nquadrilateral.print(output);";
+    output << "\nquadrilateral.print(); // Test the default argument (which is std::cout).";
+    output << "\nquadrilateral.print(output);";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    QUADRILATERAL quadrilateral;
+    quadrilateral.print(output);
+    quadrilateral.print(); // Test the default argument (which is std::cout).
+    quadrilateral.print(output);
     output << "\n--------------------------------------------------------------------------------------------------";
 }
 
@@ -67,6 +86,8 @@ int main()
     // Implement a series of unit tests which demonstrate the functionality of POLYGON class variables.
     unit_test_0(std::cout);
     unit_test_0(file);
+    unit_test_1(std::cout);
+    unit_test_1(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";

@@ -44,9 +44,13 @@ double POLYGON::get_perimeter() { return 0.0; }
  */
 void POLYGON::print(std::ostream & output)
 {
+    output << "\n\n--------------------------------------------------------------------------------------------------";
     output << "\nmemory_address = " << this << ".";
     output << "\ncategory = " << category << ".";
     output << "\ncolor = " << color << ".";
+    output << "\n&category = " << &category << ".";
+    output << "\n&color = " << &color << ".";
+    output << "\n\n--------------------------------------------------------------------------------------------------";
 }
 
 /**
