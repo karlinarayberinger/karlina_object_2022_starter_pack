@@ -197,8 +197,9 @@ public:
     /** 
      * This method overrides the POLYGON class's print method.
      * 
-     * The descriptor method prints a description of the caller QUADRILATERAL to the output stream.
-     * If no parameter is supplied, output is set to the command line terminal.
+     * The descriptor method prints a description of the caller QUADRILATERAL instance to the output stream.
+
+     * If no function input is supplied, output is set to the command line terminal.
      */
     void print(std::ostream & output = std::cout);
     
@@ -207,8 +208,8 @@ public:
      * The friend function overloads the ostream operator (i.e. <<).
      * 
      * The friend function is not a member of the QUADRILATERAL class,
-     * but it does have access to the members of QUADRILATERAL as though
-     * it were a member of that class.
+     * but the friend function does have access to the private and protected members of the QUADRILATERAL class as though
+     * the friend function was a member of the QUADRILATERAL class.
      */
     friend std::ostream & operator << (std::ostream & output, QUADRILATERAL & quadrilateral);
 };
