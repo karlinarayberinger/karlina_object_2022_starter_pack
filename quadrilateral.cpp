@@ -101,10 +101,10 @@ bool QUADRILATERAL::interior_angles_add_up_to_360_degrees()
     // Allow for there to be a +/- 2 margin of error for the value stored in sum_of_interior_angles with the ideal value being 360.
     if ((sum_of_interior_angles >= 358) && (sum_of_interior_angles <= 362)) return true;
     std::cout << "\nThe interior angles of the quadrilateral must add up to 360 degrees.";
-    std::cout << "\ninterior_angle_of_A := " << interior_angle_of_A << " degrees.";
-    std::cout << "\ninterior_angle_of_B := " << interior_angle_of_B << " degrees.";
-    std::cout << "\ninterior_angle_of_C := " << interior_angle_of_C << " degrees.";
-    std::cout << "\ninterior_angle_of_D := " << interior_angle_of_D << " degrees.";
+    std::cout << "\ninterior_angle_of_A = " << interior_angle_of_A << " degrees.";
+    std::cout << "\ninterior_angle_of_B = " << interior_angle_of_B << " degrees.";
+    std::cout << "\ninterior_angle_of_C = " << interior_angle_of_C << " degrees.";
+    std::cout << "\ninterior_angle_of_D = " << interior_angle_of_D << " degrees.";
     return false;
 }
 
@@ -116,7 +116,46 @@ bool QUADRILATERAL::interior_angles_add_up_to_360_degrees()
  */
 bool QUADRILATERAL::opposite_interior_angles_are_equal()
 {
+    double a0 = 0.0, b0 = 0.0, c0 = 0.0;
+    double a1 = 0.0, b1 = 0.0, c1 = 0.0;
+    double angle_opposite_of_a0 = 0.0, angle_opposite_of_b0 = 0.0, angle_opposite_of_c0 = 0.0; 
+    double angle_opposite_of_a1 = 0.0, angle_opposite_of_b1 = 0.0, angle_opposite_of_c1 = 0.0; 
+    double interior_angle_of_A = 0.0, interior_angle_of_B = 0.0, interior_angle_of_C = 0.0, interior_angle_of_D = 0.0;
+    double sum_of_interior_angles = 0.0;
 
+    // first triangle
+    a0 = A.get_distance_from(B);
+    b0 = B.get_distance_from(D);
+    c0 = D.get_distance_from(A);
+    angle_opposite_of_a0 = acos(((b0 * b0) + (c0 * c0) - (a0 * a0)) / (2 * b0 * c0)) * (180 / PI);
+    angle_opposite_of_b0 = acos(((a0 * a0) + (c0 * c0) - (b0 * b0)) / (2 * a0 * c0)) * (180 / PI);
+    angle_opposite_of_c0 = acos(((a0 * a0) + (b0 * b0) - (c0 * c0)) / (2 * a0 * b0)) * (180 / PI);
+
+    // second triangle
+    a1 = D.get_distance_from(B);
+    b1 = B.get_distance_from(C);
+    c1 = C.get_distance_from(D);
+    angle_opposite_of_a1 = acos(((b1 * b1) + (c1 * c1) - (a1 * a1)) / (2 * b1 * c1)) * (180 / PI);
+    angle_opposite_of_b1 = acos(((a1 * a1) + (c1 * c1) - (b1 * b1)) / (2 * a1 * c1)) * (180 / PI);
+    angle_opposite_of_c1 = acos(((a1 * a1) + (b1 * b1) - (c1 * c1)) / (2 * a1 * b1)) * (180 / PI);
+
+    interior_angle_of_A = floor(angle_opposite_of_b0); // round down to nearest whole number
+    interior_angle_of_B = floor(angle_opposite_of_c0 + angle_opposite_of_c1); // round down to nearest whole number
+    interior_angle_of_C = floor(angle_opposite_of_a1); // round down to nearest whole number
+    interior_angle_of_D = floor(angle_opposite_of_b1 + angle_opposite_of_a0); // round down to nearest whole number
+
+    // Determine whether or not the opposite interior angles of the quadrilateral which the caller QUADRILATERAL object represents are equal.
+    // If those conditions are satisfied, then return true.
+    if ((interior_angle_of_A == interior_angle_of_C) && (interior_angle_of_B == interior_angle_of_D)) return true;
+
+    // Return false if the conditions specified above are not satisfied.
+    std::cout << "\nThe measurement of the interior angle whose vertice is A must be identical to the measurement of the interior angle whose vertice is C.";
+    std::cout << "\nAlso, the measurement of the interior angle whose vertice is B must be identical to the measurement of the interior angle whose vertice is D.";
+    std::cout << "\ninterior_angle_of_A = " << interior_angle_of_A << " degrees. // rounded down to nearest whole number";
+    std::cout << "\ninterior_angle_of_B := " << interior_angle_of_B << " degrees. // rounded down to nearest whole number";
+    std::cout << "\ninterior_angle_of_C := " << interior_angle_of_C << " degrees. // rounded down to nearest whole number";
+    std::cout << "\ninterior_angle_of_D := " << interior_angle_of_D << " degrees. // rounded down to nearest whole number";
+    return false;
 }
 
 /**
@@ -135,10 +174,11 @@ bool QUADRILATERAL::opposite_interior_angles_are_equal()
  */
 bool QUADRILATERAL::point_sequence_represents_non_bowtie_quadrilateral(POINT _A, POINT _B, POINT _C, POINT _D)
 {
+    // Return false if the first test fails.
     if (!points_represent_unique_coordinate_pairs(_A, _B, _C, _D))
     {
         std::cout << "\n\n_A, _B, _C, and _D do not each represent unique coordinate pairs.";
-        std::cout << "\nHence, point_sequence_represents_non_hemipolytopes(_A, _B, _C, _D) is returning false.";
+        std::cout << "\nHence, point_sequence_represents_non_bowtie_quadrilateral(_A, _B, _C, _D) is returning false.";
         return false;
     }
 
@@ -153,34 +193,40 @@ bool QUADRILATERAL::point_sequence_represents_non_bowtie_quadrilateral(POINT _A,
     test_quadrilateral.D.set_X(_D.get_X());
     test_quadrilateral.D.set_Y(_D.get_Y());
 
+    // Return false if the second test fails.
     if (!test_quadrilateral.interior_angles_add_up_to_360_degrees())
     {
         std::cout << "\n\n_A, _B, _C, and _D do not represent a quadrilateral whose interior angles add up to 360 degrees.";
-        std::cout << "\nHence, point_sequence_represents_non_hemipolytope(_A, _B, _C, _D) is returning false.";
+        std::cout << "\nHence, point_sequence_represents_non_bowtie_quadrilateral(_A, _B, _C, _D) is returning false.";
         return false;
     }
-    A = point_0;
-    B = point_1;
-    C = point_2;
-    if (get_area() <= 0) 
+
+    // Return false if the third test fails.
+    if (!test_quadrilateral.opposite_interior_angles_are_equal())
     {
-        std::cout << "\n\nWhen setting the POINT values of the caller TRIANGLE object using the given inputs, get_area() returned a non-positive number result.";
-        std::cout << "\nHence, points_form_nondegenerate_triangle(POINT point_0, POINT point_1, POINT point_2) is returning false.";
+        std::cout << "\n\n_A, _B, _C, and _D do not represent a quadrilateral whose opposite interior angles have equal angle measurements.";
+        std::cout << "\nHence, point_sequence_represents_non_bowtie_quadrilateral(_A, _B, _C, _D) is returning false.";
         return false;
     }
+
+    // Return true if neither of the three tests fail.
     return true;
 }
     
 /**
- * The default constructor of the QUADRILATERAL calls the constructor of the POLYGON class
- * and sets the string type color of the QUADRILATERAL object returned by this funnction to "green" 
- * (which overrides the default color value "orange" which is specified by the POLYGON constructor) and
+ * The default constructor of the QUADRILATERAL calls the constructor of the POLYGON class and
  * sets the POINT type data member of that quadrilateral named A to POINT(0,0), 
  * sets the POINT type data member of that quadrilateral named B to POINT(0,5), 
  * sets the POINT type data member of that quadrilateral named C to POINT(4,5), and
  * sets the POINT type data member of that quadrilateral named D to POINT(4,0).
  */
-QUADRILATERAL::QUADRILATERAL();
+QUADRILATERAL::QUADRILATERAL()
+{
+    A = POINT(0,0);
+    B = POINT(0,5);
+    C = POINT(4,5);
+    D = POINT(4,0);
+}
     
 /**
  * The normal constructor of QUADRILATERAL attempts to set
@@ -196,7 +242,24 @@ QUADRILATERAL::QUADRILATERAL();
  * then set the data members of this named A, B, C, and D to have the same coordinate values as 
  * the data members named A, B, C, and D of a QUADRILATERAL object returned by the default QUADRILATERAL constructor.
  */
-QUADRILATERAL::QUADRILATERAL(std::string color, POINT A, POINT B, POINT C, POINT D);
+QUADRILATERAL::QUADRILATERAL(std::string color, POINT A, POINT B, POINT C, POINT D)
+{
+    if (point_sequence_represents_non_bowtie_quadrilateral(A, B, C, D))
+    {
+        this -> A = A;
+        this -> B = B;
+        this -> C = C;
+        this -> D = D;
+    }
+    else
+    {
+        this -> A = POINT(0,0);
+        this -> B = POINT(0,5);
+        this -> C = POINT(4,5);
+        this -> D = POINT(4,0);
+    }
+    this -> color = color;
+}
 
 /**
  * The copy constructor method of the QUADRILATERAL class 
@@ -206,7 +269,14 @@ QUADRILATERAL::QUADRILATERAL(std::string color, POINT A, POINT B, POINT C, POINT
  * whose C value is set to the C value of the input QUADRILATERAL object, and
  * whose D value is set to the D value of the input QUADRILATERAL object.
  */
-QUADRILATERAL::QUADRILATERAL(QUADRILATERAL & quadrilateral);
+QUADRILATERAL::QUADRILATERAL(QUADRILATERAL & quadrilateral)
+{
+    A = quadrilateral.A;
+    B = quadrilateral.B;
+    C = quadrilateral.C;
+    D = quadrilateral.D;
+    color = quadrilateral.color;
+}
 
 /**
  * The QUADRILATERAL class implements the virtual get_area() method of the POLYGON class.
@@ -235,7 +305,28 @@ QUADRILATERAL::QUADRILATERAL(QUADRILATERAL & quadrilateral);
  * 
  * Finally, return the sum of the two triangle areas.
  */
-double QUADRILATERAL::get_area();
+double QUADRILATERAL::get_area()
+{
+    double a0 = 0.0, b0 = 0.0, c0= 0.0, s0 = 0.0, area_0 = 0.0;
+    double a1 = 0.0, b1 = 0.0, c1 = 0.0, s1 = 0.0, area_1 = 0.0;
+
+    // first triangle
+    a0 = A.get_distance_from(B);
+    b0 = B.get_distance_from(C);
+    c0 = C.get_distance_from(A);
+    s0 = (a0 + b0 + c0) / 2;
+    area_0 = sqrt(s0 * (s0 - a0) * (s0 - b0) * (s0 - c0));
+
+    // second triangle
+    a1 = A.get_distance_from(C);
+    b1 = C.get_distance_from(D);
+    c1 = D.get_distance_from(A);
+    s1 = (a1 + b1 + c1) / 2;
+    area_1 = sqrt(s1 * (s1 - a1) * (s1 - b1) * (s1 - c1));
+
+    // Return the sum of the two triangle areas.
+    return area_0 + area_1;
+}
 
 /**
  * The QUADRILATERAL class implements the virtual get_perimeter() method of the POLYGON class.
@@ -250,7 +341,15 @@ double QUADRILATERAL::get_area();
  * 
  * Then return the sum of AB, BC, CD, and DA.
  */
-double QUADRILATERAL::get_perimeter();
+double QUADRILATERAL::get_perimeter()
+{
+    double AB = 0.0, BC = 0.0, CD = 0.0, DA = 0.0;
+    AB = A.get_distance_from(B);
+    BC = B.get_distance_from(C);
+    CD = C.get_distance_from(D);
+    DA = D.get_distance_from(A);
+    return AB + BC + CD + DA;
+}
     
 /** 
  * This method overrides the POLYGON class's print method.
@@ -259,7 +358,67 @@ double QUADRILATERAL::get_perimeter();
  * 
  * If no function input is supplied, output is set to the command line terminal.
  */
-void print(std::ostream & output = std::cout);
+void QUADRILATERAL::print(std::ostream & output)
+{
+    double a0 = 0.0, b0 = 0.0, c0 = 0.0;
+    double a1 = 0.0, b1 = 0.0, c1 = 0.0;
+    double angle_opposite_of_a0 = 0.0, angle_opposite_of_b0 = 0.0, angle_opposite_of_c0 = 0.0; 
+    double angle_opposite_of_a1 = 0.0, angle_opposite_of_b1 = 0.0, angle_opposite_of_c1 = 0.0; 
+    double interior_angle_of_A = 0.0, interior_angle_of_B = 0.0, interior_angle_of_C = 0.0, interior_angle_of_D = 0.0;
+
+    double slope_of_side_AB = 0.0, slope_of_side_BC = 0.0, slope_of_side_CD = 0.0, slope_of_side_DA = 0.0;
+    slope_of_side_AB = get_slope(A,B);
+    slope_of_side_BC = get_slope(B,C);
+    slope_of_side_CD = get_slope(C,D);
+    slope_of_side_DA = get_slope(D,A);
+
+    // first triangle
+    a0 = A.get_distance_from(B);
+    b0 = B.get_distance_from(D);
+    c0 = D.get_distance_from(A);
+    angle_opposite_of_a0 = acos(((b0 * b0) + (c0 * c0) - (a0 * a0)) / (2 * b0 * c0)) * (180 / PI);
+    angle_opposite_of_b0 = acos(((a0 * a0) + (c0 * c0) - (b0 * b0)) / (2 * a0 * c0)) * (180 / PI);
+    angle_opposite_of_c0 = acos(((a0 * a0) + (b0 * b0) - (c0 * c0)) / (2 * a0 * b0)) * (180 / PI);
+
+    // second triangle
+    a1 = D.get_distance_from(B);
+    b1 = B.get_distance_from(C);
+    c1 = C.get_distance_from(D);
+    angle_opposite_of_a1 = acos(((b1 * b1) + (c1 * c1) - (a1 * a1)) / (2 * b1 * c1)) * (180 / PI);
+    angle_opposite_of_b1 = acos(((a1 * a1) + (c1 * c1) - (b1 * b1)) / (2 * a1 * c1)) * (180 / PI);
+    angle_opposite_of_c1 = acos(((a1 * a1) + (b1 * b1) - (c1 * c1)) / (2 * a1 * b1)) * (180 / PI);
+
+    interior_angle_of_A = angle_opposite_of_b0;
+    interior_angle_of_B = angle_opposite_of_c0 + angle_opposite_of_c1;
+    interior_angle_of_C = angle_opposite_of_a1;
+    interior_angle_of_D = angle_opposite_of_b1 + angle_opposite_of_a0;
+
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nthis = " << this << ". // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.";
+    output << "\n&A = " << &A << ". // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.";
+    output << "\n&B = " << &B << ". // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.";
+    output << "\n&C = " << &C << ". // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.";
+    output << "\n&D = " << &D << ". // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.";
+    output << "\nsizeof(int) = " << sizeof(int) << ". // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).";
+    output << "\nsizeof(POINT) = " << sizeof(POINT) << ". // The sizeof() operation returns the nonnegative integer number of bytes of memory which a QUADRILATERAL type object occupies. (Each memory cell has a data capacity of 1 byte).";
+    output << "\nsizeof(QUADRILATERAL) = " << sizeof(QUADRILATERAL) << ". // The sizeof() operation returns the nonnegative integer number of bytes of memory which a TRIANGLE type object occupies. (Each memory cell has a data capacity of 1 byte).";
+    output << "\nA = POINT(" << A.get_X() << "," << A.get_Y() << "). // A represents a point (which is neither B nor C nor D) plotted on a two-dimensional Cartesian grid (such that the X value represents a real whole number position along the horizontal axis of the Cartesian grid while Y represents a real whole number position along the vertical axis of the same Cartesian grid).";
+    output << "\nB = POINT(" << B.get_X() << "," << B.get_Y() << "). // B represents a point (which is neither A nor C nor D) plotted on a two-dimensional Cartesian grid (such that the X value represents a real whole number position along the horizontal axis of the Cartesian grid while Y represents a real whole number position along the vertical axis of the same Cartesian grid).";
+    output << "\nC = POINT(" << C.get_X() << "," << C.get_Y() << "). // C represents a point (which is neither A nor B nor D) plotted on a two-dimensional Cartesian grid (such that the X value represents a real whole number position along the horizontal axis of the Cartesian grid while Y represents a real whole number position along the vertical axis of the same Cartesian grid).";
+    output << "\nC = POINT(" << D.get_X() << "," << D.get_Y() << "). // D represents a point (which is neither A nor B nor C) plotted on a two-dimensional Cartesian grid (such that the X value represents a real whole number position along the horizontal axis of the Cartesian grid while Y represents a real whole number position along the vertical axis of the same Cartesian grid).";
+    output << "\na = B.get_distance_from(C) = " << B.get_distance_from(C) << ". // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.";
+    output << "\nb = C.get_distance_from(D) = " << C.get_distance_from(D) << ". // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.";
+    output << "\nc = D.get_distance_from(A) = " << D.get_distance_from(A) << ". // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.";
+    output << "\nd = A.get_distance_from(B) = " << A.get_distance_from(D) << ". // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.";
+    output << "\ninterior_angle_DAB = interior_angle_of_A = " << interior_angle_of_A << ". // The value represents the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are D and A with the line segment whose endpoints are A and B such that those two line segments intersect at A (and the angle measurement is in degrees and not in radians).";
+    output << "\ninterior_angle_ABC = interior_angle_of_B = " << interior_angle_of_B << ". // The method returns the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are A and B with the line segment whose endpoints are B and C such that those two line segments intersect at B (and the angle measurement is in degrees and not in radians).";
+    output << "\ninterior_angle_BCD = interior_angle_of_C = " << interior_angle_of_C << ". // The method returns the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are B and C with the line segment whose endpoints are C and D such that those two line segments intersect at C (and the angle measurement is in degrees and not in radians).";
+    output << "\ninterior_angle_CDA = interior_angle_of_D = " << interior_angle_of_D << ". // The method returns the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are C and D with the line segment whose endpoints are D and A such that those two line segments intersect at D (and the angle measurement is in degrees and not in radians).";
+    output << "\ninterior_angle_of_A + interior_angle_of_B + interior_angle_of_C + interior_angle_of_D = " << interior_angle_of_A + interior_angle_of_B + interior_angle_of_C + interior_angle_of_D << ". // sum of all four approximate angle measurements of the quadrilateral represented by the caller QUADRILATERAL object (in degrees and not in radians)";
+    output << "\nget_perimeter() = a + b + c + d = " << get_perimeter() << ". // The method returns the sum of the four approximated side lengths of the quadrilateral which the caller QUADRILATERAL object represents.";
+    output << "\nget_area() = " << get_area() << ". // The method returns the approximate nonnegative real number of Cartesian grid unit squares which are enclosed inside of the two-dimensional region formed by the four line segments which connect points A to B, B to C, C to D, and D to A.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+}
 
 /**
  * The friend function is an alternative to the print method.
@@ -269,4 +428,8 @@ void print(std::ostream & output = std::cout);
  * but it does have access to the members of QUADRILATERAL as though
  * it were a member of that class.
  */
-std::ostream & operator << (std::ostream & output, QUADRILATERAL & quadrilateral);
+std::ostream & operator << (std::ostream & output, QUADRILATERAL & quadrilateral)
+{
+    quadrilateral.print(output);
+    return output;
+}
