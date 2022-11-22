@@ -63,17 +63,6 @@ public:
      * sets the POINT type data member of the TRAPEZOID object returned by this function named D to POINT(3,0).
      */
     TRAPEZOID();
-    
-    /**
-     * The normal constructor of TRAPEZOID attempts to set
-     * the color and point values to the input values.
-     * 
-     * If those point values fail to represent a 
-     * trapezoid (i.e. where exactly two opposite sides
-     * are parallel to each other and not the same length),
-     * then set the point values to the coordinates of the default
-     * trapezoid points.
-     */
 
     /**
      * The normal constructor of TRAPEZOID attempts to set
