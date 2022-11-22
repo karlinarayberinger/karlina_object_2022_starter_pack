@@ -1,7 +1,7 @@
 /**
  * file: quadrilateral.cpp
  * type: C++ (source file)
- * date: 21_NOVEMBER_2022
+ * date: 22_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN
  */
@@ -107,111 +107,6 @@ bool QUADRILATERAL::interior_angles_add_up_to_360_degrees()
     std::cout << "\ninterior_angle_of_D = " << interior_angle_of_D << " degrees.";
     return false;
 }
-
-/**
- * If the interior angle measurement of the angle whose vertice is A is identical to the interior angle measurement of the angle whose vertice is C and
- * if the interior angle measurement of the angle whose vertice is B is identical to the interior angle measurement of the angle whose vertice is D,
- * return true.
- * Otherwise, return false.
- */
-bool QUADRILATERAL::opposite_interior_angles_are_equal()
-{
-    double a0 = 0.0, b0 = 0.0, c0 = 0.0;
-    double a1 = 0.0, b1 = 0.0, c1 = 0.0;
-    double angle_opposite_of_a0 = 0.0, angle_opposite_of_b0 = 0.0, angle_opposite_of_c0 = 0.0; 
-    double angle_opposite_of_a1 = 0.0, angle_opposite_of_b1 = 0.0, angle_opposite_of_c1 = 0.0; 
-    double interior_angle_of_A = 0.0, interior_angle_of_B = 0.0, interior_angle_of_C = 0.0, interior_angle_of_D = 0.0;
-    double sum_of_interior_angles = 0.0;
-
-    // first triangle
-    a0 = A.get_distance_from(B);
-    b0 = B.get_distance_from(D);
-    c0 = D.get_distance_from(A);
-    angle_opposite_of_a0 = acos(((b0 * b0) + (c0 * c0) - (a0 * a0)) / (2 * b0 * c0)) * (180 / PI);
-    angle_opposite_of_b0 = acos(((a0 * a0) + (c0 * c0) - (b0 * b0)) / (2 * a0 * c0)) * (180 / PI);
-    angle_opposite_of_c0 = acos(((a0 * a0) + (b0 * b0) - (c0 * c0)) / (2 * a0 * b0)) * (180 / PI);
-
-    // second triangle
-    a1 = D.get_distance_from(B);
-    b1 = B.get_distance_from(C);
-    c1 = C.get_distance_from(D);
-    angle_opposite_of_a1 = acos(((b1 * b1) + (c1 * c1) - (a1 * a1)) / (2 * b1 * c1)) * (180 / PI);
-    angle_opposite_of_b1 = acos(((a1 * a1) + (c1 * c1) - (b1 * b1)) / (2 * a1 * c1)) * (180 / PI);
-    angle_opposite_of_c1 = acos(((a1 * a1) + (b1 * b1) - (c1 * c1)) / (2 * a1 * b1)) * (180 / PI);
-
-    interior_angle_of_A = floor(angle_opposite_of_b0); // round down to nearest whole number
-    interior_angle_of_B = floor(angle_opposite_of_c0 + angle_opposite_of_c1); // round down to nearest whole number
-    interior_angle_of_C = floor(angle_opposite_of_a1); // round down to nearest whole number
-    interior_angle_of_D = floor(angle_opposite_of_b1 + angle_opposite_of_a0); // round down to nearest whole number
-
-    // Determine whether or not the opposite interior angles of the quadrilateral which the caller QUADRILATERAL object represents are equal.
-    // If those conditions are satisfied, then return true.
-    if ((interior_angle_of_A == interior_angle_of_C) && (interior_angle_of_B == interior_angle_of_D)) return true;
-
-    // Return false if the conditions specified above are not satisfied.
-    std::cout << "\nThe measurement of the interior angle whose vertice is A must be identical to the measurement of the interior angle whose vertice is C.";
-    std::cout << "\nAlso, the measurement of the interior angle whose vertice is B must be identical to the measurement of the interior angle whose vertice is D.";
-    std::cout << "\ninterior_angle_of_A = " << interior_angle_of_A << " degrees. // rounded down to nearest whole number";
-    std::cout << "\ninterior_angle_of_B := " << interior_angle_of_B << " degrees. // rounded down to nearest whole number";
-    std::cout << "\ninterior_angle_of_C := " << interior_angle_of_C << " degrees. // rounded down to nearest whole number";
-    std::cout << "\ninterior_angle_of_D := " << interior_angle_of_D << " degrees. // rounded down to nearest whole number";
-    return false;
-}
-
-/**
- * If the quadrilateral represented by the caller QUADRILATERAL object represents a quadrilateral 
- * whose vertices _A, _B, _C, and _D each represent a unique coordinate pair and 
- * each vertice connects with exactly two other vertices in that quadrilateral such that
- * the side of the quadrilateral labeled a is the line segment whose endpoints are _B and _C,
- * the side of the quadrilateral labeled b is the line segment whose endpoints are _C and _D,
- * the side of the quadrilateral labeled c is the line segment whose endpoints are _D and _A, 
- * the side of the quadrilateral labeled d is the line segment whose endpoints are _A and _B, and
- * such that the four interior angles of that quadrilateral add up to approximately 360 degrees,
- * return true.
- * Otherwise, return false.
- * 
- * (A bowtie quadrilateral has no diagonal lines because two sides of the quadrilateral intersect each other).
- */
-bool QUADRILATERAL::point_sequence_represents_non_bowtie_quadrilateral(POINT _A, POINT _B, POINT _C, POINT _D)
-{
-    // Return false if the first test fails.
-    if (!points_represent_unique_coordinate_pairs(_A, _B, _C, _D))
-    {
-        std::cout << "\n\n_A, _B, _C, and _D do not each represent unique coordinate pairs.";
-        std::cout << "\nHence, point_sequence_represents_non_bowtie_quadrilateral(_A, _B, _C, _D) is returning false.";
-        return false;
-    }
-
-    // Create a test QUADRILATERAL object by which to run the following helper method.
-    QUADRILATERAL test_quadrilateral;
-    test_quadrilateral.A.set_X(_A.get_X());
-    test_quadrilateral.A.set_Y(_A.get_Y());
-    test_quadrilateral.B.set_X(_B.get_X());
-    test_quadrilateral.B.set_Y(_B.get_Y());
-    test_quadrilateral.C.set_X(_C.get_X());
-    test_quadrilateral.C.set_Y(_C.get_Y());
-    test_quadrilateral.D.set_X(_D.get_X());
-    test_quadrilateral.D.set_Y(_D.get_Y());
-
-    // Return false if the second test fails.
-    if (!test_quadrilateral.interior_angles_add_up_to_360_degrees())
-    {
-        std::cout << "\n\n_A, _B, _C, and _D do not represent a quadrilateral whose interior angles add up to 360 degrees.";
-        std::cout << "\nHence, point_sequence_represents_non_bowtie_quadrilateral(_A, _B, _C, _D) is returning false.";
-        return false;
-    }
-
-    // Return false if the third test fails.
-    if (!test_quadrilateral.opposite_interior_angles_are_equal())
-    {
-        std::cout << "\n\n_A, _B, _C, and _D do not represent a quadrilateral whose opposite interior angles have equal angle measurements.";
-        std::cout << "\nHence, point_sequence_represents_non_bowtie_quadrilateral(_A, _B, _C, _D) is returning false.";
-        return false;
-    }
-
-    // Return true if neither of the three tests fail.
-    return true;
-}
     
 /**
  * The default constructor of the QUADRILATERAL calls the constructor of the POLYGON class and
@@ -244,7 +139,14 @@ QUADRILATERAL::QUADRILATERAL()
  */
 QUADRILATERAL::QUADRILATERAL(std::string color, POINT A, POINT B, POINT C, POINT D)
 {
-    if (point_sequence_represents_non_bowtie_quadrilateral(A, B, C, D))
+    QUADRILATERAL test_quadrilateral;
+    test_quadrilateral.A.set_X(A.get_X());
+    test_quadrilateral.A.set_Y(A.get_Y());
+    test_quadrilateral.B.set_X(B.get_X());
+    test_quadrilateral.B.set_Y(B.get_Y());
+    test_quadrilateral.C.set_X(C.get_X());
+    test_quadrilateral.C.set_Y(C.get_Y());
+    if (points_represent_unique_coordinate_pairs(A, B, C, D) && test_quadrilateral.interior_angles_add_up_to_360_degrees())
     {
         this -> A = A;
         this -> B = B;
