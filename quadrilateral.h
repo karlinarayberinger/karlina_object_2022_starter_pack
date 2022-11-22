@@ -17,42 +17,9 @@
  * QUADRILATERAL is a class which inherits the protected and public data
  * attributes and methods of POLYGON (and POLYGON is an abstract class).
  * 
- * Each QUADRILATERAL instance represents a specific four-sided polygon.
- * 
- * A TRIANGLE object represents an instance in which three unique POINT instances exist 
- * (and such that each one of those three POINT instances represents a unique coordinate pair within the tuple of three objects 
- *  which each represent exactle one two-dimensional point, POINT(X,Y), on a Cartesian grid).
- * 
- * A cyclic polygon's vertices (i.e. points) are each positioned on the edge of a circle
- * inside of which that polygon is inscribed.
- * 
- * Note that all regular polygons (i.e. polygon's whose side lengths are each the same length) 
- * are cyclic. Note that all non-degenerate triangles (i.e. triangles which have a positive area
- * instead of an area of zero due to the fact that a single line passes through all three points)
- * are cyclic.
- * 
- * The public keyword prefacing POLYGON in the class definition below specifies that
- * all the public members of the base class POLYGON will be public in the derived class QUADRILATERAL
- * and that all the protected members of the base class POLYGON will be protected in the derived class QUADRILATERAL.
- * 
- * If the access specifier prefacing POLYGON in the class definition below is protected instead of public, then
- * all the public members of the base class POLYGON will be protected in the derived class QUADRILATERAL
- * and all the protected members of the base class POLYGON will be protected in the derived class QUADRILATERAL.
- * 
- * If the access specifier prefacing POLYGON in the class definition below is private instead of public, then
- * all the public members of the base class POLYGON will be private in the derived class QUADRILATERAL
- * and all the protected members of the base class POLYGON will be private in the derived class QUADRILATERAL.
- * 
- * Note that the private members of a class cannot be accessed from outside of that class (even by derived classes).
- */
-
-/**
- * QUADRILATERAL is a class which inherits the protected and public data
- * attributes and methods of POLYGON (and POLYGON is an abstract class).
- * 
  * A QUADRILATERAL object represents an instance in which four unique POINT instances exist 
- * (and such that each one of those four POINT instances represents a unique coordinate pair within the tuple of four objects 
- *  which each represent exactle one two-dimensional point, POINT(X,Y), on a Cartesian grid).
+ * such that each one of those four POINT instances represents a unique coordinate pair within the tuple of four POINT instances 
+ * (such that each coordinate pair represents exactly one two-dimensional point, POINT(X,Y), on a Cartesian grid).
  * 
  * Each QUADRILATERAL object represents a specific four-sided polygon whose area is a positive real number.
  * 
@@ -104,8 +71,9 @@ protected:
      * each connect with exactly two other vertices in that quadrilateral such that
      * the side of the quadrilateral labeled a is the line segment whose endpoints are _B and _C,
      * the side of the quadrilateral labeled b is the line segment whose endpoints are _C and _D,
-     * the side of the quadrilateral labeled c is the line segment whose endpoints are _D and _A, and
-     * the side of the quadrilateral labeled d is the line segment whose endpoints are _A and _B,
+     * the side of the quadrilateral labeled c is the line segment whose endpoints are _D and _A, 
+     * the side of the quadrilateral labeled d is the line segment whose endpoints are _A and _B, and
+     * such that the four interior angles of that quadrilateral add up to approximately 360 degrees,
      * return true.
      * Otherwise, return false.
      */
