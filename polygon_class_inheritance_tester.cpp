@@ -20,6 +20,7 @@ void unit_test_4(std::ostream & output);
 void unit_test_5(std::ostream & output);
 void unit_test_6(std::ostream & output);
 void unit_test_7(std::ostream & output);
+void unit_test_8(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -193,11 +194,31 @@ void unit_test_7(std::ostream & output)
     POLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as TRAPEZOID.
     pointer_to_polygon = new TRAPEZOID; // Assign memory to a dynamic TRAPEZOID instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
     pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
-    output << "\npoineter_to_polygon -> get_area() = " << pointer_to_polygon -> get_area() << ".";
-    output << "\npoineter_to_polygon -> get_perimeter() = " << pointer_to_polygon -> get_perimeter() << ".";
+    output << "\npoineter_to_polygon -> get_area() = " << pointer_to_polygon -> get_area() << ". // Indirectly call the TRAPEZOID get_area() method.";
+    output << "\npoineter_to_polygon -> get_perimeter() = " << pointer_to_polygon -> get_perimeter() << ". // Indirectly call the TRAPEZOND get_permieter() method.";
     output << "\ndelete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated TRAPEZOID instance.";
     output << "\n--------------------------------------------------------------------------------------------------";
     delete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated TRAPEZOID instance.";
+}
+
+/**
+ * Unit Test # 8: Create a pointer-to-QUADRILATERAL type variable to store the memory address of a dynamically allocated TRAPEZOID instance. 
+ * Use that pointer-to-QUADRILATERAL type variable to call the QUADRILATERAL print method.
+ */
+void unit_test_8(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 8: Create a pointer-to-QUADRILATERAL type variable to store the memory address of a dynamically allocated TRAPEZOID instance. Use that pointer-to-QUADRILATERAL type variable to call the QUADRILATERAL print method.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nQUADRILATERAL * pointer_to_quadrilateral; // The pointer-to-QUADRILATERAL type variable can store the memory address of an object whose data type is a non-abstract derived class of QUADRILATERAL such as TRAPEZOID.";
+    output << "\npointer_to_quadrilateral = new TRAPEZOID; // Assign memory to a dynamic TRAPEZOID instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).";
+    output << "\npointer_to_quadrilateral -> print(output); // Indirectly call the QUADRILATERAL print method.";
+    output << "\ndelete pointer_to_quadrilateral; // De-allocate memory which was assigned to the dynamically allocated TRAPEZOID instance.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    QUADRILATERAL * pointer_to_quadrilateral; // The pointer-to-QUADRILATERAL type variable can store the memory address of an object whose data type is a non-abstract derived class of QUADRILATERAL such as TRAPEZOID.
+    pointer_to_quadrilateral = new TRAPEZOID; // Assign memory to a dynamic TRAPEZOID instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
+    pointer_to_quadrilateral -> print(output); // Indirectly call the QUADRILATERAL print method.
+    delete pointer_to_quadrilateral; // De-allocate memory which was assigned to the dynamically allocated TRAPEZOID instance.
 }
 
 /* program entry point */
@@ -248,6 +269,8 @@ int main()
     unit_test_6(file);
     unit_test_7(std::cout);
     unit_test_7(file);
+    unit_test_8(std::cout);
+    unit_test_8(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
