@@ -1,4 +1,3 @@
-
 /**
  * file: polygon_class_inheritance_tester.cpp
  * type: C++ (source file)
