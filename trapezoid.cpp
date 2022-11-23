@@ -17,6 +17,7 @@
 bool TRAPEZOID::is_trapezoid()
 {
     double a = 0.0, b = 0.0, c = 0.0, d = 0.0;
+    double slope_of_a = 0.0, slope_of_b = 0.0, slope_of_c = 0.0, slope_of_d = 0.0;
     double a0 = 0.0, b0 = 0.0, c0 = 0.0;
     double a1 = 0.0, b1 = 0.0, c1 = 0.0;
     double angle_opposite_of_a0 = 0.0, angle_opposite_of_b0 = 0.0, angle_opposite_of_c0 = 0.0; 
@@ -51,9 +52,15 @@ bool TRAPEZOID::is_trapezoid()
     c = D.get_distance_from(A);
     d = A.get_distance_from(B);
 
+    /* slope of sides of quadrilateral */
+    slope_of_a = B.get_slope_of_line_to(C);
+    slope_of_b = C.get_slope_of_line_to(D);
+    slope_of_c = D.get_slope_of_line_to(A);
+    slope_of_d = A.get_slope_of_line_to(B);
+
     if (!points_represent_unique_coordinate_pairs(A,B,C,D) || !interior_angles_add_up_to_360_degrees()) return false;
-    if (((a == c) && (b != d)) || ((a != c) && (b == d))) return false;
-    return true;
+    if ((a == c) && (b != d) && (slope_of_a != slope_of_c) && (slope_of_b == slope_of_d)) return true;
+    return false;
 }
 
 /**
