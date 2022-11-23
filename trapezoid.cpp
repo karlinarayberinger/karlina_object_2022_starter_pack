@@ -97,6 +97,30 @@ TRAPEZOID::TRAPEZOID()
 TRAPEZOID::TRAPEZOID(std::string color, POINT A, POINT B, POINT C, POINT D)
 {
     std::cout << "\n\nCreating the TRAPEZOID type object whose memory address is " << this << "...";
+    TRAPEZOID test_trapezoid;
+    test_trapezoid.A.set_X(A.get_X());
+    test_trapezoid.A.set_Y(A.get_Y());
+    test_trapezoid.B.set_X(B.get_X());
+    test_trapezoid.B.set_Y(B.get_Y());
+    test_trapezoid.C.set_X(C.get_X());
+    test_trapezoid.C.set_Y(C.get_Y());
+    test_trapezoid.D.set_X(D.get_X());
+    test_trapezoid.D.set_Y(D.get_Y());
+    if (!test_trapezoid.is_trapezoid())
+    {
+        this -> A = A;
+        this -> B = B;
+        this -> C = C;
+        this -> D = D;
+    }
+    else
+    {
+        this -> A = POINT(0,0);
+        this -> B = POINT(0,5);
+        this -> C = POINT(4,5);
+        this -> D = POINT(4,0);
+    }
+    this -> color = color;
 }
 
 /**
