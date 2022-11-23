@@ -16,7 +16,7 @@
  */
 bool TRAPEZOID::is_trapezoid()
 {
-    double a = 0.0, b = 0.0, c = 0.0;
+    double a = 0.0, b = 0.0, c = 0.0, d = 0.0;
     double a0 = 0.0, b0 = 0.0, c0 = 0.0;
     double a1 = 0.0, b1 = 0.0, c1 = 0.0;
     double angle_opposite_of_a0 = 0.0, angle_opposite_of_b0 = 0.0, angle_opposite_of_c0 = 0.0; 
@@ -38,7 +38,7 @@ bool TRAPEZOID::is_trapezoid()
     c1 = floor(C.get_distance_from(D));
     angle_opposite_of_a1 = floor(acos(((b1 * b1) + (c1 * c1) - (a1 * a1)) / (2 * b1 * c1)) * (180 / PI));
     angle_opposite_of_b1 = floor(acos(((a1 * a1) + (c1 * c1) - (b1 * b1)) / (2 * a1 * c1)) * (180 / PI));
-    angle_opposite_of_c1 = floor(acos(((a1 * a1) + (b1 * b1) - (c1 * c1)) / (2 * a1 * b1)) * (180 / PI);
+    angle_opposite_of_c1 = floor(acos(((a1 * a1) + (b1 * b1) - (c1 * c1)) / (2 * a1 * b1)) * (180 / PI));
 
     interior_angle_of_A = angle_opposite_of_b0;
     interior_angle_of_B = angle_opposite_of_c0 + angle_opposite_of_c1;
@@ -51,7 +51,7 @@ bool TRAPEZOID::is_trapezoid()
     c = D.get_distance_from(A);
     d = A.get_distance_from(B);
 
-    if (!points_represent_unique_coordinate_pairs() || !interior_angles_add_up_to_360_degrees()) return false;
+    if (!points_represent_unique_coordinate_pairs(A,B,C,D) || !interior_angles_add_up_to_360_degrees()) return false;
     if (((a == c) && (b != d)) || ((a != c) && (b == d))) return false;
     return true;
 }

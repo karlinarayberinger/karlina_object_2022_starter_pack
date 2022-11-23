@@ -9,6 +9,7 @@
 
 #include "polygon.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the POLYGON class.
 #include "quadrilateral.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the QUADRILATERAL class.
+#include "trapezoid.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the TRAPEZOID class.
 
 /* function prototypes */
 void unit_test_0(std::ostream & output);
@@ -17,6 +18,7 @@ void unit_test_2(std::ostream & output);
 void unit_test_3(std::ostream & output);
 void unit_test_4(std::ostream & output);
 void unit_test_5(std::ostream & output);
+void unit_test_6(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -152,6 +154,27 @@ void unit_test_5(std::ostream & output)
     quadrilateral_2.print(output);
 }
 
+/**
+ * Unit Test # 6: Test the default TRAPEZOID constructor and the TRAPEZOID print method.
+ */
+void unit_test_6(std::ostream & output)
+{
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 6: Test the default TRAPEZOID constructor and the TRAPEZOID print method.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nTRAPEZOID trapezoid;";
+    output << "\ntrapezoid.print(output);";
+    output << "\ntrapezoid.print(); // Test the default argument (which is std::cout).";
+    output << "\ntrapezoid.print(output);";
+    output << "\noutput << trapezoid; // overloaded ostream operator as defined in trapezoid.cpp";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    TRAPEZOID trapezoid;
+    trapezoid.print(output);
+    trapezoid.print(); // Test the default argument (which is std::cout).
+    trapezoid.print(output);
+    output << trapezoid; // overloaded ostream operator as defined in trapezoid.cpp
+}
+
 /* program entry point */
 int main()
 {
@@ -196,6 +219,8 @@ int main()
     unit_test_4(file);
     unit_test_5(std::cout);
     unit_test_5(file);
+    unit_test_6(std::cout);
+    unit_test_6(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
