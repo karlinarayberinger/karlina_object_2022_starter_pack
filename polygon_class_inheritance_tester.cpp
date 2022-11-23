@@ -239,7 +239,7 @@ void unit_test_9(std::ostream & output)
     output << "\n--------------------------------------------------------------------------------------------------";
     TRAPEZOID trapezoid_0 = TRAPEZOID("pink", POINT(-5,-10), POINT(0,5), POINT(15,5), POINT(30,-10));
     trapezoid_0.print(output);
-    TRAPEZOID trapezoid_1 = TRAPEZOID("brown", POINT(0,0), POINT(1,-1), POINT(1,-2), POINT(0,-3));
+    TRAPEZOID trapezoid_1 = TRAPEZOID("brown", POINT(0,0), POINT(4,-5), POINT(15,-5), POINT(45,0));
     trapezoid_1.print(output);
     TRAPEZOID trapezoid_2 = TRAPEZOID(trapezoid_0);
     trapezoid_2.print(output);
