@@ -21,6 +21,7 @@ void unit_test_5(std::ostream & output);
 void unit_test_6(std::ostream & output);
 void unit_test_7(std::ostream & output);
 void unit_test_8(std::ostream & output);
+void unit_test_9(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -221,6 +222,29 @@ void unit_test_8(std::ostream & output)
     delete pointer_to_quadrilateral; // De-allocate memory which was assigned to the dynamically allocated TRAPEZOID instance.
 }
 
+/**
+ * Unit Test # 9: Test the normal TRAPEZOID constructor and TRAPEZOID copy constructor using valid function inputs and the TRAPEZOID print method.
+ */
+void unit_test_9(std::ostream & output)
+{
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 9: Test the normal TRAPEZOID constructor and TRAPEZOID copy constructor using valid function inputs and the TRAPEZOID print method.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nTRAPEZOID trapezoid_0 = TRAPEZOID(\"pink\", POINT(-2,-2), POINT(-1,0), POINT(5,0), POINT(6,-2));";
+    output << "\ntrapezoid_0.print(output);";
+    output << "\nTRAPEZOID trapezoid_1 = TRAPEZOID(\"brown\", POINT(0,0), POINT(1,-1), POINT(1,-2), POINT(0,-3));";
+    output << "\ntrapezoid_1.print(output);";
+    output << "\nTRAPEZOID trapezoid_2 = TRAPEZOID(trapezoid_0);";
+    output << "\ntrapezoid_2.print(output);";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    TRAPEZOID trapezoid_0 = TRAPEZOID("pink", POINT(-2,-2), POINT(-1,0), POINT(5,0), POINT(6,-2));
+    trapezoid_0.print(output);
+    TRAPEZOID trapezoid_1 = TRAPEZOID("brown", POINT(0,0), POINT(1,-1), POINT(1,-2), POINT(0,-3));
+    trapezoid_1.print(output);
+    TRAPEZOID trapezoid_2 = TRAPEZOID(trapezoid_0);
+    trapezoid_2.print(output);
+}
+
 /* program entry point */
 int main()
 {
@@ -271,6 +295,8 @@ int main()
     unit_test_7(file);
     unit_test_8(std::cout);
     unit_test_8(file);
+    unit_test_9(std::cout);
+    unit_test_9(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
