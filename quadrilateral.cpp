@@ -108,6 +108,8 @@ QUADRILATERAL::QUADRILATERAL(std::string color, POINT A, POINT B, POINT C, POINT
     test_quadrilateral.B.set_Y(B.get_Y());
     test_quadrilateral.C.set_X(C.get_X());
     test_quadrilateral.C.set_Y(C.get_Y());
+    test_quadrilateral.D.set_X(D.get_X());
+    test_quadrilateral.D.set_Y(D.get_Y());
     if (points_represent_unique_coordinate_pairs(A, B, C, D) && test_quadrilateral.interior_angles_add_up_to_360_degrees() && (test_quadrilateral.get_area() > 0))
     {
         this -> A = A;
