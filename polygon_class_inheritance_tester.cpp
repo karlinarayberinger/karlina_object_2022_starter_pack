@@ -232,7 +232,7 @@ void unit_test_9(std::ostream & output)
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nTRAPEZOID trapezoid_0 = TRAPEZOID(\"pink\", POINT(-5,-10), POINT(0,5), POINT(15,5), POINT(30,-10));";
     output << "\ntrapezoid_0.print(output);";
-    output << "\nTRAPEZOID trapezoid_1 = TRAPEZOID(\"brown\", POINT(0,0), POINT(1,-1), POINT(1,-2), POINT(0,-3));";
+    output << "\nTRAPEZOID trapezoid_1 = TRAPEZOID(\"brown\", POINT(0,0), POINT(4,-5), POINT(15,-5), POINT(45,0));";
     output << "\ntrapezoid_1.print(output);";
     output << "\nTRAPEZOID trapezoid_2 = TRAPEZOID(trapezoid_0);";
     output << "\ntrapezoid_2.print(output);";
