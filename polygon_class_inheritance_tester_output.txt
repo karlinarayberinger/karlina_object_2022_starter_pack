@@ -13,11 +13,11 @@ delete pointer_to_polygon; // De-allocate memory which was assigned to the dynam
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-memory_address = 0x5556b08fb4b0.
+memory_address = 0x555f9bdd24b0.
 category = POLYGON.
 color = orange.
-&category = 0x5556b08fb4b8.
-&color = 0x5556b08fb4d8.
+&category = 0x555f9bdd24b8.
+&color = 0x555f9bdd24d8.
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 Unit Test # 1: Test the default QUADRILATERAL constructor and the QUADRILATERAL print method.
@@ -30,13 +30,13 @@ output << quadrilateral; // overloaded ostream operator as defined in quadrilate
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffe4a016000. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffe4a016048. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffe4a016028. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffe4a016068. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffe4a016070. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffe4a016078. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffe4a016080. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffeaed77080. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffeaed770c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffeaed770a8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffeaed770e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffeaed770f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffeaed770f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffeaed77100. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -61,7 +61,7 @@ D = POINT(4,0). // D represents a point (which is neither A nor B nor C) plotted
 a = B.get_distance_from(C) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
 b = C.get_distance_from(D) = 5. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.
 c = D.get_distance_from(A) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.
-d = A.get_distance_from(B) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+d = A.get_distance_from(B) = 5. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
 A.get_slope_of_line_to(B) = inf. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
 B.get_slope_of_line_to(C) = 0. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
 C.get_slope_of_line_to(D) = -inf. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and D.
@@ -76,13 +76,13 @@ get_area() = 20. // The method returns the approximate nonnegative real number o
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffe4a016000. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffe4a016048. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffe4a016028. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffe4a016068. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffe4a016070. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffe4a016078. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffe4a016080. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffeaed77080. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffeaed770c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffeaed770a8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffeaed770e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffeaed770f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffeaed770f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffeaed77100. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -107,7 +107,7 @@ D = POINT(4,0). // D represents a point (which is neither A nor B nor C) plotted
 a = B.get_distance_from(C) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
 b = C.get_distance_from(D) = 5. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.
 c = D.get_distance_from(A) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.
-d = A.get_distance_from(B) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+d = A.get_distance_from(B) = 5. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
 A.get_slope_of_line_to(B) = inf. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
 B.get_slope_of_line_to(C) = 0. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
 C.get_slope_of_line_to(D) = -inf. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and D.
@@ -122,13 +122,13 @@ get_area() = 20. // The method returns the approximate nonnegative real number o
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffe4a016000. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffe4a016048. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffe4a016028. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffe4a016068. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffe4a016070. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffe4a016078. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffe4a016080. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffeaed77080. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffeaed770c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffeaed770a8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffeaed770e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffeaed770f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffeaed770f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffeaed77100. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -153,7 +153,7 @@ D = POINT(4,0). // D represents a point (which is neither A nor B nor C) plotted
 a = B.get_distance_from(C) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
 b = C.get_distance_from(D) = 5. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.
 c = D.get_distance_from(A) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.
-d = A.get_distance_from(B) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+d = A.get_distance_from(B) = 5. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
 A.get_slope_of_line_to(B) = inf. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
 B.get_slope_of_line_to(C) = 0. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
 C.get_slope_of_line_to(D) = -inf. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and D.
@@ -177,11 +177,11 @@ delete pointer_to_polygon; // De-allocate memory which was assigned to the dynam
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-memory_address = 0x5556b08fb4b0.
+memory_address = 0x555f9bdd24b0.
 category = POLYGON.
 color = orange.
-&category = 0x5556b08fb4b8.
-&color = 0x5556b08fb4d8.
+&category = 0x555f9bdd24b8.
+&color = 0x555f9bdd24d8.
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 Unit Test # 3: Create a pointer-to-QUADRILATERAL type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. Use that pointer-to-QUADRILATERAL to call the overloaded ostream operator method of the QUADRILATERAL class and the public getter methods of the QUADRILATERAL class.
@@ -193,13 +193,13 @@ delete pointer_to_quadrilateral; // De-allocate memory which was assigned to the
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x5556b08fb4b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x5556b08fb4f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x5556b08fb4d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x5556b08fb518. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x5556b08fb520. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x5556b08fb528. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x5556b08fb530. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x555f9bdd24b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x555f9bdd24f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x555f9bdd24d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x555f9bdd2518. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x555f9bdd2520. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x555f9bdd2528. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x555f9bdd2530. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -224,7 +224,7 @@ D = POINT(4,0). // D represents a point (which is neither A nor B nor C) plotted
 a = B.get_distance_from(C) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
 b = C.get_distance_from(D) = 5. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.
 c = D.get_distance_from(A) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.
-d = A.get_distance_from(B) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+d = A.get_distance_from(B) = 5. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
 A.get_slope_of_line_to(B) = inf. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
 B.get_slope_of_line_to(C) = 0. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
 C.get_slope_of_line_to(D) = -inf. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and D.
@@ -252,13 +252,13 @@ quadrilateral_2.print(output);
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffe4a015ee0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffe4a015f28. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffe4a015f08. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffe4a015f48. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffe4a015f50. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffe4a015f58. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffe4a015f60. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffeaed76f60. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffeaed76fa8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffeaed76f88. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffeaed76fc8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffeaed76fd0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffeaed76fd8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffeaed76fe0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -298,13 +298,13 @@ get_area() = 15.99999999999999289457264239899814128875732421875. // The method r
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffe4a015f70. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffe4a015fb8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffe4a015f98. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffe4a015fd8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffe4a015fe0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffe4a015fe8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffe4a015ff0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffeaed76ff0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffeaed77038. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffeaed77018. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffeaed77058. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffeaed77060. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffeaed77068. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffeaed77070. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -329,7 +329,7 @@ D = POINT(-1,-2). // D represents a point (which is neither A nor B nor C) plott
 a = B.get_distance_from(C) = 2.236067977499789805051477742381393909454345703125. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
 b = C.get_distance_from(D) = 6.708203932499369415154433227144181728363037109375. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.
 c = D.get_distance_from(A) = 2.236067977499789805051477742381393909454345703125. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.
-d = A.get_distance_from(B) = 2.236067977499789805051477742381393909454345703125. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+d = A.get_distance_from(B) = 3.605551275463989124858699142350815236568450927734375. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
 A.get_slope_of_line_to(B) = 0.66666666666666662965923251249478198587894439697265625. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
 B.get_slope_of_line_to(C) = -0.5. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
 C.get_slope_of_line_to(D) = 0.5. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and D.
@@ -344,13 +344,13 @@ get_area() = 8. // The method returns the approximate nonnegative real number of
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffe4a016000. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffe4a016048. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffe4a016028. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffe4a016068. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffe4a016070. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffe4a016078. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffe4a016080. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffeaed77080. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffeaed770c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffeaed770a8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffeaed770e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffeaed770f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffeaed770f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffeaed77100. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -400,13 +400,13 @@ quadrilateral_2.print(output);
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffe4a015ee0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffe4a015f28. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffe4a015f08. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffe4a015f48. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffe4a015f50. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffe4a015f58. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffe4a015f60. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffeaed76f60. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffeaed76fa8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffeaed76f88. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffeaed76fc8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffeaed76fd0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffeaed76fd8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffeaed76fe0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -431,7 +431,7 @@ D = POINT(4,0). // D represents a point (which is neither A nor B nor C) plotted
 a = B.get_distance_from(C) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
 b = C.get_distance_from(D) = 5. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.
 c = D.get_distance_from(A) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.
-d = A.get_distance_from(B) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+d = A.get_distance_from(B) = 5. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
 A.get_slope_of_line_to(B) = inf. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
 B.get_slope_of_line_to(C) = 0. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
 C.get_slope_of_line_to(D) = -inf. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and D.
@@ -446,13 +446,13 @@ get_area() = 20. // The method returns the approximate nonnegative real number o
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffe4a015f70. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffe4a015fb8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffe4a015f98. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffe4a015fd8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffe4a015fe0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffe4a015fe8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffe4a015ff0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffeaed76ff0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffeaed77038. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffeaed77018. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffeaed77058. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffeaed77060. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffeaed77068. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffeaed77070. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -477,7 +477,7 @@ D = POINT(4,0). // D represents a point (which is neither A nor B nor C) plotted
 a = B.get_distance_from(C) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
 b = C.get_distance_from(D) = 5. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.
 c = D.get_distance_from(A) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.
-d = A.get_distance_from(B) = 4. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+d = A.get_distance_from(B) = 5. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
 A.get_slope_of_line_to(B) = inf. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
 B.get_slope_of_line_to(C) = 0. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
 C.get_slope_of_line_to(D) = -inf. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and D.
@@ -492,13 +492,13 @@ get_area() = 20. // The method returns the approximate nonnegative real number o
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffe4a016000. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffe4a016048. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffe4a016028. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffe4a016068. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffe4a016070. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffe4a016078. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffe4a016080. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffeaed77080. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffeaed770c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffeaed770a8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffeaed770e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffeaed770f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffeaed770f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffeaed77100. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -523,7 +523,7 @@ D = POINT(4,2). // D represents a point (which is neither A nor B nor C) plotted
 a = B.get_distance_from(C) = 4.47213595499957961010295548476278781890869140625. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
 b = C.get_distance_from(D) = 2. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.
 c = D.get_distance_from(A) = 4.47213595499957961010295548476278781890869140625. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.
-d = A.get_distance_from(B) = 4.47213595499957961010295548476278781890869140625. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+d = A.get_distance_from(B) = 2. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
 A.get_slope_of_line_to(B) = inf. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
 B.get_slope_of_line_to(C) = -0.5. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
 C.get_slope_of_line_to(D) = inf. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and D.
@@ -547,13 +547,13 @@ output << trapezoid; // overloaded ostream operator as defined in trapezoid.cpp
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffe4a015fe0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffe4a016068. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffe4a016008. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffe4a016048. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffe4a016050. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffe4a016058. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffe4a016060. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffeaed77060. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffeaed770e8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffeaed77088. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffeaed770c8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffeaed770d0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffeaed770d8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffeaed770e0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -581,7 +581,7 @@ D = POINT(3,0). // D represents a point (which is neither A nor B nor C) plotted
 a = B.get_distance_from(C) = 1. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
 b = C.get_distance_from(D) = 1.4142135623730951454746218587388284504413604736328125. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.
 c = D.get_distance_from(A) = 3. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.
-d = A.get_distance_from(B) = 3. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+d = A.get_distance_from(B) = 1.4142135623730951454746218587388284504413604736328125. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
 A.get_slope_of_line_to(B) = 1. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
 B.get_slope_of_line_to(C) = 0. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
 C.get_slope_of_line_to(D) = -1. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and D.
@@ -596,13 +596,13 @@ get_area() = 1.9999999999999993338661852249060757458209991455078125. // The meth
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffe4a015fe0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffe4a016068. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffe4a016008. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffe4a016048. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffe4a016050. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffe4a016058. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffe4a016060. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffeaed77060. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffeaed770e8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffeaed77088. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffeaed770c8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffeaed770d0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffeaed770d8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffeaed770e0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -630,7 +630,7 @@ D = POINT(3,0). // D represents a point (which is neither A nor B nor C) plotted
 a = B.get_distance_from(C) = 1. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
 b = C.get_distance_from(D) = 1.4142135623730951454746218587388284504413604736328125. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.
 c = D.get_distance_from(A) = 3. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.
-d = A.get_distance_from(B) = 3. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+d = A.get_distance_from(B) = 1.4142135623730951454746218587388284504413604736328125. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
 A.get_slope_of_line_to(B) = 1. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
 B.get_slope_of_line_to(C) = 0. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
 C.get_slope_of_line_to(D) = -1. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and D.
@@ -645,13 +645,13 @@ get_area() = 1.9999999999999993338661852249060757458209991455078125. // The meth
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffe4a015fe0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffe4a016068. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffe4a016008. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffe4a016048. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffe4a016050. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffe4a016058. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffe4a016060. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffeaed77060. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffeaed770e8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffeaed77088. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffeaed770c8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffeaed770d0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffeaed770d8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffeaed770e0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -679,7 +679,7 @@ D = POINT(3,0). // D represents a point (which is neither A nor B nor C) plotted
 a = B.get_distance_from(C) = 1. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
 b = C.get_distance_from(D) = 1.4142135623730951454746218587388284504413604736328125. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.
 c = D.get_distance_from(A) = 3. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.
-d = A.get_distance_from(B) = 3. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+d = A.get_distance_from(B) = 1.4142135623730951454746218587388284504413604736328125. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
 A.get_slope_of_line_to(B) = 1. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
 B.get_slope_of_line_to(C) = 0. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
 C.get_slope_of_line_to(D) = -1. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and D.
@@ -702,11 +702,11 @@ pointer_to_polygon = new TRAPEZOID; // Assign memory to a dynamic TRAPEZOID inst
 pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
 
 --------------------------------------------------------------------------------------------------
-memory_address = 0x5556b08fb670.
+memory_address = 0x555f9bdd2670.
 category = POLYGON.
 color = orange.
-&category = 0x5556b08fb678.
-&color = 0x5556b08fb698.
+&category = 0x555f9bdd2678.
+&color = 0x555f9bdd2698.
 --------------------------------------------------------------------------------------------------
 poineter_to_polygon -> get_area() = 1.9999999999999993338661852249060757458209991455078125. // Indirectly call the TRAPEZOID get_area() method.
 poineter_to_polygon -> get_perimeter() = 6.8284271247461898468600338674150407314300537109375. // Indirectly call the TRAPEZOND get_permieter() method.
@@ -723,13 +723,13 @@ delete pointer_to_quadrilateral; // De-allocate memory which was assigned to the
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x5556b08fb670. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x5556b08fb6b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x5556b08fb698. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x5556b08fb6d8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x5556b08fb6e0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x5556b08fb6e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x5556b08fb6f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x555f9bdd2670. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x555f9bdd26b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x555f9bdd2698. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x555f9bdd26d8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x555f9bdd26e0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x555f9bdd26e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x555f9bdd26f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -754,7 +754,7 @@ D = POINT(3,0). // D represents a point (which is neither A nor B nor C) plotted
 a = B.get_distance_from(C) = 1. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
 b = C.get_distance_from(D) = 1.4142135623730951454746218587388284504413604736328125. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.
 c = D.get_distance_from(A) = 3. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.
-d = A.get_distance_from(B) = 3. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+d = A.get_distance_from(B) = 1.4142135623730951454746218587388284504413604736328125. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
 A.get_slope_of_line_to(B) = 1. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
 B.get_slope_of_line_to(C) = 0. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
 C.get_slope_of_line_to(D) = -1. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and D.
@@ -779,13 +779,13 @@ trapezoid_2.print(output);
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffe4a015e80. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffe4a015f08. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffe4a015ea8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffe4a015ee8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffe4a015ef0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffe4a015ef8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffe4a015f00. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffeaed76f00. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffeaed76f88. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffeaed76f28. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffeaed76f68. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffeaed76f70. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffeaed76f78. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffeaed76f80. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -813,7 +813,7 @@ D = POINT(30,-10). // D represents a point (which is neither A nor B nor C) plot
 a = B.get_distance_from(C) = 15. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
 b = C.get_distance_from(D) = 21.21320343559642651598551310598850250244140625. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.
 c = D.get_distance_from(A) = 35. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.
-d = A.get_distance_from(B) = 35. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+d = A.get_distance_from(B) = 15.8113883008418962816676867078058421611785888671875. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
 A.get_slope_of_line_to(B) = 3. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
 B.get_slope_of_line_to(C) = 0. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
 C.get_slope_of_line_to(D) = -1. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and D.
@@ -828,13 +828,13 @@ get_area() = 375. // The method returns the approximate nonnegative real number 
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffe4a015f30. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffe4a015fb8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffe4a015f58. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffe4a015f98. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffe4a015fa0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffe4a015fa8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffe4a015fb0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffeaed76fb0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffeaed77038. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffeaed76fd8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffeaed77018. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffeaed77020. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffeaed77028. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffeaed77030. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -862,7 +862,7 @@ D = POINT(45,0). // D represents a point (which is neither A nor B nor C) plotte
 a = B.get_distance_from(C) = 11. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
 b = C.get_distance_from(D) = 30.413812651491099359191139228641986846923828125. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.
 c = D.get_distance_from(A) = 45. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.
-d = A.get_distance_from(B) = 45. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+d = A.get_distance_from(B) = 6.403124237432848531170748174190521240234375. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
 A.get_slope_of_line_to(B) = -1.25. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
 B.get_slope_of_line_to(C) = 0. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
 C.get_slope_of_line_to(D) = 0.1666666666666666574148081281236954964697360992431640625. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and D.
@@ -877,13 +877,13 @@ get_area() = 140.0000000000001136868377216160297393798828125. // The method retu
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffe4a015fe0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffe4a016068. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffe4a016008. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffe4a016048. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffe4a016050. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffe4a016058. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffe4a016060. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffeaed77060. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffeaed770e8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffeaed77088. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffeaed770c8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffeaed770d0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffeaed770d8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffeaed770e0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -911,7 +911,7 @@ D = POINT(30,-10). // D represents a point (which is neither A nor B nor C) plot
 a = B.get_distance_from(C) = 15. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
 b = C.get_distance_from(D) = 21.21320343559642651598551310598850250244140625. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and D.
 c = D.get_distance_from(A) = 35. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points D and A.
-d = A.get_distance_from(B) = 35. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+d = A.get_distance_from(B) = 15.8113883008418962816676867078058421611785888671875. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
 A.get_slope_of_line_to(B) = 3. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
 B.get_slope_of_line_to(C) = 0. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
 C.get_slope_of_line_to(D) = -1. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and D.
