@@ -178,23 +178,25 @@ void unit_test_6(std::ostream & output)
 
 /**
  * Unit Test # 7: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated TRAPEZOID instance. 
- * Use that pointer-to-POLYGON type variable to call the print method of the POLYGON class (and not of the TRAPEZOID class).
+ * Use that pointer-to-POLYGON type variable to call the POLYGON print method and the POLYGON getter methods.
  */
 void unit_test_7(std::ostream & output) 
 {
     output << "\n\n--------------------------------------------------------------------------------------------------";
-    output << "\nUnit Test # 7: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated TRAPEZOID instance. Use that pointer-to-POLYGON type variable to call the print method of the POLYGON class (and not of the TRAPEZOID class).";
+    output << "\nUnit Test # 7: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated TRAPEZOID instance. Use that pointer-to-POLYGON type variable to call the POLYGON print method and the POLYGON getter methods.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\n// COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.";
     output << "\nPOLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as TRAPEZOID.";
     output << "\npointer_to_polygon = new TRAPEZOID; // Assign memory to a dynamic TRAPEZOID instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).";
     output << "\npointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.";
-    output << "\ndelete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated TRAPEZOID instance.";
-    output << "\n--------------------------------------------------------------------------------------------------";
     // COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.
     POLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as TRAPEZOID.
     pointer_to_polygon = new TRAPEZOID; // Assign memory to a dynamic TRAPEZOID instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
     pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
+    output << "\npoineter_to_polygon -> get_area() = " << pointer_to_polygon -> get_area() << ".";
+    output << "\npoineter_to_polygon -> get_perimeter() = " << pointer_to_polygon -> get_perimeter() << ".";
+    output << "\ndelete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated TRAPEZOID instance.";
+    output << "\n--------------------------------------------------------------------------------------------------";
     delete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated TRAPEZOID instance.";
 }
 
