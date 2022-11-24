@@ -108,8 +108,8 @@ void unit_test_3(std::ostream & output)
     pointer_to_quadrilateral = new QUADRILATERAL; // Assign memory to a dynamic QUADRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
     output << * pointer_to_quadrilateral; // Use the overloaded ostream operator as defined in quadrilateral.cpp to print the data which is stored at the memory address which pointer_to_quadrilateral stores.
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\npointer_to_quadrilateral -> get_area() = " << pointer_to_quadrilateral -> get_area(); // Indirectly call the get_area() method of the QUADRILATERAL class.
-    output << "\npointer_to_quadrilateral -> get_perimeter() = " << pointer_to_quadrilateral -> get_perimeter(); // Indirectly call the get_perimeter() method of the QUADRILATERAL class.
+    output << "\npointer_to_quadrilateral -> get_area() = " << pointer_to_quadrilateral -> get_area() << ". // Indirectly call the get_area() method of the QUADRILATERAL class.";
+    output << "\npointer_to_quadrilateral -> get_perimeter() = " << pointer_to_quadrilateral -> get_perimeter() << ". // Indirectly call the get_perimeter() method of the QUADRILATERAL class.\n";
     delete pointer_to_quadrilateral; // De-allocate memory which was assigned to the dynamically allocated QUADRILATERAL instance.
 }
 
