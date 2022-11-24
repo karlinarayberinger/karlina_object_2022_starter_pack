@@ -60,6 +60,7 @@ bool TRAPEZOID::is_trapezoid()
 
     if (!points_represent_unique_coordinate_pairs(A,B,C,D) || !interior_angles_add_up_to_360_degrees()) return false;
     if ((a == c) && (b != d) && (slope_of_a != slope_of_c) && (slope_of_b == slope_of_d)) return true;
+    if ((a != c) && (b == d) && (slope_of_a == slope_of_c) && (slope_of_b != slope_of_d)) return true;
     return false;
 }
 
