@@ -1,7 +1,7 @@
 /**
  * file: polygon_class_inheritance_tester.cpp
  * type: C++ (source file)
- * date: 22_NOVEMBER_2022
+ * date: 23_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN 
  */
@@ -9,6 +9,7 @@
 #include "polygon.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the POLYGON class.
 #include "quadrilateral.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the QUADRILATERAL class.
 #include "trapezoid.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the TRAPEZOID class.
+#include "rectangle.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the RECTANGLE class.
 
 /* function prototypes */
 void unit_test_0(std::ostream & output);
@@ -21,6 +22,7 @@ void unit_test_6(std::ostream & output);
 void unit_test_7(std::ostream & output);
 void unit_test_8(std::ostream & output);
 void unit_test_9(std::ostream & output);
+void unit_test_10(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -244,6 +246,27 @@ void unit_test_9(std::ostream & output)
     trapezoid_2.print(output);
 }
 
+/**
+ * Unit Test # 10: Test the default RECTAGLE constructor and the RECTANGLE print method.
+ */
+void unit_test_10(std::ostream & output)
+{
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 10: Test the default RECTAGLE constructor and the RECTANGLE print method.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nRECTANGLE rectangle;";
+    output << "\nrectangle.print(output);";
+    output << "\nrectangle.print(); // Test the default argument (which is std::cout).";
+    output << "\nrectangle.print(output);";
+    output << "\noutput << rectangle; // overloaded ostream operator as defined in rectangle.cpp";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    RECTANGLE rectangle;
+    rectangle.print(output);
+    rectangle.print(); // Test the default argument (which is std::cout).
+    rectangle.print(output);
+    output << rectangle; // overloaded ostream operator as defined in rectangle.cpp
+}
+
 /* program entry point */
 int main()
 {
@@ -296,6 +319,8 @@ int main()
     unit_test_8(file);
     unit_test_9(std::cout);
     unit_test_9(file);
+    unit_test_10(std::cout);
+    unit_test_10(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
