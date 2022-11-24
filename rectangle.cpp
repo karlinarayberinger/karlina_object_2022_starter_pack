@@ -17,6 +17,7 @@
  */
 bool RECTANGLE::is_rectangle()
 {
+    double a = 0.0, b = 0.0, c = 0.0, d = 0.0;
     double a0 = 0.0, b0 = 0.0, c0 = 0.0;
     double a1 = 0.0, b1 = 0.0, c1 = 0.0;
     double angle_opposite_of_a0 = 0.0, angle_opposite_of_b0 = 0.0, angle_opposite_of_c0 = 0.0; 
