@@ -123,7 +123,7 @@ SQUARE::SQUARE(std::string color, POINT A, POINT B, POINT C, POINT D)
  * The copy constructor of SQUARE creates a clone of 
  * the input SQUARE instance.
  */
-SQUARE(SQUARE & square)
+SQUARE::SQUARE(SQUARE & square)
 {
     std::cout << "\n\nCreating the SQUARE type object whose memory address is " << this << "...";
     A = square.A;
