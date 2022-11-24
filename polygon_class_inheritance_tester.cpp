@@ -30,6 +30,8 @@ void unit_test_13(std::ostream & output);
 void unit_test_14(std::ostream & output);
 void unit_test_15(std::ostream & output);
 void unit_test_16(std::ostream & output);
+void unit_test_17(std::ostream & output);
+void unit_test_18(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -407,6 +409,50 @@ void unit_test_16(std::ostream & output)
     output << square; // overloaded ostream operator as defined in square.cpp
 }
 
+/**
+ * Unit Test # 17: Create a pointer-to-QUADRILATERAL type variable to store the memory address of a dynamically allocated SQUARE instance. 
+ * Use that pointer-to-QUADRILATERAL type variable to call the QUADRILATERAL print method and the QUADRILATERAL getter methods.
+ */
+void unit_test_17(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 12: Create a pointer-to-QUADRILATERAL type variable to store the memory address of a dynamically allocated SQUARE instance. Use that pointer-to-QUADRILATERAL type variable to call the QUADRILATERAL print method and the QUADRILATERAL getter methods.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nQUADRILATERAL * pointer_to_quadrilateral; // The pointer-to-QUADRILATERAL type variable can store the memory address of an object whose data type is a non-abstract derived class of QUADRILATERAL such as SQUARE.";
+    output << "\npointer_to_quadrilateral = new SQUARE; // Assign memory to a dynamic SQUARE instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).";
+    output << "\npointer_to_quadrilateral -> print(output); // Indirectly call the QUADRILATERAL print method.";
+    QUADRILATERAL * pointer_to_quadrilateral; // The pointer-to-QUADRILATERAL type variable can store the memory address of an object whose data type is a non-abstract derived class of QUADRILATERAL such as SQUARE.
+    pointer_to_quadrilateral = new SQUARE; // Assign memory to a dynamic SQUARE instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
+    pointer_to_quadrilateral -> print(output); // Indirectly call the POLYGON print method.
+    output << "\npointer_to_quadrilateral -> get_area() = " << pointer_to_quadrilateral -> get_area() << ". // Indirectly call the QUADRILATERAL get_area() method.";
+    output << "\npointer_to_quadrilateral -> get_perimeter() = " << pointer_to_quadrilateral -> get_perimeter() << ". // Indirectly call the QUADRILATERAL get_permieter() method.";
+    output << "\ndelete pointer_to_quadrilateral; // De-allocate memory which was assigned to the dynamically allocated SQUARE instance.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    delete pointer_to_quadrilateral; // De-allocate memory which was assigned to the dynamically allocated SQUARE instance.
+}
+
+/**
+ * Unit Test # 18: Create a pointer-to-RECTANGLE type variable to store the memory address of a dynamically allocated SQUARE instance. 
+ * Use that pointer-to-RECTANGLE type variable to call the RECTANGLE print method and the RECTANGLE getter methods.
+ */
+void unit_test_18(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 18: Create a pointer-to-RECTANGLE type variable to store the memory address of a dynamically allocated SQUARE instance. Use that pointer-to-RECTANGLE type variable to call the RECTANGLE print method and the RECTANGLE getter methods.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nRECTANGLE * pointer_to_rectangle; // The pointer-to-RECTANGLE type variable can store the memory address of an object whose data type is a non-abstract derived class of RECTANGLE such as SQUARE.";
+    output << "\npointer_to_rectangle = new SQUARE; // Assign memory to a dynamic SQUARE instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).";
+    output << "\npointer_to_rectangle -> print(output); // Indirectly call the RECTANGLE print method.";
+    RECTANGLE * pointer_to_rectangle; // The pointer-to-RECTANGLE type variable can store the memory address of an object whose data type is a non-abstract derived class of RECTANGLE such as SQUARE.
+    pointer_to_rectangle = new SQUARE; // Assign memory to a dynamic SQUARE instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
+    pointer_to_rectangle -> print(output); // Indirectly call the RECTANGLE print method.
+    output << "\npointer_to_rectangle -> get_area() = " << pointer_to_rectangle -> get_area() << ". // Indirectly call the RECTANGLE get_area() method.";
+    output << "\npointer_to_rectangle -> get_perimeter() = " << pointer_to_rectangle -> get_perimeter() << ". // Indirectly call the RECTANGLE get_permieter() method.";
+    output << "\ndelete pointer_to_rectangle; // De-allocate memory which was assigned to the dynamically allocated SQUARE instance.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    delete pointer_to_rectangle; // De-allocate memory which was assigned to the dynamically allocated SQUARE instance.
+}
+
 /* program entry point */
 int main()
 {
@@ -473,6 +519,8 @@ int main()
     unit_test_15(file);
     unit_test_16(std::cout);
     unit_test_16(file);
+    unit_test_17(file);
+    unit_test_18(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
