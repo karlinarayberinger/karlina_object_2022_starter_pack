@@ -25,6 +25,7 @@ void unit_test_9(std::ostream & output);
 void unit_test_10(std::ostream & output);
 void unit_test_11(std::ostream & output);
 void unit_test_12(std::ostream & output);
+void unit_test_13(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -313,6 +314,29 @@ void unit_test_12(std::ostream & output)
     delete pointer_to_quadrilateral; // De-allocate memory which was assigned to the dynamically allocated RECTANGLE instance.
 }
 
+/**
+ * Unit Test # 13: Test the normal RECTANGLE constructor and RECTANGLEL copy constructor using valid function inputs and the RECTANGLE print method.
+ */
+void unit_test_13(std::ostream & output)
+{
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 13: Test the normal RECTANGLE constructor and RECTANGLE copy constructor using valid function inputs and the RECTANGLE print method.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nRECTANGLE rectangle_0 = RECTANGLE(\"gray\", POINT(9,10), POINT(9,5), POINT(3,5), POINT(3,10));";
+    output << "\nrectangle_0.print(output);";
+    output << "\nRECTANGLE rectangle_1 = RECTANGLE(\"black\", POINT(0,0), POINT(0,1), POINT(1,1), POINT(1,0));";
+    output << "\nrectangle_1.print(output);";
+    output << "\nRECTANGLE rectangle_2 = RECTANGLE(rectangle_0);";
+    output << "\nrectangle_2.print(output);";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    RECTANGLE rectangle_0 = RECTANGLE("gray", POINT(9,10), POINT(9,5), POINT(3,5), POINT(3,10));
+    rectangle_0.print(output);
+    RECTANGLE rectangle_1 = RECTANGLE("black", POINT(0,0), POINT(0,1), POINT(1,1), POINT(1,0));
+    rectangle_1.print(output);
+    RECTANGLE rectangle_2 = RECTANGLE(rectangle_0);
+    rectangle_2.print(output);
+}
+
 /* program entry point */
 int main()
 {
@@ -371,6 +395,8 @@ int main()
     unit_test_11(file);
     unit_test_12(std::cout);
     unit_test_12(file);
+    unit_test_13(std::cout);
+    unit_test_13(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
