@@ -1,7 +1,7 @@
 /**
  * file: trapezoid.cpp
  * type: C++ (source file)
- * date: 23_NOVEMBER_2022
+ * date: 24_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN
  */
@@ -106,7 +106,7 @@ TRAPEZOID::TRAPEZOID(std::string color, POINT A, POINT B, POINT C, POINT D)
     test_trapezoid.C.set_Y(C.get_Y());
     test_trapezoid.D.set_X(D.get_X());
     test_trapezoid.D.set_Y(D.get_Y());
-    if (!test_trapezoid.is_trapezoid())
+    if (test_trapezoid.is_trapezoid())
     {
         this -> A = A;
         this -> B = B;
