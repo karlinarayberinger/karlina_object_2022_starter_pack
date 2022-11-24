@@ -32,6 +32,7 @@ void unit_test_15(std::ostream & output);
 void unit_test_16(std::ostream & output);
 void unit_test_17(std::ostream & output);
 void unit_test_18(std::ostream & output);
+void unit_test_19(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -453,6 +454,29 @@ void unit_test_18(std::ostream & output)
     delete pointer_to_rectangle; // De-allocate memory which was assigned to the dynamically allocated SQUARE instance.
 }
 
+/**
+ * Unit Test # 19: Test the normal SQUARE constructor and SQUARE copy constructor using valid function inputs and the SQUARE print method.
+ */
+void unit_test_19(std::ostream & output)
+{
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 19: Test the normal SQUARE constructor and SQUARE copy constructor using valid function inputs and the SQUARE print method.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nSQUARE square_0 = SQUARE(\"yellow\", POINT(-3,3), POINT(.3,0), POINT(0,0), POINT(0,-3));";
+    output << "\nsquare_0.print(output);";
+    output << "\nSQUARE square_1 = SQUARE(\"white\", POINT(-1,-1), POINT(-1,1), POINT(1,1), POINT(1,-1));";
+    output << "\nsquare_1.print(output);";
+    output << "\nSQUARE square_2 = SQUARE(square_0);";
+    output << "\nsquare_2.print(output);";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    SQUARE square_0 = SQUARE("yellow", POINT(-3,3), POINT(.3,0), POINT(0,0), POINT(0,-3));
+    square_0.print(output);
+    SQUARE square_1 = SQUARE("white", POINT(-1,-1), POINT(-1,1), POINT(1,1), POINT(1,-1));
+    square_1.print(output);
+    SQUARE square_2 = SQUARE(square_0);
+    square_2.print(output);
+}
+
 /* program entry point */
 int main()
 {
@@ -521,6 +545,7 @@ int main()
     unit_test_16(file);
     unit_test_17(file);
     unit_test_18(file);
+    unit_test_19(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
