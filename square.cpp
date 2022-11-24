@@ -140,7 +140,7 @@ SQUARE(SQUARE & square)
  * 
  * If no function input is supplied, output is set to the command line terminal.
  */
-void print(std::ostream & output)
+void SQUARE::print(std::ostream & output)
 {
     double a0 = 0.0, b0 = 0.0, c0 = 0.0;
     double a1 = 0.0, b1 = 0.0, c1 = 0.0;
