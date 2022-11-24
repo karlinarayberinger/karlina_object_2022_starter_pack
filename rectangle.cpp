@@ -113,7 +113,7 @@ RECTANGLE::RECTANGLE(std::string color, POINT A, POINT B, POINT C, POINT D)
     test_rectangle.C.set_Y(C.get_Y());
     test_rectangle.D.set_X(D.get_X());
     test_rectangle.D.set_Y(D.get_Y());
-    if (!test_rectangle.is_rectangle())
+    if (test_rectangle.is_rectangle())
     {
         this -> A = A;
         this -> B = B;
