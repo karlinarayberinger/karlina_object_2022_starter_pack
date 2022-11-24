@@ -55,13 +55,11 @@ void unit_test_1(std::ostream & output)
     output << "\nUnit Test # 1: Test the default QUADRILATERAL constructor and the QUADRILATERAL print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nQUADRILATERAL quadrilateral;";
-    output << "\nquadrilateral.print(output);";
     output << "\nquadrilateral.print(); // Test the default argument (which is std::cout).";
     output << "\nquadrilateral.print(output);";
     output << "\noutput << quadrilateral; // overloaded ostream operator as defined in quadrilateral.cpp";
     output << "\n--------------------------------------------------------------------------------------------------";
     QUADRILATERAL quadrilateral;
-    quadrilateral.print(output);
     quadrilateral.print(); // Test the default argument (which is std::cout).
     quadrilateral.print(output);
     output << quadrilateral; // overloaded ostream operator as defined in quadrilateral.cpp
@@ -167,13 +165,11 @@ void unit_test_6(std::ostream & output)
     output << "\nUnit Test # 6: Test the default TRAPEZOID constructor and the TRAPEZOID print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nTRAPEZOID trapezoid;";
-    output << "\ntrapezoid.print(output);";
     output << "\ntrapezoid.print(); // Test the default argument (which is std::cout).";
     output << "\ntrapezoid.print(output);";
     output << "\noutput << trapezoid; // overloaded ostream operator as defined in trapezoid.cpp";
     output << "\n--------------------------------------------------------------------------------------------------";
     TRAPEZOID trapezoid;
-    trapezoid.print(output);
     trapezoid.print(); // Test the default argument (which is std::cout).
     trapezoid.print(output);
     output << trapezoid; // overloaded ostream operator as defined in trapezoid.cpp
@@ -255,13 +251,11 @@ void unit_test_10(std::ostream & output)
     output << "\nUnit Test # 10: Test the default RECTAGLE constructor and the RECTANGLE print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nRECTANGLE rectangle;";
-    output << "\nrectangle.print(output);";
     output << "\nrectangle.print(); // Test the default argument (which is std::cout).";
     output << "\nrectangle.print(output);";
     output << "\noutput << rectangle; // overloaded ostream operator as defined in rectangle.cpp";
     output << "\n--------------------------------------------------------------------------------------------------";
     RECTANGLE rectangle;
-    rectangle.print(output);
     rectangle.print(); // Test the default argument (which is std::cout).
     rectangle.print(output);
     output << rectangle; // overloaded ostream operator as defined in rectangle.cpp
