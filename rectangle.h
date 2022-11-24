@@ -77,7 +77,8 @@ public:
      * 
      * If A, B, C, and D represent unique points on a Cartesian plane and
      * if the interior angles of the quadrilateral which those points would represent add up to 360 degrees and
-     * if the area of the quadrilateral which those points represents is larger than zero,
+     * if the area of the quadrilateral which those points represents is larger than zero, and
+     * if each interior angle of that quadrilateral has an angle measurement of 90 degrees,
      * use the input POINT values as the POINT values for the RECTANGLE object which is returned by this function.
      */
     RECTANGLE(std::string color, POINT A, POINT B, POINT C, POINT D);
