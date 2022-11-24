@@ -51,6 +51,9 @@ bool RECTANGLE::is_rectangle()
     c = D.get_distance_from(A);
     d = A.get_distance_from(B);
 
+    if (!points_represent_unique_coordinate_pairs(A,B,C,D) || !interior_angles_add_up_to_360_degrees()) return false;
+
+    // Determine whether or not exactly one pair of opposite sides of the quadrilateral are parallel to each other.
     if ((a == c) && (b == d))
     {
         if (!floor(interior_angle_of_A) == 90) return false;
