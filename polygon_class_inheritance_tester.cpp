@@ -416,7 +416,7 @@ void unit_test_16(std::ostream & output)
 void unit_test_17(std::ostream & output) 
 {
     output << "\n\n--------------------------------------------------------------------------------------------------";
-    output << "\nUnit Test # 12: Create a pointer-to-QUADRILATERAL type variable to store the memory address of a dynamically allocated SQUARE instance. Use that pointer-to-QUADRILATERAL type variable to call the QUADRILATERAL print method and the QUADRILATERAL getter methods.";
+    output << "\nUnit Test # 17: Create a pointer-to-QUADRILATERAL type variable to store the memory address of a dynamically allocated SQUARE instance. Use that pointer-to-QUADRILATERAL type variable to call the QUADRILATERAL print method and the QUADRILATERAL getter methods.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nQUADRILATERAL * pointer_to_quadrilateral; // The pointer-to-QUADRILATERAL type variable can store the memory address of an object whose data type is a non-abstract derived class of QUADRILATERAL such as SQUARE.";
     output << "\npointer_to_quadrilateral = new SQUARE; // Assign memory to a dynamic SQUARE instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).";
