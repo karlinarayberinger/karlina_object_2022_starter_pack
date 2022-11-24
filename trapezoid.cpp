@@ -1,7 +1,7 @@
 /**
  * file: trapezoid.cpp
  * type: C++ (source file)
- * date: 22_NOVEMBER_2022
+ * date: 23_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN
  */
@@ -87,12 +87,12 @@ TRAPEZOID::TRAPEZOID()
  * the POINT type data member of this named C to the input POINT type value named C and
  * the POINT type data member of this named D to the input POINT type value named D.
  * 
- * (The keyword this refers to the QUADRILATERAL object which is returned by this function).
+ * (The keyword this refers to the TRAPEZID object which is returned by this function).
  * 
  * If A, B, C, and D represent unique points on a Cartesian plane and
- * if the interior angles of the quadrilateral which those points would represent add up to 360 degrees and
- * if the area of the quadrilateral which those points represents is larger than zero,
- * use the input POINT values as the POINT values for the QUADRILATERAL object which is returned by this function.
+ * if the interior angles of the trapezoid which those points would represent add up to 360 degrees and
+ * if the area of the trapezoid which those points represents is larger than zero,
+ * use the input POINT values as the POINT values for the TRAPEZOID object which is returned by this function.
  */
 TRAPEZOID::TRAPEZOID(std::string color, POINT A, POINT B, POINT C, POINT D)
 {
