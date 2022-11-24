@@ -1,7 +1,7 @@
 /**
  * file: quadrilateral.cpp
  * type: C++ (source file)
- * date: 22_NOVEMBER_2022
+ * date: 24_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN
  */
@@ -65,6 +65,14 @@ bool QUADRILATERAL::interior_angles_add_up_to_360_degrees()
     // Allow for there to be a +/- 2 margin of error for the value stored in sum_of_interior_angles with the ideal value being 360.
     if ((sum_of_interior_angles >= 358) && (sum_of_interior_angles <= 362)) return true;
     return false;
+}
+
+/**
+ * The test function helps to illustrate how pointers work.
+ */
+int QUADRILATERAL::quadrilateral_test()
+{
+    return 555;
 }
     
 /**

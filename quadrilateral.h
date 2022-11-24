@@ -1,7 +1,7 @@
 /**
  * file: quadrilateral.h
  * type: C++ (header file)
- * date: 22_NOVEMBER_2022
+ * date: 24_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN
  */
@@ -66,6 +66,11 @@ protected:
     bool interior_angles_add_up_to_360_degrees();
     
 public:
+
+    /**
+     * The test function helps to illustrate how pointers work.
+     */
+    int quadrilateral_test(); // return 555
     
     /**
      * The default constructor of the QUADRILATERAL class calls the constructor of the POLYGON class and

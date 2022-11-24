@@ -63,6 +63,14 @@ bool RECTANGLE::is_rectangle()
 }
 
 /**
+ * The test function helps to illustrate how pointers work.
+ */
+int RECTANGLE::rectangle_test()
+{
+    return 666;
+}
+
+/**
  * The default constructor of the RECTANGLE class calls the constructor of the QUADRILATERAL class and
  * sets the POINT type data member of the RECTANGLE object returned by this function named A to POINT(0,0), 
  * sets the POINT type data member of the RECTANGLE object returned by this function named B to POINT(0,3), 

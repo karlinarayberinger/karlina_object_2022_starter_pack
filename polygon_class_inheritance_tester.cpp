@@ -24,26 +24,27 @@ void unit_test_8(std::ostream & output);
 void unit_test_9(std::ostream & output);
 void unit_test_10(std::ostream & output);
 void unit_test_11(std::ostream & output);
+void unit_test_12(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
- * Use that pointer-to-POLYGON type variable to call the print method of the POLYGON class and the getter methods of the QUADRILATERAL class.
+ * Use that pointer-to-POLYGON type variable to call the print method of the POLYGON class and the getter methods of the POLYGON class.
  */
 void unit_test_0(std::ostream & output) 
 {
     output << "\n\n--------------------------------------------------------------------------------------------------";
-    output << "\nUnit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. Use that pointer-to-POLYGON type variable to call the print method of the POLYGON class and the getter methods of the QUADRILATERAL class.";
+    output << "\nUnit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. Use that pointer-to-POLYGON type variable to call the print method of the POLYGON class and the getter methods of the POLYGON class.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\n// COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.";
     output << "\nPOLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as QUADRILATERAL.";
     output << "\npointer_to_polygon = new QUADRILATERAL; // Assign memory to a dynamic QUADRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).";
     output << "\npointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.";
     // COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.
-    POLYGON * pointer_to_polygon; // The pointer-to-polygon type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as QUADRILATERAL.
+    POLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as QUADRILATERAL.
     pointer_to_polygon = new QUADRILATERAL; // Assign memory to a dynamic QUADRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
     pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
-    output << "\npoineter_to_polygon -> get_area() = " << pointer_to_polygon -> get_area() << ". // Indirectly call the QUADRILATERAL get_area() method.";
-    output << "\npoineter_to_polygon -> get_perimeter() = " << pointer_to_polygon -> get_perimeter() << ". // Indirectly call the QUADRILATERAL get_permieter() method.";
+    output << "\npoineter_to_polygon -> get_area() = " << pointer_to_polygon -> get_area() << ". // Indirectly call the POLYGON get_area() method.";
+    output << "\npoineter_to_polygon -> get_perimeter() = " << pointer_to_polygon -> get_perimeter() << ". // Indirectly call the POLYGON get_permieter() method.";
     output << "\ndelete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated QUADRILATERAL instance.";
     output << "\n--------------------------------------------------------------------------------------------------";
     delete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated QUADRILATERAL instance.
@@ -99,7 +100,7 @@ void unit_test_3(std::ostream & output)
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nUnit Test # 3: Create a pointer-to-QUADRILATERAL type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. Use that pointer-to-QUADRILATERAL to call the overloaded ostream operator method of the QUADRILATERAL class and the public getter methods of the QUADRILATERAL class.";
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\nQUADRILATERAL * pointer_to_quadrilateral; // The pointer-to-QUADRATERAL type variable can store the memory address of an object whose data type is QUADRILATERAL or else a non-abstract derived class of QUADRILATERAL such as TRAPEZOID.";
+    output << "\nQUADRILATERAL * pointer_to_quadrilateral; // The pointer-to-QUADRILATERAL type variable can store the memory address of an object whose data type is QUADRILATERAL or else a non-abstract derived class of QUADRILATERAL such as TRAPEZOID.";
     output << "\npointer_to_quadrilateral = new QUADRILATERAL; // Assign memory to a dynamic QUADRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).";
     output << "\noutput << * pointer_to_quadrilateral; // Use the overloaded ostream operator as defined in quadrilateral.cpp to print the data which is stored at the memory address which pointer_to_quadrilateral stores.";
     output << "\ndelete pointer_to_quadrilateral; // De-allocate memory which was assigned to the dynamically allocated QUADRILATERAL instance.";
@@ -109,7 +110,7 @@ void unit_test_3(std::ostream & output)
     output << * pointer_to_quadrilateral; // Use the overloaded ostream operator as defined in quadrilateral.cpp to print the data which is stored at the memory address which pointer_to_quadrilateral stores.
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\npointer_to_quadrilateral -> get_area() = " << pointer_to_quadrilateral -> get_area() << ". // Indirectly call the get_area() method of the QUADRILATERAL class.";
-    output << "\npointer_to_quadrilateral -> get_perimeter() = " << pointer_to_quadrilateral -> get_perimeter() << ". // Indirectly call the get_perimeter() method of the QUADRILATERAL class.\n";
+    output << "\npointer_to_quadrilateral -> get_perimeter() = " << pointer_to_quadrilateral -> get_perimeter() << ". // Indirectly call the get_perimeter() method of the QUADRILATERAL class.";
     delete pointer_to_quadrilateral; // De-allocate memory which was assigned to the dynamically allocated QUADRILATERAL instance.
 }
 
@@ -195,8 +196,8 @@ void unit_test_7(std::ostream & output)
     POLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as TRAPEZOID.
     pointer_to_polygon = new TRAPEZOID; // Assign memory to a dynamic TRAPEZOID instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
     pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
-    output << "\npoineter_to_polygon -> get_area() = " << pointer_to_polygon -> get_area() << ". // Indirectly call the TRAPEZOID get_area() method.";
-    output << "\npoineter_to_polygon -> get_perimeter() = " << pointer_to_polygon -> get_perimeter() << ". // Indirectly call the TRAPEZOND get_permieter() method.";
+    output << "\npoineter_to_polygon -> get_area() = " << pointer_to_polygon -> get_area() << ". // Indirectly call the POLYGON get_area() method.";
+    output << "\npoineter_to_polygon -> get_perimeter() = " << pointer_to_polygon -> get_perimeter() << ". // Indirectly call the POLYGON get_permieter() method.";
     output << "\ndelete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated TRAPEZOID instance.";
     output << "\n--------------------------------------------------------------------------------------------------";
     delete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated TRAPEZOID instance.
@@ -246,12 +247,12 @@ void unit_test_9(std::ostream & output)
 }
 
 /**
- * Unit Test # 10: Test the default RECTAGLE constructor and the RECTANGLE print method.
+ * Unit Test # 10: Test the default RECTANGLE constructor and the RECTANGLE print method.
  */
 void unit_test_10(std::ostream & output)
 {
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\nUnit Test # 10: Test the default RECTAGLE constructor and the RECTANGLE print method.";
+    output << "\nUnit Test # 10: Test the default RECTANGLE constructor and the RECTANGLE print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nRECTANGLE rectangle;";
     output << "\nrectangle.print(); // Test the default argument (which is std::cout).";
@@ -281,11 +282,35 @@ void unit_test_11(std::ostream & output)
     POLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as RECTANGLE.
     pointer_to_polygon = new RECTANGLE; // Assign memory to a dynamic RECTANGLE instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
     pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
-    output << "\npoineter_to_polygon -> get_area() = " << pointer_to_polygon -> get_area() << ". // Indirectly call the RECTANGLE get_area() method.";
-    output << "\npoineter_to_polygon -> get_perimeter() = " << pointer_to_polygon -> get_perimeter() << ". // Indirectly call the RECTANGLE get_permieter() method.";
+    output << "\n// COMMENTED OUT (does not work): pointer_to_polygon -> quadrilateral_test(). // Indirectly call the QUADRILATERAL quadrilateral_test() method.";
+    output << "\npoineter_to_polygon -> get_area() = " << pointer_to_polygon -> get_area() << ". // Indirectly call the POLYGON get_area() method.";
+    output << "\npoineter_to_polygon -> get_perimeter() = " << pointer_to_polygon -> get_perimeter() << ". // Indirectly call the POLYGON get_permieter() method.";
     output << "\ndelete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated RECTANGLE instance.";
     output << "\n--------------------------------------------------------------------------------------------------";
     delete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated TRAPEZOID instance.
+}
+
+/**
+ * Unit Test # 12: Create a pointer-to-QUADRILATERAL type variable to store the memory address of a dynamically allocated RECTANGLE instance. 
+ * Use that pointer-to-QUADRILATERAL type variable to call the QUADRILATERAL print method and the QUADRILATERAL getter methods.
+ */
+void unit_test_12(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 12: Create a pointer-to-QUADRILATERAL type variable to store the memory address of a dynamically allocated RECTANGLE instance. Use that pointer-to-QUADRILATERAL type variable to call the POLYGON print method and the QUADRILATERAL getter methods.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nQUADRILATERAL * pointer_to_quadrilateral; // The pointer-to-QUADRILATERAL type variable can store the memory address of an object whose data type is a non-abstract derived class of QUADRILATERAL such as RECTANGLE.";
+    output << "\npointer_to_quadrilateral = new RECTANGLE; // Assign memory to a dynamic RECTANGLE instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).";
+    output << "\npointer_to_quadrilateral -> print(output); // Indirectly call the QUADRILATERAL print method.";
+    QUADRILATERAL * pointer_to_quadrilateral; // The pointer-to-QUADRILATERAL type variable can store the memory address of an object whose data type is a non-abstract derived class of QUADRILATERAL such as RECTANGLE.
+    pointer_to_quadrilateral = new RECTANGLE; // Assign memory to a dynamic RECTANGLE instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
+    pointer_to_quadrilateral -> print(output); // Indirectly call the POLYGON print method.
+    output << "\n// COMMENTED OUT (does not work): pointer_to_quadrilateral -> rectangle_test(); // Indirectly call the RECTANGLE rectangle_test() method.";
+    output << "\npoineter_to_quadrilateral -> get_area() = " << pointer_to_quadrilateral -> get_area() << ". // Indirectly call the QUADRILATERAL get_area() method.";
+    output << "\npoineter_to_quadrilateral -> get_perimeter() = " << pointer_to_quadrilateral -> get_perimeter() << ". // Indirectly call the QUADRILATERAL get_permieter() method.";
+    output << "\ndelete pointer_to_quadrilateral; // De-allocate memory which was assigned to the dynamically allocated RECTANGLE instance.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    delete pointer_to_quadrilateral; // De-allocate memory which was assigned to the dynamically allocated RECTANGLE instance.
 }
 
 /* program entry point */
@@ -344,6 +369,8 @@ int main()
     unit_test_10(file);
     unit_test_11(std::cout);
     unit_test_11(file);
+    unit_test_12(std::cout);
+    unit_test_12(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";

@@ -1,7 +1,7 @@
 /**
  * @file: rectangle.h
  * @type: C++ (header file)
- * @date: 23_NOVEMBER_2022
+ * @date: 24_NOVEMBER_2022
  * @author: Karlina Ray Beringer
  * @license: PUBLIC_DOMAIN
  */
@@ -50,6 +50,11 @@ protected:
     bool is_rectangle();
     
 public:
+
+    /**
+     * The test function helps to illustrate how pointers work.
+     */
+    int rectangle_test(); // return 666
     
     /**
      * The default constructor of the RECTANGLE class calls the constructor of the QUADRILATERAL class and
