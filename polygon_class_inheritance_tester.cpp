@@ -26,6 +26,7 @@ void unit_test_10(std::ostream & output);
 void unit_test_11(std::ostream & output);
 void unit_test_12(std::ostream & output);
 void unit_test_13(std::ostream & output);
+void unit_test_14(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -315,7 +316,7 @@ void unit_test_12(std::ostream & output)
 }
 
 /**
- * Unit Test # 13: Test the normal RECTANGLE constructor and RECTANGLEL copy constructor using valid function inputs and the RECTANGLE print method.
+ * Unit Test # 13: Test the normal RECTANGLE constructor and RECTANGLE copy constructor using valid function inputs and the RECTANGLE print method.
  */
 void unit_test_13(std::ostream & output)
 {
@@ -334,6 +335,29 @@ void unit_test_13(std::ostream & output)
     RECTANGLE rectangle_1 = RECTANGLE("black", POINT(0,0), POINT(0,1), POINT(1,1), POINT(1,0));
     rectangle_1.print(output);
     RECTANGLE rectangle_2 = RECTANGLE(rectangle_0);
+    rectangle_2.print(output);
+}
+
+/**
+ * Unit Test # 14: Test the normal RECTANGLE constructor using invalid function inputs and the RECTANGLE print method.
+ */
+void unit_test_14(std::ostream & output)
+{
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 14: Test the normal RECTANGLE constructor using invalid function inputs and the RECTANGLE print method.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nRECTANGLE rectangle_0 = RECTANGLE(\"red\", POINT(-1,-1), POINT(0,0), POINT(1,1), POINT(2,2));";
+    output << "\nrectangle_0.print(output);";
+    output << "\nRECTANGLE rectangle_1 = RECTANGLE(\"green\", POINT(-5,-10), POINT(0,5), POINT(15,5), POINT(30,-10));";
+    output << "\nrectangle_1.print(output);";
+    output << "\nRECTANGLE rectangle_2 = RECTANGLE(\"blue\", POINT(-5,-5), POINT(0,0), POINT(-5,-5), POINT(0,0));";
+    output << "\nrectangle_2.print(output);";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    RECTANGLE rectangle_0 = RECTANGLE("red", POINT(-1,-1), POINT(0,0), POINT(1,1), POINT(2,2));
+    rectangle_0.print(output);
+    RECTANGLE rectangle_1 = RECTANGLE("green", POINT(-5,-10), POINT(0,5), POINT(15,5), POINT(30,-10));
+    rectangle_1.print(output);
+    RECTANGLE rectangle_2 = RECTANGLE("blue", POINT(-5,-5), POINT(0,0), POINT(-5,-5), POINT(0,0));
     rectangle_2.print(output);
 }
 
@@ -397,7 +421,9 @@ int main()
     unit_test_12(file);
     unit_test_13(std::cout);
     unit_test_13(file);
-    
+    unit_test_14(std::cout);
+    unit_test_14(file);
+
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
     std::cout << "\nEnd Of Program";
