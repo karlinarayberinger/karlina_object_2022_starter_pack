@@ -70,7 +70,8 @@ public:
      * 
      * If A, B, C, and D represent unique points on a Cartesian plane and
      * if the interior angles of the quadrilateral which those points would represent add up to 360 degrees and
-     * if the area of the quadrilateral which those points represents is larger than zero,
+     * if the area of the quadrilateral which those points represents is larger than zero, and
+     * if exactly two sides of the quadrilateral are parallel to each other,
      * use the input POINT values as the POINT values for the TRAPEZOID object which is returned by this function.
      */
     TRAPEZOID(std::string color, POINT A, POINT B, POINT C, POINT D);
