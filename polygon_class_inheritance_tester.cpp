@@ -29,6 +29,7 @@ void unit_test_12(std::ostream & output);
 void unit_test_13(std::ostream & output);
 void unit_test_14(std::ostream & output);
 void unit_test_15(std::ostream & output);
+void unit_test_16(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -387,6 +388,25 @@ void unit_test_15(std::ostream & output)
     delete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated SQUARE instance.
 }
 
+/**
+ * Unit Test # 16: Test the default SQUARE constructor and the SQUARE print method.
+ */
+void unit_test_16(std::ostream & output)
+{
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 16: Test the default SQUARE constructor and the SQUARE print method.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nSQUARE square;";
+    output << "\nsquare.print(); // Test the default argument (which is std::cout).";
+    output << "\nsquare.print(output);";
+    output << "\noutput << square; // overloaded ostream operator as defined in square.cpp";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    SQUARE square;
+    square.print(); // Test the default argument (which is std::cout).
+    square.print(output);
+    output << square; // overloaded ostream operator as defined in square.cpp
+}
+
 /* program entry point */
 int main()
 {
@@ -451,6 +471,8 @@ int main()
     unit_test_14(file);
     unit_test_15(std::cout);
     unit_test_15(file);
+    unit_test_16(std::cout);
+    unit_test_16(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
