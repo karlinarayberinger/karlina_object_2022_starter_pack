@@ -462,14 +462,14 @@ void unit_test_19(std::ostream & output)
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nUnit Test # 19: Test the normal SQUARE constructor and SQUARE copy constructor using valid function inputs and the SQUARE print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\nSQUARE square_0 = SQUARE(\"yellow\", POINT(-3,3), POINT(.3,0), POINT(0,0), POINT(0,-3));";
+    output << "\nSQUARE square_0 = SQUARE(\"yellow\", POINT(-3,3), POINT(-3,0), POINT(0,0), POINT(0,-3));";
     output << "\nsquare_0.print(output);";
     output << "\nSQUARE square_1 = SQUARE(\"white\", POINT(-1,-1), POINT(-1,1), POINT(1,1), POINT(1,-1));";
     output << "\nsquare_1.print(output);";
     output << "\nSQUARE square_2 = SQUARE(square_0);";
     output << "\nsquare_2.print(output);";
     output << "\n--------------------------------------------------------------------------------------------------";
-    SQUARE square_0 = SQUARE("yellow", POINT(-3,3), POINT(.3,0), POINT(0,0), POINT(0,-3));
+    SQUARE square_0 = SQUARE("yellow", POINT(-3,3), POINT(-3,0), POINT(0,0), POINT(0,-3));
     square_0.print(output);
     SQUARE square_1 = SQUARE("white", POINT(-1,-1), POINT(-1,1), POINT(1,1), POINT(1,-1));
     square_1.print(output);
