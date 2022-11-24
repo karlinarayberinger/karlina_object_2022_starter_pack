@@ -1,7 +1,7 @@
 /**
  * file: polygon_class_inheritance_tester.cpp
  * type: C++ (source file)
- * date: 23_NOVEMBER_2022
+ * date: 24_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN 
  */
@@ -23,6 +23,7 @@ void unit_test_7(std::ostream & output);
 void unit_test_8(std::ostream & output);
 void unit_test_9(std::ostream & output);
 void unit_test_10(std::ostream & output);
+void unit_test_11(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -196,7 +197,7 @@ void unit_test_7(std::ostream & output)
     output << "\npoineter_to_polygon -> get_perimeter() = " << pointer_to_polygon -> get_perimeter() << ". // Indirectly call the TRAPEZOND get_permieter() method.";
     output << "\ndelete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated TRAPEZOID instance.";
     output << "\n--------------------------------------------------------------------------------------------------";
-    delete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated TRAPEZOID instance.";
+    delete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated TRAPEZOID instance.
 }
 
 /**
@@ -261,6 +262,27 @@ void unit_test_10(std::ostream & output)
     output << rectangle; // overloaded ostream operator as defined in rectangle.cpp
 }
 
+/**
+ * Unit Test # 11: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated RECTANGLE instance. 
+ * Use that pointer-to-POLYGON type variable to call the POLYGON print method and the POLYGON getter methods.
+ */
+void unit_test_11(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 11: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated RECTANGLE instance. Use that pointer-to-POLYGON type variable to call the POLYGON print method and the POLYGON getter methods.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\n// COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.";
+    output << "\nPOLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as RECTANGLE.";
+    output << "\npointer_to_polygon = new RECTANGLE; // Assign memory to a dynamic RECTANGLE instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).";
+    output << "\npointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.";
+    // COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.
+    POLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as RECTANGLE.
+    pointer_to_polygon = new RECTANGLE; // Assign memory to a dynamic RECTANGLE instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
+    pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    delete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated TRAPEZOID instance.
+}
+
 /* program entry point */
 int main()
 {
@@ -315,6 +337,8 @@ int main()
     unit_test_9(file);
     unit_test_10(std::cout);
     unit_test_10(file);
+    unit_test_11(std::cout);
+    unit_test_11(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
