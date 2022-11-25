@@ -11,7 +11,7 @@
 #include "trapezoid.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the TRAPEZOID class.
 #include "rectangle.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the RECTANGLE class.
 #include "square.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the SQUARE class.
-#include "triangle.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the TRIANGLE class.
+#include "trilateral.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the TRILATERAL class.
 
 /* function prototypes */
 void unit_test_0(std::ostream & output);
