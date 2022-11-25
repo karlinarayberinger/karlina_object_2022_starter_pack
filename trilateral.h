@@ -118,7 +118,7 @@ public:
      * if the area of the trilateral which those points represents is larger than zero,
      * use the input POINT values as the POINT values for the TRILATERAL object which is returned by this function.
      */
-    TRILATERAL(std::string color, POINT A, POINT B, POINT C, POINT D);
+    TRILATERAL(std::string color, POINT A, POINT B, POINT C);
 
     /**
      * The copy constructor method of the TRILATERAL class 
