@@ -61,6 +61,33 @@ protected:
     bool points_represent_unique_coordinate_pairs(POINT _A, POINT _B, POINT _C);
 
     /**
+     * The getter method of the TRILATERAL class named get_interior_angle_ABC() returns the approximate angle measurement in degrees of the angle
+     * formed by connecting points A, B, anc C in the order specified by this sentence.
+     * 
+     * The function below uses the Law of Cosines to compute the measurement of an interior angle of a triangle 
+     * using that triangle's three side lengths as function inputs to output some nonnegative real number of degrees.
+     */
+    double get_interior_angle_ABC();
+
+    /**
+     * The getter method of the TRILATERAL class named get_interior_angle_BCA() returns the approximate angle measurement in degrees of the angle
+     * formed by connecting points B, C, and A in the order specified by this sentence.
+     * 
+     * The function below uses the Law of Cosines to compute the measurement of an interior angle of a triangle 
+     * using that triangle's three side lengths as function inputs to output some nonnegative real number of degrees.
+     */
+    double get_interior_angle_BCA();
+
+    /**
+     * The getter method of the TRILATERAL class named get_interior_angle_CAB() returns the approximate angle measurement in degrees of the angle
+     * formed by connecting points C, A, and B in the order specified by this sentence.
+     * 
+     * The function below uses Law of Cosines to compute the measurement of an interior angle of a triangle 
+     * using that triangle's three side lengths as function inputs to output some nonnegative real number of degrees.
+     */   
+    double TRILATERAL::get_interior_angle_CAB();
+
+    /**
      * If sum of the interior angle measurements of the quadrilateral which the caller TRILATERAL object represents add up to approximately 180 degrees, 
      * return true.
      * Otherwise, return false.
