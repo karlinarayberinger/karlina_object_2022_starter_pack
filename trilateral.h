@@ -61,7 +61,7 @@ protected:
     bool points_represent_unique_coordinate_pairs(POINT _A, POINT _B, POINT _C);
 
     /**
-     * If sum of the interior angle measurements of the quadrilateral which the caller QUADRILATERAL object represents add up to approximately 180 degrees, 
+     * If sum of the interior angle measurements of the quadrilateral which the caller TRILATERAL object represents add up to approximately 180 degrees, 
      * return true.
      * Otherwise, return false.
      */
