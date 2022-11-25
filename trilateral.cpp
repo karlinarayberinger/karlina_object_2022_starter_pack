@@ -84,7 +84,7 @@ double TRILATERAL::get_interior_angle_CAB()
  * return true.
  * Otherwise, return false.
  */
-bool interior_angles_add_up_to_180_degrees()
+bool TRILATERAL::interior_angles_add_up_to_180_degrees()
 {
     return floor(get_interior_angle_ABC()) + floor(get_interior_angle_BCA()) + floor(get_interior_angle_CAB());
 }
