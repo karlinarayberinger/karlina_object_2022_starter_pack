@@ -145,7 +145,6 @@ TRILATERAL::TRILATERAL(TRILATERAL & trilateral)
     A = trilateral.A;
     B = trilateral.B;
     C = trilateral.C;
-    D = trilateral.D;
     color = trilateral.color;
 }
 
@@ -190,7 +189,7 @@ double TRILATERAL::get_perimeter()
  * 
  * If no function input is supplied, output is set to the command line terminal.
  */
-void TRILATERAL::print(std::ostream & output = std::cout)
+void TRILATERAL::print(std::ostream & output)
 {
     output << "\n\n--------------------------------------------------------------------------------------------------";
     output << "\nthis = " << this << ". // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.";
@@ -228,7 +227,7 @@ void TRILATERAL::print(std::ostream & output = std::cout)
     output << "\ninterior_angle_of_A = get_interior_angle_CAB() = " << get_interior_angle_CAB() << ". // The value represents the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are C and A with the line segment whose endpoints are A and B such that those two line segments intersect at A (and the angle measurement is in degrees and not in radians).";
     output << "\ninterior_angle_of_B = get_interior_angle_ABC() = " << get_interior_angle_ABC() << ". // The method returns the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are A and B with the line segment whose endpoints are B and C such that those two line segments intersect at B (and the angle measurement is in degrees and not in radians).";
     output << "\ninterior_angle_of_C = get_interior_angle_BCA() = " << get_interior_angle_BCA() << ". // The method returns the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are B and C with the line segment whose endpoints are C and A such that those two line segments intersect at C (and the angle measurement is in degrees and not in radians).";
-    output << "\ninterior_angle_of_A + interior_angle_of_B + interior_angle_of_C = " << interior_angle_of_A + interior_angle_of_B + interior_angle_of_C << ". // sum of all three approximate interior angle measurements of the trilateral represented by the caller TRILATERAL object (in degrees and not in radians)";
+    output << "\ninterior_angle_of_A + interior_angle_of_B + interior_angle_of_C = " << get_interior_angle_CAB() + get_interior_angle_ABC() + get_interior_angle_BCA() << ". // sum of all three approximate interior angle measurements of the trilateral represented by the caller TRILATERAL object (in degrees and not in radians)";
     output << "\nget_perimeter() = a + b + c = " << get_perimeter() << ". // The method returns the sum of the three approximated side lengths of the trilateral which the caller TRILATERAL object represents.";
     output << "\nget_area() = " << get_area() << ". // The method returns the approximate nonnegative real number of Cartesian grid unit squares which are enclosed inside of the two-dimensional region formed by the three line segments which connect points A to B, B to C, and C to A.";
     output << "\n--------------------------------------------------------------------------------------------------";
