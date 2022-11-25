@@ -85,7 +85,7 @@ protected:
      * The function below uses Law of Cosines to compute the measurement of an interior angle of a triangle 
      * using that triangle's three side lengths as function inputs to output some nonnegative real number of degrees.
      */   
-    double TRILATERAL::get_interior_angle_CAB();
+    double get_interior_angle_CAB();
 
     /**
      * If sum of the interior angle measurements of the quadrilateral which the caller TRILATERAL object represents add up to approximately 180 degrees, 
