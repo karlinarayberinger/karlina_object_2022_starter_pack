@@ -1,7 +1,7 @@
 /**
  * file: polygon_class_inheritance_tester.cpp
  * type: C++ (source file)
- * date: 24_NOVEMBER_2022
+ * date: 25_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN 
  */
@@ -11,6 +11,7 @@
 #include "trapezoid.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the TRAPEZOID class.
 #include "rectangle.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the RECTANGLE class.
 #include "square.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the SQUARE class.
+#include "triangle.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the TRIANGLE class.
 
 /* function prototypes */
 void unit_test_0(std::ostream & output);
@@ -34,6 +35,7 @@ void unit_test_17(std::ostream & output);
 void unit_test_18(std::ostream & output);
 void unit_test_19(std::ostream & output);
 void unit_test_20(std::ostream & output);
+void unit_test_21(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -501,6 +503,30 @@ void unit_test_20(std::ostream & output)
     square_2.print(output);
 }
 
+/**
+ * Unit Test # 21: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated TRILATERAL instance. 
+ * Use that pointer-to-POLYGON type variable to call the print method of the POLYGON class and the getter methods of the POLYGON class.
+ */
+void unit_test_21(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 21: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated TRILATERAL instance. Use that pointer-to-POLYGON type variable to call the print method of the POLYGON class and the getter methods of the POLYGON class.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\n// COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.";
+    output << "\nPOLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as SQUARE.";
+    output << "\npointer_to_polygon = new TRILATERAL; // Assign memory to a dynamic TRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).";
+    output << "\npointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.";
+    // COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.
+    POLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as SQUARE.
+    pointer_to_polygon = new SQUARE; // Assign memory to a dynamic TRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
+    pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
+    output << "\npointer_to_polygon -> get_area() = " << pointer_to_polygon -> get_area() << ". // Indirectly call the POLYGON get_area() method.";
+    output << "\npointer_to_polygon -> get_perimeter() = " << pointer_to_polygon -> get_perimeter() << ". // Indirectly call the POLYGON get_permieter() method.";
+    output << "\ndelete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated TRILATERAL instance.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    delete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated TRILATERAL instance.
+}
+
 /* program entry point */
 int main()
 {
@@ -575,6 +601,8 @@ int main()
     unit_test_19(file);
     unit_test_20(std::cout);
     unit_test_20(file);
+    unit_test_21(std::cout);
+    unit_test_21(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
