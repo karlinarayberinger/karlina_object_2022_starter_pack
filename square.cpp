@@ -1,7 +1,7 @@
 /**
  * file: square.cpp
  * type: C++ (source file)
- * date: 23_NOVEMBER_2022
+ * date: 24_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN
  */
