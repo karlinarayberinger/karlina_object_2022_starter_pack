@@ -10,7 +10,7 @@
 #include "quadrilateral.h" 
 
 /**
- * If each of the four whole number coordinate pairs represented by the POINT type input values named _A, _B, _C, and _D each unique whole number coordinate pairs, 
+ * If each of the four whole number coordinate pairs represented by the POINT type input values named _A, _B, _C, and _D are unique whole number coordinate pairs, 
  * return true. 
  * Otherwise, return false.
  */
