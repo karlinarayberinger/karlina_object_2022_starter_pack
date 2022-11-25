@@ -159,9 +159,9 @@ double TRILATERAL::get_area()
 {
     double s = 0.0, a = 0.0, b = 0.0, c = 0.0;
     s = get_perimeter() / 2; // s is technically referred to as the semiperimter of the triangle which the caller TRIANGLE object of this function represents.
-    a = get_side_length_BC(); // a represents the length of the line segment whose endpoints are B and C (and which are points of the caller TRIANGLE object of this function represents).
-    b = get_side_length_CA(); // b represents the length of the line segment whose endpoints are C and A (and which are points of the caller TRIANGLE object of this function represents).
-    c = get_side_length_AB(); // c represents the length of the line segment whose endpoints are A and B (and which are points of the caller TRIANGLE object of this function represents).
+    a = B.get_distance_from(C); // a represents the length of the line segment whose endpoints are B and C (and which are points of the caller TRIANGLE object of this function represents).
+    b = C.get_distance_from(A); // b represents the length of the line segment whose endpoints are C and A (and which are points of the caller TRIANGLE object of this function represents).
+    c = A.get_distance_from(B); // c represents the length of the line segment whose endpoints are A and B (and which are points of the caller TRIANGLE object of this function represents).
     return sqrt(s * (s - a) * (s - b) * (s - c)); // Use Heron's Formula to compute the area of the triangle whose points are A, B, and C (and which are points of the caller TRIANGLE object of this function represents).
 }
 
