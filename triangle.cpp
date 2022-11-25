@@ -2,7 +2,7 @@
  * file: triangle.cpp
  * type: C++ (source file)
  * author: Karlina Ray Beringer
- * date: 21_NOVEMBER_2022
+ * date: 24_NOVEMBER_2022
  * license: PUBLIC_DOMAIN
  */
 
@@ -297,7 +297,7 @@ double TRIANGLE::get_perimeter()
  * The getter method of the TRIANGLE class named get_area() returns the approximate area of the two-dimensional space whose bounds are 
  * the shortest paths between points A, B, and C of the triangle which the caller TRIANGLE object represents.
  * 
- * This function uses Heron's Formula to compute the area of a triangle using that triangle's side lengths as function inputs.
+ * This function uses Heron's Formula to compute the area of a triangle using that triangle's side lengths as formula inputs.
  */
 double TRIANGLE::get_area()
 {
