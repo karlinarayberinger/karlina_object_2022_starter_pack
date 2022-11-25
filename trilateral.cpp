@@ -22,7 +22,6 @@ bool TRILATERAL::points_represent_unique_coordinate_pairs(POINT _A, POINT _B, PO
     return true;
 }
 
-
 /**
  * The getter method of the TRILATERAL class named get_interior_angle_ABC() returns the approximate angle measurement in degrees of the angle
  * formed by connecting points A, B, anc C in the order specified by this sentence.
@@ -54,7 +53,7 @@ double TRILATERAL::get_interior_angle_BCA()
     double a = 0.0, b = 0.0, c = 0.0, angle_opposite_of_a = 0.0, angle_opposite_of_b = 0.0, angle_opposite_of_c = 0.0;
     a = B.get_distance_from(C); // a represents the length of the line segment whose endpoints are B and C.
     b = C.get_distance_from(A); // b represents the length of the line segment whose endpoints are C and A.
-    c = B.get_distance_from(B); // c represents the length of the line segment whose endpoints are A and B.
+    c = A.get_distance_from(B); // c represents the length of the line segment whose endpoints are A and B.
     angle_opposite_of_a = acos(((b * b) + (c * c) - (a * a)) / (2 * b * c)) * (180 / PI);
     angle_opposite_of_b = acos(((a * a) + (c * c) - (b * b)) / (2 * a * c)) * (180 / PI);
     angle_opposite_of_c = acos(((a * a) + (b * b) - (c * c)) / (2 * a * b)) * (180 / PI);
