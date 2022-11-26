@@ -11,11 +11,11 @@ pointer_to_polygon = new QUADRILATERAL; // Assign memory to a dynamic QUADRILATE
 pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
 
 --------------------------------------------------------------------------------------------------
-memory_address = 0x55dcbcfd64b0.
+memory_address = 0x5621e944f4b0.
 category = POLYGON.
 color = orange.
-&category = 0x55dcbcfd64b8.
-&color = 0x55dcbcfd64d8.
+&category = 0x5621e944f4b8.
+&color = 0x5621e944f4d8.
 --------------------------------------------------------------------------------------------------
 pointer_to_polygon -> get_area() = 20. // Indirectly call the POLYGON get_area() method.
 pointer_to_polygon -> get_perimeter() = 18. // Indirectly call the POLYGON get_permieter() method.
@@ -31,13 +31,13 @@ output << quadrilateral; // overloaded ostream operator as defined in quadrilate
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d5c0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d608. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5e8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d630. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d638. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d640. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf7b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf820. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf828. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf830. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -77,13 +77,13 @@ get_area() = 20. // The method returns the approximate nonnegative real number o
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d5c0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d608. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5e8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d630. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d638. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d640. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf7b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf820. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf828. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf830. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -132,11 +132,11 @@ delete pointer_to_polygon; // De-allocate memory which was assigned to the dynam
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-memory_address = 0x55dcbcfd64b0.
+memory_address = 0x5621e944f4b0.
 category = POLYGON.
 color = orange.
-&category = 0x55dcbcfd64b8.
-&color = 0x55dcbcfd64d8.
+&category = 0x5621e944f4b8.
+&color = 0x5621e944f4d8.
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
 Unit Test # 3: Create a pointer-to-QUADRILATERAL type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. Use that pointer-to-QUADRILATERAL to call the overloaded ostream operator method of the QUADRILATERAL class and the public getter methods of the QUADRILATERAL class.
@@ -148,13 +148,13 @@ delete pointer_to_quadrilateral; // De-allocate memory which was assigned to the
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x55dcbcfd64b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x55dcbcfd64f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x55dcbcfd64d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x55dcbcfd6518. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x55dcbcfd6520. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x55dcbcfd6528. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x55dcbcfd6530. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x5621e944f4b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x5621e944f4f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x5621e944f4d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x5621e944f518. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x5621e944f520. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x5621e944f528. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x5621e944f530. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -207,13 +207,13 @@ quadrilateral_2.print(output);
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d4a0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d4e8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d4c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d508. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d510. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d518. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d520. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf690. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf6d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf6b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf6f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf700. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf708. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf710. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -253,13 +253,13 @@ get_area() = 15.99999999999999289457264239899814128875732421875. // The method r
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d530. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d578. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d558. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d598. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d5a0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d5a8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d5b0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf720. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf768. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf748. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf788. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf790. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf798. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf7a0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -299,13 +299,13 @@ get_area() = 8. // The method returns the approximate nonnegative real number of
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d5c0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d608. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5e8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d630. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d638. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d640. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf7b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf820. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf828. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf830. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -355,13 +355,13 @@ quadrilateral_2.print(output);
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d4a0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d4e8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d4c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d508. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d510. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d518. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d520. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf690. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf6d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf6b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf6f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf700. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf708. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf710. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -401,13 +401,13 @@ get_area() = 20. // The method returns the approximate nonnegative real number o
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d530. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d578. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d558. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d598. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d5a0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d5a8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d5b0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf720. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf768. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf748. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf788. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf790. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf798. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf7a0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -447,13 +447,13 @@ get_area() = 20. // The method returns the approximate nonnegative real number o
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d5c0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d608. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5e8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d630. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d638. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d640. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf7b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf820. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf828. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf830. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -501,13 +501,13 @@ output << trapezoid; // overloaded ostream operator as defined in trapezoid.cpp
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d5a0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d608. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d610. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d618. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d620. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf790. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf800. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf808. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf810. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -550,13 +550,13 @@ get_area() = 1.9999999999999993338661852249060757458209991455078125. // The meth
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d5a0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d608. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d610. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d618. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d620. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf790. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf800. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf808. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf810. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -607,11 +607,11 @@ pointer_to_polygon = new TRAPEZOID; // Assign memory to a dynamic TRAPEZOID inst
 pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
 
 --------------------------------------------------------------------------------------------------
-memory_address = 0x55dcbcfd6670.
+memory_address = 0x5621e944f670.
 category = POLYGON.
 color = orange.
-&category = 0x55dcbcfd6678.
-&color = 0x55dcbcfd6698.
+&category = 0x5621e944f678.
+&color = 0x5621e944f698.
 --------------------------------------------------------------------------------------------------
 pointer_to_polygon -> get_area() = 1.9999999999999993338661852249060757458209991455078125. // Indirectly call the POLYGON get_area() method.
 pointer_to_polygon -> get_perimeter() = 6.8284271247461898468600338674150407314300537109375. // Indirectly call the POLYGON get_permieter() method.
@@ -628,13 +628,13 @@ delete pointer_to_quadrilateral; // De-allocate memory which was assigned to the
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x55dcbcfd6670. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x55dcbcfd66b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x55dcbcfd6698. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x55dcbcfd66d8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x55dcbcfd66e0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x55dcbcfd66e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x55dcbcfd66f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x5621e944f670. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x5621e944f6b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x5621e944f698. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x5621e944f6d8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x5621e944f6e0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x5621e944f6e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x5621e944f6f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -684,13 +684,13 @@ trapezoid_2.print(output);
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d440. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d4c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d468. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d4a8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d4b0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d4b8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d4c0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf630. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf6b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf658. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf698. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf6a0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf6a8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf6b0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -733,13 +733,13 @@ get_area() = 375. // The method returns the approximate nonnegative real number 
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d4f0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d578. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d518. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d558. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d560. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d568. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d570. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf6e0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf768. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf708. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf748. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf750. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf758. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf760. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -782,13 +782,13 @@ get_area() = 140.0000000000001136868377216160297393798828125. // The method retu
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d5a0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d608. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d610. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d618. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d620. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf790. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf800. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf808. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf810. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -839,13 +839,13 @@ output << rectangle; // overloaded ostream operator as defined in rectangle.cpp
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d5a0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d608. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d610. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d618. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d620. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf790. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf800. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf808. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf810. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -888,13 +888,13 @@ get_area() = 12. // The method returns the approximate nonnegative real number o
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d5a0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d608. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d610. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d618. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d620. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf790. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf800. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf808. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf810. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -945,11 +945,11 @@ pointer_to_polygon = new RECTANGLE; // Assign memory to a dynamic RECTANGLE inst
 pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
 
 --------------------------------------------------------------------------------------------------
-memory_address = 0x55dcbcfd6670.
+memory_address = 0x5621e944f670.
 category = POLYGON.
 color = orange.
-&category = 0x55dcbcfd6678.
-&color = 0x55dcbcfd6698.
+&category = 0x5621e944f678.
+&color = 0x5621e944f698.
 --------------------------------------------------------------------------------------------------
 // COMMENTED OUT (does not work): pointer_to_polygon -> quadrilateral_test(). // Indirectly call the QUADRILATERAL quadrilateral_test() method.
 pointer_to_polygon -> get_area() = 12. // Indirectly call the POLYGON get_area() method.
@@ -965,13 +965,13 @@ pointer_to_quadrilateral = new RECTANGLE; // Assign memory to a dynamic RECTANGL
 pointer_to_quadrilateral -> print(output); // Indirectly call the QUADRILATERAL print method.
 
 --------------------------------------------------------------------------------------------------
-this = 0x55dcbcfd6670. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x55dcbcfd66b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x55dcbcfd6698. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x55dcbcfd66d8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x55dcbcfd66e0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x55dcbcfd66e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x55dcbcfd66f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x5621e944f670. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x5621e944f6b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x5621e944f698. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x5621e944f6d8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x5621e944f6e0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x5621e944f6e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x5621e944f6f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1026,13 +1026,13 @@ rectangle_2.print(output);
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d440. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d4c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d468. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d4a8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d4b0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d4b8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d4c0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf630. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf6b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf658. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf698. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf6a0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf6a8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf6b0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1075,13 +1075,13 @@ get_area() = 30. // The method returns the approximate nonnegative real number o
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d4f0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d578. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d518. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d558. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d560. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d568. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d570. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf6e0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf768. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf708. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf748. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf750. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf758. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf760. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1124,13 +1124,13 @@ get_area() = 0.999999999999999555910790149937383830547332763671875. // The metho
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d5a0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d608. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d610. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d618. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d620. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf790. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf800. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf808. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf810. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1183,13 +1183,13 @@ rectangle_2.print(output);
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d440. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d4c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d468. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d4a8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d4b0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d4b8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d4c0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf630. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf6b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf658. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf698. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf6a0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf6a8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf6b0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1232,13 +1232,13 @@ get_area() = 12. // The method returns the approximate nonnegative real number o
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d4f0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d578. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d518. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d558. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d560. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d568. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d570. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf6e0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf768. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf708. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf748. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf750. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf758. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf760. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1281,13 +1281,13 @@ get_area() = 12. // The method returns the approximate nonnegative real number o
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d5a0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d608. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d610. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d618. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d620. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf790. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf800. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf808. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf810. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1338,11 +1338,11 @@ pointer_to_polygon = new SQUARE; // Assign memory to a dynamic SQUARE instance (
 pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
 
 --------------------------------------------------------------------------------------------------
-memory_address = 0x55dcbcfd69b0.
+memory_address = 0x5621e944f9b0.
 category = POLYGON.
 color = orange.
-&category = 0x55dcbcfd69b8.
-&color = 0x55dcbcfd69d8.
+&category = 0x5621e944f9b8.
+&color = 0x5621e944f9d8.
 --------------------------------------------------------------------------------------------------
 pointer_to_polygon -> get_area() = 25. // Indirectly call the POLYGON get_area() method.
 pointer_to_polygon -> get_perimeter() = 20. // Indirectly call the POLYGON get_permieter() method.
@@ -1358,13 +1358,13 @@ output << square; // overloaded ostream operator as defined in square.cpp
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d580. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5a8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d5e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d5f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d5f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d600. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf770. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf798. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf7d8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf7e0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf7e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf7f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1410,13 +1410,13 @@ get_area() = 25. // The method returns the approximate nonnegative real number o
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d580. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5a8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d5e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d5f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d5f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d600. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf770. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf798. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf7d8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf7e0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf7e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf7f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1469,13 +1469,13 @@ pointer_to_quadrilateral = new SQUARE; // Assign memory to a dynamic SQUARE inst
 pointer_to_quadrilateral -> print(output); // Indirectly call the QUADRILATERAL print method.
 
 --------------------------------------------------------------------------------------------------
-this = 0x55dcbcfd69b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x55dcbcfd69f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x55dcbcfd69d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x55dcbcfd6a18. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x55dcbcfd6a20. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x55dcbcfd6a28. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x55dcbcfd6a30. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x5621e944f9b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x5621e944f9f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x5621e944f9d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x5621e944fa18. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x5621e944fa20. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x5621e944fa28. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x5621e944fa30. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1526,13 +1526,13 @@ pointer_to_rectangle = new SQUARE; // Assign memory to a dynamic SQUARE instance
 pointer_to_rectangle -> print(output); // Indirectly call the RECTANGLE print method.
 
 --------------------------------------------------------------------------------------------------
-this = 0x55dcbcfd69b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x55dcbcfd6a38. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x55dcbcfd69d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x55dcbcfd6a18. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x55dcbcfd6a20. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x55dcbcfd6a28. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x55dcbcfd6a30. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x5621e944f9b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x5621e944fa38. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x5621e944f9d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x5621e944fa18. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x5621e944fa20. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x5621e944fa28. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x5621e944fa30. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1589,13 +1589,13 @@ square_2.print(output);
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d3e0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d488. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d408. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d448. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d450. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d458. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d460. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf5d0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf678. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf5f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf638. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf640. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf648. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf650. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1641,13 +1641,13 @@ get_area() = 8.9999999999999946709294817992486059665679931640625. // The method 
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d4b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d558. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d4d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d518. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d520. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d528. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d530. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf6a0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf748. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf6c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf708. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf710. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf718. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf720. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1693,13 +1693,13 @@ get_area() = 3.9999999999999982236431605997495353221893310546875. // The method 
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d580. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5a8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d5e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d5f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d5f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d600. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf770. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf798. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf7d8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf7e0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf7e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf7f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1755,13 +1755,13 @@ square_2.print(output);
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d3e0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d488. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d408. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d448. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d450. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d458. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d460. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf5d0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf678. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf5f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf638. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf640. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf648. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf650. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1807,13 +1807,13 @@ get_area() = 12. // The method returns the approximate nonnegative real number o
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d4b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d558. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d4d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d518. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d520. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d528. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d530. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf6a0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf748. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf6c8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf708. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf710. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf718. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf720. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1859,13 +1859,13 @@ get_area() = 12. // The method returns the approximate nonnegative real number o
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d580. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
-&category = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5a8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d5e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d5f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d5f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
-&D = 0x7ffc0611d600. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
+this = 0x7ffc6fdcf770. // The keyword named this is a pointer which stores the memory address of the first memory cell of a QUADRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRIANGLE object.
+&category = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf798. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf7d8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf7e0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf7e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+&D = 0x7ffc6fdcf7f0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named D.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1919,11 +1919,11 @@ pointer_to_polygon = new TRILATERAL; // Assign memory to a dynamic TRILATERAL in
 pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
 
 --------------------------------------------------------------------------------------------------
-memory_address = 0x55dcbcfd64b0.
+memory_address = 0x5621e944f4b0.
 category = POLYGON.
 color = orange.
-&category = 0x55dcbcfd64b8.
-&color = 0x55dcbcfd64d8.
+&category = 0x5621e944f4b8.
+&color = 0x5621e944f4d8.
 --------------------------------------------------------------------------------------------------
 pointer_to_polygon -> get_area() = 6. // Indirectly call the POLYGON get_area() method.
 pointer_to_polygon -> get_perimeter() = 12. // Indirectly call the POLYGON get_permieter() method.
@@ -1934,12 +1934,12 @@ Unit Test # 22: Test the default TRILATERAL constructor and the TRILATERAL print
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d5c0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
-&category = 0x7ffc0611d608. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5e8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d630. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d638. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+this = 0x7ffc6fdcf7b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
+&category = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf820. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf828. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -1975,12 +1975,12 @@ get_area() = 6. // The method returns the approximate nonnegative real number of
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d5c0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
-&category = 0x7ffc0611d608. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5e8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d630. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d638. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+this = 0x7ffc6fdcf7b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
+&category = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf820. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf828. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -2026,12 +2026,12 @@ trilateral_2.print(output);
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d4c0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
-&category = 0x7ffc0611d508. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d4e8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d528. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d530. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d538. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+this = 0x7ffc6fdcf6b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
+&category = 0x7ffc6fdcf6f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf6d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf718. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf720. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf728. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -2067,12 +2067,12 @@ get_area() = 50. // The method returns the approximate nonnegative real number o
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d540. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
-&category = 0x7ffc0611d588. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d568. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d5a8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d5b0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d5b8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+this = 0x7ffc6fdcf730. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
+&category = 0x7ffc6fdcf778. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf758. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf798. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf7a0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf7a8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -2108,12 +2108,12 @@ get_area() = 62.49999999999994315658113919198513031005859375. // The method retu
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d5c0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
-&category = 0x7ffc0611d608. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5e8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d630. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d638. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+this = 0x7ffc6fdcf7b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
+&category = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf820. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf828. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -2157,12 +2157,12 @@ trilateral_1.print(output);
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d540. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
-&category = 0x7ffc0611d588. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d568. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d5a8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d5b0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d5b8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+this = 0x7ffc6fdcf730. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
+&category = 0x7ffc6fdcf778. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf758. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf798. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf7a0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf7a8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -2198,12 +2198,12 @@ get_area() = 6. // The method returns the approximate nonnegative real number of
 --------------------------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------------------------
-this = 0x7ffc0611d5c0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
-&category = 0x7ffc0611d608. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x7ffc0611d5e8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x7ffc0611d628. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x7ffc0611d630. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x7ffc0611d638. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+this = 0x7ffc6fdcf7b0. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
+&category = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7d8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf818. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf820. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf828. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -2247,11 +2247,11 @@ pointer_to_polygon = new RIGHT_TRILATERAL; // Assign memory to a dynamic RIGHT_T
 pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
 
 --------------------------------------------------------------------------------------------------
-memory_address = 0x55dcbcfd6670.
+memory_address = 0x5621e944f670.
 category = POLYGON.
 color = orange.
-&category = 0x55dcbcfd6678.
-&color = 0x55dcbcfd6698.
+&category = 0x5621e944f678.
+&color = 0x5621e944f698.
 --------------------------------------------------------------------------------------------------
 pointer_to_polygon -> get_area() = 0.4999999999999997779553950749686919152736663818359375. // Indirectly call the POLYGON get_area() method.
 pointer_to_polygon -> get_perimeter() = 3.41421356237309492343001693370752036571502685546875. // Indirectly call the POLYGON get_permieter() method.
@@ -2266,12 +2266,12 @@ pointer_to_trilateral = new RIGHT_TRILATERAL; // Assign memory to a dynamic RIGH
 pointer_to_trilateral -> print(output); // Indirectly call the TRILATERAL print method.
 
 --------------------------------------------------------------------------------------------------
-this = 0x55dcbcfd6670. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
-&category = 0x55dcbcfd66b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
-&color = 0x55dcbcfd6698. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
-&A = 0x55dcbcfd66d8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
-&B = 0x55dcbcfd66e0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
-&C = 0x55dcbcfd66e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+this = 0x5621e944f670. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
+&category = 0x5621e944f6b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x5621e944f698. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x5621e944f6d8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x5621e944f6e0. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x5621e944f6e8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
 sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
@@ -2308,6 +2308,97 @@ get_area() = 0.4999999999999997779553950749686919152736663818359375. // The meth
 pointer_to_trilateral -> get_area() = 0.4999999999999997779553950749686919152736663818359375. // Indirectly call the TRILATERAL get_area() method.
 pointer_to_trilateral -> get_perimeter() = 3.41421356237309492343001693370752036571502685546875. // Indirectly call the TRILATERAL get_permieter() method.
 delete pointer_to_trilateral; // De-allocate memory which was assigned to the dynamically allocated RIGHT_TRILATERAL instance.
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+Unit Test # 27: Test the default RIGHT_TRILATERAL constructor and the RIGHT_TRILATERAL print method.
+--------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------
+this = 0x7ffc6fdcf790. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
+&category = 0x7ffc6fdcf810. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf800. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf808. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(std::string) = 32. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a string type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(std::string *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-string type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(std::string **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-pointer-to-string type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(POINT) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(POINT *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-POINT type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(POINT **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-pointer-to-POINT type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(POLYGON) = 72. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a POLYGON type object occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(POLYGON *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-POLYGON type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(POLYGON **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-pointer-to-POLYGON type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(TRILATERAL) = 128. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a TRILATERAL type object occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(TRILATERAL *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-TRILATERAL type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(TRILATERAL **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-pointer-to-TRILATERAL type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(RIGHT_TRILATERAL) = 160. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a RIGHT_TRILATERAL type object occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(RIGHT_TRILATERAL *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-RIGHT_TRILATERAL type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(RIGHT_TRILATERAL **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-pointer-to-RIGHT_TRILATERAL type variable occupies. (Each memory cell has a data capacity of 1 byte).
+category = POLYGON/TRILATERAL/RIGHT_TRILATERAL. // This is an immutable string type value which is a data member of the caller TRILATERAL object.
+color = orange. // This is a string type value which is a data member of the caller TRILATERAL object.
+A = POINT(0,0). // A represents a point (which is neither B nor C nor D) plotted on a two-dimensional Cartesian grid (such that the X value represents a real whole number position along the horizontal axis of the Cartesian grid while Y represents a real whole number position along the vertical axis of the same Cartesian grid).
+B = POINT(0,1). // B represents a point (which is neither A nor C nor D) plotted on a two-dimensional Cartesian grid (such that the X value represents a real whole number position along the horizontal axis of the Cartesian grid while Y represents a real whole number position along the vertical axis of the same Cartesian grid).
+C = POINT(1,0). // C represents a point (which is neither A nor B nor D) plotted on a two-dimensional Cartesian grid (such that the X value represents a real whole number position along the horizontal axis of the Cartesian grid while Y represents a real whole number position along the vertical axis of the same Cartesian grid).
+a = B.get_distance_from(C) = 1.4142135623730951454746218587388284504413604736328125. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
+b = C.get_distance_from(A) = 1. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and A.
+c = A.get_distance_from(B) = 1. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+slope_of_side_a = B.get_slope_of_line_to(C) = -1. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
+slope_of_side_b = C.get_slope_of_line_to(A) = 0. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and A.
+slope_of_side_c = A.get_slope_of_line_to(B) = inf. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
+interior_angle_of_A = get_interior_angle_CAB() = 90.0000760198120843824654002673923969268798828125. // The value represents the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are C and A with the line segment whose endpoints are A and B such that those two line segments intersect at A (and the angle measurement is in degrees and not in radians).
+interior_angle_of_B = get_interior_angle_ABC() = 45.0000380099060208749506273306906223297119140625. // The method returns the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are A and B with the line segment whose endpoints are B and C such that those two line segments intersect at B (and the angle measurement is in degrees and not in radians).
+interior_angle_of_C = get_interior_angle_BCA() = 45.0000380099060208749506273306906223297119140625. // The method returns the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are B and C with the line segment whose endpoints are C and A such that those two line segments intersect at C (and the angle measurement is in degrees and not in radians).
+interior_angle_of_A + interior_angle_of_B + interior_angle_of_C = 180.0001520396241403432213701307773590087890625. // sum of all three approximate interior angle measurements of the trilateral represented by the caller TRILATERAL object (in degrees and not in radians)
+get_perimeter() = a + b + c = 3.41421356237309492343001693370752036571502685546875. // The method returns the sum of the three approximated side lengths of the trilateral which the caller TRILATERAL object represents.
+get_area() = 0.4999999999999997779553950749686919152736663818359375. // The method returns the approximate nonnegative real number of Cartesian grid unit squares which are enclosed inside of the two-dimensional region formed by the three line segments which connect points A to B, B to C, and C to A.
+--------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------
+this = 0x7ffc6fdcf790. // The keyword named this is a pointer which stores the memory address of the first memory cell of a TRILATERAL sized chunk of contiguous memory cells which are allocated to the caller TRILATERAL object.
+&category = 0x7ffc6fdcf810. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named category.
+&color = 0x7ffc6fdcf7b8. // The reference operation returns the memory address of the first memory cell of a string sized chunk of contiguous memory cells which are allocated to the string data attribute named color..
+&A = 0x7ffc6fdcf7f8. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named A.
+&B = 0x7ffc6fdcf800. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named B.
+&C = 0x7ffc6fdcf808. // The reference operation returns the memory address of the first memory cell of a POINT sized chunk of contiguous memory cells which are allocated to the POINT data attribute named C.
+sizeof(int) = 4. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an int type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(int *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(int **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which an pointer-to-pointer-to-int type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(std::string) = 32. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a string type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(std::string *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-string type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(std::string **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-pointer-to-string type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(POINT) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a POINT type object occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(POINT *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-POINT type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(POINT **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-pointer-to-POINT type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(POLYGON) = 72. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a POLYGON type object occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(POLYGON *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-POLYGON type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(POLYGON **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-pointer-to-POLYGON type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(TRILATERAL) = 128. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a TRILATERAL type object occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(TRILATERAL *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-TRILATERAL type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(TRILATERAL **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-pointer-to-TRILATERAL type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(RIGHT_TRILATERAL) = 160. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a RIGHT_TRILATERAL type object occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(RIGHT_TRILATERAL *) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-RIGHT_TRILATERAL type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(RIGHT_TRILATERAL **) = 8. // The sizeof() operation returns the nonnegative integer number of bytes of memory which a pointer-to-pointer-to-RIGHT_TRILATERAL type variable occupies. (Each memory cell has a data capacity of 1 byte).
+category = POLYGON/TRILATERAL/RIGHT_TRILATERAL. // This is an immutable string type value which is a data member of the caller TRILATERAL object.
+color = orange. // This is a string type value which is a data member of the caller TRILATERAL object.
+A = POINT(0,0). // A represents a point (which is neither B nor C nor D) plotted on a two-dimensional Cartesian grid (such that the X value represents a real whole number position along the horizontal axis of the Cartesian grid while Y represents a real whole number position along the vertical axis of the same Cartesian grid).
+B = POINT(0,1). // B represents a point (which is neither A nor C nor D) plotted on a two-dimensional Cartesian grid (such that the X value represents a real whole number position along the horizontal axis of the Cartesian grid while Y represents a real whole number position along the vertical axis of the same Cartesian grid).
+C = POINT(1,0). // C represents a point (which is neither A nor B nor D) plotted on a two-dimensional Cartesian grid (such that the X value represents a real whole number position along the horizontal axis of the Cartesian grid while Y represents a real whole number position along the vertical axis of the same Cartesian grid).
+a = B.get_distance_from(C) = 1.4142135623730951454746218587388284504413604736328125. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points B and C.
+b = C.get_distance_from(A) = 1. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points C and A.
+c = A.get_distance_from(B) = 1. // The method returns the approximate nonnegative real number of Cartesian grid unit lengths which span the length of the shortest path between points A and B.
+slope_of_side_a = B.get_slope_of_line_to(C) = -1. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points B and C.
+slope_of_side_b = C.get_slope_of_line_to(A) = 0. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points C and A.
+slope_of_side_c = A.get_slope_of_line_to(B) = inf. // The method returns the approximate nonnegative real number which represents the slope of the line which intersects points A and B.
+interior_angle_of_A = get_interior_angle_CAB() = 90.0000760198120843824654002673923969268798828125. // The value represents the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are C and A with the line segment whose endpoints are A and B such that those two line segments intersect at A (and the angle measurement is in degrees and not in radians).
+interior_angle_of_B = get_interior_angle_ABC() = 45.0000380099060208749506273306906223297119140625. // The method returns the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are A and B with the line segment whose endpoints are B and C such that those two line segments intersect at B (and the angle measurement is in degrees and not in radians).
+interior_angle_of_C = get_interior_angle_BCA() = 45.0000380099060208749506273306906223297119140625. // The method returns the approximate nonnegative real number angle measurement of the acute or else right angle formed by the intersection of the line segment whose endpoints are B and C with the line segment whose endpoints are C and A such that those two line segments intersect at C (and the angle measurement is in degrees and not in radians).
+interior_angle_of_A + interior_angle_of_B + interior_angle_of_C = 180.0001520396241403432213701307773590087890625. // sum of all three approximate interior angle measurements of the trilateral represented by the caller TRILATERAL object (in degrees and not in radians)
+get_perimeter() = a + b + c = 3.41421356237309492343001693370752036571502685546875. // The method returns the sum of the three approximated side lengths of the trilateral which the caller TRILATERAL object represents.
+get_area() = 0.4999999999999997779553950749686919152736663818359375. // The method returns the approximate nonnegative real number of Cartesian grid unit squares which are enclosed inside of the two-dimensional region formed by the three line segments which connect points A to B, B to C, and C to A.
 --------------------------------------------------------------------------------------------------
 
 --------------------------------

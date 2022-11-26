@@ -42,6 +42,7 @@ void unit_test_23(std::ostream & output);
 void unit_test_24(std::ostream & output);
 void unit_test_25(std::ostream & output);
 void unit_test_26(std::ostream & output);
+void unit_test_27(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -636,6 +637,20 @@ void unit_test_26(std::ostream & output)
     delete pointer_to_trilateral; // De-allocate memory which was assigned to the dynamically allocated RIGHT_TRILATERAL instance.
 }
 
+/**
+ * Unit Test # 27: Test the default TRILATERAL constructor and the TRILATERAL print method.
+ */
+void unit_test_27(std::ostream & output)
+{
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 27: Test the default RIGHT_TRILATERAL constructor and the RIGHT_TRILATERAL print method.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    RIGHT_TRILATERAL right_trilateral;
+    right_trilateral.print(); // Test the default argument (which is std::cout).
+    right_trilateral.print(output);
+    output << right_trilateral; // overloaded ostream operator as defined in right_trilateral.cpp
+}
+
 /* program entry point */
 int main()
 {
@@ -722,6 +737,8 @@ int main()
     unit_test_25(file);
     unit_test_26(std::cout);
     unit_test_26(file);
+    unit_test_27(std::cout);
+    unit_test_27(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
