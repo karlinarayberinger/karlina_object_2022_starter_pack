@@ -573,7 +573,7 @@ void unit_test_23(std::ostream & output)
 void unit_test_24(std::ostream & output)
 {
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\nUnit Test # 20: Test the normal TRILATERAL constructor using invalid function inputs and the TRILATERAL print method.";
+    output << "\nUnit Test # 24: Test the normal TRILATERAL constructor using invalid function inputs and the TRILATERAL print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nTRILATERAL trilateral_0 = TRILATERAL(\"red\", POINT(-1,-1), POINT(0,0), POINT(1,1);";
     output << "\ntrilateral_0.print(output);";
@@ -666,6 +666,7 @@ int main()
     unit_test_22(file);
     unit_test_23(std::cout);
     unit_test_23(file);
+    unit_test_24(std::cout);
     unit_test_24(file);
 
     // Print a closing message to the command line terminal.
