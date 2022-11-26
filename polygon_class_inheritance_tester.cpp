@@ -694,14 +694,14 @@ void unit_test_29(std::ostream & output)
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nUnit Test # 29: Test the normal RIGHT_TRILATERAL constructor using invalid function inputs and the RIGHT_TRILATERAL print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\nRIGHT_TRILATERAL right_trilateral_0 = RIGHT_TRILATERAL(\"red\", POINT(-2,2), POINT(0,0), POINT(4,4));";
+    output << "\nRIGHT_TRILATERAL right_trilateral_0 = RIGHT_TRILATERAL(\"red\", POINT(-2,-2), POINT(0,0), POINT(4,4));";
     output << "\nright_trilateral_0.print(output);";
     output << "\nRIGHT_TRILATERAL right_trilateral_1 = RIGHT_TRILATERAL(\"green\", POINT(0,0), POINT(4,5), POINT(9,-3));";
     output << "\nright_trilateral_1.print(output);";
     output << "\nRIGHT_TRILATERAL right_trilateral_2 = RIGHT_TRILATERAL(\"blue\", POINT(0,0), POINT(4,5), POINT(0,0));";
     output << "\nright_trilateral_2.print(output);";
     output << "\n--------------------------------------------------------------------------------------------------";
-    RIGHT_TRILATERAL right_trilateral_0 = RIGHT_TRILATERAL("red", POINT(-2,2), POINT(0,0), POINT(4,4));
+    RIGHT_TRILATERAL right_trilateral_0 = RIGHT_TRILATERAL("red", POINT(-2,-2), POINT(0,0), POINT(4,4));
     right_trilateral_0.print(output);
     RIGHT_TRILATERAL right_trilateral_1 = RIGHT_TRILATERAL("green", POINT(0,0), POINT(4,5), POINT(9,-3));
     right_trilateral_1.print(output);
