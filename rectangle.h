@@ -1,7 +1,7 @@
 /**
  * file: rectangle.h
  * type: C++ (header file)
- * date: 24_NOVEMBER_2022
+ * date: 26_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN
  */
