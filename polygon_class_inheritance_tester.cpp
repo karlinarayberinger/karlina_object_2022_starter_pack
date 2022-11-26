@@ -38,6 +38,7 @@ void unit_test_20(std::ostream & output);
 void unit_test_21(std::ostream & output);
 void unit_test_22(std::ostream & output);
 void unit_test_23(std::ostream & output);
+void unit_test_24(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -566,6 +567,25 @@ void unit_test_23(std::ostream & output)
     trilateral_2.print(output);
 }
 
+/**
+ * Unit Test # 24: Test the normal SQUARE constructor using invalid function inputs and the SQUARE print method.
+ */
+void unit_test_24(std::ostream & output)
+{
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 20: Test the normal TRILATERAL constructor using invalid function inputs and the TRILATERAL print method.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nTRILATERAL trilateral_0 = TRILATERAL(\"red\", POINT(-1,-1), POINT(0,0), POINT(1,1);";
+    output << "\ntrilateral_0.print(output);";
+    output << "\nTRILATERAL trilateral_1 = TRILATERAL(\"green\", POINT(5,0), POINT(5,1), POINT(5,0));";
+    output << "\ntrilateral_1.print(output);";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    TRILATERAL trilateral_0 = TRILATERAL("red", POINT(-1,-1), POINT(0,0), POINT(1,1));
+    trilateral_0.print(output);
+    TRILATERAL trilateral_1 = TRILATERAL("green", POINT(5,0), POINT(5,1), POINT(5,0));
+    trilateral_1.print(output);
+}
+
 /* program entry point */
 int main()
 {
@@ -646,6 +666,7 @@ int main()
     unit_test_22(file);
     unit_test_23(std::cout);
     unit_test_23(file);
+    unit_test_24(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
