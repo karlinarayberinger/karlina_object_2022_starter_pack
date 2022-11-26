@@ -1,9 +1,9 @@
 /**
- * @file: square.h
- * @type: C++ (header file)
- * @date: 24_NOVEMBER_2022
- * @author: Karlina Ray Beringer
- * @license: PUBLIC_DOMAIN
+ * file: square.h
+ * type: C++ (header file)
+ * date: 26_NOVEMBER_2022
+ * author: Karlina Ray Beringer
+ * license: PUBLIC_DOMAIN
  */
 
 // If square.h has not already been linked to a source file (.cpp), then link this header file to the source file(s) which include this header file.
