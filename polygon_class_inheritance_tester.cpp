@@ -37,6 +37,7 @@ void unit_test_19(std::ostream & output);
 void unit_test_20(std::ostream & output);
 void unit_test_21(std::ostream & output);
 void unit_test_22(std::ostream & output);
+void unit_test_23(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -529,12 +530,26 @@ void unit_test_21(std::ostream & output)
 }
 
 /**
- * Unit Test # 22: Test the normal TRILATERAL constructor and TRILATERAL copy constructor using valid function inputs and the TRILATERAL print method.
+ * Unit Test # 22: Test the default TRILATERAL constructor and the TRILATERAL print method.
  */
 void unit_test_22(std::ostream & output)
 {
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\nUnit Test # 22: Test the normal TRILATERAL constructor and TRILATREAL copy constructor using valid function inputs and the TRILATERAL print method.";
+    output << "\nUnit Test # 22: Test the default TRILATERAL constructor and the TRILATERAL print method.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    TRILATERAL trilateral;
+    trilateral.print(); // Test the default argument (which is std::cout).
+    trilateral.print(output);
+    output << trilateral; // overloaded ostream operator as defined in trilateral.cpp
+}
+
+/**
+ * Unit Test # 23: Test the normal TRILATERAL constructor and TRILATERAL copy constructor using valid function inputs and the TRILATERAL print method.
+ */
+void unit_test_23(std::ostream & output)
+{
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 23: Test the normal TRILATERAL constructor and TRILATREAL copy constructor using valid function inputs and the TRILATERAL print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nTRILATERAL trilateral_0 = TRILATERAL(\"purple\", POINT(0,0), POINT(10,0), POINT(10,-10));";
     output << "\ntrilateral_0.print(output);";
@@ -629,6 +644,8 @@ int main()
     unit_test_21(file);
     unit_test_22(std::cout);
     unit_test_22(file);
+    unit_test_23(std::cout);
+    unit_test_23(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
