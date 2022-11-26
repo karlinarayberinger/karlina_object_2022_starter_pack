@@ -121,20 +121,23 @@ TRILATERAL::TRILATERAL(std::string color, POINT A, POINT B, POINT C)
 {
     std::cout << "\n\nCreating the TRILATERAL type object whose memory address is " << this << "...";
     TRILATERAL test_trilateral;
-    test_trilateral.A = A;
-    test_trilateral.B = B;
-    test_trilateral.C = C;
-    if (!test_trilateral.interior_angles_add_up_to_180_degrees() || (test_trilateral.get_area() <= 0))
-    {
-        A = POINT(0,0);
-        B = POINT(4,3);
-        C = POINT(4,0);
-    }
-    else
+    test_trilateral.A.set_X(A.get_X());
+    test_trilateral.A.set_Y(A.get_Y());
+    test_trilateral.B.set_X(B.get_X());
+    test_trilateral.B.set_Y(B.get_Y());
+    test_trilateral.C.set_X(C.get_X());
+    test_trilateral.C.set_Y(C.get_Y());
+    if (test_trilateral.interior_angles_add_up_to_180_degrees() && (test_trilateral.get_area() > 0))
     {
         this -> A = A;
         this -> B = B;
         this -> C = C;
+    }
+    else
+    {
+        A = POINT(0,0);
+        B = POINT(4,3);
+        C = POINT(4,0);
     }
     this -> color = color;
 }
