@@ -41,6 +41,7 @@ void unit_test_22(std::ostream & output);
 void unit_test_23(std::ostream & output);
 void unit_test_24(std::ostream & output);
 void unit_test_25(std::ostream & output);
+void unit_test_26(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -612,6 +613,29 @@ void unit_test_25(std::ostream & output)
     delete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated RIGHT_TRILATERAL instance.
 }
 
+/**
+ * Unit Test # 26: Create a pointer-to-TRILATERAL type variable to store the memory address of a dynamically allocated RIGHT_TRILATERAL instance. 
+ * Use that pointer-to-TRILATERAL type variable to call the print method of the TRILATERAL class and the getter methods of the TRILATERAL class.
+ */
+void unit_test_26(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 25: Create a pointer-to-TRILATERAL type variable to store the memory address of a dynamically allocated RIGHT_TRILATERAL instance. Use that pointer-to-TRILATERAL type variable to call the print method of the TRILATERAL class and the getter methods of the TRILATERAL class.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nTRILATERAL * pointer_to_trilateral; // The pointer-to-TRILATERAL type variable can store the memory address of an object whose data type is a non-abstract derived class of TRILATERAL such as RIGHT_TRILATERAL.";
+    output << "\npointer_to_trilateral = new RIGHT_TRILATERAL; // Assign memory to a dynamic RIGHT_TRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).";
+    output << "\npointer_to_trilateral -> print(output); // Indirectly call the TRILATERAL print method.";
+
+    TRILATERAL * pointer_to_trilateral; // The pointer-to-TRILATERAL type variable can store the memory address of an object whose data type is a non-abstract derived class of TRILATERAL such as RIGHT_TRILATERAL.
+    pointer_to_trilateral = new RIGHT_TRILATERAL; // Assign memory to a dynamic RIGHT_TRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
+    pointer_to_trilateral -> print(output); // Indirectly call the TRILATERAL print method.
+    output << "\npointer_to_trilateral -> get_area() = " << pointer_to_trilateral -> get_area() << ". // Indirectly call the TRILATERAL get_area() method.";
+    output << "\npointer_to_trilateral -> get_perimeter() = " << pointer_to_trilateral -> get_perimeter() << ". // Indirectly call the TRILATERAL get_permieter() method.";
+    output << "\ndelete pointer_to_trilateral; // De-allocate memory which was assigned to the dynamically allocated RIGHT_TRILATERAL instance.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    delete pointer_to_trilateral; // De-allocate memory which was assigned to the dynamically allocated RIGHT_TRILATERAL instance.
+}
+
 /* program entry point */
 int main()
 {
@@ -696,6 +720,8 @@ int main()
     unit_test_24(file);
     unit_test_25(std::cout);
     unit_test_25(file);
+    unit_test_26(std::cout);
+    unit_test_26(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
