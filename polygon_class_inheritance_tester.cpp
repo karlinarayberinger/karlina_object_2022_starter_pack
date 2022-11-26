@@ -43,6 +43,7 @@ void unit_test_24(std::ostream & output);
 void unit_test_25(std::ostream & output);
 void unit_test_26(std::ostream & output);
 void unit_test_27(std::ostream & output);
+void unit_test_28(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -542,6 +543,11 @@ void unit_test_22(std::ostream & output)
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nUnit Test # 22: Test the default TRILATERAL constructor and the TRILATERAL print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nTRILATERAL trilateral;";
+    output << "\ntrilateral.print(); // Test the default argument (which is std::cout).";
+    output << "\ntrilateral.print(output);";
+    output << "\noutput << trilateral; // overloaded ostream operator as defined in trilateral.cpp";
+    output << "\n--------------------------------------------------------------------------------------------------";
     TRILATERAL trilateral;
     trilateral.print(); // Test the default argument (which is std::cout).
     trilateral.print(output);
@@ -645,10 +651,38 @@ void unit_test_27(std::ostream & output)
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nUnit Test # 27: Test the default RIGHT_TRILATERAL constructor and the RIGHT_TRILATERAL print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nRIGHT_TRILATERAL right_trilateral;";
+    output << "\nright_trilateral.print(); // Test the default argument (which is std::cout).";
+    output << "\nright_trilateral.print(output);";
+    output << "\noutput << right_trilateral; // overloaded ostream operator as defined in right_trilateral.cpp";
+    output << "\n--------------------------------------------------------------------------------------------------";
     RIGHT_TRILATERAL right_trilateral;
     right_trilateral.print(); // Test the default argument (which is std::cout).
     right_trilateral.print(output);
     output << right_trilateral; // overloaded ostream operator as defined in right_trilateral.cpp
+}
+
+/**
+ * Unit Test # 28: Test the normal RIGHT_TRILATERAL constructor and RIGHT_TRILATERAL copy constructor using valid function inputs and the RIGHT_TRILATERAL print method.
+ */
+void unit_test_28(std::ostream & output)
+{
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 28: Test the normal RIGHT_TRILATERAL constructor and RIGHT_TRILATERAL copy constructor using valid function inputs and the RIGHT_TRILATERAL print method.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nRIGHT_TRILATERAL right_trilateral_0 = RIGHT_TRILATERAL(\"purple\", POINT(0,0), POINT(0,100), POINT(100,0));";
+    output << "\nright_trilateral_0.print(output);";
+    output << "\nRIGHT_TRILATERAL right_trilateral_1 = RIGHT_TRILATERAL(\"green\", POINT(-3,0), POINT(0,-4), POINT(0,0);";
+    output << "\nright_trilateral_1.print(output);";
+    output << "\nRIGHT_TRILATERAL right_trilateral_2 = RIGHT_TRILATERAL(right_trilateral_0);";
+    output << "\nright_trilateral_2.print(output);";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    RIGHT_TRILATERAL right_trilateral_0 = RIGHT_TRILATERAL("purple", POINT(0,0), POINT(0,100), POINT(100,0));
+    right_trilateral_0.print(output);
+    RIGHT_TRILATERAL right_trilateral_1 = RIGHT_TRILATERAL("green", POINT(-3,0), POINT(0,-4), POINT(0,0));
+    right_trilateral_1.print(output);
+    RIGHT_TRILATERAL right_trilateral_2 = RIGHT_TRILATERAL(right_trilateral_0);
+    right_trilateral_2.print(output);
 }
 
 /* program entry point */
@@ -739,6 +773,8 @@ int main()
     unit_test_26(file);
     unit_test_27(std::cout);
     unit_test_27(file);
+    unit_test_28(std::cout);
+    unit_test_28(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
