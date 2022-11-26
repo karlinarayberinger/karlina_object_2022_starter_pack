@@ -53,26 +53,14 @@ RIGHT_TRILATERAL::RIGHT_TRILATERAL(std::string color, POINT A, POINT B, POINT C)
     test_interior_angle_A = (int) floor(test_right_trilateral.get_interior_angle_CAB()); // coerce the data type to be int
     test_interior_angle_B = (int) floor(test_right_trilateral.get_interior_angle_ABC()); // coerce the data type to be int
     test_interior_angle_C = (int) floor(test_right_trilateral.get_interior_angle_BCA()); // coerce the data type to be int
-    if (test_interior_angle_A == 90)
+    if ((test_interior_angle_A == 90) && (test_interior_angle_B < 90) && (test_interior_angle_C < 90)) is_right_triangle = true;
+    if ((test_interior_angle_B == 90) && (test_interior_angle_A < 90) && (test_interior_angle_C < 90)) is_right_triangle = true;
+    if ((test_interior_angle_C == 90) && (test_interior_angle_A < 90) && (test_interior_angle_B < 90)) is_right_triangle = true;
+    if (test_right_trilateral.interior_angles_add_up_to_180_degrees() && (test_right_trilateral.get_area() > 0) && (is_right_triangle))
     {
-        is_right_triangle = ((test_interior_angle_B < 90) && (test_interior_angle_C < 90));
-    }
-    if (test_interior_angle_B == 90)
-    {
-        is_right_triangle = ((test_interior_angle_A < 90) && (test_interior_angle_C < 90));
-    }
-    if (test_interior_angle_C == 90)
-    {
-        is_right_triangle = ((test_interior_angle_A < 90) && (test_interior_angle_B < 90));
-    }
-    if (test_right_trilateral.interior_angles_add_up_to_180_degrees() && (test_right_trilateral.get_area() > 0))
-    {
-        if (is_right_triangle)
-        {
-            this -> A = A;
-            this -> B = B;
-            this -> C = C;
-        }
+        this -> A = A;
+        this -> B = B;
+        this -> C = C;
     }
     else
     {
