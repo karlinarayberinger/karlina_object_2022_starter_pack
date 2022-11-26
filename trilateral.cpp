@@ -129,6 +129,7 @@ TRILATERAL::TRILATERAL(std::string color, POINT A, POINT B, POINT C)
         B = POINT(4,3);
         C = POINT(4,0);
     }
+    this -> color = color;
 }
 
 /**
