@@ -518,7 +518,7 @@ void unit_test_21(std::ostream & output)
     output << "\npointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.";
     // COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.
     POLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as SQUARE.
-    pointer_to_polygon = new SQUARE; // Assign memory to a dynamic TRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
+    pointer_to_polygon = new TRILATERAL; // Assign memory to a dynamic TRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
     pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
     output << "\npointer_to_polygon -> get_area() = " << pointer_to_polygon -> get_area() << ". // Indirectly call the POLYGON get_area() method.";
     output << "\npointer_to_polygon -> get_perimeter() = " << pointer_to_polygon -> get_perimeter() << ". // Indirectly call the POLYGON get_permieter() method.";
