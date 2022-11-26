@@ -113,10 +113,9 @@ public:
      * 
      * (The keyword this refers to the TRILATERAL object which is returned by this function).
      * 
-     * If A, B, and C represent unique points on a Cartesian plane and
-     * if the interior angles of the quadrilateral which those points would represent add up to 180 degrees and
+     * If A, B, and C represent unique points on a Cartesian plane,
+     * if the interior angles of the trilatreal which those points would represent add up to 180 degrees, and
      * if the area of the trilateral which those points represents is larger than zero,
-     * use the input POINT values as the POINT values for the TRILATERAL object which is returned by this function.
      */
     TRILATERAL(std::string color, POINT A, POINT B, POINT C);
 
