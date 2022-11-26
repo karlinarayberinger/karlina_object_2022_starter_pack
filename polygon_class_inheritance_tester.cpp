@@ -692,7 +692,7 @@ void unit_test_28(std::ostream & output)
 void unit_test_29(std::ostream & output)
 {
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\nUnit Test # 24: Test the normal RIGHT_TRILATERAL constructor using invalid function inputs and the RIGHT_TRILATERAL print method.";
+    output << "\nUnit Test # 29: Test the normal RIGHT_TRILATERAL constructor using invalid function inputs and the RIGHT_TRILATERAL print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nRIGHT_TRILATERAL right_trilateral_0 = RIGHT_TRILATERAL(\"red\", POINT(-2,2), POINT(0,0), POINT(4,4));";
     output << "\nright_trilateral_0.print(output);";
