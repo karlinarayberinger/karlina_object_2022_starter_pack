@@ -1,9 +1,9 @@
 /**
- * @file: trapezoid.h
- * @type: C++ (header file)
- * @date: 23_NOVEMBER_2022
- * @author: Karlina Ray Beringer
- * @license: PUBLIC_DOMAIN
+ * file: trapezoid.h
+ * type: C++ (header file)
+ * date: 25_NOVEMBER_2022
+ * author: Karlina Ray Beringer
+ * license: PUBLIC_DOMAIN
  */
 
 // If trapezoid.h has not already been linked to a source file (.cpp), then link this header file to the source file(s) which include this header file.
