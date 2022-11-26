@@ -57,15 +57,15 @@ RIGHT_TRILATERAL::RIGHT_TRILATERAL(std::string color, POINT A, POINT B, POINT C)
     {
         is_right_triangle = ((test_interior_angle_B < 90) && (test_interior_angle_C < 90));
     }
-    if (test_right_trilateral_B == 90)
+    if (test_interior_angle_B == 90)
     {
         is_right_triangle = ((test_interior_angle_A < 90) && (test_interior_angle_C < 90));
     }
-    if (test_right_trilateral_C == 90)
+    if (test_interior_angle_C == 90)
     {
         is_right_triangle = ((test_interior_angle_A < 90) && (test_interior_angle_B < 90));
     }
-    if (test_trilateral.interior_angles_add_up_to_180_degrees() && (test_trilateral.get_area() > 0))
+    if (test_right_trilateral.interior_angles_add_up_to_180_degrees() && (test_right_trilateral.get_area() > 0))
     {
         if (is_right_triangle)
         {

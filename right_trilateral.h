@@ -11,7 +11,7 @@
 #define RIGHT_TRILATERAL_H
 
 // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the TRILATERAL class.
-#include "right_trilateral.h" 
+#include "trilateral.h" 
 
 /**
  * RIGHT_TRILATERAL is a class which inherits the protected and public data

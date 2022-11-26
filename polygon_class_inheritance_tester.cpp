@@ -12,6 +12,7 @@
 #include "rectangle.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the RECTANGLE class.
 #include "square.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the SQUARE class.
 #include "trilateral.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the TRILATERAL class.
+#include "right_trilateral.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the RIGHT_TRILATERAL class.
 
 /* function prototypes */
 void unit_test_0(std::ostream & output);
@@ -39,6 +40,7 @@ void unit_test_21(std::ostream & output);
 void unit_test_22(std::ostream & output);
 void unit_test_23(std::ostream & output);
 void unit_test_24(std::ostream & output);
+void unit_test_25(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -516,7 +518,7 @@ void unit_test_21(std::ostream & output)
     output << "\nUnit Test # 21: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated TRILATERAL instance. Use that pointer-to-POLYGON type variable to call the print method of the POLYGON class and the getter methods of the POLYGON class.";
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\n// COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.";
-    output << "\nPOLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as SQUARE.";
+    output << "\nPOLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as TRILATERAL.";
     output << "\npointer_to_polygon = new TRILATERAL; // Assign memory to a dynamic TRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).";
     output << "\npointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.";
     // COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.
@@ -584,6 +586,30 @@ void unit_test_24(std::ostream & output)
     trilateral_0.print(output);
     TRILATERAL trilateral_1 = TRILATERAL("green", POINT(5,0), POINT(5,1), POINT(5,0));
     trilateral_1.print(output);
+}
+
+/**
+ * Unit Test # 25: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated RIGHT_TRILATERAL instance. 
+ * Use that pointer-to-POLYGON type variable to call the print method of the POLYGON class and the getter methods of the POLYGON class.
+ */
+void unit_test_25(std::ostream & output) 
+{
+    output << "\n\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 25: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated RIGHT_TRILATERAL instance. Use that pointer-to-POLYGON type variable to call the print method of the POLYGON class and the getter methods of the POLYGON class.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\n// COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.";
+    output << "\nPOLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as RIGHT_TRILATERAL.";
+    output << "\npointer_to_polygon = new RIGHT_TRILATERAL; // Assign memory to a dynamic RIGHT_TRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).";
+    output << "\npointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.";
+    // COMMENTED OUT: POLYGON polygon; // This command does not work because POLYGON is an abstract class.
+    POLYGON * pointer_to_polygon; // The pointer-to-POLYGON type variable can store the memory address of an object whose data type is a non-abstract derived class of POLYGON such as RIGHT_TRILATERAL.
+    pointer_to_polygon = new RIGHT_TRILATERAL; // Assign memory to a dynamic RIGHT_TRILATERAL instance (i.e. and dynamic implies that the variable was created during program runtime instead of program compile time).
+    pointer_to_polygon -> print(output); // Indirectly call the POLYGON print method.
+    output << "\npointer_to_polygon -> get_area() = " << pointer_to_polygon -> get_area() << ". // Indirectly call the POLYGON get_area() method.";
+    output << "\npointer_to_polygon -> get_perimeter() = " << pointer_to_polygon -> get_perimeter() << ". // Indirectly call the POLYGON get_permieter() method.";
+    output << "\ndelete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated RIGHT_TRILATERAL instance.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    delete pointer_to_polygon; // De-allocate memory which was assigned to the dynamically allocated RIGHT_TRILATERAL instance.
 }
 
 /* program entry point */
@@ -668,6 +694,8 @@ int main()
     unit_test_23(file);
     unit_test_24(std::cout);
     unit_test_24(file);
+    unit_test_25(std::cout);
+    unit_test_25(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
