@@ -44,6 +44,7 @@ void unit_test_25(std::ostream & output);
 void unit_test_26(std::ostream & output);
 void unit_test_27(std::ostream & output);
 void unit_test_28(std::ostream & output);
+void unit_test_29(std::ostream & output);
 
 /**
  * Unit Test # 0: Create a pointer-to-POLYGON type variable to store the memory address of a dynamically allocated QUADRILATERAL instance. 
@@ -585,7 +586,7 @@ void unit_test_24(std::ostream & output)
     output << "\n--------------------------------------------------------------------------------------------------";
     output << "\nUnit Test # 24: Test the normal TRILATERAL constructor using invalid function inputs and the TRILATERAL print method.";
     output << "\n--------------------------------------------------------------------------------------------------";
-    output << "\nTRILATERAL trilateral_0 = TRILATERAL(\"red\", POINT(-1,-1), POINT(0,0), POINT(1,1);";
+    output << "\nTRILATERAL trilateral_0 = TRILATERAL(\"red\", POINT(-1,-1), POINT(0,0), POINT(1,1));";
     output << "\ntrilateral_0.print(output);";
     output << "\nTRILATERAL trilateral_1 = TRILATERAL(\"green\", POINT(5,0), POINT(5,1), POINT(5,0));";
     output << "\ntrilateral_1.print(output);";
@@ -685,6 +686,29 @@ void unit_test_28(std::ostream & output)
     right_trilateral_2.print(output);
 }
 
+/**
+ * Unit Test # 29: Test the normal RIGHT_TRILATERAL constructor using invalid function inputs and the RIGHT_TRILATERAL print method.
+ */
+void unit_test_29(std::ostream & output)
+{
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nUnit Test # 24: Test the normal RIGHT_TRILATERAL constructor using invalid function inputs and the RIGHT_TRILATERAL print method.";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    output << "\nRIGHT_TRILATERAL right_trilateral_0 = RIGHT_TRILATERAL(\"red\", POINT(-2,2), POINT(0,0), POINT(4,4));";
+    output << "\nright_trilateral_0.print(output);";
+    output << "\nRIGHT_TRILATERAL right_trilateral_1 = RIGHT_TRILATERAL(\"green\", POINT(0,0), POINT(4,5), POINT(9,-3));";
+    output << "\nright_trilateral_1.print(output);";
+    output << "\nRIGHT_TRILATERAL right_trilateral_2 = RIGHT_TRILATERAL(\"blue\", POINT(0,0), POINT(4,5), POINT(0,0));";
+    output << "\nright_trilateral_2.print(output);";
+    output << "\n--------------------------------------------------------------------------------------------------";
+    RIGHT_TRILATERAL right_trilateral_0 = RIGHT_TRILATERAL("red", POINT(-2,2), POINT(0,0), POINT(4,4));
+    right_trilateral_0.print(output);
+    RIGHT_TRILATERAL right_trilateral_1 = RIGHT_TRILATERAL("green", POINT(0,0), POINT(4,5), POINT(9,-3));
+    right_trilateral_1.print(output);
+    RIGHT_TRILATERAL right_trilateral_2 = RIGHT_TRILATERAL("blue", POINT(0,0), POINT(4,5), POINT(0,0));
+    right_trilateral_2.print(output);
+}
+
 /* program entry point */
 int main()
 {
@@ -775,6 +799,8 @@ int main()
     unit_test_27(file);
     unit_test_28(std::cout);
     unit_test_28(file);
+    unit_test_29(std::cout);
+    unit_test_29(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
