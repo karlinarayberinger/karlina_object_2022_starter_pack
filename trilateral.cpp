@@ -125,9 +125,12 @@ TRILATERAL::TRILATERAL(std::string color, POINT A, POINT B, POINT C)
     this -> C = C;
     if (!interior_angles_add_up_to_180_degrees() || (get_area() <= 0))
     {
-        A = POINT(0, 0);
-        B = POINT(4,3);
-        C = POINT(4,0);
+        A.set_X(0);
+        A.set_Y(0);
+        B.set_X(4);
+        B.set_Y(3);
+        C.set_X(4);
+        C.set_Y(0);
     }
     this -> color = color;
 }
