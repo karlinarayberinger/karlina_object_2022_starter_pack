@@ -13,7 +13,7 @@
 #define E 0.000001 // constant which represents the degree of accuracy of the square root approximation 
 
 /* function prototype */
-long double compute_square_root_of_nonnegative_integer(int N, std::ostream & output);
+long double compute_square_root_of_nonnegative_integer(float N, std::ostream & output);
 
 /**
  * Compute the approximate square root of a nonnegative integer, N, using the Babylonian Method.
@@ -22,19 +22,20 @@ long double compute_square_root_of_nonnegative_integer(int N, std::ostream & out
  * 
  * This function returns a value whose data type is long double (which is a floating-point number).
  */
-long double compute_square_root_of_nonnegative_integer(int N, std::ostream & output)
+long double compute_square_root_of_nonnegative_integer(float N, std::ostream & output)
 {
     int i = 0;
     long double X = 0.0, Y = 1.0;
     X = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
+    X = N;
     output << "\n\nN = " << N << ". // number to take the square root of";
     output << "\nX = " << X << ". // approximate square root of N";
     output << "\nY = " << Y << ". // number to add to X to divide by 2 per square root approximation";
-    while ((X - Y) > E) 
+    while (X - Y > E) 
     {
         X = (X + Y) / 2;
         Y = N / X;
-        output << "\nX = ((X + Y) / 2) = " << X << ". // approximate square root of N # " << i;
+        output << "\n\nX = ((X + Y) / 2) = " << X << ". // approximate square root of N # " << i;
         output << "\nY = (N / X) = " << Y << ". // approximate square root of N # " << i;
         i += 1;
     }
@@ -44,8 +45,8 @@ long double compute_square_root_of_nonnegative_integer(int N, std::ostream & out
 /* program entry point */
 int main()
 {
-    // Declare an int type variable and set its initial value to zero.
-    int N = 0;
+    // Declare a float type variable and set its initial value to zero.
+    float N = 0;
 
     // Declare two long double type variables and set their initial values to zero.
     long double A = 0.0, B = 0.0;
@@ -78,8 +79,8 @@ int main()
     file << "\nStart Of Program";
     file << "\n--------------------------------";
 
-    // Print "Enter a nonnegative integer which is no larger than {MAXIMUM_N}: " to the command line terminal.
-    std::cout << "\n\nEnter a nonnegative integer which is no larger than " << MAXIMUM_N << ": ";
+    // Print "Enter a nonnegative number which is no larger than {MAXIMUM_N}: " to the command line terminal.
+    std::cout << "\n\nEnter a nonnegative number which is no larger than " << MAXIMUM_N << ": ";
 
     // Scan the command line terminal for the most recent keyboard input value.
     std::cin >> N;
