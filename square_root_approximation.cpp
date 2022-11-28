@@ -1,7 +1,7 @@
 /**
  * file: square_root_approximation.cpp
  * type: C++ (source file)
- * date: 27_NOVEMBER_2022
+ * date: 28_NOVEMBER_2022
  * author: Karlina Ray Beringer
  * license: PUBLIC_DOMAIN
  */
@@ -10,7 +10,7 @@
 #include <iostream> // library for defining objects which handle command line input and command line output
 #include <fstream> // library for defining objects which handle file input and file output
 #define MAXIMUM_N 100 // constant which represents maximum N value 
-#define E 0.000001 // constant which represents the degree of accuracy of the square root approximation
+#define E 0.000001 // constant which represents the degree of accuracy of the square root approximation 
 
 /* function prototype */
 long double compute_square_root_of_nonnegative_integer(int N, std::ostream & output);
@@ -24,37 +24,40 @@ long double compute_square_root_of_nonnegative_integer(int N, std::ostream & out
  */
 long double compute_square_root_of_nonnegative_integer(int N, std::ostream & output)
 {
+    int i = 0;
     long double X = 0.0, Y = 1.0;
     X = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
-    while (X - Y > E) {
+    output << "\n\nN = " << N << ". // number to take the square root of";
+    output << "\nX = " << X << ". // approximate square root of N";
+    output << "\nY = " << Y << ". // number to add to X to divide by 2 per square root approximation";
+    while ((X - Y) > E) 
+    {
         X = (X + Y) / 2;
         Y = N / X;
+        output << "\nX = ((X + Y) / 2) = " << X << ". // approximate square root of N # " << i;
+        output << "\nY = (N / X) = " << Y << ". // approximate square root of N # " << i;
+        i += 1;
     }
-    return 0;
+    return X;
 }
-
-    float squareRoot(float n)
-    {
-        /*We are using n itself as initial approximation
-          This can definitely be improved */
-        float x = n;
-        float y = 1;
-        float e = 0.000001; /* e decides the accuracy level*/
-        while (x - y > e) {
-            x = (x + y) / 2;
-            y = n / x;
-        }
-        return x;
-    }
 
 /* program entry point */
 int main()
 {
-    // Declare three int type variables and set each of their initial values to 0.
-    int N = 0, A = 0, B = 0;
+    // Declare an int type variable and set its initial value to zero.
+    int N = 0;
+
+    // Declare two long double type variables and set their initial values to zero.
+    long double A = 0.0, B = 0.0;
 
     // Declare a file output stream object.
     std::ofstream file;
+
+    // Set the number of digits of floating-point numbers which are printed to the command line terminal to 100 digits.
+    std::cout.precision(100);
+
+    // Set the number of digits of floating-point numbers which are printed to the file output stream to 100 digits.
+    file.precision(100);
 
     /**
      * If square_root_approximation_output.txt does not already exist in the same directory as square_root_approximation.cpp, 
@@ -95,6 +98,36 @@ int main()
 
     // Print "N := {N}." to the file output stream.
     file << "\n\nN := " << N << ".";
+
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------";
+
+    // Print "Computing the approximate square root of N:" to the command line terminal.
+    std::cout << "\n\nComputing the approximate square root of N:";
+
+    // Print "Computing the approximate square root of N:" to the file output stream.
+    file << "\n\nComputing the approximate square root of N:";
+
+    // Compute the approximate square root of N using the Babylonian method, print the computational steps to the command line terminal, and store the function result in A.
+    A = compute_square_root_of_nonnegative_integer(N, std::cout);
+
+    // Compute the approximate square root of N using the Babylonian method, print the computational steps to the file output stream.
+    compute_square_root_of_nonnegative_integer(N, file);
+
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------";
+
+    // Print "A = approximate_square_root({N}) = {A}." to the command line terminal.
+    std::cout << "\n\nA = approximate_square_root(" << N << ") = " << A << ".";
+
+    // Print "A = approximate_square_root({N}) = {A}." to the file output stream.
+    file << "\n\nA = approximate_square_root(" << N << ") = " << A << ".";
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";

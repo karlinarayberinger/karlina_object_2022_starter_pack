@@ -1,0 +1,37 @@
+--------------------------------
+Start Of Program
+--------------------------------
+
+The value which was entered for N is 100.
+
+N := 100.
+
+--------------------------------
+
+Computing the approximate square root of N:
+
+N = 100. // number to take the square root of
+X = 100. // approximate square root of N
+Y = 1. // number to add to X to divide by 2 per square root approximation
+X = ((X + Y) / 2) = 50.5. // approximate square root of N # 0
+Y = (N / X) = 1.98019801980198019799618569525279099252657033503055572509765625. // approximate square root of N # 0
+X = ((X + Y) / 2) = 26.24009900990099009888967263037784505286253988742828369140625. // approximate square root of N # 1
+Y = (N / X) = 3.81096123007263465711814964809178718496696092188358306884765625. // approximate square root of N # 1
+X = ((X + Y) / 2) = 15.025530119986812377895490921986265675514005124568939208984375. // approximate square root of N # 2
+Y = (N / X) = 6.6553392260670379662786111385486265135114081203937530517578125. // approximate square root of N # 2
+X = ((X + Y) / 2) = 10.84043467302692517230389146476454698131419718265533447265625. // approximate square root of N # 3
+Y = (N / X) = 9.22472234889428614745821022324889781884849071502685546875. // approximate square root of N # 3
+X = ((X + Y) / 2) = 10.032578510960605659881050844006722400081343948841094970703125. // approximate square root of N # 4
+Y = (N / X) = 9.96752728032478032237084786260084001696668565273284912109375. // approximate square root of N # 4
+X = ((X + Y) / 2) = 10.00005289564269299155963022229798298212699592113494873046875. // approximate square root of N # 5
+Y = (N / X) = 9.999947104637100430378493509664394878200255334377288818359375. // approximate square root of N # 5
+X = ((X + Y) / 2) = 10.00000000013989671053538099698698715656064450740814208984375. // approximate square root of N # 6
+Y = (N / X) = 9.99999999986010328946461900301301284343935549259185791015625. // approximate square root of N # 6
+
+--------------------------------
+
+A = approximate_square_root(100) = 10.00000000013989671053538099698698715656064450740814208984375.
+
+--------------------------------
+End Of Program
+--------------------------------
