@@ -10,7 +10,7 @@
 #include <iostream> // library for defining objects which handle command line input and command line output
 #include <fstream> // library for defining objects which handle file input and file output
 #define MAXIMUM_N 100 // constant which represents maximum N value 
-#define E 0.000001 // constant which represents the degree of accuracy of the square root approximation 
+#define E 0.00000001 // constant which represents the degree of accuracy of the square root approximation 
 
 /* function prototype */
 long double compute_square_root_of_nonnegative_integer(float N, std::ostream & output);
@@ -35,8 +35,9 @@ long double compute_square_root_of_nonnegative_integer(float N, std::ostream & o
     {
         X = (X + Y) / 2;
         Y = N / X;
-        output << "\n\nX = ((X + Y) / 2) = " << X << ". // approximate square root of N # " << i;
-        output << "\nY = (N / X) = " << Y << ". // approximate square root of N # " << i;
+        output << "\n\nwhile loop iteration # " << i << ":";
+        output << "\nX = ((X + Y) / 2) = " << X << ".";
+        output << "\nY = (N / X) = " << Y << ".";
         i += 1;
     }
     return X;
