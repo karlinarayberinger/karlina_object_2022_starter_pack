@@ -24,8 +24,28 @@ long double compute_square_root_of_nonnegative_integer(int N, std::ostream & out
  */
 long double compute_square_root_of_nonnegative_integer(int N, std::ostream & output)
 {
+    long double X = 0.0, Y = 1.0;
+    X = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
+    while (X - Y > E) {
+        X = (X + Y) / 2;
+        Y = N / X;
+    }
     return 0;
 }
+
+    float squareRoot(float n)
+    {
+        /*We are using n itself as initial approximation
+          This can definitely be improved */
+        float x = n;
+        float y = 1;
+        float e = 0.000001; /* e decides the accuracy level*/
+        while (x - y > e) {
+            x = (x + y) / 2;
+            y = n / x;
+        }
+        return x;
+    }
 
 /* program entry point */
 int main()
