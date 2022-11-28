@@ -131,6 +131,12 @@ int main()
     // Print "A = approximate_square_root({N}) = {A}." to the file output stream.
     file << "\n\nA = approximate_square_root(" << N << ") = " << A << ".";
 
+    // Print "(A * A) = " << {(A * A)} << ". // the approximate value of N" to the command line terminal.
+    std::cout << "\n\n(A * A) = " << (A * A) << ". // the approximate value of N";
+
+    // Print "(A * A) = " << {(A * A)} << ". // the approximate value of N" to the file output stream.
+    file << "\n\n(A * A) = " << (A * A) << ". // the approximate value of N";
+
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
     std::cout << "\nEnd Of Program";
