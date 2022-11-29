@@ -116,7 +116,7 @@ int main()
     // Compute the approximate square root of N using the Babylonian method, print the computational steps to the command line terminal, and store the function result in A.
     A = compute_square_root_of_nonnegative_integer(N, std::cout);
 
-    // Compute the approximate square root of N using the Babylonian method, print the computational steps to the file output stream.
+    // Compute the approximate square root of N using the Babylonian method and print the computational steps to the file output stream.
     compute_square_root_of_nonnegative_integer(N, file);
 
     // Print a horizontal line to the command line terminal.
