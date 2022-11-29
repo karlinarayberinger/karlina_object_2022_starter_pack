@@ -10,10 +10,22 @@
 #include <iostream> // library for defining objects which handle command line input and command line output
 #include <fstream> // library for defining objects which handle file input and file output
 #define MAXIMUM_N 100 // constant which represents maximum N value 
-#define E 0.00000001 // constant which represents the degree of accuracy of the square root approximation 
+#define E 0.00000001 // constant which represents the degree of accuracy of the cube root approximation 
 
 /* function prototype */
 long double compute_cube_root_of_nonnegative_integer(float N, std::ostream & output);
+long double compute_difference(long double N, long double B);
+
+/**
+ * Return the absolute value of (N - ((B * B) * B)).
+ * 
+ * Assume that N is a long double type value and that B is a long double type value.
+ */
+long double difference(long double N, long double B)
+{
+    if (N > ((B * B) * B)) return (N - (B * B * B));
+    return ((B * B * B) - N);
+}
 
 /**
  * Compute the approximate cube root of a nonnegative number, N.
@@ -24,8 +36,16 @@ long double compute_cube_root_of_nonnegative_integer(float N, std::ostream & out
  */
 long double compute_cube_root_of_nonnegative_integer(float N, std::ostream & output)
 {
-    //...
-    return 0;
+    long double A = 0.0, B = 0.0, C = 0.0, error = 0.0;
+    B = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
+    while (true)
+    {
+        B = ((A + C) / 2);
+        error = difference(N, B);
+        if (error <= E) return B;
+        if ((B * B * B) > N) C = B;
+        else A = B;
+    }
 }
 
 /* program entry point */
