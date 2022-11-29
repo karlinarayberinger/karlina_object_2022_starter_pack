@@ -49,8 +49,8 @@ int main()
     // Declare a float type variable and set its initial value to zero.
     float N = 0;
 
-    // Declare two long double type variables and set their initial values to zero.
-    long double A = 0.0, B = 0.0;
+    // Declare one double type variables and set their its initial value to zero.
+    long double A = 0.0;
 
     // Declare a file output stream object.
     std::ofstream file;
