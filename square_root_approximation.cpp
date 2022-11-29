@@ -18,7 +18,7 @@ long double compute_square_root_of_nonnegative_integer(float N, std::ostream & o
 /**
  * Compute the approximate square root of a nonnegative number, N, using the Babylonian Method.
  * 
- * Assume that N is an integer value and that output is an output stream object.
+ * Assume that N is an float value and that output is an output stream object.
  * 
  * This function returns a value whose data type is long double (which is a floating-point number).
  */
