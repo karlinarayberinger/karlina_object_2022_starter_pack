@@ -120,6 +120,12 @@ int main()
     // Print "Computing the approximate square root of N:" to the file output stream.
     file << "\n\nComputing the approximate cube root of N:";
 
+    // Print a horizontal line to the command line terminal.
+    std::cout << "\n\n--------------------------------";
+
+    // Print a horizontal line to the command line terminal.
+    file << "\n\n--------------------------------";
+
     // Compute the approximate cube root of N, print the computational steps to the command line terminal, and store the function result in S.
     S = compute_cube_root_of_nonnegative_integer(N, std::cout);
 
