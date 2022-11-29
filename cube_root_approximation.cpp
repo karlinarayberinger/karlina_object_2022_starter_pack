@@ -10,63 +10,37 @@
 #include <iostream> // library for defining objects which handle command line input and command line output
 #include <fstream> // library for defining objects which handle file input and file output
 #include <cmath> // library which contains the absolute value function
-#define MAXIMUM_N 100 // constant which represents maximum N value 
+#define MAXIMUM_N 1000 // constant which represents maximum N value 
 #define E 0.00000001 // constant which represents the degree of accuracy of the cube root approximation 
 
 /* function prototype */
 long double difference(long double n, long double mid);
 long double compute_cube_root_of_nonnegative_integer(float N, std::ostream & output);
 
-// Returns the absolute value of n-mid*mid*mid
-double diff(double n,double mid)
+/**
+ * Return the absolute value of (N - (B * B * B)).
+ */
+long double difference(long double N, long double B)
 {
-    if (n > (mid*mid*mid))
-        return (n-(mid*mid*mid));
-    else
-        return ((mid*mid*mid) - n);
-}
-
-// Returns cube root of a no n
-double cubicRoot(double n)
-{
-    // Set start and end for binary search
-    double start = 0, end = n;
-
-    // Set precision
-    double e = 0.0000001;
-
-    while (true)
-    {
-        double mid = (start + end)/2;
-        double error = diff(n, mid);
-
-        // If error is less than e then mid is
-        // our answer so return mid
-        if (error <= e)
-            return mid;
-
-        // If mid*mid*mid is greater than n set
-        // end = mid
-        if ((mid*mid*mid) > n)
-            end = mid;
-
-        // If mid*mid*mid is less than n set
-        // start = mid
-        else
-            start = mid;
-    }
+    if (N > (B * B * B)) return (N - (B * B * B));
+    return ((B * B * B) - N);
 }
 
 /**
  * Compute the approximate cube root of a nonnegative number, N.
- * 
- * Assume that N is a float type value and that output is an output stream object.
- * 
- * This function returns a value whose data type is long double (which is a floating-point number).
  */
 long double compute_cube_root_of_nonnegative_integer(float N, std::ostream & output)
 {
-    return cubicRoot(N);
+    double A = 0.0, B = 0.0, C = 0.0, epsilon = 0.0;
+    C = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
+    while (true)
+    {
+        B = (A + C) / 2;
+        epsilon = difference(N, B);
+        if (epsilon <= E) return B;
+        if ((B * B * B) > N) C = B;
+        else A = B;
+    }
 }
 
 /* program entry point */
