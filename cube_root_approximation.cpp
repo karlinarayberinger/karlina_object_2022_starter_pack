@@ -31,15 +31,22 @@ long double difference(long double N, long double B)
  */
 long double compute_cube_root_of_nonnegative_integer(float N, std::ostream & output)
 {
+    int i = 0;
     double A = 0.0, B = 0.0, C = 0.0, epsilon = 0.0;
     C = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
     while (true)
     {
+        output << "\n\nwhile loop iteration # " << i << ":";
         B = (A + C) / 2;
         epsilon = difference(N, B);
+        output << "\nA = " << A << ".";
+        output << "\nC = " << C << ".";
+        output << "\nB = (A + C) / 2 = " << B << ".";
+        output << "\nepsilon = difference(N , B) = " << epsilon << ".";
         if (epsilon <= E) return B;
         if ((B * B * B) > N) C = B;
         else A = B;
+        i += 1;
     }
 }
 
