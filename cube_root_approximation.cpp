@@ -130,8 +130,8 @@ int main()
     // Print "Computing the approximate square root of N:" to the file output stream.
     file << "\n\nComputing the approximate cube root of N:";
 
-    // Compute the approximate cube root of N, print the computational steps to the command line terminal, and store the function result in A.
-    A = compute_cube_root_of_nonnegative_integer(N, std::cout);
+    // Compute the approximate cube root of N, print the computational steps to the command line terminal, and store the function result in S.
+    S = compute_cube_root_of_nonnegative_integer(N, std::cout);
 
     // Compute the approximate cube root of N and print the computational steps to the file output stream.
     compute_cube_root_of_nonnegative_integer(N, file);
@@ -149,10 +149,10 @@ int main()
     file << "\n\nS = approximate_cube_root(" << N << ") = " << S << ".";
 
     // Print "(S * S * S) = " << {(S * S * S)} << ". // the approximate value of N" to the command line terminal.
-    std::cout << "\n\n(A * A * A) = " << (A * A * A) << ". // the approximate value of N";
+    std::cout << "\n\n(S * S * S) = " << (S * S * S) << ". // the approximate value of N";
 
-    // Print "(A * A * A) = " << {(A * A * A)} << ". // the approximate value of N" to the file output stream.
-    file << "\n\n(A * A * A) = " << (A * A * A) << ". // the approximate value of N";
+    // Print "(S * S * S) = " << {(S * S * S)} << ". // the approximate value of N" to the file output stream.
+    file << "\n\n(S * S * S) = " << (S * S * S) << ". // the approximate value of N";
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
