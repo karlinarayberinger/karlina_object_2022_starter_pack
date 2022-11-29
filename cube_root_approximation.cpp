@@ -9,22 +9,52 @@
 /* preprocessing directives */
 #include <iostream> // library for defining objects which handle command line input and command line output
 #include <fstream> // library for defining objects which handle file input and file output
+#include <cmath> // library which contains the absolute value function
 #define MAXIMUM_N 100 // constant which represents maximum N value 
 #define E 0.00000001 // constant which represents the degree of accuracy of the cube root approximation 
 
 /* function prototype */
+long double difference(long double n, long double mid);
 long double compute_cube_root_of_nonnegative_integer(float N, std::ostream & output);
-long double compute_difference(long double N, long double B);
 
-/**
- * Return the absolute value of (N - ((B * B) * B)).
- * 
- * Assume that N is a long double type value and that B is a long double type value.
- */
-long double difference(long double N, long double B)
+// Returns the absolute value of n-mid*mid*mid
+double diff(double n,double mid)
 {
-    if (N > ((B * B) * B)) return (N - (B * B * B));
-    return ((B * B * B) - N);
+    if (n > (mid*mid*mid))
+        return (n-(mid*mid*mid));
+    else
+        return ((mid*mid*mid) - n);
+}
+
+// Returns cube root of a no n
+double cubicRoot(double n)
+{
+    // Set start and end for binary search
+    double start = 0, end = n;
+
+    // Set precision
+    double e = 0.0000001;
+
+    while (true)
+    {
+        double mid = (start + end)/2;
+        double error = diff(n, mid);
+
+        // If error is less than e then mid is
+        // our answer so return mid
+        if (error <= e)
+            return mid;
+
+        // If mid*mid*mid is greater than n set
+        // end = mid
+        if ((mid*mid*mid) > n)
+            end = mid;
+
+        // If mid*mid*mid is less than n set
+        // start = mid
+        else
+            start = mid;
+    }
 }
 
 /**
@@ -36,28 +66,7 @@ long double difference(long double N, long double B)
  */
 long double compute_cube_root_of_nonnegative_integer(float N, std::ostream & output)
 {
-    int i = 0;
-    long double A = 0.0, B = 0.0, C = 0.0, error = 0.0;
-    B = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
-    output << "\n\nN = " << N << ". // number to take the cube root of";
-    output << "\nA = " << A << ". // approximate square root of N (lower limit)";
-    output << "\nB = " << B << ". // approximate square root of N (range middle)";
-    output << "\nC = " << C << ". // approximate square root of N (upper limit)";
-    output << "\nerror = " << error << ". // approximate difference between N and B";
-    while (true)
-    {
-        B = ((A + C) / 2);
-        error = difference(N, B);
-        output << "\n\nwhile loop iteration # " << i << ":";
-        output << "\nA = " << A << ".";
-        output << "\nB = ((A + C) / 2) = " << B << ".";
-        output << "\nC = " << C << ".";
-        output << "\nerror = difference(N,B) = " << error << ".";
-        if (error <= E) return B;
-        if ((B * B * B) > N) C = B;
-        else A = B;
-        i += 1;
-    }
+    return cubicRoot(N);
 }
 
 /* program entry point */
