@@ -36,15 +36,27 @@ long double difference(long double N, long double B)
  */
 long double compute_cube_root_of_nonnegative_integer(float N, std::ostream & output)
 {
+    int i = 0;
     long double A = 0.0, B = 0.0, C = 0.0, error = 0.0;
     B = ((N < 0) || (N > MAXIMUM_N)) ? 0 : N;
+    output << "\n\nN = " << N << ". // number to take the cube root of";
+    output << "\nA = " << A << ". // approximate square root of N (lower limit)";
+    output << "\nB = " << B << ". // approximate square root of N (range middle)";
+    output << "\nC = " << C << ". // approximate square root of N (upper limit)";
+    output << "\nerror = " << error << ". // approximate difference between N and B";
     while (true)
     {
         B = ((A + C) / 2);
         error = difference(N, B);
+        output << "\n\nwhile loop iteration # " << i << ":";
+        output << "\nA = " << A << ".";
+        output << "\nB = ((A + C) / 2) = " << B << ".";
+        output << "\nC = " << C << ".";
+        output << "\nerror = difference(N,B) = " << error << ".";
         if (error <= E) return B;
         if ((B * B * B) > N) C = B;
         else A = B;
+        i += 1;
     }
 }
 
@@ -55,7 +67,7 @@ int main()
     float N = 0;
 
     // Declare one double type variable and set its initial value to zero.
-    long double A = 0.0;
+    long double S = 0.0;
 
     // Declare a file output stream object.
     std::ofstream file;
@@ -130,13 +142,13 @@ int main()
     // Print a horizontal line to the command line terminal.
     file << "\n\n--------------------------------";
 
-    // Print "A = approximate_cube_root({N}) = {A}." to the command line terminal.
-    std::cout << "\n\nA = approximate_cube_root(" << N << ") = " << A << ".";
+    // Print "S = approximate_cube_root({N}) = {S}." to the command line terminal.
+    std::cout << "\n\nS = approximate_cube_root(" << N << ") = " << S << ".";
 
-    // Print "A = approximate_cube_root({N}) = {A}." to the file output stream.
-    file << "\n\nA = approximate_cube_root(" << N << ") = " << A << ".";
+    // Print "S = approximate_cube_root({N}) = {S}." to the file output stream.
+    file << "\n\nS = approximate_cube_root(" << N << ") = " << S << ".";
 
-    // Print "(A * A * A) = " << {(A * A * A)} << ". // the approximate value of N" to the command line terminal.
+    // Print "(S * S * S) = " << {(S * S * S)} << ". // the approximate value of N" to the command line terminal.
     std::cout << "\n\n(A * A * A) = " << (A * A * A) << ". // the approximate value of N";
 
     // Print "(A * A * A) = " << {(A * A * A)} << ". // the approximate value of N" to the file output stream.
