@@ -49,7 +49,7 @@ int main()
     // Declare a float type variable and set its initial value to zero.
     float N = 0;
 
-    // Declare one double type variables and set their its initial value to zero.
+    // Declare one double type variable and set its initial value to zero.
     long double A = 0.0;
 
     // Declare a file output stream object.
