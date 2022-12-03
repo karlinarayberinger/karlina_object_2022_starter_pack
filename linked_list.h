@@ -1,8 +1,8 @@
 /**
  * file: linked_list.h
  * type: C++ (header file)
- * author: Karlina Ray Beringer
- * date: 26_NOVEMBER_2022
+ * author: karbytes
+ * date: 03_DECEMBER_2022
  * license: PUBLIC_DOMAIN
  */
 
@@ -35,7 +35,7 @@ struct NODE
 /**
  * A variable whose data type is LINKED_LIST is a software object whose data attributes
  * consist of exactly one pointer-to-NODE type variable which is assumed to be the 
- * first node of a linear and unidirectional linked list.
+ * first node of a linear and unidirectional (i.e. singly-linked) linked list.
  * 
  * When a LINKED_LIST type variable is declared, a dynamic NODE type variable is created
  * and the memory address of that dynamic NODE type variable is stored in a pointer-to-NODE
@@ -45,7 +45,7 @@ struct NODE
  * NODE type elements can be inserted into the list which the LINKED_LIST type variable represents
  * and NODE type elements can be removed from the list which the LINKED_LIST type variable represents.
  * 
- * After a LINKED_LIST type ariable is created and before that variable is deleted,
+ * After a LINKED_LIST type variable is created and before that variable is deleted,
  * that variable (i.e. object) can invoke a print function which prints a description
  * of the caller LINKED_LIST object.
  * 
@@ -56,7 +56,7 @@ struct NODE
 class LINKED_LIST
 {
 private:
-    NODE * head; // head stores the memory address of the first NODE type element of a LINKED_LIST type list.
+    NODE * head; // head stores the memory address of the first NODE type element of a LINKED_LIST type data structure.
     bool remove_node_with_key(std::string key); // helper method
 public:
     LINKED_LIST(); // constructor
