@@ -2,7 +2,7 @@
  * file: linked_list.h
  * type: C++ (header file)
  * author: karbytes
- * date: 03_DECEMBER_2022
+ * date: 04_DECEMBER_2022
  * license: PUBLIC_DOMAIN
  */
 
@@ -60,7 +60,7 @@ private:
     bool remove_node_with_key(std::string key); // helper method
 public:
     LINKED_LIST(); // constructor
-    void insert_node_at_end_of_list(NODE * pointer_to_node); // setter method
+    void insert_node_at_end_of_list(NODE * node); // setter method
     void remove_nodes_with_key(std::string key); // setter method
     int get_number_of_nodes_in_list(); // getter method
     void print(std::ostream & output = std::cout); // descriptor method
