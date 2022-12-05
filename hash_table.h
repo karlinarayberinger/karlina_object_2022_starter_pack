@@ -14,10 +14,6 @@
 #include "linked_list.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the LINKED_LIST class.
 #define MAXIMUM_N 100 // constant which represents maximum N value
 
-//*****************************************************************
-// Hash Table objects store a fixed number of Linked Lists.
-//*****************************************************************
-
 /**
  * A variable whose data type is HASH_TABLE is a software object whose data attributes
  * consist of exactly one pointer-to-LINKED_LIST type variable named array 
@@ -33,7 +29,8 @@
  * type variable named array.
  * 
  * After a HASH_TABLE type variable is created and before that variable is deleted, 
- * NODE type elements can be inserted into the hash table array.
+ * NODE type elements can be inserted into the hash table array and
+ * NODE type elements can be removed from the hash table array.
  * 
  * When a NODE is inserted into the hash table array, a hash function takes that NODE's key as 
  * a hash function input and then the hash function outputs a corresponding nonnegative integer
@@ -71,10 +68,16 @@ public:
     // The setter method appends the input NODE to the end of the LINKED_LIST located at array[hash(node -> key)].
     void insert_node(NODE * node); 
 
-    // The getter method returns the number of LINKED_LIST type values stored in the hash table array.
+    // The setter method removes all NODE type instances from the hash table array whose key values match the input key value.
+    bool remove_nodes_with_key(std:: key);
+
+    // The getter method returns a singly-linked list of all NODE type instances in the hash table array whose key values match the input key value.
+    LINKED_LIST * get_nodes_with_key(std::string key);
+
+    // The getter method returns the number of LINKED_LIST type values stored in the hash table array (and the value returned is N).
     int get_number_of_linked_lists_in_hash_table(); 
 
-    // The getter method returns the total number of NODE type values stored in the hash table array.
+    // The getter method returns the total number of NODE type values stored in the hash table array (and the value returned is an integer which is equal to or larger than N).
     int get_number_of_nodes_in_hash_table(); 
     
     // The descriptor method prints a description of the caller HASH_TABLE object to the output stream (and the command line terminal is the default output stream parameter).
