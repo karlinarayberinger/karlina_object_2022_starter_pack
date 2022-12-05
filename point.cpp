@@ -252,12 +252,12 @@ void POINT::print(std::ostream & output)
  * (and the definition of this function is specified in the POINT class source file (i.e. point.cpp)).
  * 
  * // overloaded print function example one
- * POINT point_0;
- * std::cout << point_0; // identical to point_0();
+ * POINT point_0; // identical to point_0.print();
+ * std::cout << point_0; 
  * 
  * // overloaded print function example two
  * std::ofstream file;
- * POINT point_1;
+ * POINT point_1; 
  * file << point_1; // identical to point_1(file);
  */
 std::ostream & operator << (std::ostream & output, POINT & point)
