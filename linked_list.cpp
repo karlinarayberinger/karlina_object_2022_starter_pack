@@ -2,7 +2,7 @@
  * file: linked_list.cpp
  * type: C++ (source file)
  * author: karbytes
- * date: 04_DECEMBER_2022
+ * date: 05_DECEMBER_2022
  * license: PUBLIC_DOMAIN
  */
 
@@ -195,9 +195,9 @@ void LINKED_LIST::print(std::ostream & output)
  * LINKED_LIST linked_list_1;
  * file << linked_list_1; // identical to linked_list_1.print(file);
  */
-std::ostream & operator << (std::ostream & output, POINT & point)
+std::ostream & operator << (std::ostream & output, LINKED_LIST & linked_list)
 {
-    point.print(output);
+    linked_list.print(output);
     return output;
 }
 
