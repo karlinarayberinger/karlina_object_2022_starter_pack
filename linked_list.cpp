@@ -211,4 +211,5 @@ std::ostream & operator << (std::ostream & output, LINKED_LIST & linked_list)
 LINKED_LIST::~LINKED_LIST()
 {
     std::cout << "\n\nDeleting the LINKED_LIST type object whose memory address is " << this << "...";
+    delete head;
 }
