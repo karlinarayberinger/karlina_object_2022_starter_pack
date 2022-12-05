@@ -365,12 +365,12 @@ void TRIANGLE::print(std::ostream & output)
  * 
  * // overloaded print function example one
  * TRIANGLE triangle_0;
- * std::cout << triangle_0; // identical to triangle_0();
+ * std::cout << triangle_0; // identical to triangle_0.print();
  * 
  * // overloaded print function example two
  * std::ofstream file;
  * TRIANGLE triangle_1;
- * file << triangle_1; // identical to triangle_1(file);
+ * file << triangle_1; // identical to triangle_1.print(file);
  */
 std::ostream & operator << (std::ostream & output, TRIANGLE & triangle)
 {
