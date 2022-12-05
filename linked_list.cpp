@@ -202,7 +202,7 @@ std::ostream & operator << (std::ostream & output, LINKED_LIST & linked_list)
 }
 
 /**
- * The destructor method of the POINT class de-allocates memory which was used to 
+ * The destructor method of the LINKED_LIST class de-allocates memory which was used to 
  * instantiate the LINKED_LIST object which is calling this function.
  * 
  * The destructor method of the LINKED_LIST class is automatically called when 
