@@ -11,6 +11,7 @@
 /* function prototypes */
 void unit_test_0(std::ostream & output);
 void unit_test_1(std::ostream & output);
+void unit_test_2(std::ostream & output);
 
 /**
  * Unit Test # 0: LINKED_LIST constructor, print method, and destructor.
@@ -48,6 +49,32 @@ void unit_test_1(std::ostream & output)
     linked_list.print(output);
 }
 
+/**
+ * Unit Test # 2: LINKED_LIST constructor, insert method, print method, and destructor.
+ */
+void unit_test_2(std::ostream & output) 
+{
+    output << "\n\n************************************************";
+    output << "\nUnit Test # 2: LINKED_LIST constructor, insert method, print method, and destructor.";
+    output << "\n************************************************";
+    output << "\nLINKED_LIST linked_list;";
+    output << "\nNODE node_A = { key : \"node_A\", next : NULL };";
+    output << "\nNODE node_B = { key : \"node_B\", next : NULL };";
+    output << "\nNODE node_C = { key : \"node_C\", next : NULL };";
+    output << "\nlinked_list.insert_node_at_end_of_list(&node_A);";
+    output << "\nlinked_list.insert_node_at_end_of_list(&node_B);";
+    output << "\nlinked_list.insert_node_at_end_of_list(&node_C);";
+    output << "\noutput << linked_list; // functionally identical to linked_list.print(output)";
+    LINKED_LIST linked_list;
+    NODE node_A = { key : "node_A", next : NULL };
+    NODE node_B = { key : "node_B", next : NULL };
+    NODE node_C = { key : "node_C", next : NULL };
+    linked_list.insert_node_at_end_of_list(&node_A);
+    linked_list.insert_node_at_end_of_list(&node_B);
+    linked_list.insert_node_at_end_of_list(&node_C);
+    output << linked_list;
+}
+
 /* program entry point */
 int main()
 {
@@ -78,6 +105,8 @@ int main()
     unit_test_0(file);
     unit_test_1(std::cout);
     unit_test_1(file);
+    unit_test_2(std::cout);
+    unit_test_2(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
