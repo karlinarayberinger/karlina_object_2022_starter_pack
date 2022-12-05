@@ -9,20 +9,20 @@ LINKED_LIST linked_list;
 linked_list.print(output);
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff251cb200. // The keyword named this is a pointer which stores the memory address of the first memory cell of a LINKED_LIST sized chunk of contiguous memory cells which are allocated to the caller LINKED_LIST object.
-&head = 0x7fff251cb200. // The reference operation returns the memory address of the first memory cell of a pointer-to-NODE sized chunk of contiguous memory cells which are allocated to the caller LINKED_LIST data attribute named head.
+this = 0x7ffd5d780740. // The keyword named this is a pointer which stores the memory address of the first memory cell of a LINKED_LIST sized chunk of contiguous memory cells which are allocated to the caller LINKED_LIST object.
+&head = 0x7ffd5d780740. // The reference operation returns the memory address of the first memory cell of a pointer-to-NODE sized chunk of contiguous memory cells which are allocated to the caller LINKED_LIST data attribute named head.
 sizeof(NODE) = 40. // The sizeof() operation returns the number of bytes of memory which a NODE type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(std::string) = 32. // The sizeof() operation returns the number of bytes of memory which a string type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(NODE *) = 8. // The sizeof() operation returns the number of bytes of memory which a pointer-to-NODE type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(LINKED_LIST) = 8. // The sizeof() operation returns the number of bytes of memory which a LINKED_LIST type variable occupies. (Each memory cell has a data capacity of 1 byte).
-head = 0x55a5a3a7d4e0. // head stores either the first memory cell of a contiguous chunk of memory cells which are allocated to a NODE type variable or else head stores NULL (and the value NULL is displayed as 0).
+head = 0x5613cafba4e0. // head stores either the first memory cell of a contiguous chunk of memory cells which are allocated to a NODE type variable or else head stores NULL (and the value NULL is displayed as 0).
 head -> key = HEAD. // The arrow operator returns the string type property named key of the NODE type variable which head points to.
 head -> next = 0. // The arrow operator returns the pointer-to-NODE type property named next of the NODE type variable which head points to.
 get_number_of_nodes_in_list() = 1.
 // p is a pointer to a NODE type variable.
 LINKED_LIST := {
 	NODE_0 := {
-		p := 0x55a5a3a7d4e0.
+		p := 0x5613cafba4e0.
 		p -> key = HEAD.
 		p -> next = 0.
 	}.
@@ -40,25 +40,25 @@ linked_list.insert_node_at_end_of_list(&node);
 linked_list.print(output);
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff251cb1d8. // The keyword named this is a pointer which stores the memory address of the first memory cell of a LINKED_LIST sized chunk of contiguous memory cells which are allocated to the caller LINKED_LIST object.
-&head = 0x7fff251cb1d8. // The reference operation returns the memory address of the first memory cell of a pointer-to-NODE sized chunk of contiguous memory cells which are allocated to the caller LINKED_LIST data attribute named head.
+this = 0x7ffd5d780718. // The keyword named this is a pointer which stores the memory address of the first memory cell of a LINKED_LIST sized chunk of contiguous memory cells which are allocated to the caller LINKED_LIST object.
+&head = 0x7ffd5d780718. // The reference operation returns the memory address of the first memory cell of a pointer-to-NODE sized chunk of contiguous memory cells which are allocated to the caller LINKED_LIST data attribute named head.
 sizeof(NODE) = 40. // The sizeof() operation returns the number of bytes of memory which a NODE type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(std::string) = 32. // The sizeof() operation returns the number of bytes of memory which a string type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(NODE *) = 8. // The sizeof() operation returns the number of bytes of memory which a pointer-to-NODE type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(LINKED_LIST) = 8. // The sizeof() operation returns the number of bytes of memory which a LINKED_LIST type variable occupies. (Each memory cell has a data capacity of 1 byte).
-head = 0x55a5a3a7d540. // head stores either the first memory cell of a contiguous chunk of memory cells which are allocated to a NODE type variable or else head stores NULL (and the value NULL is displayed as 0).
+head = 0x5613cafba540. // head stores either the first memory cell of a contiguous chunk of memory cells which are allocated to a NODE type variable or else head stores NULL (and the value NULL is displayed as 0).
 head -> key = HEAD. // The arrow operator returns the string type property named key of the NODE type variable which head points to.
-head -> next = 0x7fff251cb1e0. // The arrow operator returns the pointer-to-NODE type property named next of the NODE type variable which head points to.
+head -> next = 0x7ffd5d780720. // The arrow operator returns the pointer-to-NODE type property named next of the NODE type variable which head points to.
 get_number_of_nodes_in_list() = 2.
 // p is a pointer to a NODE type variable.
 LINKED_LIST := {
 	NODE_0 := {
-		p := 0x55a5a3a7d540.
+		p := 0x5613cafba540.
 		p -> key = HEAD.
-		p -> next = 0x7fff251cb1e0.
+		p -> next = 0x7ffd5d780720.
 	}.
 	NODE_1 := {
-		p := 0x7fff251cb1e0.
+		p := 0x7ffd5d780720.
 		p -> key = unit_test_1.
 		p -> next = 0.
 	}.
@@ -78,36 +78,117 @@ linked_list.insert_node_at_end_of_list(&node_C);
 output << linked_list; // functionally identical to linked_list.print(output)
 
 --------------------------------------------------------------------------------------------------
-this = 0x7fff251cb178. // The keyword named this is a pointer which stores the memory address of the first memory cell of a LINKED_LIST sized chunk of contiguous memory cells which are allocated to the caller LINKED_LIST object.
-&head = 0x7fff251cb178. // The reference operation returns the memory address of the first memory cell of a pointer-to-NODE sized chunk of contiguous memory cells which are allocated to the caller LINKED_LIST data attribute named head.
+this = 0x7ffd5d7806b8. // The keyword named this is a pointer which stores the memory address of the first memory cell of a LINKED_LIST sized chunk of contiguous memory cells which are allocated to the caller LINKED_LIST object.
+&head = 0x7ffd5d7806b8. // The reference operation returns the memory address of the first memory cell of a pointer-to-NODE sized chunk of contiguous memory cells which are allocated to the caller LINKED_LIST data attribute named head.
 sizeof(NODE) = 40. // The sizeof() operation returns the number of bytes of memory which a NODE type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(std::string) = 32. // The sizeof() operation returns the number of bytes of memory which a string type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(NODE *) = 8. // The sizeof() operation returns the number of bytes of memory which a pointer-to-NODE type variable occupies. (Each memory cell has a data capacity of 1 byte).
 sizeof(LINKED_LIST) = 8. // The sizeof() operation returns the number of bytes of memory which a LINKED_LIST type variable occupies. (Each memory cell has a data capacity of 1 byte).
-head = 0x55a5a3a7d5a0. // head stores either the first memory cell of a contiguous chunk of memory cells which are allocated to a NODE type variable or else head stores NULL (and the value NULL is displayed as 0).
+head = 0x5613cafba5a0. // head stores either the first memory cell of a contiguous chunk of memory cells which are allocated to a NODE type variable or else head stores NULL (and the value NULL is displayed as 0).
 head -> key = HEAD. // The arrow operator returns the string type property named key of the NODE type variable which head points to.
-head -> next = 0x7fff251cb180. // The arrow operator returns the pointer-to-NODE type property named next of the NODE type variable which head points to.
+head -> next = 0x7ffd5d7806c0. // The arrow operator returns the pointer-to-NODE type property named next of the NODE type variable which head points to.
 get_number_of_nodes_in_list() = 4.
 // p is a pointer to a NODE type variable.
 LINKED_LIST := {
 	NODE_0 := {
-		p := 0x55a5a3a7d5a0.
+		p := 0x5613cafba5a0.
 		p -> key = HEAD.
-		p -> next = 0x7fff251cb180.
+		p -> next = 0x7ffd5d7806c0.
 	}.
 	NODE_1 := {
-		p := 0x7fff251cb180.
+		p := 0x7ffd5d7806c0.
 		p -> key = node_A.
-		p -> next = 0x7fff251cb1b0.
+		p -> next = 0x7ffd5d7806f0.
 	}.
 	NODE_2 := {
-		p := 0x7fff251cb1b0.
+		p := 0x7ffd5d7806f0.
 		p -> key = node_B.
-		p -> next = 0x7fff251cb1e0.
+		p -> next = 0x7ffd5d780720.
 	}.
 	NODE_3 := {
-		p := 0x7fff251cb1e0.
+		p := 0x7ffd5d780720.
 		p -> key = node_C.
+		p -> next = 0.
+	}.
+}.
+--------------------------------------------------------------------------------------------------
+
+************************************************
+Unit Test # 3: LINKED_LIST constructor, insert method, remove method, print method, and destructor.
+************************************************
+LINKED_LIST linked_list;
+NODE node_X = { key : "node_X", next : NULL };
+NODE node_Y = { key : "node_Y", next : NULL };
+NODE node_Z = { key : "node_Z", next : NULL };
+linked_list.insert_node_at_end_of_list(&node_X);
+linked_list.insert_node_at_end_of_list(&node_Y);
+linked_list.insert_node_at_end_of_list(&node_Z);
+linked_list.print(output);
+linked_list.remove_nodes_with_key("node_Y");
+linked_list.print(output);
+
+--------------------------------------------------------------------------------------------------
+this = 0x7ffd5d780698. // The keyword named this is a pointer which stores the memory address of the first memory cell of a LINKED_LIST sized chunk of contiguous memory cells which are allocated to the caller LINKED_LIST object.
+&head = 0x7ffd5d780698. // The reference operation returns the memory address of the first memory cell of a pointer-to-NODE sized chunk of contiguous memory cells which are allocated to the caller LINKED_LIST data attribute named head.
+sizeof(NODE) = 40. // The sizeof() operation returns the number of bytes of memory which a NODE type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(std::string) = 32. // The sizeof() operation returns the number of bytes of memory which a string type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(NODE *) = 8. // The sizeof() operation returns the number of bytes of memory which a pointer-to-NODE type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(LINKED_LIST) = 8. // The sizeof() operation returns the number of bytes of memory which a LINKED_LIST type variable occupies. (Each memory cell has a data capacity of 1 byte).
+head = 0x5613cafba600. // head stores either the first memory cell of a contiguous chunk of memory cells which are allocated to a NODE type variable or else head stores NULL (and the value NULL is displayed as 0).
+head -> key = HEAD. // The arrow operator returns the string type property named key of the NODE type variable which head points to.
+head -> next = 0x7ffd5d7806c0. // The arrow operator returns the pointer-to-NODE type property named next of the NODE type variable which head points to.
+get_number_of_nodes_in_list() = 4.
+// p is a pointer to a NODE type variable.
+LINKED_LIST := {
+	NODE_0 := {
+		p := 0x5613cafba600.
+		p -> key = HEAD.
+		p -> next = 0x7ffd5d7806c0.
+	}.
+	NODE_1 := {
+		p := 0x7ffd5d7806c0.
+		p -> key = node_X.
+		p -> next = 0x7ffd5d7806f0.
+	}.
+	NODE_2 := {
+		p := 0x7ffd5d7806f0.
+		p -> key = node_Y.
+		p -> next = 0x7ffd5d780720.
+	}.
+	NODE_3 := {
+		p := 0x7ffd5d780720.
+		p -> key = node_Z.
+		p -> next = 0.
+	}.
+}.
+--------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------
+this = 0x7ffd5d780698. // The keyword named this is a pointer which stores the memory address of the first memory cell of a LINKED_LIST sized chunk of contiguous memory cells which are allocated to the caller LINKED_LIST object.
+&head = 0x7ffd5d780698. // The reference operation returns the memory address of the first memory cell of a pointer-to-NODE sized chunk of contiguous memory cells which are allocated to the caller LINKED_LIST data attribute named head.
+sizeof(NODE) = 40. // The sizeof() operation returns the number of bytes of memory which a NODE type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(std::string) = 32. // The sizeof() operation returns the number of bytes of memory which a string type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(NODE *) = 8. // The sizeof() operation returns the number of bytes of memory which a pointer-to-NODE type variable occupies. (Each memory cell has a data capacity of 1 byte).
+sizeof(LINKED_LIST) = 8. // The sizeof() operation returns the number of bytes of memory which a LINKED_LIST type variable occupies. (Each memory cell has a data capacity of 1 byte).
+head = 0x5613cafba600. // head stores either the first memory cell of a contiguous chunk of memory cells which are allocated to a NODE type variable or else head stores NULL (and the value NULL is displayed as 0).
+head -> key = HEAD. // The arrow operator returns the string type property named key of the NODE type variable which head points to.
+head -> next = 0x7ffd5d7806c0. // The arrow operator returns the pointer-to-NODE type property named next of the NODE type variable which head points to.
+get_number_of_nodes_in_list() = 3.
+// p is a pointer to a NODE type variable.
+LINKED_LIST := {
+	NODE_0 := {
+		p := 0x5613cafba600.
+		p -> key = HEAD.
+		p -> next = 0x7ffd5d7806c0.
+	}.
+	NODE_1 := {
+		p := 0x7ffd5d7806c0.
+		p -> key = node_X.
+		p -> next = 0x7ffd5d780720.
+	}.
+	NODE_2 := {
+		p := 0x7ffd5d780720.
+		p -> key = node_Z.
 		p -> next = 0.
 	}.
 }.

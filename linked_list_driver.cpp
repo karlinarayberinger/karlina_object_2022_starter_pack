@@ -12,6 +12,7 @@
 void unit_test_0(std::ostream & output);
 void unit_test_1(std::ostream & output);
 void unit_test_2(std::ostream & output);
+void unit_test_3(std::ostream & output);
 
 /**
  * Unit Test # 0: LINKED_LIST constructor, print method, and destructor.
@@ -75,6 +76,36 @@ void unit_test_2(std::ostream & output)
     output << linked_list;
 }
 
+/**
+ * Unit Test # 3: LINKED_LIST constructor, insert method, remove method, print method, and destructor.
+ */
+void unit_test_3(std::ostream & output) 
+{
+    output << "\n\n************************************************";
+    output << "\nUnit Test # 3: LINKED_LIST constructor, insert method, remove method, print method, and destructor.";
+    output << "\n************************************************";
+    output << "\nLINKED_LIST linked_list;";
+    output << "\nNODE node_X = { key : \"node_X\", next : NULL };";
+    output << "\nNODE node_Y = { key : \"node_Y\", next : NULL };";
+    output << "\nNODE node_Z = { key : \"node_Z\", next : NULL };";
+    output << "\nlinked_list.insert_node_at_end_of_list(&node_X);";
+    output << "\nlinked_list.insert_node_at_end_of_list(&node_Y);";
+    output << "\nlinked_list.insert_node_at_end_of_list(&node_Z);";
+    output << "\nlinked_list.print(output);";
+    output << "\nlinked_list.remove_nodes_with_key(\"node_Y\");";
+    output << "\nlinked_list.print(output);";
+    LINKED_LIST linked_list;
+    NODE node_X = { key : "node_X", next : NULL };
+    NODE node_Y = { key : "node_Y", next : NULL };
+    NODE node_Z = { key : "node_Z", next : NULL };
+    linked_list.insert_node_at_end_of_list(&node_X);
+    linked_list.insert_node_at_end_of_list(&node_Y);
+    linked_list.insert_node_at_end_of_list(&node_Z);
+    linked_list.print(output);
+    linked_list.remove_nodes_with_key("node_Y");
+    linked_list.print(output);
+}
+
 /* program entry point */
 int main()
 {
@@ -107,6 +138,8 @@ int main()
     unit_test_1(file);
     unit_test_2(std::cout);
     unit_test_2(file);
+    unit_test_3(std::cout);
+    unit_test_3(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
