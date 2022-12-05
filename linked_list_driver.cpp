@@ -13,6 +13,7 @@ void unit_test_0(std::ostream & output);
 void unit_test_1(std::ostream & output);
 void unit_test_2(std::ostream & output);
 void unit_test_3(std::ostream & output);
+void unit_test_4(std::ostream & output);
 
 /**
  * Unit Test # 0: LINKED_LIST constructor, print method, and destructor.
@@ -106,6 +107,64 @@ void unit_test_3(std::ostream & output)
     linked_list.print(output);
 }
 
+/**
+ * Unit Test # 4: LINKED_LIST constructor, insert method, remove method, print method, and destructor.
+ */
+void unit_test_4(std::ostream & output) 
+{
+    output << "\n\n************************************************";
+    output << "\nUnit Test # 4: LINKED_LIST constructor, insert method, remove method, print method, and destructor.";
+    output << "\n************************************************";
+    output << "\nLINKED_LIST linked_list;";
+    output << "\nNODE n0 = { key : \"red\", next : NULL };";
+    output << "\nNODE n1 = { key : \"blue\", next : NULL };";
+    output << "\nNODE n2 = { key : \"green\", next : NULL };";
+    output << "\nNODE n3 = { key : \"red\", next : NULL };";
+    output << "\nNODE n4 = { key : \"green\", next : NULL };";
+    output << "\nNODE n5 = { key : \"red\", next : NULL };";
+    output << "\nNODE n6 = { key : \"red\", next : NULL };";
+    output << "\nNODE n7 = { key : \"red\", next : NULL };";
+    output << "\nlinked_list.insert_node_at_end_of_list(&n0);";
+    output << "\nlinked_list.insert_node_at_end_of_list(&n1);";
+    output << "\nlinked_list.insert_node_at_end_of_list(&n2);";
+    output << "\nlinked_list.insert_node_at_end_of_list(&n3);";
+    output << "\nlinked_list.insert_node_at_end_of_list(&n4);";
+    output << "\nlinked_list.insert_node_at_end_of_list(&n5);";
+    output << "\nlinked_list.insert_node_at_end_of_list(&n6);";
+    output << "\nlinked_list.insert_node_at_end_of_list(&n7);";
+    output << "\nlinked_list.print(output);";
+    output << "\nlinked_list.remove_nodes_with_key(\"red\");";
+    output << "\nlinked_list.print(output);";
+    output << "\nlinked_list.remove_nodes_with_key(\"green\");";
+    output << "\nlinked_list.print(output);";
+    output << "\nlinked_list.remove_nodes_with_key(\"blue\");";
+    output << "\nlinked_list.print(output);";
+    LINKED_LIST linked_list;
+    NODE n0 = { key : "red", next : NULL };
+    NODE n1 = { key : "blue", next : NULL };
+    NODE n2 = { key : "green", next : NULL };
+    NODE n3 = { key : "red", next : NULL };
+    NODE n4 = { key : "green", next : NULL };
+    NODE n5 = { key : "red", next : NULL };
+    NODE n6 = { key : "red", next : NULL };
+    NODE n7 = { key : "red", next : NULL };
+    linked_list.insert_node_at_end_of_list(&n0);
+    linked_list.insert_node_at_end_of_list(&n1);
+    linked_list.insert_node_at_end_of_list(&n2);
+    linked_list.insert_node_at_end_of_list(&n3);
+    linked_list.insert_node_at_end_of_list(&n4);
+    linked_list.insert_node_at_end_of_list(&n5);
+    linked_list.insert_node_at_end_of_list(&n6);
+    linked_list.insert_node_at_end_of_list(&n7);
+    linked_list.print(output);
+    linked_list.remove_nodes_with_key("red");
+    linked_list.print(output);
+    linked_list.remove_nodes_with_key("green");
+    linked_list.print(output);
+    linked_list.remove_nodes_with_key("blue");
+    linked_list.print(output);
+}
+
 /* program entry point */
 int main()
 {
@@ -140,6 +199,8 @@ int main()
     unit_test_2(file);
     unit_test_3(std::cout);
     unit_test_3(file);
+    unit_test_4(std::cout);
+    unit_test_4(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
