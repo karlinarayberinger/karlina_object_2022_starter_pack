@@ -258,7 +258,7 @@ void POINT::print(std::ostream & output)
  * // overloaded print function example two
  * std::ofstream file;
  * POINT point_1; 
- * file << point_1; // identical to point_1(file);
+ * file << point_1; // identical to point_1.print(file);
  */
 std::ostream & operator << (std::ostream & output, POINT & point)
 {
