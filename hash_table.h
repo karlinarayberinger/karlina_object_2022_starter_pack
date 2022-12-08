@@ -69,7 +69,7 @@ public:
     void insert_node(NODE * node); 
 
     // The setter method removes all NODE type instances from the hash table array whose key values match the input key value.
-    void remove_nodes_with_key(std:: key);
+    void remove_nodes_with_key(std::string key);
 
     // The getter method returns a singly-linked list of all NODE type instances in the hash table array whose key values match the input key value.
     LINKED_LIST * get_nodes_with_key(std::string key);

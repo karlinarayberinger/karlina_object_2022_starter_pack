@@ -42,7 +42,7 @@ void HASH_TABLE::insert_node(NODE * node)
 /**
  * The setter method removes all NODE type instances from the hash table array whose key values match the input key value.
  */
-void HASH_TABLE::remove_nodes_with_key(std:: key)
+void HASH_TABLE::remove_nodes_with_key(std::string key)
 {
     int index = hash(key);
     return array[index].remove_nodes_with_key(key);
