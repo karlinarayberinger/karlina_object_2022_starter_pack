@@ -26,6 +26,7 @@ int HASH_TABLE::hash(std::string key)
  */
 HASH_TABLE::HASH_TABLE(int hash_table_length)
 {
+    std::cout << "\n\nCreating the HASH_TABLE type object whose memory address is " << this << "...";
     N = ((hash_table_length < 1) || (hash_table_length > MAXIMUM_N)) ? 10 : hash_table_length;
     array = new LINKED_LIST[N];
 }
@@ -168,5 +169,6 @@ std::ostream & operator << (std::ostream & output, HASH_TABLE & hash_table)
  */
 HASH_TABLE::~HASH_TABLE()
 {
+    std::cout << "\n\nDeleting the HASH_TABLE type object whose memory address is " << this << "...";
     delete [] array;
 }
