@@ -10,6 +10,7 @@
 
 /* function prototypes */
 void unit_test_0(std::ostream & output);
+void unit_test_1(std::ostream & output);
 
 /**
  * Unit Test # 0: HASH_TABLE constructor, print method, and destructor.
@@ -22,6 +23,28 @@ void unit_test_0(std::ostream & output)
     output << "\nHASH_TABLE hash_table;";
     output << "\nhash_table.print(output);";
     HASH_TABLE hash_table;
+    hash_table.print(output);
+}
+
+/**
+ * Unit Test # 1: HASH_TABLE constructor, insert method, print method, and destructor.
+ */
+void unit_test_1(std::ostream & output) 
+{
+    output << "\n\n************************************************";
+    output << "\nUnit Test # 1: HASH_TABLE constructor, insert method, print method, and destructor.";
+    output << "\n************************************************";
+    output << "\nHASH_TABLE hash_table;";
+    output << "\nNODE node;";
+    output << "\nnode.key = \"unit_test_1\";";
+    output << "\nnode.next = NULL;";
+    output << "\nhash_table.insert_node(&node);";
+    output << "\nhash_table.print(output);";
+    HASH_TABLE hash_table;
+    NODE node;
+    node.key = "unit_test_1";
+    node.next = NULL;
+    hash_table.insert_node(&node);
     hash_table.print(output);
 }
 
@@ -53,6 +76,8 @@ int main()
     // Implement a series of unit tests which demonstrate the functionality of LINKED_LIST class variables.
     unit_test_0(std::cout);
     unit_test_0(file);
+    unit_test_1(std::cout);
+    unit_test_1(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
