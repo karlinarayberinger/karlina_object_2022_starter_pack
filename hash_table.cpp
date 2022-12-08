@@ -53,8 +53,7 @@ void HASH_TABLE::remove_nodes_with_key(std::string key)
  * 
  * Set the next pointer value of the final NODE element in the returned LINKED_LIST to NULL.
  */
-/*
-LINKED_LIST * HASH_TABLE::get_nodes_with_key(std::string key)
+LINKED_LIST HASH_TABLE::get_nodes_with_key(std::string key)
 {
     int index = hash(key);
     LINKED_LIST search_results;
@@ -62,7 +61,7 @@ LINKED_LIST * HASH_TABLE::get_nodes_with_key(std::string key)
     NODE * q = array[index].head;
     while (q)
     {
-        if ((q -> key == key) && (q != head)) 
+        if ((q -> key == key) && (q != array[index].head)) 
         {
             search_results.insert_node_at_end_of_list(q);
             q -> next = NULL;
@@ -71,7 +70,7 @@ LINKED_LIST * HASH_TABLE::get_nodes_with_key(std::string key)
         q = p -> next;
     }
     return search_results;
-}*/
+}
 
 /**
  * The getter method returns the number of LINKED_LIST type values stored in the hash table array (and the value returned is N).

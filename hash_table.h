@@ -72,7 +72,7 @@ public:
     void remove_nodes_with_key(std::string key);
 
     // The getter method returns a singly-linked list of all NODE type instances in the hash table array whose key values match the input key value.
-    //LINKED_LIST * get_nodes_with_key(std::string key);
+    LINKED_LIST get_nodes_with_key(std::string key);
 
     // The getter method returns the number of LINKED_LIST type values stored in the hash table array (and the value returned is N).
     int get_number_of_linked_lists_in_hash_table(); 
