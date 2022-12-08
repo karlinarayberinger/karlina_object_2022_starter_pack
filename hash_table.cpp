@@ -53,6 +53,7 @@ void HASH_TABLE::remove_nodes_with_key(std::string key)
  * 
  * Set the next pointer value of the final NODE element in the returned LINKED_LIST to NULL.
  */
+/*
 LINKED_LIST * HASH_TABLE::get_nodes_with_key(std::string key)
 {
     int index = hash(key);
@@ -70,7 +71,7 @@ LINKED_LIST * HASH_TABLE::get_nodes_with_key(std::string key)
         q = p -> next;
     }
     return search_results;
-}
+}*/
 
 /**
  * The getter method returns the number of LINKED_LIST type values stored in the hash table array (and the value returned is N).
@@ -111,12 +112,11 @@ void HASH_TABLE::print(std::ostream & output)
     output << "\nsizeof(HASH_TABLE) = " << sizeof(HASH_TABLE) << ". // The sizeof() operation returns the number of bytes of memory which a HASH_TABLE type variable occupies. (Each memory cell has a data capacity of 1 byte).";
     output << "\nsizeof(HASH_TABLE) = " << sizeof(HASH_TABLE *) << ". // The sizeof() operation returns the number of bytes of memory which a pointer-to-HASH_TABLE type variable occupies. (Each memory cell has a data capacity of 1 byte).";
     output << "\narray = " << array << ". // array stores either the first memory cell of a contiguous chunk of memory cells which are allocated to a LINKED_LIST type variable or else array stores NULL (and the value NULL is displayed as 0).";
-    output << "\narray[0] = " << array[0] << ". // array[0] stores either the first memory cell of a contiguous chunk of memory cells which are allocated to a LINKED_LIST type variable or else array stores NULL (and the value NULL is displayed as 0).";
     output << "\nN = " << N << ". // N stores the total number of LINKED_LIST types elements which are represented by the array property of the caller HASH_TABLE object.";
     output << "\nHASH_TABLE := {";
     for (i = 0; i < N; i += 1)
     {
-        output << "\n############################################################";
+        output << "\n\n############################################################";
         output << "\narray[" << i << "] := {";
         output << array[i];
         output << "\n}.";
