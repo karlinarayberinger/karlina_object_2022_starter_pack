@@ -62,14 +62,15 @@ LINKED_LIST HASH_TABLE::get_nodes_with_key(std::string key)
     NODE * q = array[index].head;
     while (q)
     {
-        if ((q -> key == key) && (q != array[index].head)) 
+        if ((p -> key == key) && (p != array[index].head)) 
         {
-            search_results.insert_node_at_end_of_list(q);
-            q -> next = NULL;
+            search_results.insert_node_at_end_of_list(p);
+            p -> next = NULL;
         }
         p = q;
         q = p -> next;
     }
+
     return search_results;
 }
 
