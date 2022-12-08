@@ -16,7 +16,7 @@ int HASH_TABLE::hash(std::string key)
 {
     int value = 0, i = 0;
     for (i = 0; i < key.length(); i += 1) value += int(key[i]);
-    return (key.length() * value) % N;
+    return value % N;
 }
 
 /**
