@@ -2,7 +2,7 @@
  * file: hash_table.h
  * type: C++ (header file)
  * author: karbytes
- * date: 07_DECEMBER_2022
+ * date: 08_DECEMBER_2022
  * license: PUBLIC_DOMAIN
  */
 
@@ -47,7 +47,7 @@
  * and every head property of every LINKED_LIST type element of that array
  * is deleted.
  */
-class HashTable
+class HASH_TABLE
 {
 private:
 
