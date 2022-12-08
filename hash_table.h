@@ -11,7 +11,7 @@
 #define HASH_TABLE_H // then link this header file to the source file(s) which include this header file.
 
 /* preprocessing directives */
-#include "linked_list.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the LINKED_LIST class.
+#include "public_linked_list.h" // Include the C++ header file which contains preprocessing directives, variable declarations, and function prototypes for the LINKED_LIST class.
 #define MAXIMUM_N 100 // constant which represents maximum N value
 
 /**

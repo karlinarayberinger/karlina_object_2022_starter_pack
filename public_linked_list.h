@@ -7,7 +7,7 @@
  */
 
 /* preprocessing directives */
-#ifndef LINKED_LIST_H // If linked_list.h has not already been linked to a source file (.cpp), 
+#ifndef LINKED_LIST_H // If public_linked_list.h has not already been linked to a source file (.cpp), 
 #define LINKED_LIST_H // then link this header file to the source file(s) which include this header file.
 
 /* preprocessing directives */

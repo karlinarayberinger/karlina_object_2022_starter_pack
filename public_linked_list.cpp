@@ -132,7 +132,7 @@ int LINKED_LIST::get_number_of_nodes_in_list()
  * 
  * Note that the default value of the function input parameter is the standard command line output stream (std::cout).
  * 
- * The default parameter is defined in the LINKED_LIST class header file (i.e. linked_list.h) and not in the LINKED_LIST class source file (i.e. linked_list.cpp).
+ * The default parameter is defined in the LINKED_LIST class header file (i.e. public_linked_list.h) and not in the LINKED_LIST class source file (i.e. public_linked_list.cpp).
  */
 void LINKED_LIST::print(std::ostream & output)
 {
@@ -174,17 +174,17 @@ void LINKED_LIST::print(std::ostream & output)
  * (Overloading an operator is assigning a different function to a native operator other than the function which that operator is used to represent by default).
  * 
  * Note that the default value of the leftmost function input parameter is the standard command line output stream (std::cout).
- * The default parameter is defined in the LINKED_LIST class header file (i.e. linked_list.h).
+ * The default parameter is defined in the LINKED_LIST class header file (i.e. public_linked_list.h).
  * 
  * The friend function is not a member of the LINKED_LIST class, 
  * but the friend function has access to the private and protected members 
  * of the LINKED_LIST class and not just to the public members of the LINKED_LIST class.
  * 
  * The friend keyword only prefaces the function prototype of this function 
- * (and the prototype of this function is declared in the LINKED_LIST class header file (i.e. linked_list.h)). 
+ * (and the prototype of this function is declared in the LINKED_LIST class header file (i.e. public_linked_list.h)). 
  * 
  * The friend keyword does not preface the definition of this function
- * (and the definition of this function is specified in the LINKED_LIST class source file (i.e. linked_list.cpp)).
+ * (and the definition of this function is specified in the LINKED_LIST class source file (i.e. public_linked_list.cpp)).
  * 
  * // overloaded print function example one
  * LINKED_LIST linked_list_0;
