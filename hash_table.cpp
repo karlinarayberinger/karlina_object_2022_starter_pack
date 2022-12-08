@@ -24,7 +24,7 @@ int HASH_TABLE::hash(std::string key)
  * 
  * The function returns a HASH_TABLE type object.
  */
-HASH_TABLE::HASH_TABLE(int hash_table_length = 10)
+HASH_TABLE::HASH_TABLE(int hash_table_length)
 {
     N = ((hash_table_length < 1) || (hash_table_length > MAXIMUM_N)) ? 10 : hash_table_length;
     array = new LINKED_LIST[N];
@@ -57,8 +57,8 @@ LINKED_LIST * HASH_TABLE::get_nodes_with_key(std::string key)
 {
     int index = hash(key);
     LINKED_LIST search_results;
-    NODE * p = array[index] -> head;
-    NODE * q = array[index] -> head;
+    NODE * p = array[index].head;
+    NODE * q = array[index].head;
     while (q)
     {
         if ((q -> key == key) && (q != head)) 
