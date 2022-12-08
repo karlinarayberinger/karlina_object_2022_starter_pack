@@ -2,7 +2,7 @@
  * file: hash_table.h
  * type: C++ (header file)
  * author: karbytes
- * date: 05_DECEMBER_2022
+ * date: 07_DECEMBER_2022
  * license: PUBLIC_DOMAIN
  */
 
@@ -69,7 +69,7 @@ public:
     void insert_node(NODE * node); 
 
     // The setter method removes all NODE type instances from the hash table array whose key values match the input key value.
-    bool remove_nodes_with_key(std:: key);
+    void remove_nodes_with_key(std:: key);
 
     // The getter method returns a singly-linked list of all NODE type instances in the hash table array whose key values match the input key value.
     LINKED_LIST * get_nodes_with_key(std::string key);
