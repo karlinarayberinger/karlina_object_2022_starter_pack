@@ -14,6 +14,7 @@ void unit_test_1(std::ostream & output);
 void unit_test_2(std::ostream & output);
 void unit_test_3(std::ostream & output);
 void unit_test_4(std::ostream & output);
+void unit_test_5(std::ostream & output);
 
 /**
  * Unit Test # 0: HASH_TABLE constructor, print method, and destructor.
@@ -74,16 +75,16 @@ void unit_test_2(std::ostream & output)
     hash_table.insert_node(&node_A);
     hash_table.insert_node(&node_B);
     hash_table.insert_node(&node_C);
-    output << hash_table; // functionally identical to hash_table.print(output)
+    output << hash_table; // functionally identical to hash_table.print(output);
 }
 
 /**
- * Unit Test # 3: HASH_TABLE constructor, insert method, print method, and destructor.
+ * Unit Test # 3: HASH_TABLE constructor, insert method, number of linked lists method, number of node method, print method, and destructor.
  */
 void unit_test_3(std::ostream & output) 
 {
     output << "\n\n************************************************";
-    output << "\nUnit Test # 3: HASH_TABLE constructor, insert method, print method, and destructor.";
+    output << "\nUnit Test # 3: HASH_TABLE constructor, insert method, number of linked lists method, number of node method, print method, and destructor.";
     output << "\n************************************************";
     output << "\nHASH_TABLE hash_table = HASH_TABLE(5);";
     output << "\nNODE node_A = { key : \"node_A\", next : NULL };";
@@ -120,7 +121,9 @@ void unit_test_3(std::ostream & output)
     hash_table.insert_node(&node_CC);
     hash_table.insert_node(&node_Z);
     hash_table.insert_node(&node_666);
-    output << hash_table; // functionally identical to hash_table.print(output)
+    output << "\nhash_table.get_number_of_linked_lists_in_hash_table() = " << hash_table.get_number_of_linked_lists_in_hash_table() << ".";
+    output << "\nhash_table.get_number_of_nodes_in_hash_table()= " << hash_table.get_number_of_nodes_in_hash_table() << ".";
+    output << hash_table; // functionally identical to hash_table.print(output);
 }
 
 /**
@@ -129,7 +132,7 @@ void unit_test_3(std::ostream & output)
 void unit_test_4(std::ostream & output) 
 {
     output << "\n\n************************************************";
-    output << "\nUnit Test # 3: HASH_TABLE constructor, insert method, remove method, print method, and destructor.";
+    output << "\nUnit Test # 4: HASH_TABLE constructor, insert method, remove method, print method, and destructor.";
     output << "\n************************************************";
     output << "\nHASH_TABLE hash_table;";
     output << "\nNODE node_0 = { key : \"XXX\", next : NULL };";
@@ -189,6 +192,84 @@ void unit_test_4(std::ostream & output)
     hash_table.print(output);
 }
 
+/**
+ * HASH_TABLE constructor, insert method, get nodes with key method, print method, and destructor.
+ */
+void unit_test_5(std::ostream & output) 
+{
+    output << "\n\n************************************************";
+    output << "\nUnit Test # 5: HASH_TABLE constructor, insert method, get nodes with key method, print method, and destructor.";
+    output << "\n************************************************";
+    output << "\nHASH_TABLE hash_table = HASH_TABLE(6);";
+    output << "\nNODE node_0 = { key : \"AAAA\", next : NULL };";
+    output << "\nNODE node_1 = { key : \"ABAB\", next : NULL };";
+    output << "\nNODE node_2 = { key : \"AABB\", next : NULL };";
+    output << "\nNODE node_3 = { key : \"CCCC\", next : NULL };";
+    output << "\nNODE node_4 = { key : \"ABAB\", next : NULL };";
+    output << "\nNODE node_5 = { key : \"CCCC\", next : NULL };";
+    output << "\nNODE node_6 = { key : \"BBBB\", next : NULL };";
+    output << "\nNODE node_7 = { key : \"ABAB\", next : NULL };";
+    output << "\nNODE node_8 = { key : \"AAAA\", next : NULL };";
+    output << "\nNODE node_9 = { key : \"CCCC\", next : NULL };";
+    output << "\nNODE node_10 = { key : \"DDDD\", next : NULL };";
+    output << "\nNODE node_11 = { key : \"AABB\", next : NULL };";
+    output << "\nNODE node_12 = { key : \"EEEE\", next : NULL };";
+    output << "\nNODE node_13 = { key : \"DDDD\", next : NULL };";
+    output << "\nNODE node_14 = { key : \"ABAB\", next : NULL };";
+    output << "\nhash_table.insert_node(&node_0);";
+    output << "\nhash_table.insert_node(&node_1);";
+    output << "\nhash_table.insert_node(&node_2);";
+    output << "\nhash_table.insert_node(&node_3);";
+    output << "\nhash_table.insert_node(&node_4);";
+    output << "\nhash_table.insert_node(&node_5);";
+    output << "\nhash_table.insert_node(&node_6);";
+    output << "\nhash_table.insert_node(&node_7);";
+    output << "\nhash_table.insert_node(&node_8);";
+    output << "\nhash_table.insert_node(&node_9);";
+    output << "\nhash_table.insert_node(&node_10);";
+    output << "\nhash_table.insert_node(&node_11);";
+    output << "\nhash_table.insert_node(&node_12);";
+    output << "\nhash_table.insert_node(&node_13);";
+    output << "\nhash_table.insert_node(&node_14);";
+    output << "\noutput << hash_table; // functionally identical to hash_table.print(output)";
+    output << "\nLINKED_LIST search_results = hash_table.get_nodes_with_key(\"AAAA\");";
+    output << "\noutput << search_results; // functionally identical to search_results.print(output);";
+    HASH_TABLE hash_table = HASH_TABLE(6);
+    NODE node_0 = { key : "AAAA", next : NULL };
+    NODE node_1 = { key : "ABAB", next : NULL };
+    NODE node_2 = { key : "AABB", next : NULL };
+    NODE node_3 = { key : "CCCC", next : NULL };
+    NODE node_4 = { key : "ABAB", next : NULL };
+    NODE node_5 = { key : "CCCC", next : NULL };
+    NODE node_6 = { key : "BBBB", next : NULL };
+    NODE node_7 = { key : "ABAB", next : NULL };
+    NODE node_8 = { key : "AAAA", next : NULL };
+    NODE node_9 = { key : "CCCC", next : NULL };
+    NODE node_10 = { key : "DDDD", next : NULL };
+    NODE node_11 = { key : "AABB", next : NULL };
+    NODE node_12 = { key : "EEEE", next : NULL };
+    NODE node_13 = { key : "DDDD", next : NULL };
+    NODE node_14 = { key : "ABAB", next : NULL };
+    hash_table.insert_node(&node_0);
+    hash_table.insert_node(&node_1);
+    hash_table.insert_node(&node_2);
+    hash_table.insert_node(&node_3);
+    hash_table.insert_node(&node_4);
+    hash_table.insert_node(&node_5);
+    hash_table.insert_node(&node_6);
+    hash_table.insert_node(&node_7);
+    hash_table.insert_node(&node_8);
+    hash_table.insert_node(&node_9);
+    hash_table.insert_node(&node_10);
+    hash_table.insert_node(&node_11);
+    hash_table.insert_node(&node_12);
+    hash_table.insert_node(&node_13);
+    hash_table.insert_node(&node_14);
+    output << hash_table; // functionally identical to hash_table.print(output);
+    LINKED_LIST search_results = hash_table.get_nodes_with_key("AAAA");
+    output << search_results; // functionally identical to search_results.print(output);
+}
+
 /* program entry point */
 int main()
 {
@@ -225,6 +306,8 @@ int main()
     unit_test_3(file);
     unit_test_4(std::cout);
     unit_test_4(file);
+    unit_test_5(std::cout);
+    unit_test_5(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
