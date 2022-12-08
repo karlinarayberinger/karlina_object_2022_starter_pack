@@ -12,6 +12,7 @@
 void unit_test_0(std::ostream & output);
 void unit_test_1(std::ostream & output);
 void unit_test_2(std::ostream & output);
+void unit_test_3(std::ostream & output);
 
 /**
  * Unit Test # 0: HASH_TABLE constructor, print method, and destructor.
@@ -75,6 +76,52 @@ void unit_test_2(std::ostream & output)
     output << hash_table; // functionally identical to hash_table.print(output)
 }
 
+/**
+ * Unit Test # 3: HASH_TABLE constructor, insert method, print method, and destructor.
+ */
+void unit_test_3(std::ostream & output) 
+{
+    output << "\n\n************************************************";
+    output << "\nUnit Test # 3: HASH_TABLE constructor, insert method, print method, and destructor.";
+    output << "\n************************************************";
+    output << "\nHASH_TABLE hash_table = HASH_TABLE(5);";
+    output << "\nNODE node_A = { key : \"node_A\", next : NULL };";
+    output << "\nNODE node_B = { key : \"node_B\", next : NULL };";
+    output << "\nNODE node_C = { key : \"node_C\", next : NULL };";
+    output << "\nNODE node_AA = { key : \"node_AA\", next : NULL };";
+    output << "\nNODE node_BB = { key : \"node_BB\", next : NULL };";
+    output << "\nNODE node_CC = { key : \"node_CC\", next : NULL };";
+    output << "\nNODE node_Z = { key : \"node_Z\", next : NULL };";
+    output << "\nNODE node_666 = { key : \"node_666\", next : NULL };";
+    output << "\nhash_table.insert_node(&node_A);";
+    output << "\nhash_table.insert_node(&node_B);";
+    output << "\nhash_table.insert_node(&node_C);";
+    output << "\nhash_table.insert_node(&node_AA);";
+    output << "\nhash_table.insert_node(&node_BB);";
+    output << "\nhash_table.insert_node(&node_CC);";
+    output << "\nhash_table.insert_node(&node_Z);";
+    output << "\nhash_table.insert_node(&node_666);";
+    output << "\noutput << hash_table; // functionally identical to hash_table.print(output)";
+    HASH_TABLE hash_table = HASH_TABLE(5);
+    NODE node_A = { key : "node_A", next : NULL };
+    NODE node_B = { key : "node_B", next : NULL };
+    NODE node_C = { key : "node_C", next : NULL };
+    NODE node_AA = { key : "node_AA", next : NULL };
+    NODE node_BB = { key : "node_BB", next : NULL };
+    NODE node_CC = { key : "node_CC", next : NULL };
+    NODE node_Z = { key : "node_Z", next : NULL };
+    NODE node_666 = { key : "node_666", next : NULL };
+    hash_table.insert_node(&node_A);
+    hash_table.insert_node(&node_B);
+    hash_table.insert_node(&node_C);
+    hash_table.insert_node(&node_AA);
+    hash_table.insert_node(&node_BB);
+    hash_table.insert_node(&node_CC);
+    hash_table.insert_node(&node_Z);
+    hash_table.insert_node(&node_666);
+    output << hash_table; // functionally identical to hash_table.print(output)
+}
+
 /* program entry point */
 int main()
 {
@@ -107,6 +154,8 @@ int main()
     unit_test_1(file);
     unit_test_2(std::cout);
     unit_test_2(file);
+    unit_test_3(std::cout);
+    unit_test_3(file);
 
     // Print a closing message to the command line terminal.
     std::cout << "\n\n--------------------------------";
