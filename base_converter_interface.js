@@ -451,8 +451,14 @@ function update_output_base_span_2() {
  * Submit the input base option which is currently selected from the list of options displayed inside the select HTML element whose id is "input_base_menu".
  * 
  * Display the digit buttons which correspond with the selected input base in the next step.
+ * 
+ * Append a time stamped message to the bottom of the web page indicating that this function was called.
  */
 function step_0_next() {
+    const time_stamp = generate_time_stamp(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
+    let message = "step_0_next() was called at time: " + time_stamp;
+    console.log(message);
+    document.getElementById("time_stamped_messages").innerHTML += p0 + message + p1;
     update_input_base_span();
     update_digit_buttons_div();
     hide_page_element("step_0_div");
@@ -465,8 +471,14 @@ function step_0_next() {
  * Assume that this function is called in response to the event of a button click of the BACK button displayed inside of the div whose id is "step_1_div".
  * 
  * Reset the text displayed inside of the span element whose id is "input_sequence_span" to its initial state: 00000000.
+ * 
+ * Append a time stamped message to the bottom of the web page indicating that this function was called.
  */
 function step_1_back() {
+    const time_stamp = generate_time_stamp(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
+    let message = "step_1_back() was called at time: " + time_stamp;
+    console.log(message);
+    document.getElementById("time_stamped_messages").innerHTML += p0 + message + p1;
     initialize_input_sequence_span();
     hide_page_element("step_1_div");
     unhide_page_element("step_0_div");
@@ -478,8 +490,14 @@ function step_1_back() {
  * Assume that this function is called in response to the event of a button click of the NEXT button displayed inside of the div whose id is "step_1_div".
  * 
  * Update the input base and input sequence displays inside of the STEP_2 div.
+ * 
+ * Append a time stamped message to the bottom of the web page indicating that this function was called.
  */
 function step_1_next() {
+    const time_stamp = generate_time_stamp(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
+    let message = "step_1_next() was called at time: " + time_stamp;
+    console.log(message);
+    document.getElementById("time_stamped_messages").innerHTML += p0 + message + p1;
     update_input_sequence_span();
     hide_page_element("step_1_div");
     unhide_page_element("step_2_div");
@@ -489,8 +507,14 @@ function step_1_next() {
  * Regress from STEP_2 to STEP_1 of the base converter application's input form (which is substantiated using the web page file named base_converter.html).
  * 
  * Assume that this function is called in response to the event of a button click of the BACK button displayed inside of the div whose id is "step_2_div".
+ * 
+ * Append a time stamped message to the bottom of the web page indicating that this function was called.
  */
 function step_2_back() {
+    const time_stamp = generate_time_stamp(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
+    let message = "step_2_back() was called at time: " + time_stamp;
+    console.log(message);
+    document.getElementById("time_stamped_messages").innerHTML += p0 + message + p1;
     initialize_input_sequence_span();
     hide_page_element("step_2_div");
     unhide_page_element("step_1_div");
@@ -504,8 +528,14 @@ function step_2_back() {
  * Submit the output base option which is currently selected from the list of options displayed inside the select HTML element whose id is "input_base_menu".
  * 
  * Update the input_base, input_sequence, and output_base values which are displayed inside the STEP_3 div.
+ * 
+ * Append a time stamped message to the bottom of the web page indicating that this function was called.
  */
 function step_2_next() {
+    const time_stamp = generate_time_stamp(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
+    let message = "step_2_next() was called at time: " + time_stamp;
+    console.log(message);
+    document.getElementById("time_stamped_messages").innerHTML += p0 + message + p1;
     update_output_base_span_2();
     hide_page_element("step_2_div");
     unhide_page_element("step_3_div");
@@ -517,8 +547,14 @@ function step_2_next() {
  * Assume that this function is called in response to the event of a button click of the BACK button displayed inside of the div whose id is "step_3_div".
  * 
  * Reset the text displayed inside of the div element whose id is "output" to its initial state: "This sentence will be replaced with base conversion results when the CONVERT button is clicked."
+ * 
+ * Append a time stamped message to the bottom of the web page indicating that this function was called.
  */
 function step_3_back() {
+    const time_stamp = generate_time_stamp(), p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
+    let message = "step_3_back() was called at time: " + time_stamp;
+    console.log(message);
+    document.getElementById("time_stamped_messages").innerHTML += p0 + message + p1;
     initialize_output_div();
     hide_page_element("step_3_div");
     unhide_page_element("step_2_div");
@@ -639,16 +675,22 @@ function initialize_application() {
  * 
  * Convert an INPUT_SEQUENCE (i.e. an unsigned integer consisting of no more than eight digits) 
  * whose base is INPUT_BASE to its equivalent representation as an unsigned integer whose base is OUTPUT_BASE.
+ * 
+ * Append a time stamped message to the bottom of the web page indicating that this function was called.
  */
 function convert() {
     try {
+        const time_stamp = generate_time_stamp();
+        let message = "convert() was called at time: " + time_stamp;
         let INPUT_BASE = 0, INPUT_SEQUENCE = "", OUTPUT_BASE = 0, OUTPUT_SEQUENCE = "";
-        let  p0 = '<' + 'p class="module" style="border-color: #00ffff; border-width: 1px;border-style: solid;"' + '>', p1 = '<' + '/' + 'p' + '>';
+        let  p00 = '<' + 'p class="module" style="border-color: #00ffff; border-width: 1px;border-style: solid;"' + '>', p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
+        console.log(message);
+        document.getElementById("time_stamped_messages").innerHTML += p0 + message + p1;
         INPUT_BASE = parseInt(document.getElementById("input_base_span").innerHTML);
         INPUT_SEQUENCE = document.getElementById("input_sequence_span").innerHTML;
         OUTPUT_BASE = parseInt(document.getElementById("output_base_span_2").innerHTML);
         OUTPUT_SEQUENCE = perform_base_conversion(INPUT_BASE, INPUT_SEQUENCE, OUTPUT_BASE);
-        document.getElementById("output").innerHTML = p0 + INPUT_SEQUENCE + " (in base-" + INPUT_BASE + ") is equal to " + OUTPUT_SEQUENCE + " (in base-" + OUTPUT_BASE + ")." + p1
+        document.getElementById("output").innerHTML = p00 + INPUT_SEQUENCE + " (in base-" + INPUT_BASE + ") is equal to " + OUTPUT_SEQUENCE + " (in base-" + OUTPUT_BASE + ")." + p1
     }
     catch(exception) {
         console.log("An exception to normal functioning occurred during the runtime of convert(): " + exception); 

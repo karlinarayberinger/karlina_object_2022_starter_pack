@@ -185,7 +185,7 @@ function convert_from_decimal(output_base, decimal_number) {
         if (Math.floor(output_base) !== output_base) throw "output_base is required to be a whole number.";
         if (Math.floor(decimal_number) !== decimal_number) throw "decimal_number is required to be a whole number.";
         if ((output_base < 2) || (output_base > 16)) throw "output_base is required to be no smaller than two and no larger than sixteen.";
-        for (i = 7; i >= 0; i--) maximum_decimal_number_value += (16 * compute_power(16, i));
+        for (i = 7; i >= 0; i -= 1) maximum_decimal_number_value += (16 * compute_power(16, i));
         if ((decimal_number < 0) || (decimal_number > maximum_decimal_number_value)) throw "decimal_number is required to be larger than zero and no larger than " + maximum_decimal_number_value + ".";
         while (decimal_number > 0) {
             output_base_result += convert_decimal_digit_to_hexidecimal(decimal_number % output_base);
