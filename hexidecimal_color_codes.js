@@ -126,8 +126,8 @@ function convert_from_decimal_to_hexidecimal(decimal_integer) {
  * larger than or equal to the decimal number represented by "RR" and 
  * larger than or equal to the decimal number represented by "GG".
  * 
- * If color_skew_specification is neither "red", "green", or "blue", 
- * then no color skew will be applied (i.e. the color_skew_specification value will be treated as though it were "none").
+ * If color_skew_specification is neither "red" nor "green" nor "blue", 
+ * then no color skew will be applied (i.e. the color_skew_specification value will be set to "none").
  * 
  * Note that a hexidecimal digit is a String type character from the following set of sixteen base-sixteen digits 
  * (which are listed in ascending order such that each hexidecimal digit 
@@ -273,8 +273,8 @@ function convert_from_hexidecimal_to_decimal(hexidecimal_sequence) {
  * the decimal number which "BB" represents will be larger than or equal to the decimal number represented by "RR" 
  * and larger than or equal to the decimal number represented by "GG".
  * 
- * If color_skew_specification is neither "red", "green", or "blue", 
- * then no color skew will be applied (i.e. the color_skew_specification value will be treated as though it were "none").           
+ * If color_skew_specification is neither "red" nor "green" nor "blue", 
+ * then no color skew will be applied (i.e. the color_skew_specification value will be set to "none").           
  * 
  * @param {String} color_skew_specification is assumed to be either "none", "red", "green", or "blue".
  * 
