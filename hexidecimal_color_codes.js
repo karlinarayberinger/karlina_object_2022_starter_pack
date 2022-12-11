@@ -267,7 +267,7 @@ function convert_from_hexidecimal_to_decimal(hexidecimal_sequence) {
  * 
  * If color_skew_specification is "green", 
  * the decimal number which "GG" represents will be larger than or equal to the decimal number represented by "RR" 
- * and larger than or equal to  the decimal number represented by "BB".
+ * and larger than or equal to the decimal number represented by "BB".
  * 
  * If color_skew_specification is "blue", 
  * the decimal number which "BB" represents will be larger than or equal to the decimal number represented by "RR" 
