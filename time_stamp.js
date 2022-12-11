@@ -9,6 +9,7 @@
 /**
  * Get the Number of milliseconds which have elapsed since the Unix Epoch.
  * The Unix Epoch is 01_JANUARY_1970 at midnight (Coordinated Universal Time (UTC)).
+ * 
  * @return {String} message displaying the time at which this function was called.
  */
 function generate_time_stamp() {
