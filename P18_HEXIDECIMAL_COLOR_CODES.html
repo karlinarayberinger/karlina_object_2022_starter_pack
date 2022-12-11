@@ -1,11 +1,11 @@
 <hr>
 <p><strong>HEXIDECIMAL_COLOR_CODES</strong></p>
 <hr>
-<p><span style="background:#ffff00">The single web page application featured in this tutorial web page substantiates a three-by-three square grid composed of nine equally-sized rectangular tiles where each tile is assigned a random background color. Each tile displays the <strong>hexidecimal color code</strong> which represents that tile’s background color in the format <strong>#RRGGBB</strong> along with that tile background color’s <strong style="background:#000000;color:#ff0000">RED</strong> gradient (<strong>RR</strong>), <strong style="background:#000000;color:#00ff00">GREEN</strong> gradient (<strong>GG</strong>), and <strong style="background:#000000;color:#0000ff">BLUE</strong> gradient (<strong>BB</strong>). The application end user may select a color skew option from a list of options to limit the randomized color output values to be either RED skewed, GREEN skewed, BLUE skewed, or not skewed towards any primary color gradient (and skew NONE is automatically selected if no other color skew menu option is selected when the GENERATE button is clicked).</span></p>
+<p><span style="background: #ffff00">The single web page application featured in this tutorial web page substantiates a three-by-three square grid composed of nine equally-sized rectangular tiles where each tile is assigned a random background color. Each tile displays the <strong>hexidecimal color code</strong> which represents that tile’s background color in the format <strong>#RRGGBB</strong> along with that tile background color’s <strong style="background: #000000;color: #ff0000">RED</strong> gradient (<strong>RR</strong>), <strong style="background: #000000;color: #00ff00">GREEN</strong> gradient (<strong>GG</strong>), and <strong style="background: #000000;color: #0000ff">BLUE</strong> gradient (<strong>BB</strong>). The application end user may select a color skew option from a list of options to limit the randomized color output values to be either RED skewed, GREEN skewed, BLUE skewed, or not skewed towards any primary color gradient (and skew NONE is automatically selected if no other color skew menu option is selected when the GENERATE button is clicked).</span></p>
 <p>If color_skew_specification is &#8220;red&#8221;, the decimal number which &#8220;RR&#8221; represents will be larger than or equal to the decimal number represented by &#8220;GG&#8221; and larger than or equal to the decimal number represented by &#8220;BB&#8221;.</p>
 <p>If color_skew_specification is &#8220;green&#8221;, the decimal number which &#8220;GG&#8221; represents will be larger than or equal to the decimal number represented by &#8220;RR&#8221; and larger than or equal to the decimal number represented by &#8220;BB&#8221;.</p>
 <p>If color_skew_specification is &#8220;blue&#8221;, the decimal number which &#8220;BB&#8221; represents will be larger than or equal to the decimal number represented by &#8220;RR&#8221; and larger than or equal to the decimal number represented by &#8220;GG&#8221;.</p>
-<p>If color_skew_specification is neither &#8220;red&#8221;, &#8220;green&#8221;, or &#8220;blue&#8221;, then no color skew will be applied (i.e. the color_skew_specification value will be treated as though it were &#8220;none&#8221;).</p>
+<p>If color_skew_specification is neither &#8220;red&#8221; nor &#8220;green&#8221; nor &#8220;blue&#8221;, then no color skew will be applied (i.e. the color_skew_specification value will be set to &#8220;none&#8221;).</p>
 <p><span style="background: #00ff00">To view hidden text inside of the preformatted text boxes below, scroll horizontally.</span></p>
 <pre>hexidecimal_digits := ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']. // The nonnegative integer value of a hexidecimal digit is sixteen to the power of the decimal array index value of that particular hexidecimal digit.</pre>
 <pre>primary_color_gradient_hexidecimal_value := hexidecimal_digits[P] hexidecimal_digits[Q]. // P and Q are each nonnegative decimal integer values no larger than 15.</pre>
@@ -230,8 +230,8 @@ function convert_from_decimal_to_hexidecimal(decimal_integer) {
  * larger than or equal to the decimal number represented by "RR" and 
  * larger than or equal to the decimal number represented by "GG".
  * 
- * If color_skew_specification is neither "red", "green", or "blue", 
- * then no color skew will be applied (i.e. the color_skew_specification value will be treated as though it were "none").
+ * If color_skew_specification is neither "red" nor "green" nor "blue", 
+ * then no color skew will be applied (i.e. the color_skew_specification value will be set to "none").
  * 
  * Note that a hexidecimal digit is a String type character from the following set of sixteen base-sixteen digits 
  * (which are listed in ascending order such that each hexidecimal digit 
@@ -371,14 +371,14 @@ function convert_from_hexidecimal_to_decimal(hexidecimal_sequence) {
  * 
  * If color_skew_specification is "green", 
  * the decimal number which "GG" represents will be larger than or equal to the decimal number represented by "RR" 
- * and larger than or equal to  the decimal number represented by "BB".
+ * and larger than or equal to the decimal number represented by "BB".
  * 
  * If color_skew_specification is "blue", 
  * the decimal number which "BB" represents will be larger than or equal to the decimal number represented by "RR" 
  * and larger than or equal to the decimal number represented by "GG".
  * 
- * If color_skew_specification is neither "red", "green", or "blue", 
- * then no color skew will be applied (i.e. the color_skew_specification value will be treated as though it were "none").           
+ * If color_skew_specification is neither "red" nor "green" nor "blue", 
+ * then no color skew will be applied (i.e. the color_skew_specification value will be set to "none").           
  * 
  * @param {String} color_skew_specification is assumed to be either "none", "red", "green", or "blue".
  * 
@@ -495,12 +495,12 @@ function generate_time_stamp() {
 <figure class="wp-block-image size-full"><img data-attachment-id="19710" data-permalink="https://karlinaobject.wordpress.com/hexidecimal_color_codes/hexidecimal_color_codes_interface_initial-2/" data-orig-file="https://karlinaobject.files.wordpress.com/2022/12/hexidecimal_color_codes_interface_initial.png" data-orig-size="821,412" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="hexidecimal_color_codes_interface_initial" data-image-description="" data-image-caption="" data-medium-file="https://karlinaobject.files.wordpress.com/2022/12/hexidecimal_color_codes_interface_initial.png?w=300" data-large-file="https://karlinaobject.files.wordpress.com/2022/12/hexidecimal_color_codes_interface_initial.png?w=821" src="https://karlinaobject.files.wordpress.com/2022/12/hexidecimal_color_codes_interface_initial.png" alt="" class="wp-image-19710" /></figure>
 
 
-<hr>
+<hr />
 <p><strong>HEXIDECIMAL_COLOR_CODES Interface (Skew None)</strong></p>
-<hr>
-<p>The screenshot image below depicts one possible configuration of what the HEXIDECIMAL_COLOR_CODES web page interface could look like if the GENERATE button is clicked without first clicking the color skew menu button or if the &#8220;NONE&#8221; option is selected in the color skew menu before the GENERATE button is clicked.</p>
+<hr />
+<p>The screenshot image below depicts one possible configuration of what the HEXIDECIMAL_COLOR_CODES web page interface could look like if the GENERATE button is clicked without first clicking on the color skew menu button or if the &#8220;NONE&#8221; option is selected in the color skew menu before the GENERATE button is clicked.</p>
 <p>Portable-Network-Graphics_image_link: <a style="background: #000000;color: #ff9000" href="https://raw.githubusercontent.com/karlinarayberinger/karlina_object_2022_starter_pack/main/hexidecimal_color_codes_interface_skew_none.png" target="_blank" rel="noopener">https://raw.githubusercontent.com/karlinarayberinger/karlina_object_2022_starter_pack/main/hexidecimal_color_codes_interface_skew_none.png</a></p>
-<hr>
+<hr />
 
 
 <figure class="wp-block-image size-full"><img data-attachment-id="19715" data-permalink="https://karlinaobject.wordpress.com/hexidecimal_color_codes/hexidecimal_color_codes_interface_skew_none-2/" data-orig-file="https://karlinaobject.files.wordpress.com/2022/12/hexidecimal_color_codes_interface_skew_none.png" data-orig-size="870,1146" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="hexidecimal_color_codes_interface_skew_none" data-image-description="" data-image-caption="" data-medium-file="https://karlinaobject.files.wordpress.com/2022/12/hexidecimal_color_codes_interface_skew_none.png?w=228" data-large-file="https://karlinaobject.files.wordpress.com/2022/12/hexidecimal_color_codes_interface_skew_none.png?w=777" src="https://karlinaobject.files.wordpress.com/2022/12/hexidecimal_color_codes_interface_skew_none.png" alt="" class="wp-image-19715" /></figure>
@@ -541,4 +541,4 @@ function generate_time_stamp() {
 
 <hr>
 <p>This web page was last updated on 11_DECEMBER_2022. The content displayed on this web page is licensed as <a style="background:#000000;color:#ff9000" href="https://karlinaobject.wordpress.com/public_domain/" target="_blank" rel="noopener">PUBLIC_DOMAIN</a> intellectual property.</p>
-<hr>
+<hr>	
