@@ -36,10 +36,30 @@
         (Clicking the RESET button will return this web page to its initial state such that each one of
         the eight light bulbs is set to "OFF" and all buttons on this web page are set to visible).
     </p>
+    <p>
+        The binary integer value <span class="highlight">0</span> is an abstract representation of 
+        the relatively physical "OFF" (insufficiently high voltage) light bulb state.
+    </p>
+    <p>
+        The binary integer value <span class="highlight">1</span> is an abstract representation of 
+        the relatively physical "ON" (sufficiently high voltage) light bulb state.
+    </p>
+    <p>Each one of the eight light bulbs displayed in the table below represents a particular power of two.</p>
+    <p>(N in the table below represents a nonnegative integer value no larger than seven).
+    <p>While light_bulb_N is in its "ON" state, light_bulb_N represents two multiplied by itself N times.</p>
+    <p>While light_bulb_N is in its "OFF" state, light_bulb_N represents zero.</p>
+    <p>
+        The nonnegative decimal integer which the sequence of eight light bulbs represents is computed by 
+        adding up the nonnegative decimal integer values which each of those eight light bulbs represents.
+    </p>
     <p>The rightmost light bulb has an N value of 0.</p>
     <p>The rightmost light bulb represents the "lowest order bit" in the byte which the sequence of eight light bulb represents.</p>
+    <p class="console">lowest_order_bit(<span class="highlight">ON</span>) = <span class="highlight">1</span> * (2 ^ 0) = 1 * 1 = 1.</p>
+    <p class="console">lowest_order_bit(<span class="highlight">OFF</span>) = <span class="highlight">0</span> * (2 ^ 0) = 0 * 1 = 0.</p>
     <p>The leftmost light bulb has an N value of 7.</p>
     <p>The leftmost light bulb represents the "highest order bit" in the byte which the sequence of eight light bulb represents.</p>
+    <p class="console">highest_order_bit(<span class="highlight">ON</span>) = <span class="highlight">1</span> * (2 ^ 7) = 1 * 2 * 2 * 2 * 2 * 2 * 2 * 2 = 128.</p>
+    <p class="console">highest_order_bit(<span class="highlight">OFF</span>) = <span class="highlight">0</span> * (2 ^ 7) = 0 * 2 * 2 * 2 * 2 * 2 * 2 * 2 = 0.</p>
     <div>
         <table style="text-align: center">
             <tr>
