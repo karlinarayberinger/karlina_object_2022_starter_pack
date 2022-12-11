@@ -642,7 +642,8 @@ function initialize_application() {
  */
 function convert() {
     try {
-        let INPUT_BASE = 0, INPUT_SEQUENCE = "", OUTPUT_BASE = 0, OUTPUT_SEQUENCE = "", p0 = '<' + 'p' + '>', p1 = '<' + '/' + 'p' + '>';
+        let INPUT_BASE = 0, INPUT_SEQUENCE = "", OUTPUT_BASE = 0, OUTPUT_SEQUENCE = "";
+        let  p0 = '<' + 'p class="module" style="border-color: #00ffff; border-width: 1px;border-style: solid;"' + '>', p1 = '<' + '/' + 'p' + '>';
         INPUT_BASE = parseInt(document.getElementById("input_base_span").innerHTML);
         INPUT_SEQUENCE = document.getElementById("input_sequence_span").innerHTML;
         OUTPUT_BASE = parseInt(document.getElementById("output_base_span_2").innerHTML);
