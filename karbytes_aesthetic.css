@@ -50,7 +50,7 @@ td {
 	color: #00ffff;
 }
 
-/** Set the text color of elements whose class is "console" to GREEN. Make the text background BLACK. */
+/** Set the text color of elements whose class is "console" to GREEN and make the text background of those elemnts BLACK. */
 .console {
 	color: #00ff00;
 	background: #000000;
