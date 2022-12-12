@@ -13,48 +13,33 @@
  * time at which the selected number of time units is decremented
  * to zero.
  * 
- * @return {String} the HTML for defining a span element
+ * @return {String} the HTML for defining a SPAN element whose id is "nonnegative_integer_display"
  */
 function generate_nonnegative_integer_display_span() {
 	return ('<' + 'span id="nonnegative_integer_display"' + '>') + '0' + ('<' + '/' + 'span' + '>');
 }
 
 /**
- * Generate a plain-text message which displays an integer number of 
- * milliseconds elapsed since midnight (00:00:00) of 01_JANUARY_1970 
- * (Coordinated Universal Time (UTC)).
- */
-function time_stamp() {
-	try {
-		const time_scalar = Date.now();
-		let message =  " milliseconds since 01_JANUARY_1970 00:00:00 (Coordinated Universal Time (UTC)).";
-		message = time_scalar + message;
-		return message;
-	}
-	catch(e) {
-		console.log("An exception to normal functioning occurred during the runtime of time_stamp(): " + e);
-	}
-}
-
-/**
- * Display exactly one time-stamped message inside the web browser console window 
- * and inside of the web page element whose identifier is "seconds_elapsed_display" which 
- * which represents the point in time at which the web page application was 
+ * Display a time-stamped message inside the DIV element whose identifier (id) 
+ * is "application_status_messages_display".
+ * which denotes the point in time at which the web page application was 
  * either opened or else reloaded by a web browser.
  *
- * Initialize the span element whose identifier is "nonnegative_integer_display" 
- * by setting its inner content to display "0".
+ * Display "0" inside the SPAN element whose identifier is "seconds_elapsed_display".
  *
- * Initialize the input element whose identifier is "timer_session_start_button" 
- * by making that element visible rather than hidden.
+ * Set the input element whose identifier is "timer_session_start_button" 
+ * to visible rather than to hidden.
+ * 
+ * Assume that this function is called when a web broswer opens count_down_timer.html 
+ * or else reloads that web page.
  */
 function initialize_application() {
 	try {
-		const message = ("The web page was opened at time: " + time_stamp());
+		const message = ("The web page was opened at time: " + generate_time_stamp());
 		console.log(message);
-		document.getElementById("timer_start_button" ).style.visibility = "block";
+		document.getElementById("timer_start_button").style.visibility = "block";
 		document.getElementById("seconds_elapsed_display").innerHTML = (('<' + 'p' + '>') + "seconds_remaining: " + generate_nonnegative_integer_display_span() + ('<' + '/' + 'p' + '>'));
-		document.getElementById("program_status_messages_display").innerHTML = (('<' + 'p' + '>') + message + ('<' + '/' + 'p' + '>'));
+		document.getElementById("application_status_messages_display").innerHTML = (('<' + 'p' + '>') + message + ('<' + '/' + 'p' + '>'));
 	}
 	catch(e) {
 		console.log("An exception to normal functioning occurred during the runtime of initialize_application(): " + e);
@@ -65,6 +50,7 @@ function initialize_application() {
  * Return the value of the selected menu OPTION of a SELECT menu element.
  * 
  * @param {String} select_menu_identifier is the id of a select HTML element.
+ * 
  * @return {String} the value of the selected menu option.
  */
 function get_selected_menu_option_value(select_menu_identifier) {
@@ -88,8 +74,8 @@ function get_selected_menu_option_value(select_menu_identifier) {
  * be a sequence of auditory phenomena).
  *
  * Assume that the sound file, alert_sound_effect.wav, 
- * exists in the same file directory as this JavaScript file
- * and the web page deploying this JavaScript file and the
+ * exists in the same file directory as this JavaScript file(s)
+ * and the web page deploying this JavaScript file(s) and the
  * referenced audio file.
  */
 function play_sound_file() {
@@ -109,8 +95,8 @@ function play_sound_file() {
  * decrement_timer_display_by_one_second(simulation)
  * function is called N times.
  *
- * Print a time-stamped status message to the web console
- * window and to the web page element whose id is "seconds_elapsed_display"
+ * Print a time-stamped status message to the DIV element 
+ * whose id is "application_status_messages_display"
  * which indicates that the timer session of N seconds 
  * is finished.
  * 
@@ -119,10 +105,10 @@ function play_sound_file() {
  */
 function finish_simulation() {
 	try {
-		const message = ("The timed simulation finished at time: " + time_stamp());
+		const message = ("The timed simulation finished at time: " + generate_time_stamp());
 		console.log(message);
-		document.getElementById("program_status_messages_display").innerHTML += (('<' + 'p' + '>') + message + ('<' + '/' + 'p' + '>'));
-		document.getElementById("timer_start_button" ).style.display = "block";
+		document.getElementById("application_status_messages_display").innerHTML += (('<' + 'p' + '>') + message + ('<' + '/' + 'p' + '>'));
+		document.getElementById("timer_start_button").style.display = "block";
 		play_sound_file();
 	}
 	catch(e) {
@@ -134,7 +120,7 @@ function finish_simulation() {
  * Decrement the number of seconds remaining by one second.
  * If the number of seconds is less than one, then terminate the timer session.
  * 
- * Assume that there is a text HTML element whose id is "nonnegative_integer_display" 
+ * Assume that there is a text HTML element whose id is "seconds_elapsed_display"
  * (and that the inner HTML of that element is an integer value).
  * 
  * @param {Object} simulation - an instance of some temporally finite process 
@@ -142,7 +128,7 @@ function finish_simulation() {
 function decrement_timer_display_by_one_second(simulation) {
 	try {
 		let timer_display, seconds_remaining;
-		timer_display = document.getElementById("nonnegative_integer_display");
+		timer_display = document.getElementById("seconds_elapsed_display");
 		seconds_remaining = parseInt(timer_display.innerHTML);
 		seconds_remaining -= 1;
 		timer_display.innerHTML = seconds_remaining;
@@ -169,14 +155,14 @@ function decrement_timer_display_by_one_second(simulation) {
  *
  * Hide the start() button to prevent overlapping timer processes.
  *
- * Set the span element whose identifier is "nonnegative_integer_display" 
+ * Set the span element whose identifier is "seconds_elapsed_display" 
  * to display the nonnegative integer, N, which was most recently selected
  * inside of the select menu whose identifier is "nonnegative_integer_interval_selector".
  *
  * If no menu option was selected, set N to 30 by default.
  *
  * For N consecutive seconds, decrement the nonnegative integer value stored
- * in the span element whose identifier is "nonnegative_integer_display" 
+ * in the span element whose identifier is "seconds_elapsed_display"
  * by exactly 1 until that value becomes 0.
  *
  * After the N-second timer interval completes, display the hidden start()
@@ -185,12 +171,12 @@ function decrement_timer_display_by_one_second(simulation) {
 function start() {
 	try {
 		// Display the time at which the START button was clicked on the web page and in the browser console.
-		let message = ("The start() button was clicked at time: " + time_stamp()), N = 0, simulation = undefined;
+		let message = ("The start() button was clicked at time: " + generate_time_stamp()), N = 0, simulation = undefined;
 		console.log(message);
-		document.getElementById("program_status_messages_display").innerHTML += (('<' + 'p' + '>') + message + ('<' + '/' + 'p' + '>'));
+		document.getElementById("application_status_messages_display").innerHTML += (('<' + 'p' + '>') + message + ('<' + '/' + 'p' + '>'));
 
 		// Disable the start() button by hiding it until the simulation is finished.
-		document.getElementById("timer_start_button" ).style.display = "none";
+		document.getElementById("timer_start_button").style.display = "none";
 
 		N = parseInt(get_selected_menu_option_value("nonnegative_integer_interval_selector"));
 
@@ -200,10 +186,10 @@ function start() {
 		// Display the selected menu option on the web page and in the browser console.
 		message = ("The selected value of N is " + N + ".");
 		console.log(message);
-		document.getElementById("program_status_messages_display").innerHTML += (('<' + 'p' + '>') + message + ('<' + '/' + 'p' + '>'));
+		document.getElementById("application_status_messages_display").innerHTML += (('<' + 'p' + '>') + message + ('<' + '/' + 'p' + '>'));
 
 		// Set the timer interval to N seconds and begin the incremental count down to 0 (in increments 1 second in length).
-		document.getElementById("nonnegative_integer_display").innerHTML = N;
+		document.getElementById("seconds_elapsed_display").innerHTML = N;
 
 		// Begin updating the timer display once per second (and 1 second is equal to 1000 milliseconds).
 		simulation = setInterval( function() { decrement_timer_display_by_one_second(simulation); }, 1000);
